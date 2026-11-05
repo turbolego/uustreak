@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-11-04T05:36:34.806Z
+**Timestamp:** 2026-11-05T09:14:55.833Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -13,15 +13,11 @@
 - **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - **Target:** `#vimeo-video-banner, body`
-  - **HTML:** `<body role="presentation" class="vp-center">`
-  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
-
-- **Target:** `#slick-slide00 > .vimeo-wrapper > iframe, body`
   - **HTML:** `<body role="presentation" class="vp-center">`
   - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
 
@@ -38,11 +34,11 @@
 #### Affected Elements:
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(1) > .event-cover > .location.event-tags-row > .event-tags-left > span`
-  - **HTML:** `<span>Håkonshallen </span>`
+  - **HTML:** `<span>Gamle Bergen </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.57 (foreground color: #72808a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(1) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
-  - **HTML:** `<span class="event-type-tag">FOREDRAG</span>`
+  - **HTML:** `<span class="event-type-tag">TEATERVANDRING</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(1) > .event-cover > .event-date-row > .event-date-column > .date-range`
@@ -50,11 +46,11 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(2) > .event-cover > .location.event-tags-row > .event-tags-left > span`
-  - **HTML:** `<span>Gamle Bergen </span>`
+  - **HTML:** `<span>Rosenkrantztårnet </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.57 (foreground color: #72808a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(2) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
-  - **HTML:** `<span class="event-type-tag">TEATERVANDRING</span>`
+  - **HTML:** `<span class="event-type-tag">BARNAS BYMUSEUM</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(2) > .event-cover > .event-date-row > .event-date-column > .date-range`
@@ -62,11 +58,11 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(3) > .event-cover > .location.event-tags-row > .event-tags-left > span`
-  - **HTML:** `<span>Rosenkrantztårnet </span>`
+  - **HTML:** `<span>Håkonshallen </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.57 (foreground color: #72808a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(3) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
-  - **HTML:** `<span class="event-type-tag">BARNAS BYMUSEUM</span>`
+  - **HTML:** `<span class="event-type-tag">FOREDRAG</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(3) > .event-cover > .event-date-row > .event-date-column > .date-range`
@@ -74,11 +70,11 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(4) > .event-cover > .location.event-tags-row > .event-tags-left > span`
-  - **HTML:** `<span>Håkonshallen </span>`
+  - **HTML:** `<span>Bergen sentrum </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.57 (foreground color: #72808a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(4) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
-  - **HTML:** `<span class="event-type-tag">FOREDRAG</span>`
+  - **HTML:** `<span class="event-type-tag">VANDRING</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.55 (foreground color: #817e7a, background color: #f5f0e7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.col-lg-3.event.load-more__item:nth-child(4) > .event-cover > .event-date-row > .event-date-column > .date-range`
@@ -114,7 +110,7 @@
   - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 - **Target:** `#slick-slide00 > .vimeo-wrapper > iframe`
-  - **HTML:** `<iframe style="border: 0;" src="https://player.vimeo.com/video/1101177840?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;playsinline=1&amp;quality=720p" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" data-ready…`
+  - **HTML:** `<iframe style="border: 0;" src="https://player.vimeo.com/video/1101177840?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;playsinline=1&amp;quality=720p" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>`
   - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 
@@ -266,30 +262,6 @@
   - **Failure summary:** Fix any of the following: user-scalable on <meta> tag disables zooming on mobile devices
 
 
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- **Target:** `html`
-  - **HTML:** `<html lang="nb-NO" prefix="og: https://ogp.me/ns#" class=" js">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
-
-- **Target:** `#vimeo-video-banner, html`
-  - **HTML:** `<html lang="en">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
-
-- **Target:** `#slick-slide00 > .vimeo-wrapper > iframe, html`
-  - **HTML:** `<html lang="en">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
-
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -297,7 +269,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -307,6 +279,10 @@
 
 - **Target:** `.events`
   - **HTML:** `<section class="events events-mixitup">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#slick-slide00 > .vimeo-wrapper > iframe, #error`
+  - **HTML:** `<div id="error" class="error">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.cta[target="_self"] > span`

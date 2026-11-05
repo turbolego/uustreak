@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kongsberg kommune
 
-**Timestamp:** 2026-11-04T05:21:46.461Z
+**Timestamp:** 2026-11-05T09:28:11.222Z
 **URL:** [https://www.kongsberg.kommune.no/](https://www.kongsberg.kommune.no/)
 **Total Violations:** 2
 
@@ -18,15 +18,15 @@
 #### Affected Elements:
 
 - **Target:** `.campaign__item[target="_blank"]:nth-child(1)`
-  - **HTML:** `<a class="campaign__item" href="https://kongsberg.kommune.no/artikkel/budsjettprosess-2027" aria-label="Budsjettprosess 2027 (Åpner i nytt vindu)" target="_blank">`
+  - **HTML:** `<a class="campaign__item" href="https://kongsbergregionen.no/informasjon-til-innbyggere-og-parorende/" aria-label="Bli kjent med Mitt Aidn (Åpner i nytt vindu)" target="_blank">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.campaign__item[target="_blank"]:nth-child(2)`
-  - **HTML:** `<a class="campaign__item" href="https://kongsbergkommune.easycruit.com/" aria-label="Vil du jobbe hos oss? (Åpner i nytt vindu)" target="_blank">`
+  - **HTML:** `<a class="campaign__item" href="https://kongsberg.kommune.no/artikkel/budsjettprosess-2027" aria-label="Budsjettprosess 2027 (Åpner i nytt vindu)" target="_blank">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.campaign__item[target="_blank"]:nth-child(3)`
-  - **HTML:** `<a class="campaign__item" href="https://kartportal-kongsbergkommune.hub.arcgis.com/" aria-label="Kartportal (Åpner i nytt vindu)" target="_blank">`
+  - **HTML:** `<a class="campaign__item" href="https://kongsbergkommune.easycruit.com/" aria-label="Vil du jobbe hos oss? (Åpner i nytt vindu)" target="_blank">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

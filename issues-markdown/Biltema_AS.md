@@ -1,10 +1,26 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-11-04T05:08:58.207Z
+**Timestamp:** 2026-11-05T09:04:36.111Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
-**Total Violations:** 11
+**Total Violations:** 12
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Source:** Embedded code from Cookiebot
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#CybotCookiebotDialog`
+  - **HTML:** `<div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="region" aria-labelledby="CybotCookiebotDialog..." tabindex="-1" lang="nb" dir="ltr" data-nosnippet="" ng-non-bindable="" class="CybotMultilevel Cybo..." style="display: flex;…`
+  - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-modal="true"
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -254,20 +270,28 @@
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 
-### Page should contain a level-one heading
+### Interactive controls must not be nested
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Source:** Embedded code from Cookiebot
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 3
 
 #### Affected Elements:
 
-- **Target:** `html`
-  - **HTML:** `<html lang="nb">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+- **Target:** `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(2) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+  - **HTML:** `<div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper" role="switch" aria-checked="false" aria-disabled="false" aria-labelledby="CybotCookiebotDialogBodyLevelButtonPreferences-label" tabindex="0">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
+- **Target:** `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(3) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+  - **HTML:** `<div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper" role="switch" aria-checked="false" aria-disabled="false" aria-labelledby="CybotCookiebotDialogBodyLevelButtonStatistics-label" tabindex="0">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
+- **Target:** `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(4) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+  - **HTML:** `<div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper" role="switch" aria-checked="false" aria-disabled="false" aria-labelledby="CybotCookiebotDialogBodyLevelButtonMarketing-label" tabindex="0">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
 
 
 ### All page content should be contained by landmarks

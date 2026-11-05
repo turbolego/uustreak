@@ -1,6 +1,6 @@
 # WCAG Violations Report for Landkreditt Bank AS
 
-**Timestamp:** 2026-11-04T05:23:28.028Z
+**Timestamp:** 2026-11-05T09:34:18.334Z
 **URL:** [https://www.landkreditt.no/](https://www.landkreditt.no/)
 **Total Violations:** 7
 
@@ -45,27 +45,27 @@
 
 #### Affected Elements:
 
-- **Target:** `#calculator-1b1509b4-74c2-4b7e-99f7-ab096eaa7afd > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- **Target:** `#calculator-ffaf9b78-8a44-4d16-b182-e0c5539f562f > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
   - **HTML:** `<button class="btn btn-haptic btn-minus" data-bind="click: decrementValue" tabindex="-1"><span class="icon icon-btn-minus"></span></button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `#calculator-1b1509b4-74c2-4b7e-99f7-ab096eaa7afd > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- **Target:** `#calculator-ffaf9b78-8a44-4d16-b182-e0c5539f562f > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
   - **HTML:** `<button class="btn btn-haptic btn-plus" data-bind="click: incrementValue" tabindex="-1"><span class="icon icon-btn-plus"></span></button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `#calculator-1b1509b4-74c2-4b7e-99f7-ab096eaa7afd > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- **Target:** `#calculator-ffaf9b78-8a44-4d16-b182-e0c5539f562f > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
   - **HTML:** `<button class="btn btn-haptic btn-minus" data-bind="click: decrementValue" tabindex="-1"><span class="icon icon-btn-minus"></span></button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `#calculator-1b1509b4-74c2-4b7e-99f7-ab096eaa7afd > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- **Target:** `#calculator-ffaf9b78-8a44-4d16-b182-e0c5539f562f > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
   - **HTML:** `<button class="btn btn-haptic btn-plus" data-bind="click: incrementValue" tabindex="-1"><span class="icon icon-btn-plus"></span></button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `#calculator-1b1509b4-74c2-4b7e-99f7-ab096eaa7afd > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- **Target:** `#calculator-ffaf9b78-8a44-4d16-b182-e0c5539f562f > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
   - **HTML:** `<button class="btn btn-haptic btn-minus" data-bind="click: decrementValue" tabindex="-1"><span class="icon icon-btn-minus"></span></button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `#calculator-1b1509b4-74c2-4b7e-99f7-ab096eaa7afd > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- **Target:** `#calculator-ffaf9b78-8a44-4d16-b182-e0c5539f562f > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
   - **HTML:** `<button class="btn btn-haptic btn-plus" data-bind="click: incrementValue" tabindex="-1"><span class="icon icon-btn-plus"></span></button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
@@ -161,7 +161,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#swiper-wrapper-d11c137f3f4b10540`
-  - **HTML:** `<ul class="swiper-wrapper" id="swiper-wrapper-d11c137f3f4b10540" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">`
+- **Target:** `#swiper-wrapper-330dde880fe9c1c9`
+  - **HTML:** `<ul class="swiper-wrapper" id="swiper-wrapper-330dde880fe9c1c9" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">`
   - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: [role=group]
 

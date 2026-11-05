@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-11-04T05:37:18.004Z
+**Timestamp:** 2026-11-05T09:30:01.035Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 7
 
@@ -145,11 +145,11 @@
   - **HTML:** `<ul class="carousel__slides">`
   - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
 
-- **Target:** `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- **Target:** `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
   - **HTML:** `<ul class="carousel__slides">`
   - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
 
-- **Target:** `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- **Target:** `.cms-recomendations:nth-child(12) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
   - **HTML:** `<ul class="carousel__slides">`
   - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
 

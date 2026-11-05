@@ -1,8 +1,8 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2026-11-04T05:31:05.837Z
+**Timestamp:** 2026-11-05T09:06:09.775Z
 **URL:** [https://www.reddbarna.no/](https://www.reddbarna.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -29,31 +29,11 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - **Target:** `donation-form, .cta > span`
   - **HTML:** `<span>Gi månedlig med</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.1 (foreground color: #ffffff, background color: #ff5b24, font size: 13.9pt (18.5px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `.rb-media-text-label__date`
-  - **HTML:** `<span class="rb-media-text-label__date">25. september 2026</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.27 (foreground color: #4a4f53, background color: #111111, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
-
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `a[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
-  - **HTML:** `<img decoding="async" class="lib-link__featured-image" src="https://www.reddbarna.no/content/uploads/2023/05/TVA_mobil.png">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 

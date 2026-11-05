@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-11-04T05:30:10.653Z
+**Timestamp:** 2026-11-05T09:13:13.786Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
 **Total Violations:** 2
 
@@ -34,11 +34,11 @@
 #### Affected Elements:
 
 - **Target:** `a[aria-describedby="0-text"]`
-  - **HTML:** `<a class="ssb-picture-card ver..." href="https://www.ssb.no/s..." aria-label="Unge voksne er mindr..." aria-describedby="0-text">`
+  - **HTML:** `<a class="ssb-picture-card vertical w-100 group" href="https://www.ssb.no/arbeid-og-lonn/sysselsetting/artikler/faerre-unge-innvandrere-star-utenfor-arbeid-og-utdanning" aria-label="Færre unge innvandrere står utenfor arbeid og utdanning" …`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `a[aria-label="Flere går på kino"]`
-  - **HTML:** `<a class="ssb-picture-card vertical w-100 group" href="https://www.ssb.no/kultur-og-fritid/kultur/artikler/kinobesok-i-norge" aria-label="Flere går på kino" aria-describedby="1-text">`
+- **Target:** `a[aria-label="Utslipp av klimagasser går ned"]`
+  - **HTML:** `<a class="ssb-picture-card vertical w-100 group" href="https://www.ssb.no/natur-og-miljo/forurensning-og-klima/statistikk/utslipp-til-luft/artikler/norge-har-kuttet-14-prosent-i-klimagasser-siden-1990" aria-label="Utslipp av klimagasser gå…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `a[aria-label="SSBs historie"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-11-04T05:03:53.881Z
+**Timestamp:** 2026-11-05T08:56:53.664Z
 **URL:** [https://www.aftenposten.no/](https://www.aftenposten.no/)
 **Total Violations:** 2
 
@@ -29,15 +29,11 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/svg-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `a[data-content-id="xl6Ae8"] > ._figure_1676t_58 > ._overlay_1676t_483._badges_1676t_478._small_1676t_541 > ._logo_1676t_536[viewBox="0 0 21 18"][role="img"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 18" style="flex-shrink:0;height:var(--graphic-size, var(--space-l));width:auto" role="img" class="_logo_1676t_536">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[data-content-id="w3Wmln"] > ._figure_1676t_58 > ._overlay_1676t_483._badges_1676t_478._small_1676t_541 > ._logo_1676t_536[viewBox="0 0 21 18"][role="img"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 18" style="flex-shrink:0;height:var(--graphic-size, var(--space-l));width:auto" role="img" class="_logo_1676t_536">`
+- **Target:** `svg[viewBox="0 0 95 29"]`
+  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 95 29" role="img" class="_logo_1676t_536" style="flex-shrink: 0; height: var(--graphic-size, var(--space-l)); width: auto;">`
   - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
 

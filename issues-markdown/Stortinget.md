@@ -1,30 +1,10 @@
 # WCAG Violations Report for Stortinget
 
-**Timestamp:** 2026-11-04T05:33:05.767Z
+**Timestamp:** 2026-11-05T09:17:43.724Z
 **URL:** [https://www.stortinget.no/](https://www.stortinget.no/)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- **Target:** `img[alt="Terje Aasland"]`
-  - **HTML:** `<img src="/Personimages/PersonImages_Small/TELA_lite.jpg" alt="Terje Aasland" title="Terje Aasland">`
-  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
-
-- **Target:** `img[alt="Kari Nessa Nordtun"]`
-  - **HTML:** `<img src="/Personimages/PersonImages_Small/KARNOR_lite.jpg" alt="Kari Nessa Nordtun" title="Kari Nessa Nordtun">`
-  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
-
 
 ### All page content should be contained by landmarks
 

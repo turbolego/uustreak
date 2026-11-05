@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergen Kino AS
 
-**Timestamp:** 2026-11-04T05:06:26.410Z
+**Timestamp:** 2026-11-05T09:03:00.940Z
 **URL:** [https://www.bergenkino.no/](https://www.bergenkino.no/)
 **Total Violations:** 8
 
@@ -13,7 +13,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 74
+- **Count:** 82
 
 #### Affected Elements:
 
@@ -21,296 +21,328 @@
   - **HTML:** `<a href="/vilkar" target="_blank" class="text-dark-primary label-link"> Les mer </a>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.26 (foreground color: #6792bd, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#objcc5596e6a50240a8b94348aad98ab48a_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.7 fra 42 brukere </div>`
+- **Target:** `#objce2ba19ce5544960afe234babf72dc03_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.7 fra 45 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064108"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:25</span>`
+- **Target:** `a[href="/showtime/3064448"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>16:20</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064109"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064438"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:05</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3063974"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:50</span>`
+- **Target:** `a[href="/showtime/3064229"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:20</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3065411"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064230"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:55</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3065947"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:00</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3066281"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>15:00</span>`
+- **Target:** `a[href="/showtime/3065232"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:30</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3065389"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>16:15</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064094"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064661"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:30</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#obja676e9b92e1245f0b5723bf3c7e3eb7e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.7 fra 20 brukere </div>`
+- **Target:** `#objd67ce5f130d44e1ca0d085c1fc8d3149_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.5 fra 21 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064098"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:50</span>`
+- **Target:** `a[href="/showtime/3064363"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>15:05</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064096"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:20</span>`
+- **Target:** `a[href="/showtime/3064626"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:50</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3065369"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3053070"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:35</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064441"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:30</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064175"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:30</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064095"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064366"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:05</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#obj164fd4c8f5c149859519499d70a55123_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#objd0cd6d8e297f4b56bedff2b00c4a0adc_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 15 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064138"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3065201"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:25</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3063978"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064630"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:25</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064234"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:25</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3063979"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064235"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:25</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#obj901cf15ab99e4d95b1855985835123ea_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 17 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3063971"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:12</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3063972"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:12</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064100"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:27</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#objf96d2130260f47cf9d6163c1e8ee7b64_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj5636d85d6a6d473390bf124efd6b2556_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.8 fra 10 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064114"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3066277"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:57</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064621"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:57</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064382"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:27</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064225"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:27</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#objf42c94bcb4a941c1995d06aa39544f63_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5 fra 33 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064086"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:10</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3065225"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:25</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj63126a1ba0674d1d93bda8d888afacc8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj7100d125502b4b5e88d1d070357124b8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 4 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064111"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064376"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:06</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064377"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:51</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#obj9c18d4faf52d4471b1f9037758d971c7_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj31381914025f452cb2c63c4040f0a4ff_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 17 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064227"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:27</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064228"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:12</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064368"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:27</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj9262e3ed53a846c0ab4c10e628cdf88c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.2 fra 23 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3065342"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:03</span>`
+- **Target:** `a[href="/showtime/3064233"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:04</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064881"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:03</span>`
+- **Target:** `a[href="/showtime/3066815"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:49</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#obj8d0203b5b21c4625acdba2ef4feb0e5e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 5 brukere </div>`
+- **Target:** `#objb9bab79016b548cf957bfe30d10f8bee_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 34 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064132"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>15:50</span>`
+- **Target:** `a[href="/showtime/3064356"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:25</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064131"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:05</span>`
+- **Target:** `a[href="/showtime/3064355"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:10</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064130"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:05</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj5dbbf318e79d46b88aa24c8fd1de7bd4_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 3.7 fra 11 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064876"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:46</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3065355"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:16</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obje13c13218ad443cfa8fe8de887410019_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 50 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3063970"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:34</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj0079bae803ba4d338daa8cf2d7c56c90_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 40 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064090"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:11</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj59c4b10c421840289a4ad2bf683da15c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 1 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064197"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:51</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064200"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:51</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064105"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:36</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj95c4e1bd1b6340d2a0334335ca5ed1d3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4 fra 4 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064125"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:14</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064124"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:44</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj0305ef953aea4f3197eb46618e973faf_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj3486ed19e3f542e8b76f07f93db7dfea_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.3 fra 5 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064118"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:45</span>`
+- **Target:** `a[href="/showtime/3064383"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:00</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#objd3290ca2215d4969a4e999245b1de266_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.2 fra 9 brukere </div>`
+- **Target:** `#obja61e737bd5364a4dab5bfb9b94fb1e6d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 1 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064112"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:19</span>`
+- **Target:** `a[href="/showtime/3064371"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>14:41</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064140"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:05</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#objac4045831364482ab0a70b5281f31159_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.4 fra 179 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064213"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:53</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#objbc22ad86322547cf9efc7afbf740aa89_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 6 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064134"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:01</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj91ef852460844736bfe6363817549faf_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 3 brukere </div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064129"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064369"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>16:56</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064127"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:11</span>`
+- **Target:** `a[href="/showtime/3064372"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:11</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3065157"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:01</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/3064141"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:17</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/2961645"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:35</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/2953370"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>13:33</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[href="/showtime/2953375"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:03</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `#obj49d12f079a1e4cbe92fcd679534bc5a1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 3 fra 2 brukere </div>`
+- **Target:** `#obj4bfa0b00c072402db559b59fd1fc0e01_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 40 brukere </div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064245"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064358"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>15:11</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj48f519f56472484bbd091ed08bf1c5e6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 5 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064394"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:15</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064395"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:05</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064396"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:05</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#objc2d0fe0655be486aa65722198f2492a0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 50 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064226"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:34</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#objbd2fad13ae4c432b8cfb3d5af3e5c022_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 1 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064595"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>12:36</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064599"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>15:16</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064374"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:06</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj357d24b532d24973a29538bdc3089a01_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 5 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3052628"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>13:50</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064397"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:18</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj4561bbd570b84b6898b47a7f3d7570b0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 6 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064398"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>21:31</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj1165da39f3c342468909ab904c256774_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4 fra 4 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064389"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>20:14</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064388"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:54</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064403"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>17:35</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[href="/showtime/3064827"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- **Target:** `a[href="/showtime/3064404"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:50</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj83856ba2303a4b3e915337613a7d18f5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.2 fra 9 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064378"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>19:49</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064386"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>12:01</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3066269"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>15:01</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#objb8b19b6ad2814c78b0d49fafe9ad49ae_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.4 fra 180 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064357"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:53</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj65ab0763e7fe44008defc63bd5688a96_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.1 fra 14 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064359"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:42</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3053067"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:45</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064405"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:02</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#obj30c19d1eae094f21b85d279b3dee478e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 3 brukere </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064392"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>22:26</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064453"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>23:25</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064645"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+  - **HTML:** `<span class="program__showtime-endtime">-<wbr>12:21</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href="/showtime/3064380"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
   - **HTML:** `<span class="program__showtime-endtime">-<wbr>12:31</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.top-list_subtitle`
-  - **HTML:** `<div class="top-list_subtitle pt-0 pb-0">Uke av <span class="text-capitalize">oktober 28 - november 04</span></div>`
+  - **HTML:** `<div class="top-list_subtitle pt-0 pb-0">Uke av <span class="text-capitalize">oktober 29 - november 05</span></div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.23 (foreground color: #7b7b7b, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.text-capitalize`
-  - **HTML:** `<span class="text-capitalize">oktober 28 - november 04</span>`
+  - **HTML:** `<span class="text-capitalize">oktober 29 - november 05</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.23 (foreground color: #7b7b7b, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
 
 
@@ -325,15 +357,15 @@
 
 #### Affected Elements:
 
-- **Target:** `#obja676e9b92e1245f0b5723bf3c7e3eb7e_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- **Target:** `#objd67ce5f130d44e1ca0d085c1fc8d3149_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
   - **HTML:** `<img src="https://images.filmgrail.com/KK2023_Logo_ToLinjer_hvit.svg?width=1200&amp;optimizer=image" class="kinoclubb__logo">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#objf96d2130260f47cf9d6163c1e8ee7b64_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- **Target:** `#obj5636d85d6a6d473390bf124efd6b2556_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
   - **HTML:** `<img src="https://images.filmgrail.com/KK2023_Logo_ToLinjer_hvit.svg?width=1200&amp;optimizer=image" class="kinoclubb__logo">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#objf42c94bcb4a941c1995d06aa39544f63_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- **Target:** `#objb9bab79016b548cf957bfe30d10f8bee_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
   - **HTML:** `<img src="https://images.filmgrail.com/KK2023_Logo_ToLinjer_hvit.svg?width=1200&amp;optimizer=image" class="kinoclubb__logo">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -497,7 +529,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 169
+- **Count:** 178
 
 #### Affected Elements:
 
@@ -517,11 +549,11 @@
   - **HTML:** `<div class="header-transparent d-flex justify-content-center">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#swiper-wrapper-0510247059b9e4aa2`
-  - **HTML:** `<div class="swiper-wrapper" id="swiper-wrapper-0510247059b9e4aa2" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-9058px, 0px, 0px);">`
+- **Target:** `#swiper-wrapper-c552a957518c628d`
+  - **HTML:** `<div class="swiper-wrapper" id="swiper-wrapper-c552a957518c628d" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-9058px, 0px, 0px);">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.obj4e3c8f2e6e7945dabd70dac7777a5e42 > section > .flex-row.mb-4.font-weight-semi-bold`
+- **Target:** `.objd4ad8f528e9d4354842074a33b5c5d53 > section > .flex-row.mb-4.font-weight-semi-bold`
   - **HTML:** `<div class=" font-weight-semi-bold mb-4 d-flex justify-content-between align-items-center flex-row ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -565,575 +597,611 @@
   - **HTML:** `<div class="card_item__subtitle mt-1">HUNGER GAMES er tilbake på arenaen, der den unge Haymitch er valgt ut som Distrikt 12s deltaker til den andre Quarter Quell.</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/dune-maraton/1803"] > .card_item__title.font-weight-bold.mt-3`
-  - **HTML:** `<div class="card_item__title font-weight-bold mt-3">Dune-maraton</div>`
+- **Target:** `div:nth-child(6) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
+  - **HTML:** `<div class="card_item__title font-weight-bold mt-3">Jul på Bergen Kino: Her er filmfavorittene!</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/dune-maraton/1803"] > .card_item__subtitle.mt-1`
-  - **HTML:** `<div class="card_item__subtitle mt-1">Vi har gleden av å tilby vårt publikum en eksklusiv mulighet i forbindelse med en av høstens mest etterlengtede filmer – Dune: Part Three. Gjenopplev Dune: Part One og Dune: Part Two på kino i premium.…`
+- **Target:** `div:nth-child(6) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__subtitle.mt-1`
+  - **HTML:** `<div class="card_item__subtitle mt-1">Finn årets beste filmer for store og små – perfekt for julestemning, familiekvelder og kinomagi i vintermørket. </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj8f874ada3e6e4354a598b18754e0b3f9_adform`
-  - **HTML:** `<div id="obj8f874ada3e6e4354a598b18754e0b3f9_adform" class="w-100 mb-2 text-center py-3 adform " style="overflow: hidden; min-height: 332px; background-color: rgb(244, 244, 244); border-radius: 8px;"><span class="adform-text">reklame</span…`
+- **Target:** `#obj8a37b2511f7a4e5e9f0280c369e88667_adform`
+  - **HTML:** `<div id="obj8a37b2511f7a4e5e9f0280c369e88667_adform" class="w-100 mb-2 text-center py-3 adform " style="overflow: hidden; min-height: 332px; background-color: rgb(244, 244, 244); border-radius: 8px;"><span class="adform-text">reklame</span…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.py-4.container > section > .flex-row.mb-4.font-weight-semi-bold`
   - **HTML:** `<div class=" font-weight-semi-bold mb-4 d-flex justify-content-between align-items-center flex-row "> <div class="align-items-center block_title_header d-flex w-100 pb-0"> Kinoprogram </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja38a9ba97daf48d5a9ed1115445d0070_dates`
-  - **HTML:** `<select class="btn filter-dropdown rounded undefined" id="obja38a9ba97daf48d5a9ed1115445d0070_dates">`
+- **Target:** `#obj5ab2f0921a5a4ae795110ce38e9f4c67_dates`
+  - **HTML:** `<select class="btn filter-dropdown rounded undefined" id="obj5ab2f0921a5a4ae795110ce38e9f4c67_dates">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja38a9ba97daf48d5a9ed1115445d0070_sortOptions`
-  - **HTML:** `<select class="btn filter-dropdown rounded " id="obja38a9ba97daf48d5a9ed1115445d0070_sortOptions">`
+- **Target:** `#obj5ab2f0921a5a4ae795110ce38e9f4c67_sortOptions`
+  - **HTML:** `<select class="btn filter-dropdown rounded " id="obj5ab2f0921a5a4ae795110ce38e9f4c67_sortOptions">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja38a9ba97daf48d5a9ed1115445d0070_screens`
-  - **HTML:** `<select class="btn filter-dropdown rounded " id="obja38a9ba97daf48d5a9ed1115445d0070_screens">`
+- **Target:** `#obj5ab2f0921a5a4ae795110ce38e9f4c67_screens`
+  - **HTML:** `<select class="btn filter-dropdown rounded " id="obj5ab2f0921a5a4ae795110ce38e9f4c67_screens">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj6189011505b64ae8b96f47e7ccae793c`
-  - **HTML:** `<div id="obj6189011505b64ae8b96f47e7ccae793c" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj7906921b1f5d41b3b59b7bcc6a237401`
+  - **HTML:** `<div id="obj7906921b1f5d41b3b59b7bcc6a237401" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.movie-title.font-weight-semi-bold[href="/f/pensjonskuppet/2645"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/pensjonskuppet/2645" data-target-partial="true">Pensjonskuppet</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objcc5596e6a50240a8b94348aad98ab48a_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.7 fra 42 brukere </div>`
+- **Target:** `#objce2ba19ce5544960afe234babf72dc03_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.7 fra 45 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objcc5596e6a50240a8b94348aad98ab48a_showtimes > p`
+- **Target:** `#objce2ba19ce5544960afe234babf72dc03_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 1t 50m | Norge | komedie, action</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja8afc30d60394aa4b374c3a3dfa39644`
-  - **HTML:** `<div id="obja8afc30d60394aa4b374c3a3dfa39644" class="col-12 py-0 ">`
+- **Target:** `#obj142c70a2cafd4a0a91ec292fe3192135`
+  - **HTML:** `<div id="obj142c70a2cafd4a0a91ec292fe3192135" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objc1e621d8d03948e9a17c805f9328d048`
-  - **HTML:** `<div id="objc1e621d8d03948e9a17c805f9328d048" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj06cfa82bed1b46f8b60163762e3c0125`
+  - **HTML:** `<div id="obj06cfa82bed1b46f8b60163762e3c0125" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.movie-title.font-weight-semi-bold[href="/f/markens-grode/2860"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/markens-grode/2860" data-target-partial="true">Markens grøde</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja676e9b92e1245f0b5723bf3c7e3eb7e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.7 fra 20 brukere </div>`
+- **Target:** `#objd67ce5f130d44e1ca0d085c1fc8d3149_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.5 fra 21 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja676e9b92e1245f0b5723bf3c7e3eb7e_showtimes > p`
+- **Target:** `#objd67ce5f130d44e1ca0d085c1fc8d3149_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 2t 35m | Norge | drama</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja676e9b92e1245f0b5723bf3c7e3eb7e_showtimes > .my-3 > .kinoclub`
+- **Target:** `#objd67ce5f130d44e1ca0d085c1fc8d3149_showtimes > .my-3 > .kinoclub`
   - **HTML:** `<div class="kinoclub">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj3b1ca49ff4414f75ac0570f0d2967575`
-  - **HTML:** `<div id="obj3b1ca49ff4414f75ac0570f0d2967575" class="col-12 py-0 ">`
+- **Target:** `#objef2167a06eae4bbda05159673d9ebd41`
+  - **HTML:** `<div id="objef2167a06eae4bbda05159673d9ebd41" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj83450378785a4deda54d69ba371630ac`
-  - **HTML:** `<div id="obj83450378785a4deda54d69ba371630ac" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objf7af212184c24ab08c7a3814adbbf7a5`
+  - **HTML:** `<div id="objf7af212184c24ab08c7a3814adbbf7a5" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.movie-title.font-weight-semi-bold[href="/f/wildwood/2922"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/wildwood/2922" data-target-partial="true">Wildwood</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj164fd4c8f5c149859519499d70a55123_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#objd0cd6d8e297f4b56bedff2b00c4a0adc_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 15 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj164fd4c8f5c149859519499d70a55123_showtimes > p`
+- **Target:** `#objd0cd6d8e297f4b56bedff2b00c4a0adc_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 2t 10m | USA | fantasy, familiefilm, animasjon</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja403ce102b3b4171afbb8d9985fa0d63`
-  - **HTML:** `<div id="obja403ce102b3b4171afbb8d9985fa0d63" class="col-12 py-0 ">`
+- **Target:** `#obj47f6d72423d8437295abd0f9a6a78993`
+  - **HTML:** `<div id="obj47f6d72423d8437295abd0f9a6a78993" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objce34174b946641ea80a8e2370f232eb5_adform`
-  - **HTML:** `<div id="objce34174b946641ea80a8e2370f232eb5_adform" class="w-100 mb-2 text-center py-3 adform mt-5 mb-4" style="overflow: hidden; min-height: 332px; background-color: rgb(244, 244, 244); border-radius: 8px;"><span class="adform-text">rekl…`
+- **Target:** `#obj8d4eb17e4c2947d89967e40d17df4e4f_adform`
+  - **HTML:** `<div id="obj8d4eb17e4c2947d89967e40d17df4e4f_adform" class="w-100 mb-2 text-center py-3 adform mt-5 mb-4" style="overflow: hidden; min-height: 332px; background-color: rgb(244, 244, 244); border-radius: 8px;"><span class="adform-text">rekl…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj35812a7c1a544ab6ad3710de8741964a`
-  - **HTML:** `<div id="obj35812a7c1a544ab6ad3710de8741964a" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[href="/f/verity/2951"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/verity/2951" data-target-partial="true">Verity</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj901cf15ab99e4d95b1855985835123ea_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 17 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj901cf15ab99e4d95b1855985835123ea_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 57m | USA | thriller, romantikk</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objefb7f3b12843431e833fbb5c4d785c9b`
-  - **HTML:** `<div id="objefb7f3b12843431e833fbb5c4d785c9b" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj07fc3b1709094adcbff9408098617ab8`
-  - **HTML:** `<div id="obj07fc3b1709094adcbff9408098617ab8" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj355db84513a74962a7f2fb4daa5b2578`
+  - **HTML:** `<div id="obj355db84513a74962a7f2fb4daa5b2578" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[href="/f/sense-and-sensibility/2649"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/sense-and-sensibility/2649" data-target-partial="true">Sense and Sensibility</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objf96d2130260f47cf9d6163c1e8ee7b64_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj5636d85d6a6d473390bf124efd6b2556_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.8 fra 10 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objf96d2130260f47cf9d6163c1e8ee7b64_showtimes > p`
+- **Target:** `#obj5636d85d6a6d473390bf124efd6b2556_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 2t 12m | USA | romantikk, drama</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objf96d2130260f47cf9d6163c1e8ee7b64_showtimes > .my-3 > .kinoclub`
+- **Target:** `#obj5636d85d6a6d473390bf124efd6b2556_showtimes > .my-3 > .kinoclub`
   - **HTML:** `<div class="kinoclub">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objf8ad2abe1fe84d218b5ff329ff339d36`
-  - **HTML:** `<div id="objf8ad2abe1fe84d218b5ff329ff339d36" class="col-12 py-0 ">`
+- **Target:** `#obj6c6162b517244dc3b424c2613d5f31f3`
+  - **HTML:** `<div id="obj6c6162b517244dc3b424c2613d5f31f3" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objfffd6608e2a44563a65eed56894a2405`
-  - **HTML:** `<div id="objfffd6608e2a44563a65eed56894a2405" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj4772fef587254e6db48b1a0e1998fd1e`
+  - **HTML:** `<div id="obj4772fef587254e6db48b1a0e1998fd1e" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/en-nasjon-i-sjakk/1972"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/en-nasjon-i-sjakk/1972" data-target-partial="true">En nasjon i sjakk</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objf42c94bcb4a941c1995d06aa39544f63_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5 fra 33 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objf42c94bcb4a941c1995d06aa39544f63_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 55m | Norge | thriller, spenning, action</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objf42c94bcb4a941c1995d06aa39544f63_showtimes > .my-3 > .kinoclub`
-  - **HTML:** `<div class="kinoclub">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj26f40020db47453287b89c75a19fcb07`
-  - **HTML:** `<div id="obj26f40020db47453287b89c75a19fcb07" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj638cabe0f32048628d56cbd958cbf35e`
-  - **HTML:** `<div id="obj638cabe0f32048628d56cbd958cbf35e" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj63126a1ba0674d1d93bda8d888afacc8_showtimes > .movie-title.font-weight-semi-bold.h5`
+- **Target:** `#obj7100d125502b4b5e88d1d070357124b8_showtimes > .movie-title.font-weight-semi-bold.h5`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/drapet-pa-benjamin-hermansen/2864" data-target-partial="true">Drapet på Benjamin Hermansen</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj63126a1ba0674d1d93bda8d888afacc8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj7100d125502b4b5e88d1d070357124b8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 4 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj63126a1ba0674d1d93bda8d888afacc8_showtimes > p`
+- **Target:** `#obj7100d125502b4b5e88d1d070357124b8_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 36m | Norge | drama</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj65238f4f49ce4c9ca338692e05962e10`
-  - **HTML:** `<div id="obj65238f4f49ce4c9ca338692e05962e10" class="col-12 py-0 ">`
+- **Target:** `#objc5bce2adcfb046a3a67d24d84ae52fcb`
+  - **HTML:** `<div id="objc5bce2adcfb046a3a67d24d84ae52fcb" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objfbb8e4ec51ba4aaf8415150247b17cf6`
-  - **HTML:** `<div id="objfbb8e4ec51ba4aaf8415150247b17cf6" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj59e7a2caa2334477b00ac446309e860d`
+  - **HTML:** `<div id="obj59e7a2caa2334477b00ac446309e860d" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/verity/2951"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/verity/2951" data-target-partial="true">Verity</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj31381914025f452cb2c63c4040f0a4ff_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 17 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj31381914025f452cb2c63c4040f0a4ff_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 57m | USA | thriller, romantikk</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj2832859e29b44ef3900410d641c6caa9`
+  - **HTML:** `<div id="obj2832859e29b44ef3900410d641c6caa9" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objf5aad7a588434a08a15d45f677917f74`
+  - **HTML:** `<div id="objf5aad7a588434a08a15d45f677917f74" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[href="/f/clayface/2916"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/clayface/2916" data-target-partial="true">Clayface</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj9c18d4faf52d4471b1f9037758d971c7_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj9262e3ed53a846c0ab4c10e628cdf88c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.2 fra 23 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj9c18d4faf52d4471b1f9037758d971c7_showtimes > p`
+- **Target:** `#obj9262e3ed53a846c0ab4c10e628cdf88c_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 48m | USA | drama, action, superheltfilm, horror</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obje3866efcf7634d68ad942b624805d9bc`
-  - **HTML:** `<div id="obje3866efcf7634d68ad942b624805d9bc" class="col-12 py-0 ">`
+- **Target:** `#obj9d446a30c8064376bfffc9767266c170`
+  - **HTML:** `<div id="obj9d446a30c8064376bfffc9767266c170" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objedd42f7b45bf42ceb24e9cf2e13f858f`
-  - **HTML:** `<div id="objedd42f7b45bf42ceb24e9cf2e13f858f" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj606c7241ea7d4c6384a4508d809e1b3b`
+  - **HTML:** `<div id="obj606c7241ea7d4c6384a4508d809e1b3b" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/naza/3096"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/naza/3096" data-target-partial="true">NAZA</a>`
+- **Target:** `a[href="/f/en-nasjon-i-sjakk/1972"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/en-nasjon-i-sjakk/1972" data-target-partial="true">En nasjon i sjakk</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj8d0203b5b21c4625acdba2ef4feb0e5e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 5 brukere </div>`
+- **Target:** `#objb9bab79016b548cf957bfe30d10f8bee_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 34 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj8d0203b5b21c4625acdba2ef4feb0e5e_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 20m | Storbritannia | dokumentar</p>`
+- **Target:** `#objb9bab79016b548cf957bfe30d10f8bee_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 55m | Norge | thriller, spenning, action</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj435515213b904286a500e9231f8367ce`
-  - **HTML:** `<div id="obj435515213b904286a500e9231f8367ce" class="col-12 py-0 ">`
+- **Target:** `#objb9bab79016b548cf957bfe30d10f8bee_showtimes > .my-3 > .kinoclub`
+  - **HTML:** `<div class="kinoclub">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objcb0364e4910d486a9c52df52996f736a`
-  - **HTML:** `<div id="objcb0364e4910d486a9c52df52996f736a" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj53bb4af595e840ffa3e12927fbc961f1`
+  - **HTML:** `<div id="obj53bb4af595e840ffa3e12927fbc961f1" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/other-mommy/2647"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/other-mommy/2647" data-target-partial="true">Other Mommy</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj5dbbf318e79d46b88aa24c8fd1de7bd4_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 3.7 fra 11 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj5dbbf318e79d46b88aa24c8fd1de7bd4_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 31m | USA | horror</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj78fbc82e076c4be39c3cd62323ff41be`
-  - **HTML:** `<div id="obj78fbc82e076c4be39c3cd62323ff41be" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj24d2746d98134a099813f08e719f9ae9`
-  - **HTML:** `<div id="obj24d2746d98134a099813f08e719f9ae9" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[href="/f/resident-evil/2881"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/resident-evil/2881" data-target-partial="true">Resident Evil</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obje13c13218ad443cfa8fe8de887410019_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 50 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obje13c13218ad443cfa8fe8de887410019_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 33m | USA | sci-fi, horror</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj6e6d1b682d0c4ed39775caa768b443cf`
-  - **HTML:** `<div id="obj6e6d1b682d0c4ed39775caa768b443cf" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objcdd9db00cb2e49fab79ba6bd7e518b1e`
-  - **HTML:** `<div id="objcdd9db00cb2e49fab79ba6bd7e518b1e" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[href="/f/kjarast/2787"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/kjarast/2787" data-target-partial="true">Kjærast</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj0079bae803ba4d338daa8cf2d7c56c90_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 40 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj0079bae803ba4d338daa8cf2d7c56c90_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 1t 54m | Norge </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objd9e4edf98e7c4861afb1dd5dfb0533d8`
-  - **HTML:** `<div id="objd9e4edf98e7c4861afb1dd5dfb0533d8" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj4dcd25ba93784035a451a56e2681ea3c`
-  - **HTML:** `<div id="obj4dcd25ba93784035a451a56e2681ea3c" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj59c4b10c421840289a4ad2bf683da15c_showtimes > .movie-title.font-weight-semi-bold.h5`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/sauen-shaun-gardens-farbannelse/2644" data-target-partial="true">Sauen Shaun - Gårdens fårbannelse</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj59c4b10c421840289a4ad2bf683da15c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 1 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj59c4b10c421840289a4ad2bf683da15c_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">Tillatt for alle | 1t 21m | Storbritannia | familiefilm, barnefilm, animasjon</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objd5c0e7e8d2c946e7a3cadde9ef542cfc`
-  - **HTML:** `<div id="objd5c0e7e8d2c946e7a3cadde9ef542cfc" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obja9c1b4e3686f45d2a20495f2c13dcbc7`
-  - **HTML:** `<div id="obja9c1b4e3686f45d2a20495f2c13dcbc7" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[href="/f/street-fighter/2646"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/street-fighter/2646" data-target-partial="true">Street Fighter</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj95c4e1bd1b6340d2a0334335ca5ed1d3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4 fra 4 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj95c4e1bd1b6340d2a0334335ca5ed1d3_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 59m | USA | action</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj490d333e99b84906a587bdf432dda45a`
-  - **HTML:** `<div id="obj490d333e99b84906a587bdf432dda45a" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj5b69b06b61c74540ae3390a9f8b45879`
-  - **HTML:** `<div id="obj5b69b06b61c74540ae3390a9f8b45879" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objfa7df4c264934c758fafb17e97d50230`
+  - **HTML:** `<div id="objfa7df4c264934c758fafb17e97d50230" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[href="/f/suser-avgarde/2648"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/suser-avgarde/2648" data-target-partial="true">Suser avgårde</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj0305ef953aea4f3197eb46618e973faf_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj3486ed19e3f542e8b76f07f93db7dfea_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.3 fra 5 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj0305ef953aea4f3197eb46618e973faf_showtimes > p`
+- **Target:** `#obj3486ed19e3f542e8b76f07f93db7dfea_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 1t 45m | Norge | musikkfilm, drama</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj0c4946fe9e3243e9aab74a810b9790b6`
-  - **HTML:** `<div id="obj0c4946fe9e3243e9aab74a810b9790b6" class="col-12 py-0 ">`
+- **Target:** `#obj1a986df4505e4aeabb775974e7dc4eb6`
+  - **HTML:** `<div id="obj1a986df4505e4aeabb775974e7dc4eb6" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj2fd3a9a7d9a34d1585f388f10b0f9fa6`
-  - **HTML:** `<div id="obj2fd3a9a7d9a34d1585f388f10b0f9fa6" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obje7c595d73415477893cc4c5d2d620266`
+  - **HTML:** `<div id="obje7c595d73415477893cc4c5d2d620266" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/glemselens-oy/2882"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/glemselens-oy/2882" data-target-partial="true">Glemselens øy</a>`
+- **Target:** `a[href="/f/mysteriepakken/2863"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/mysteriepakken/2863" data-target-partial="true">Mysteriepakken</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objd3290ca2215d4969a4e999245b1de266_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.2 fra 9 brukere </div>`
+- **Target:** `#obja61e737bd5364a4dab5bfb9b94fb1e6d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 1 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objd3290ca2215d4969a4e999245b1de266_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 1t 49m | USA | barnefilm, animasjon</p>`
+- **Target:** `#obja61e737bd5364a4dab5bfb9b94fb1e6d_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">Tillatt for alle | 1t 26m | Norge | familiefilm</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obje1c7a41ffa9d4b9298133fddeb997979`
-  - **HTML:** `<div id="obje1c7a41ffa9d4b9298133fddeb997979" class="col-12 py-0 ">`
+- **Target:** `#obje6d619aae4ed49dcbe96cefe30522fe6`
+  - **HTML:** `<div id="obje6d619aae4ed49dcbe96cefe30522fe6" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obje052284ea4d34696a511fac8326f6514`
-  - **HTML:** `<div id="obje052284ea4d34696a511fac8326f6514" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objbf3fcf1438e343fcbf0ed6da9164aecf`
+  - **HTML:** `<div id="objbf3fcf1438e343fcbf0ed6da9164aecf" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/et-lite-stykke-finland/2921"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/et-lite-stykke-finland/2921" data-target-partial="true">Et lite stykke Finland</a>`
+- **Target:** `a[href="/f/kjarast/2787"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/kjarast/2787" data-target-partial="true">Kjærast</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj6c5c0746acf441779d189cf47aa140a0_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 35m | Finland, Norge | dokumentar</p>`
+- **Target:** `#obj4bfa0b00c072402db559b59fd1fc0e01_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 40 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj2942ff09245a473aa7634b2a75c6ce08`
-  - **HTML:** `<div id="obj2942ff09245a473aa7634b2a75c6ce08" class="col-12 py-0 ">`
+- **Target:** `#obj4bfa0b00c072402db559b59fd1fc0e01_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 1t 54m | Norge </p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj08262bde9a37446bb3a90f57da9eed4c`
-  - **HTML:** `<div id="obj08262bde9a37446bb3a90f57da9eed4c" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj7f72fc72702c481dab18aad8aa261ba4`
+  - **HTML:** `<div id="obj7f72fc72702c481dab18aad8aa261ba4" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href="/f/the-odyssey/2654"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/the-odyssey/2654" data-target-partial="true">The Odyssey</a>`
+- **Target:** `#obj90def6b06eff4d4f808d8503c2c4ac63`
+  - **HTML:** `<div id="obj90def6b06eff4d4f808d8503c2c4ac63" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objac4045831364482ab0a70b5281f31159_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.4 fra 179 brukere </div>`
+- **Target:** `a[href="/f/naza/3096"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/naza/3096" data-target-partial="true">NAZA</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objac4045831364482ab0a70b5281f31159_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 2t 52m | USA </p>`
+- **Target:** `#obj48f519f56472484bbd091ed08bf1c5e6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 5 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj730625403faa4f0680ee4e6d1570dc88`
-  - **HTML:** `<div id="obj730625403faa4f0680ee4e6d1570dc88" class="col-12 py-0 ">`
+- **Target:** `#obj48f519f56472484bbd091ed08bf1c5e6_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 20m | Storbritannia | dokumentar</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj26466295fe5948c5932094194ae324b9`
-  - **HTML:** `<div id="obj26466295fe5948c5932094194ae324b9" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objcdae448c1f6b4381a9a4e8847ea70f22`
+  - **HTML:** `<div id="objcdae448c1f6b4381a9a4e8847ea70f22" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj1b20639c2daa4fed867dcca3bbd53386`
+  - **HTML:** `<div id="obj1b20639c2daa4fed867dcca3bbd53386" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/resident-evil/2881"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/resident-evil/2881" data-target-partial="true">Resident Evil</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objc2d0fe0655be486aa65722198f2492a0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.1 fra 50 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objc2d0fe0655be486aa65722198f2492a0_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 1t 33m | USA | sci-fi, horror</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj335fd1d6d4e94ce4bb71bf695878c63c`
+  - **HTML:** `<div id="obj335fd1d6d4e94ce4bb71bf695878c63c" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj28ddaaae98ff41a8a4c5116c9dd28f3b`
+  - **HTML:** `<div id="obj28ddaaae98ff41a8a4c5116c9dd28f3b" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objbd2fad13ae4c432b8cfb3d5af3e5c022_showtimes > .movie-title.font-weight-semi-bold.h5`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/sauen-shaun-gardens-farbannelse/2644" data-target-partial="true">Sauen Shaun - Gårdens fårbannelse</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objbd2fad13ae4c432b8cfb3d5af3e5c022_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 1 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objbd2fad13ae4c432b8cfb3d5af3e5c022_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">Tillatt for alle | 1t 21m | Storbritannia | familiefilm, barnefilm, animasjon</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objf94015aa9a6b40498827ffc8d762d576`
+  - **HTML:** `<div id="objf94015aa9a6b40498827ffc8d762d576" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objcf0d37e45e0f48698adafcd8ab288c1d`
+  - **HTML:** `<div id="objcf0d37e45e0f48698adafcd8ab288c1d" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/sangen-fra-skogene/2919"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/sangen-fra-skogene/2919" data-target-partial="true">Sangen fra skogene</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj357d24b532d24973a29538bdc3089a01_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 5 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj357d24b532d24973a29538bdc3089a01_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">Tillatt for alle | 1t 33m | Frankrike | dokumentar</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj848ef8af055945569aaec0ab317d7e9f`
+  - **HTML:** `<div id="obj848ef8af055945569aaec0ab317d7e9f" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj767a88a2f1aa4b6a89aa7de83305e2aa`
+  - **HTML:** `<div id="obj767a88a2f1aa4b6a89aa7de83305e2aa" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[href="/f/tony/2973"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/tony/2973" data-target-partial="true">Tony</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objbc22ad86322547cf9efc7afbf740aa89_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj4561bbd570b84b6898b47a7f3d7570b0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.8 fra 6 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objbc22ad86322547cf9efc7afbf740aa89_showtimes > p`
+- **Target:** `#obj4561bbd570b84b6898b47a7f3d7570b0_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 46m | USA | drama</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj921b34eec5ed48cab0eb1c47f45d9df6`
-  - **HTML:** `<div id="obj921b34eec5ed48cab0eb1c47f45d9df6" class="col-12 py-0 ">`
+- **Target:** `#objab8a26e2c505449eb0aadbaf67bf0002`
+  - **HTML:** `<div id="objab8a26e2c505449eb0aadbaf67bf0002" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objb6fcba4452df4849a2da24d514ec6e1b`
-  - **HTML:** `<div id="objb6fcba4452df4849a2da24d514ec6e1b" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objf2cc937235ad43eea86a8e4e63580656`
+  - **HTML:** `<div id="objf2cc937235ad43eea86a8e4e63580656" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/street-fighter/2646"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/street-fighter/2646" data-target-partial="true">Street Fighter</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj1165da39f3c342468909ab904c256774_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4 fra 4 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj1165da39f3c342468909ab904c256774_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 59m | USA | action</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objfb625f2c0d87469aa3c0dc5ff9c4acb0`
+  - **HTML:** `<div id="objfb625f2c0d87469aa3c0dc5ff9c4acb0" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objdf76a46f413a4cbc958b05a83740fdab`
+  - **HTML:** `<div id="objdf76a46f413a4cbc958b05a83740fdab" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/et-lite-stykke-finland/2921"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/et-lite-stykke-finland/2921" data-target-partial="true">Et lite stykke Finland</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objef66448bc8a64b67a1567d873fcba38a_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 35m | Finland, Norge | dokumentar</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj87a13b66611246319de80510db53fb81`
+  - **HTML:** `<div id="obj87a13b66611246319de80510db53fb81" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obje270243f526e45f08292fb343d7e218a`
+  - **HTML:** `<div id="obje270243f526e45f08292fb343d7e218a" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/glemselens-oy/2882"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/glemselens-oy/2882" data-target-partial="true">Glemselens øy</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj83856ba2303a4b3e915337613a7d18f5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.2 fra 9 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj83856ba2303a4b3e915337613a7d18f5_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">9 år | 1t 49m | USA | barnefilm, animasjon</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj6bf05e16c5a642ccba76a9aad5930848`
+  - **HTML:** `<div id="obj6bf05e16c5a642ccba76a9aad5930848" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obje534f41ddac1495ab9a9e92a44cf3d7e`
+  - **HTML:** `<div id="obje534f41ddac1495ab9a9e92a44cf3d7e" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj3cd2192ca2964e5faa0e52e2246163ad_showtimes > .movie-title.font-weight-semi-bold.h5`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/lille-spokelset-laban-skoyer-igjen/2918" data-target-partial="true">Lille spøkelset Laban skøyer igjen</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj3cd2192ca2964e5faa0e52e2246163ad_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">Tillatt for alle | 1t 01m | Sverige | familiefilm, animasjon</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj048cc08c420e475e949711e7e5650af8`
+  - **HTML:** `<div id="obj048cc08c420e475e949711e7e5650af8" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obje8c0211866694565a4060c43feb9f243`
+  - **HTML:** `<div id="obje8c0211866694565a4060c43feb9f243" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/the-odyssey/2654"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/the-odyssey/2654" data-target-partial="true">The Odyssey</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objb8b19b6ad2814c78b0d49fafe9ad49ae_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 5.4 fra 180 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objb8b19b6ad2814c78b0d49fafe9ad49ae_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 2t 52m | USA </p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj040297c8e78c4eb5a34c6debdf2f0a4f`
+  - **HTML:** `<div id="obj040297c8e78c4eb5a34c6debdf2f0a4f" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objd9583a91df7942c1a1fe226e3e017bee`
+  - **HTML:** `<div id="objd9583a91df7942c1a1fe226e3e017bee" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href="/f/butterfly/2784"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/butterfly/2784" data-target-partial="true">Butterfly</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj65ab0763e7fe44008defc63bd5688a96_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 4.1 fra 14 brukere </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj65ab0763e7fe44008defc63bd5688a96_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 57m | Norge, Spania | drama</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj6ba2ac80dccc4c749669355651e023fd`
+  - **HTML:** `<div id="obj6ba2ac80dccc4c749669355651e023fd" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj46acd9c14f5f4ad3bea64ccb09167a7c`
+  - **HTML:** `<div id="obj46acd9c14f5f4ad3bea64ccb09167a7c" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj643d975ef84c408182f7bfd410e862a5_showtimes > .movie-title.font-weight-semi-bold.h5`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/ramayana-rise-of-a-legend/3106" data-target-partial="true">Ramayana: Rise of a Legend</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj643d975ef84c408182f7bfd410e862a5_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 3t 30m | India | fantasy, eventyr, action</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objee6d3d69de8144cba2cdd58ef0f35466`
+  - **HTML:** `<div id="objee6d3d69de8144cba2cdd58ef0f35466" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj6518e8cb8d4346c2919f615ecdba3622`
+  - **HTML:** `<div id="obj6518e8cb8d4346c2919f615ecdba3622" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objd2634b0d48774a38bbb79bc5b836fd78_showtimes > .movie-title.font-weight-semi-bold.h5`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/hex-en-film-om-fenomenet-witch-club-satan/2920" data-target-partial="true">HEX - En film om fenomenet Witch Club Satan</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#objd2634b0d48774a38bbb79bc5b836fd78_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 32m | Norge | dokumentar</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj5bfd9dd3b79340df8cfabf870ad42bff`
+  - **HTML:** `<div id="obj5bfd9dd3b79340df8cfabf870ad42bff" class="col-12 py-0 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#obj3a565bcb1f5f4387b9e41e64132665ba`
+  - **HTML:** `<div id="obj3a565bcb1f5f4387b9e41e64132665ba" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[href="/f/klara-and-the-sun/2974"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/klara-and-the-sun/2974" data-target-partial="true">Klara and the Sun</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj91ef852460844736bfe6363817549faf_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- **Target:** `#obj30c19d1eae094f21b85d279b3dee478e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
   - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 6 fra 3 brukere </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj91ef852460844736bfe6363817549faf_showtimes > p`
+- **Target:** `#obj30c19d1eae094f21b85d279b3dee478e_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 56m | USA | sci-fi, drama</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obje5a6ab2c66fe4813a6d9951e796c4109`
-  - **HTML:** `<div id="obje5a6ab2c66fe4813a6d9951e796c4109" class="col-12 py-0 ">`
+- **Target:** `#obj51bed9331e2048b59fa242508a14f2e6`
+  - **HTML:** `<div id="obj51bed9331e2048b59fa242508a14f2e6" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj170a03388be64b1d95ea1dd773f481df`
-  - **HTML:** `<div id="obj170a03388be64b1d95ea1dd773f481df" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objd885f094cb324a0685f1e54364879025 > .card2_item__image > img[alt="poster"][loading="lazy"]`
+  - **HTML:** `<img loading="lazy" src="https://images.filmgrail.com/mediaserver/movies/young-washington-9838/poster/1791894610147?optimizer=image&amp;height=378&amp;width=241&amp;aspect_ratio=1:1.5684647302904564" class="w-100" alt="poster">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objaf88386403ce4b3d88e7363d952c5faa_showtimes > .movie-title.font-weight-semi-bold.h5`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/lille-spokelset-laban-skoyer-igjen/2918" data-target-partial="true">Lille spøkelset Laban skøyer igjen</a>`
+- **Target:** `a[href="/f/young-washington/3109"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/young-washington/3109" data-target-partial="true">Young Washington</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objaf88386403ce4b3d88e7363d952c5faa_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">Tillatt for alle | 1t 01m | Sverige | familiefilm, animasjon</p>`
+- **Target:** `#obj711ccecde69b47208208a1bcc27611e5_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">15 år | 2t 10m | USA | krigsfilm, eventyr, biografi, action</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objc0bceee225c245cc9be560110cee45ee`
-  - **HTML:** `<div id="objc0bceee225c245cc9be560110cee45ee" class="col-12 py-0 ">`
+- **Target:** `#obj83c49400836b421286a6215d8362b6f9`
+  - **HTML:** `<div id="obj83c49400836b421286a6215d8362b6f9" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj23eddc4f598c42e09393d46d59f37d00`
-  - **HTML:** `<div id="obj23eddc4f598c42e09393d46d59f37d00" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#objac695ef6862a4d67824f6a87be4145d0`
+  - **HTML:** `<div id="objac695ef6862a4d67824f6a87be4145d0" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj3a306d67259441669d1334577365f894_showtimes > .movie-title.font-weight-semi-bold.h5`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/hex-en-film-om-fenomenet-witch-club-satan/2920" data-target-partial="true">HEX - En film om fenomenet Witch Club Satan</a>`
+- **Target:** `a[href="/f/monster-mia/2913"]`
+  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/monster-mia/2913" data-target-partial="true">Monster Mia</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj3a306d67259441669d1334577365f894_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 32m | Norge | dokumentar</p>`
+- **Target:** `#objc4d5b54874c940658dc8d202572a6083_showtimes > p`
+  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">6 år | 1t 21m | Tyskland, Østerrike, Spania | komedie, eventyr, animasjon</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obje1c244bce14f4abd8679601beebd0762`
-  - **HTML:** `<div id="obje1c244bce14f4abd8679601beebd0762" class="col-12 py-0 ">`
+- **Target:** `#objc18882c5a3a946a089aaeaf37c34499d`
+  - **HTML:** `<div id="objc18882c5a3a946a089aaeaf37c34499d" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objfd9710f67c9542b8b6ae57a01a83dca6`
-  - **HTML:** `<div id="objfd9710f67c9542b8b6ae57a01a83dca6" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objb814dfdd0fd54380b706a635f48409c6_showtimes > .movie-title.font-weight-semi-bold.h5`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/rammstein-live-in-mexico-city/2985" data-target-partial="true">Rammstein - Live in Mexico City</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objb814dfdd0fd54380b706a635f48409c6_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">18 år | 1t 50m | Tyskland | musikkfilm, konsert</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj3380aaec17344a6e8078e2f3879b7e08`
-  - **HTML:** `<div id="obj3380aaec17344a6e8078e2f3879b7e08" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objfb98782f6f3349c89a28e52741f26cb0`
-  - **HTML:** `<div id="objfb98782f6f3349c89a28e52741f26cb0" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj1f3a561135c54c67a5c2246ef74d2e37_showtimes > .movie-title.font-weight-semi-bold.h5`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/velkommen-til-anchorage/2595" data-target-partial="true">Velkommen til Anchorage</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj1f3a561135c54c67a5c2246ef74d2e37_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 18m | Norge | dokumentar</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#objf4ce4b8a7c85445eb1c3e8fd7074c36f`
-  - **HTML:** `<div id="objf4ce4b8a7c85445eb1c3e8fd7074c36f" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj8ce584f654864906be7612350e7fbf45`
-  - **HTML:** `<div id="obj8ce584f654864906be7612350e7fbf45" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[href="/f/a-prayer-for-the-dying/2915"]`
-  - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/a-prayer-for-the-dying/2915" data-target-partial="true">A Prayer for the Dying</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj49d12f079a1e4cbe92fcd679534bc5a1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-  - **HTML:** `<div class="rating-text ml-2 text-muted d-flex align-items-center"> 3 fra 2 brukere </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj49d12f079a1e4cbe92fcd679534bc5a1_showtimes > p`
-  - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">12 år | 1t 35m | USA, Norge | western, thriller, drama</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj66d67d792c0f478180d1dede7ec888ff`
-  - **HTML:** `<div id="obj66d67d792c0f478180d1dede7ec888ff" class="col-12 py-0 ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#obj69935334b5714a70a10871e88e839cd9`
-  - **HTML:** `<div id="obj69935334b5714a70a10871e88e839cd9" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
+- **Target:** `#obj88d06d972bb2437f9a9b3476c343f51e`
+  - **HTML:** `<div id="obj88d06d972bb2437f9a9b3476c343f51e" class="card2_item d-flex align-items-start flex-column align-content-between flex-wrap ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[href="/f/monsterfabrikken/2970"]`
   - **HTML:** `<a class="movie-title h5 font-weight-semi-bold" href="/f/monsterfabrikken/2970" data-target-partial="true">Monsterfabrikken</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj0063223706bf4dec85f22f3403d9fc98_showtimes > p`
+- **Target:** `#obj89394f7b413442579f3663955b9eb06c_showtimes > p`
   - **HTML:** `<p class="mt-3" style="font-size: 14px;line-height: 1.42!important;">6 år | 1t 31m | Tyskland </p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj24a14ad6c1f54744ade85736fc0d8d9b`
-  - **HTML:** `<div id="obj24a14ad6c1f54744ade85736fc0d8d9b" class="col-12 py-0 ">`
+- **Target:** `#obj34e3add3a217435e8c9a6efdf9319003`
+  - **HTML:** `<div id="obj34e3add3a217435e8c9a6efdf9319003" class="col-12 py-0 ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.obj5084a3fc39b146d1a94f3e2c9804cf10 > section > .flex-row.mb-4.font-weight-semi-bold`
+- **Target:** `.objf7931622b9784e7eb47bf32cb863dd1a > section > .flex-row.mb-4.font-weight-semi-bold`
   - **HTML:** `<div class=" font-weight-semi-bold mb-4 d-flex justify-content-between align-items-center flex-row "> <div class="align-items-center block_title_header d-flex w-100 pb-0"> Ukentlig toppfilmliste </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.top-list_subtitle`
-  - **HTML:** `<div class="top-list_subtitle pt-0 pb-0">Uke av <span class="text-capitalize">oktober 28 - november 04</span></div>`
+  - **HTML:** `<div class="top-list_subtitle pt-0 pb-0">Uke av <span class="text-capitalize">oktober 29 - november 05</span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objfe9a445ce0464ba98b1c656f9e0f011d > .top-card_wrapper.d-flex`
+- **Target:** `#obj3ca0db95fadd4af1b8631d2bdcdd2944 > .top-card_wrapper.d-flex`
   - **HTML:** `<div class="top-card_wrapper d-flex" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja536bb53e02a491b84471a407e4c4c76 > .top-card_wrapper.d-flex`
+- **Target:** `#objc02cafe775f84f8caca365d12f052e66 > .top-card_wrapper.d-flex`
   - **HTML:** `<div class="top-card_wrapper d-flex" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj2ce1f4a897f442f68e2dae449e0067af > .top-card_wrapper.d-flex`
+- **Target:** `#obja32b966b8b3e4790880d52bedd71ef1c > .top-card_wrapper.d-flex`
   - **HTML:** `<div class="top-card_wrapper d-flex" style="min-height:initial;">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#objc2e3bd2a43a64d12bd5c8b1125fac41d > .top-card_wrapper.d-flex`
+- **Target:** `#obj457dab216a37421ca9812d7321668fff > .top-card_wrapper.d-flex`
   - **HTML:** `<div class="top-card_wrapper d-flex" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obj48968cde020a4746a0ec659d28b86aa5 > .top-card_wrapper.d-flex`
+- **Target:** `#obj3f80d2666d224b0b859b5bb11e55d5c0 > .top-card_wrapper.d-flex`
   - **HTML:** `<div class="top-card_wrapper d-flex" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#obja6970b44bc9a48629b3f740c5765694b > .top-card_wrapper.d-flex`
+- **Target:** `#obj6c3d88a7469b479ab6405d1b2df2ee2f > .top-card_wrapper.d-flex`
   - **HTML:** `<div class="top-card_wrapper d-flex" style="min-height:initial;">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -1189,16 +1257,16 @@
 
 #### Affected Elements:
 
-- **Target:** `#obja38a9ba97daf48d5a9ed1115445d0070_dates`
-  - **HTML:** `<select class="btn filter-dropdown rounded undefined" id="obja38a9ba97daf48d5a9ed1115445d0070_dates">`
+- **Target:** `#obj5ab2f0921a5a4ae795110ce38e9f4c67_dates`
+  - **HTML:** `<select class="btn filter-dropdown rounded undefined" id="obj5ab2f0921a5a4ae795110ce38e9f4c67_dates">`
   - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
 
-- **Target:** `#obja38a9ba97daf48d5a9ed1115445d0070_sortOptions`
-  - **HTML:** `<select class="btn filter-dropdown rounded " id="obja38a9ba97daf48d5a9ed1115445d0070_sortOptions">`
+- **Target:** `#obj5ab2f0921a5a4ae795110ce38e9f4c67_sortOptions`
+  - **HTML:** `<select class="btn filter-dropdown rounded " id="obj5ab2f0921a5a4ae795110ce38e9f4c67_sortOptions">`
   - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
 
-- **Target:** `#obja38a9ba97daf48d5a9ed1115445d0070_screens`
-  - **HTML:** `<select class="btn filter-dropdown rounded " id="obja38a9ba97daf48d5a9ed1115445d0070_screens">`
+- **Target:** `#obj5ab2f0921a5a4ae795110ce38e9f4c67_screens`
+  - **HTML:** `<select class="btn filter-dropdown rounded " id="obj5ab2f0921a5a4ae795110ce38e9f4c67_screens">`
   - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
 
 - **Target:** `.movie-filter-dropdown`

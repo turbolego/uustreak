@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-11-04T05:35:24.368Z
+**Timestamp:** 2026-11-05T09:16:30.121Z
 **URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
@@ -13,7 +13,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -21,44 +21,40 @@
   - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Avvis" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;">Avvis</button>`
   - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
 
-- **Target:** `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 5"][role="group"]`
+- **Target:** `li[aria-label="1 av 5"]`
   - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="1 av 5">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 5"][role="group"]`
+- **Target:** `li[aria-label="2 av 5"]`
   - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 av 5">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 5"][role="group"]`
+- **Target:** `li[aria-label="3 av 5"]`
   - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 av 5">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 5"][role="group"]`
+- **Target:** `li[aria-label="4 av 5"]`
   - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="4 av 5">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="5 av 5"][role="group"]`
+- **Target:** `li[aria-label="5 av 5"]`
   - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="5 av 5">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 5"][role="group"]`
-  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="1 av 5">`
+- **Target:** `li[aria-label="1 av 4"]`
+  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="1 av 4">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 5"][role="group"]`
-  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 av 5">`
+- **Target:** `li[aria-label="2 av 4"]`
+  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 av 4">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 5"][role="group"]`
-  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 av 5">`
+- **Target:** `li[aria-label="3 av 4"]`
+  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 av 4">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
-- **Target:** `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 5"][role="group"]`
-  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="4 av 5">`
-  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
-
-- **Target:** `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="5 av 5"][role="group"]`
-  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="5 av 5">`
+- **Target:** `li[aria-label="4 av 4"]`
+  - **HTML:** `<li class="ulc-carousel__slide" role="group" aria-roledescription="slide" aria-label="4 av 4">`
   - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
 
 

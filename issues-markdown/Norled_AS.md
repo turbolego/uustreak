@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norled AS
 
-**Timestamp:** 2026-11-04T05:25:57.505Z
+**Timestamp:** 2026-11-05T09:01:56.274Z
 **URL:** [https://www.norled.no/](https://www.norled.no/)
 **Total Violations:** 3
 
@@ -41,20 +41,20 @@
   - **HTML:** `<a class="tag" href="https://www.norled.no/sok/"><img src="https://www.norled.no/wp-content/uploads/2025/03/search.svg" class="css-filter size-full" alt="" decoding="async" data-type="string"></a>`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.bricks-link-wrapper[target="_blank"]:nth-child(1)`
-  - **HTML:** `<a href="https://www.facebook.com/NorledAs/?locale=nb_NO" target="_blank" class="bricks-link-wrapper">`
+- **Target:** `.bricks-link-wrapper[aria-describedby="brx-new-tab-link-description"][target="_blank"]:nth-child(1)`
+  - **HTML:** `<a href="https://www.facebook.com/NorledAs/?locale=nb_NO" target="_blank" aria-describedby="brx-new-tab-link-description" class="bricks-link-wrapper">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.bricks-link-wrapper[target="_blank"]:nth-child(2)`
-  - **HTML:** `<a href="https://no.linkedin.com/company/norled-as" target="_blank" class="bricks-link-wrapper">`
+- **Target:** `.bricks-link-wrapper[aria-describedby="brx-new-tab-link-description"][target="_blank"]:nth-child(2)`
+  - **HTML:** `<a href="https://no.linkedin.com/company/norled-as" target="_blank" aria-describedby="brx-new-tab-link-description" class="bricks-link-wrapper">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.bricks-link-wrapper[target="_blank"]:nth-child(3)`
-  - **HTML:** `<a href="https://www.instagram.com/norled_as/" target="_blank" class="bricks-link-wrapper">`
+- **Target:** `.bricks-link-wrapper[aria-describedby="brx-new-tab-link-description"][target="_blank"]:nth-child(3)`
+  - **HTML:** `<a href="https://www.instagram.com/norled_as/" target="_blank" aria-describedby="brx-new-tab-link-description" class="bricks-link-wrapper">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.bricks-link-wrapper[target="_blank"]:nth-child(4)`
-  - **HTML:** `<a href="https://www.youtube.com/@NorledAS" target="_blank" class="bricks-link-wrapper">`
+- **Target:** `.bricks-link-wrapper[aria-describedby="brx-new-tab-link-description"][target="_blank"]:nth-child(4)`
+  - **HTML:** `<a href="https://www.youtube.com/@NorledAS" target="_blank" aria-describedby="brx-new-tab-link-description" class="bricks-link-wrapper">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 
@@ -65,15 +65,11 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `a[href$="#brx-content"]`
-  - **HTML:** `<a class="skip-link" href="#brx-content">Hopp til hovedinnhold</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[href$="#brx-footer"]`
-  - **HTML:** `<a class="skip-link" href="#brx-footer">Hopp til bunntekst</a>`
+- **Target:** `#brx-new-tab-link-description`
+  - **HTML:** `<span id="brx-new-tab-link-description" class="screen-reader-text">Åpnes i en ny fane</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

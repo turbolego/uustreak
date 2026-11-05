@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2026-11-04T05:25:49.133Z
+**Timestamp:** 2026-11-05T08:59:06.708Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 2
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `.css-m9urpq`
-  - **HTML:** `<button type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Endre datoer Valgt intervall er onsdag 4. november 2026 til torsdag 5. november 2026." data-focus="false" data-testid="calendar-input" class="css-m9urpq">`
+  - **HTML:** `<button type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Endre datoer Valgt intervall er torsdag 5. november 2026 til fredag 6. november 2026." data-focus="false" data-testid="calendar-input" class="css-m9urpq">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.css-rviocf`

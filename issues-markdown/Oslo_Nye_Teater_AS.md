@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-11-04T05:26:35.822Z
+**Timestamp:** 2026-11-05T09:04:10.817Z
 **URL:** [https://oslonye.no/](https://oslonye.no/)
 **Total Violations:** 4
 
@@ -94,7 +94,7 @@
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.cafescenen.alignment-top.bg-none > .les-mer-link`
-  - **HTML:** `<a href="https://oslonye.no/forestillinger/quiet-when-im-coming-home/" class="les-mer-link"> <div class="image-cover " style="background-image: url('https://oslonye.no/wp-content/uploads/harrulling-kopi.jpeg');"> </div> </a>`
+  - **HTML:** `<a href="https://oslonye.no/forestillinger/quiet-when-im-coming-home/" class="les-mer-link"> <div class="image-cover " style="background-image: url('https://oslonye.no/wp-content/uploads/Marika_Enstad.jpg');"> </div> </a>`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(2) > .alignment-top.bg-none.block > .les-mer-link`
@@ -117,7 +117,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 222
+- **Count:** 212
 
 #### Affected Elements:
 
@@ -234,7 +234,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 03.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 05.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -246,15 +246,15 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/to-kjaerester-som-ikke-er-kjaerester/">To kjærester som ikke er kjærester</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/">Utbrent av den hellige ånd</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/773820118?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1694886023?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 04.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 06.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -266,15 +266,15 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/siren-stories/">Siren Stories Sex Worker Project</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/">Mette - Prinsesse på evig prøve</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1258966216?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/965625335?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 05.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 07.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -282,19 +282,19 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
+  - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/">Utbrent av den hellige ånd</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/quiet-when-im-coming-home/">Enstad &amp; Løvstad Soaré med Quiet when I’m coming home</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1694886023?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1069733581?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 06.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 07.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -306,15 +306,15 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/">Mette - Prinsesse på evig prøve</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/kikis-burly-q/">Kiki’s Burly Q</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/965625335?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1869637571?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 07.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 10.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -322,19 +322,19 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
+  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/quiet-when-im-coming-home/">Enstad &amp; Løvstad Soaré med Quiet when I’m coming home</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/bestemorungen/">BESTEMORUNGEN</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1069733581?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/2076134432?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 07.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 11.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -346,35 +346,31 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/kikis-burly-q/">Kiki’s Burly Q</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/finans/">FINANS</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1869637571?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/525639705?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 10.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 12.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/bestemorungen/">BESTEMORUNGEN</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/2076134432?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1110795723?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 11.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 12.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -390,135 +386,131 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/525639705?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/10019540?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 12.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1110795723?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 12.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/finans/">FINANS</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/10019540?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 12.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
   - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
   - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/dracula/">Dracula</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .text-sm-right.large-3.cell`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .text-sm-right.large-3.cell`
   - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1333170383?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 13.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/733881704?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 13.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/its-britney-bitch/">It’s Britney, Bitch!</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/300356553?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 13.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/sara-utfordrer-teatret/">Sara utfordrer teatret</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/733881704?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/735880537?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 13.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/its-britney-bitch/">It’s Britney, Bitch!</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/300356553?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 13.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/sara-utfordrer-teatret/">Sara utfordrer teatret</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/735880537?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 13.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
   - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
   - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/dracula/">Dracula</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .text-sm-right.large-3.cell`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .text-sm-right.large-3.cell`
   - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1265356977?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 14.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
+  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/">Jul med Prøysen og snekker Andersen</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1647642060?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 14.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/482576751?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(17) > .large-2.cell`
@@ -534,7 +526,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(17) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1647642060?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1222890289?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(18) > .large-2.cell`
@@ -550,63 +542,67 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(18) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/482576751?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1176496650?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 14.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/">Jul med Prøysen og snekker Andersen</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/fri-da-tarab-arabiske-sanger-med-frida-marida-og-ahmad/">Fri Da Ahmad — arabiske sanger med Frida Marida og Ahmad</a> …`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1222890289?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/387500442?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 14.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1176496650?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 14.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+  - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/dracula/">Dracula</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1865448250?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 17.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/fri-da-tarab-arabiske-sanger-med-frida-marida-og-ahmad/">Fri Da Ahmad — arabiske sanger med Frida Marida og Ahmad</a> …`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/387500442?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/236753062?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 14.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 18.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -614,55 +610,55 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/dracula/">Dracula</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1865448250?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 17.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/236753062?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 18.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
   - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
   - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/vi-var-vi-ble-teppefallsfest/">VI VAR / VI BLE - SISTE FORESTILLING OG TEPPEFALLS!!</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .text-sm-right.large-3.cell`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22) > .text-sm-right.large-3.cell`
   - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/810079149?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .large-2.cell`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 19.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+  - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/askefast/">Askefast</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/15309164?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 20.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(24) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1663398688?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 20.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -670,51 +666,47 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat cafescenen hide1 ">Caféscenen</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/askefast/">Askefast</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/15309164?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 20.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1663398688?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 20.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
   - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
   - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/">Mette - Prinsesse på evig prøve</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .text-sm-right.large-3.cell`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(25) > .text-sm-right.large-3.cell`
   - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1032401122?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 21.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
+  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/">Jul med Prøysen og snekker Andersen</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(26) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/18125385?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-2.cell`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 21.11 </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(27) > .text-sm-right.large-3.cell`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1848275424?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(28) > .large-2.cell`
@@ -730,7 +722,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(28) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/18125385?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/615956123?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(29) > .large-2.cell`
@@ -746,27 +738,31 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(29) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1848275424?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/137117998?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(30) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 21.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(30) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(30) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(30) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(30) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/">Jul med Prøysen og snekker Andersen</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/">Mette - Prinsesse på evig prøve</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(30) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/615956123?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/2014606565?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(31) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 21.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 25.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(31) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
@@ -778,11 +774,11 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(31) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/137117998?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/71482062?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(32) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 21.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 25.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(32) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -794,15 +790,15 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(32) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/mette-prinsesse-pa-evig-prove/">Mette - Prinsesse på evig prøve</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/siren-stories/">Siren Stories Sex Worker Project</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(32) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/2014606565?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1929085046?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(33) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 25.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 26.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(33) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
@@ -814,11 +810,11 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(33) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/71482062?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1432763787?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(34) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 25.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 26.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(34) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
@@ -830,15 +826,15 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(34) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/siren-stories/">Siren Stories Sex Worker Project</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/success-story/">Success Story</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(34) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1929085046?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1253974074?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(35) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 26.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 27.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(35) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
@@ -850,47 +846,47 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(35) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1432763787?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/456465001?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 26.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 27.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/success-story/">Success Story</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/">Jul med Prøysen og snekker Andersen</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1253974074?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/679154320?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 27.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
+  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/tipsy-ibsen-2/">Tipsy Ibsen</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/456465001?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1432297503?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(38) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 27.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 28.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(38) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
@@ -902,27 +898,23 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(38) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/679154320?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/617558089?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(39) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 27.11 </div> </div>`
+  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 28.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(39) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(39) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
-  - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(39) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
+  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(39) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/tipsy-ibsen-2/">Tipsy Ibsen</a> </div>`
+  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(39) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1432297503?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/80033710?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(40) > .large-2.cell`
@@ -938,7 +930,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(40) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/617558089?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1048327550?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(41) > .large-2.cell`
@@ -954,58 +946,26 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(41) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/80033710?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </div>`
+  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1126773615?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .large-2.cell`
   - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 28.11 </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .large-7.cell > .content-holder > .cat-cover > .centralteatret.cat.hide1`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
   - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/">Jul med Prøysen og snekker Andersen</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1048327550?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(43) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 28.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(43) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-  - **HTML:** `<div class="cat hovedscenen hide1 ">hovedscenen</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(43) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
-  - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/snofall/">Snøfall</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(43) > .text-sm-right.large-3.cell`
-  - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1126773615?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(44) > .large-2.cell`
-  - **HTML:** `<div class="cell large-2"> <div class="date text-white"> 28.11 </div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(44) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .centralteatret.cat.hide1`
-  - **HTML:** `<div class="cat centralteatret hide1 ">Centralteatret</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(44) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .large-7.cell > .content-holder > .cat-cover:nth-child(2)`
   - **HTML:** `<div class="cat-cover"> <div class="cat teaterkjellern hide1 ">Teaterkjelleren</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(44) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .large-7.cell > .content-holder > .text-uppercase.title.text-white`
   - **HTML:** `<div class="title text-white text-uppercase"> <a class="text-white les-mer-link" href="https://oslonye.no/forestillinger/purple-underground/">Purple Under­ground</a> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(44) > .text-sm-right.large-3.cell`
+- **Target:** `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(42) > .text-sm-right.large-3.cell`
   - **HTML:** `<div class="cell large-3 text-sm-right"> <a href="https://www.ticketmaster.no/event/1219349918?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1" class="button btn-orange ticketmaster-link"> Billetter </a> </di…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

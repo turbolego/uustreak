@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-11-04T05:31:24.801Z
+**Timestamp:** 2026-11-05T09:13:42.830Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 4
 
@@ -49,16 +49,16 @@
 
 #### Affected Elements:
 
+- **Target:** `audio-play-button[title="Jebb Flanderson\a for president!"]`
+  - **HTML:** `<audio-play-button asset-id="113818" vendor="sa" provider="sa" title="Jebb Flanderson for president!" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-track-click="" data-state="idle">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
 - **Target:** `track-element[data-track-id="teaser:113773"] > ._podcast_drfin_1 > ._meta_drfin_64 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
   - **HTML:** `<audio-play-button asset-id="113773" vendor="sa" provider="sa" title="Er du redd for et vanlig liv, Karen Kyllesø?" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-track-click="" data-state="idle">`
   - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
 
 - **Target:** `track-element[data-track-id="teaser:113786"] > ._podcast_drfin_1 > ._meta_drfin_64 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
   - **HTML:** `<audio-play-button asset-id="113786" vendor="sa" provider="sa" title="Flengende oppgjør med Glimts trener: – Skammelig!" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-track-click="" data-state="idle">`
-  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
-
-- **Target:** `track-element[data-track-id="teaser:113767"] > ._podcast_drfin_1 > ._meta_drfin_64 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-  - **HTML:** `<audio-play-button asset-id="113767" vendor="sa" provider="sa" title="– Ingen er uerstattelige i Viking" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-track-click="" data-state="idle">`
   - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
 
 

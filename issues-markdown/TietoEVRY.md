@@ -1,6 +1,6 @@
 # WCAG Violations Report for TietoEVRY
 
-**Timestamp:** 2026-11-04T05:34:51.411Z
+**Timestamp:** 2026-11-05T09:22:10.494Z
 **URL:** [https://www.tieto.com/no/](https://www.tieto.com/no/)
 **Total Violations:** 3
 
@@ -34,19 +34,19 @@
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.news-item.border-t.border-grey-300:nth-child(1) > .align-center.gap-8.border-r-4`
-  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/nyhete..." aria-label="Les mer: Tieto Caret...">`
+  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/presse..." aria-label="Les mer: Tieto Caret...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.news-item.border-t.border-grey-300:nth-child(2) > .align-center.gap-8.border-r-4`
-  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/presse..." aria-label="Les mer: Handelsbank...">`
+  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/nyhete..." aria-label="Les mer: Tieto Caret...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.news-item.border-t.border-grey-300:nth-child(3) > .align-center.gap-8.border-r-4`
-  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/presse..." aria-label="Les mer: Eika Gruppe...">`
+  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/presse..." aria-label="Les mer: Handelsbank...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.news-item.border-t.border-grey-300:nth-child(4) > .align-center.gap-8.border-r-4`
-  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/presse..." aria-label="Les mer: KapitalKont...">`
+  - **HTML:** `<a class="group align-center o..." href="/no/nyhetsrom/presse..." aria-label="Les mer: Eika Gruppe...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.btn-blue-600.outline-white.before\:h-4`

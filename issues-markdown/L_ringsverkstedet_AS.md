@@ -1,8 +1,8 @@
 # WCAG Violations Report for Læringsverkstedet AS
 
-**Timestamp:** 2026-11-04T05:21:01.177Z
+**Timestamp:** 2026-11-05T08:55:56.759Z
 **URL:** [https://laringsverkstedet.no/](https://laringsverkstedet.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -45,13 +45,9 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 22
+- **Count:** 21
 
 #### Affected Elements:
-
-- **Target:** `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-  - **HTML:** `<a id="CybotCookiebotDialogBodyEdgeMoreDetailsLink" href="#" class="">Show details</a>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.42 (foreground color: #2f991e, background color: #f8f7ee, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.pb-3.pb-lg-0.col-lg-4:nth-child(1) > p:nth-child(3)`
   - **HTML:** `<p>Postboks 215<br>2051 Jessheim</p>`
@@ -204,22 +200,6 @@
 - **Target:** `a[target="_BLANK"]:nth-child(2)`
   - **HTML:** `<a href="https://www.instagram.com/explore/tags/læringsverkstedet/" target="_BLANK">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `#skipnavigation`
-  - **HTML:** `<a class="scroll" id="skipnavigation" href="#content">Gå til innhold</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 
 ### Elements should not have tabindex greater than zero

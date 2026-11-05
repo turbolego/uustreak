@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-11-04T05:20:46.216Z
+**Timestamp:** 2026-11-05T09:26:24.641Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -41,44 +41,32 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 9
+- **Count:** 6
 
 #### Affected Elements:
 
-- **Target:** `.snap-start:nth-child(1) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
-  - **HTML:** `<a aria-label="Se mer TV-benk LYNGVIG 160cm 2 sjalusidører mørk eik" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/stue/tv-benker/tv-benk-lyngvig-160cm-2-sjalusidorer-mork-eik#DyProductRecommendations">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
 - **Target:** `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/stue/tv-benker/tv-benk-lyngvig-160cm-2-sjalusidorer-mork-eik#DyProductRecommendations">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `.snap-start:nth-child(2) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
-  - **HTML:** `<a aria-label="Se mer Reolmodul SKALS skap 2 dører hvit" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/oppbevaring/bokhyller-og-reoler/reolmodul-skals-skap-2-dorer-hvit#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/oppbevaring/garderobeskap/skap-billund-119x193-4-dorer-2-skuffer-travertinfarget-beige#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/oppbevaring/bokhyller-og-reoler/reolmodul-skals-skap-2-dorer-hvit#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/interior/gulvtepper/store-gulvtepper/teppe-villeple-200x300-beige#DyProductRecommendations">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
+- **Target:** `a[aria-describedby="5800003-_r_a_"]`
+  - **HTML:** `<a aria-label="Lenke til produkt" aria-describedby="5800003-_r_a_" class="cursor-pointer text-left no-underline text-xs font-bold pt-1 pb-2" href="/interior/gulvtepper/store-gulvtepper/teppe-villeple-200x300-beige#DyProductRecommendations"…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(3) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
-  - **HTML:** `<a aria-label="Se mer Gjestehåndkle UPPSALA 30x50cm støvet drue" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/baderom/handklaer/gjestehandkle-uppsala-30x50cm-stovet-drue#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Se mer Sengesett ELLEN 140x200 brun" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/soverom/sengetoy/glatt-sengetoy/sengesett-ellen-140x200-brun#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/baderom/handklaer/gjestehandkle-uppsala-30x50cm-stovet-drue#DyProductRecommendations">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `a[aria-describedby="2351200-_r_b_"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" aria-describedby="2351200-_r_b_" class="cursor-pointer text-left no-underline text-xs font-bold pt-1 pb-2" href="/baderom/handklaer/gjestehandkle-uppsala-30x50cm-stovet-drue#DyProductRecommendations">+ fle…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `.snap-start:nth-child(4) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
-  - **HTML:** `<a aria-label="Se mer Pyntebrett TIERP B12xL22xH3cm tre" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/baderom/baderomstilbehor/tilbehor/pyntebrett-tierp-b12xl22xh3cm-tre#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/soverom/sengetoy/glatt-sengetoy/sengesett-ellen-140x200-brun#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/baderom/baderomstilbehor/tilbehor/pyntebrett-tierp-b12xl22xh3cm-tre#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/inngangsparti/entremobler/entrebenker/benk-bislev-mork-sand-stoff#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

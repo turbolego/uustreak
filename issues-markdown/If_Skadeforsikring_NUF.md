@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-11-04T05:19:56.805Z
+**Timestamp:** 2026-11-05T09:24:29.352Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 3
 
@@ -37,7 +37,7 @@
   - **HTML:** `<img class="if size-100p object-..." loading="lazy" alt="Vi forsikrer bedrift..." src="https://v.imgi.no/yy..." srcset="https://v.imgi.no/yy..." sizes="(max-width: 450px) 4..." role="presentation">`
   - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
 
-- **Target:** `#c6dcda386650420eaf12fced87e91dca > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- **Target:** `#\35 6a3a74bc7c84417a47723e39c71b999 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
   - **HTML:** `<img class="if size-100p object-..." loading="lazy" alt="Kan navnet på en sto..." src="https://v.imgi.no/up..." srcset="https://v.imgi.no/up..." sizes="(max-width: 450px) 4..." role="presentation">`
   - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#d449cbbfc549480f98f5bbcc363d3345 > .weight-medium`
+- **Target:** `#\39 99eccec664b473aaa599e76cf674607 > .weight-medium`
   - **HTML:** `<h4 class="if typography ui medium weight-medium">Jeg vil ...</h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
@@ -69,7 +69,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#d449cbbfc549480f98f5bbcc363d3345`
-  - **HTML:** `<nav class="if flex-column gap-16" id="d449cbbfc549480f98f5bbcc363d3345">`
+- **Target:** `#\39 99eccec664b473aaa599e76cf674607`
+  - **HTML:** `<nav class="if flex-column gap-16" id="999eccec664b473aaa599e76cf674607">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 

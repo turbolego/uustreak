@@ -1,6 +1,6 @@
 # WCAG Violations Report for Extra Leker Butikker AS
 
-**Timestamp:** 2026-11-04T05:15:30.993Z
+**Timestamp:** 2026-11-05T09:15:20.305Z
 **URL:** [https://www.extra-leker.no/](https://www.extra-leker.no/)
 **Total Violations:** 9
 
@@ -33,7 +33,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-required-parent?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -66,7 +66,11 @@
   - **Failure summary:** Fix any of the following: Required ARIA parents role not present: menu, menubar, group
 
 - **Target:** `#ui-id-124`
-  - **HTML:** `<a href="https://www.extra-leker.no/merker-leketoy/" class="level-top ambrands-link ui-menu-item-wrapper" title="Merker" id="ui-id-124" tabindex="-1" role="menuitem"> Merker </a>`
+  - **HTML:** `<a href="https://www.extra-leker.no/pokemon/pokemon-plysjbamser/sovende-pokemon" class="level-top ui-menu-item-wrapper" id="ui-id-124" tabindex="-1" role="menuitem"><span class="icon-text"><span>Sovende Pokemon</span></span></a>`
+  - **Failure summary:** Fix any of the following: Required ARIA parents role not present: menu, menubar, group
+
+- **Target:** `#ui-id-125`
+  - **HTML:** `<a href="https://www.extra-leker.no/merker-leketoy/" class="level-top ambrands-link ui-menu-item-wrapper" title="Merker" id="ui-id-125" tabindex="-1" role="menuitem"> Merker </a>`
   - **Failure summary:** Fix any of the following: Required ARIA parents role not present: menu, menubar, group
 
 
@@ -101,27 +105,27 @@
   - **HTML:** `<span>Hama Perler</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer="product-title-clerk-height"] > .product-item-manufacturer[data-tiny-equalizer="product-brand-clerk-height"] > span`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer="product-title-clerk-height"] > .product-item-manufacturer[data-tiny-equalizer="product-brand-clerk-height"] > span`
   - **HTML:** `<span>Kiddieland</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price`
   - **HTML:** `<span class="price"> 399,- </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer="product-title-clerk-height"] > .product-item-manufacturer[data-tiny-equalizer="product-brand-clerk-height"] > span`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer="product-title-clerk-height"] > .product-item-manufacturer[data-tiny-equalizer="product-brand-clerk-height"] > span`
   - **HTML:** `<span>Dickie Toys</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price`
   - **HTML:** `<span class="price"> 399,- </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(3) > div[lass="product-item-info"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer="product-title-clerk-height"] > .product-item-manufacturer[data-tiny-equalizer="product-brand-clerk-height"] > span`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(3) > div[lass="product-item-info"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer="product-title-clerk-height"] > .product-item-manufacturer[data-tiny-equalizer="product-brand-clerk-height"] > span`
   - **HTML:** `<span>Stiga</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(4) > div[lass="product-item-info"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(4) > div[lass="product-item-info"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price`
   - **HTML:** `<span class="price"> 299,- </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
@@ -181,72 +185,72 @@
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/6/1/61544_1__179559__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.photo.product-item-photo[data-clerk-product-id="15266"] > .product-image-container > .product-image-wrapper > .product-image-photo`
-  - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/6/1/61584_1__179599__h62090134.jpg">`
+- **Target:** `.photo.product-item-photo[data-clerk-product-id="17613"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+  - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/6/4/64345_1__182182__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="43067"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="43067"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-861172_1__221285__hc730dc11.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="69020"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="69020"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-880533_10__228692__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(3) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="86988"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(3) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="86988"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-883132_1__276261__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(4) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="46087"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(4) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="46087"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-865891_9__224605__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(5) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="97413"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(5) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="97413"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-885931_1__289684__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(6) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="51549"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(6) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="51549"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/9/1/91495_1__208637__heb3095a4.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(7) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="82367"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(7) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="82367"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-883036_1__267020__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(8) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74823"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(8) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74823"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-881802_1__252381__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(9) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="47965"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(9) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="47965"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-868172_18__226708__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(10) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="36272"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(10) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="36272"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/9/1/91528_1__208668__heb3095a4.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(11) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74336"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(11) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74336"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-108601_10__251408__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(12) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="45575"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(12) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="76275"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+  - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-882202_1_1__255373__h62090134.jpg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(13) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="45575"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-865247_1__224040__hb10cfaaf.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(13) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="92821"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(14) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="92821"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-884848_1__285125__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(14) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="85754"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(15) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="85754"] > .product-image-container > .product-image-wrapper > .product-image-photo`
   - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-883885_1_1__273773__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(15) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="85753"] > .product-image-container > .product-image-wrapper > .product-image-photo`
-  - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-883884_10__273772__h62090134.jpg">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(16) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="49783"] > .product-image-container > .product-image-wrapper > .product-image-photo`
-  - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-999735_1__229355__hc730dc11.jpg">`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(16) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="105023"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+  - **HTML:** `<img class="product-image-photo" src="https://www.extra-leker.no/media/catalog/product/n/t/nti-887299_1__296886__h62090134.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 
@@ -305,72 +309,72 @@
   - **HTML:** `<a data-clerk-product-id="15226" class="product photo product-item-photo" href="https://www.extra-leker.no/hama-midi-perler-1000-stk-brun-nr-12" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style=…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.photo.product-item-photo[data-clerk-product-id="15266"]`
-  - **HTML:** `<a data-clerk-product-id="15266" class="product photo product-item-photo" href="https://www.extra-leker.no/hama-midi-perler-1000-stk-pastell-rosa-nr-48" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true…`
+- **Target:** `.photo.product-item-photo[data-clerk-product-id="17613"]`
+  - **HTML:** `<a data-clerk-product-id="17613" class="product photo product-item-photo" href="https://www.extra-leker.no/hama-midi-1000-perler-lys-gra-70" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="hei…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="43067"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(1) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="43067"]`
   - **HTML:** `<a data-clerk-product-id="43067" class="product photo product-item-photo" href="https://www.extra-leker.no/kiddieland-traktor-med-henger-fra-12-maneder-1" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="tr…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="69020"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(2) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="69020"]`
   - **HTML:** `<a data-clerk-product-id="69020" class="product photo product-item-photo" href="https://www.extra-leker.no/dickie-toys-lastebilkoffert-m-9-lekebiler" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" s…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(3) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="86988"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(3) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="86988"]`
   - **HTML:** `<a data-clerk-product-id="86988" class="product photo product-item-photo" href="https://www.extra-leker.no/snowracer-iconic-red" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="height: 285px;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(4) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="46087"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(4) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="46087"]`
   - **HTML:** `<a data-clerk-product-id="46087" class="product photo product-item-photo" href="https://www.extra-leker.no/doktorkoffert-lekesett-10-deler-legeutstyr" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" …`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(5) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="97413"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(5) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="97413"]`
   - **HTML:** `<a data-clerk-product-id="97413" class="product photo product-item-photo" href="https://www.extra-leker.no/slush-puppie-slushmaskin-ny" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="height: …`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(6) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="51549"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(6) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="51549"]`
   - **HTML:** `<a data-clerk-product-id="51549" class="product photo product-item-photo" href="https://www.extra-leker.no/vtech-ga-vogn-no" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="height: 285px;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(7) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="82367"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(7) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="82367"]`
   - **HTML:** `<a data-clerk-product-id="82367" class="product photo product-item-photo" href="https://www.extra-leker.no/syma-stuntkule-med-led-lys-revolt-orbiter" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" s…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(8) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74823"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(8) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74823"]`
   - **HTML:** `<a data-clerk-product-id="74823" class="product photo product-item-photo" href="https://www.extra-leker.no/mini-bordspill-air-hockey" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="height: 28…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(9) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="47965"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(9) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="47965"]`
   - **HTML:** `<a data-clerk-product-id="47965" class="product photo product-item-photo" href="https://www.extra-leker.no/interaktiv-plysjbamse-med-fortellinger-30-cm-luna" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added=…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(10) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="36272"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(10) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="36272"]`
   - **HTML:** `<a data-clerk-product-id="36272" class="product photo product-item-photo" href="https://www.extra-leker.no/vtech-aktivitetsbord-med-6-laerestasjoner" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" s…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(11) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74336"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(11) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="74336"]`
   - **HTML:** `<a data-clerk-product-id="74336" class="product photo product-item-photo" href="https://www.extra-leker.no/byggeklosser-treleke-100-deler-fra-1-5-ar-putteboks" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-adde…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(12) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="45575"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(12) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="76275"]`
+  - **HTML:** `<a data-clerk-product-id="76275" class="product photo product-item-photo" href="https://www.extra-leker.no/idance-karaoke-alt-i-ett-dj-sett-starpads-9" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true"…`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(13) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="45575"]`
   - **HTML:** `<a data-clerk-product-id="45575" class="product photo product-item-photo" href="https://www.extra-leker.no/slush-puppie-maskin" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="height: 285px;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(13) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="92821"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(14) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="92821"]`
   - **HTML:** `<a data-clerk-product-id="92821" class="product photo product-item-photo" href="https://www.extra-leker.no/bambolina-girlz-frisorhode-med-styling-og-sminketilbehor-molly" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tr…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(14) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="85754"]`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(15) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="85754"]`
   - **HTML:** `<a data-clerk-product-id="85754" class="product photo product-item-photo" href="https://www.extra-leker.no/giromag-magnetisk-byggesett-60-deler" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style=…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(15) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="85753"]`
-  - **HTML:** `<a data-clerk-product-id="85753" class="product photo product-item-photo" href="https://www.extra-leker.no/giromag-magnetisk-kulebane-byggesett-125-deler" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="tr…`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `#\{\} > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(16) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="49783"]`
-  - **HTML:** `<a data-clerk-product-id="49783" class="product photo product-item-photo" href="https://www.extra-leker.no/mini-supermarked" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking-added="true" style="height: 285px;">`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer="product-item-clerk-height"]:nth-child(16) > div[lass="product-item-info"] > .photo.product-item-photo[data-clerk-product-id="105023"]`
+  - **HTML:** `<a data-clerk-product-id="105023" class="product photo product-item-photo" href="https://www.extra-leker.no/discovery-mindblown-byggesett-87-deler-bionisk-hand-bla" data-tiny-equalizer="product-photo-clerk-height" data-clerk-click-tracking…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.cookies > a[href$="extra-leker.no/"]`
@@ -393,7 +397,7 @@
   - **HTML:** `<ol id="$id" class=":target clerk-slider products list items product-items">`
   - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: div
 
-- **Target:** `#\{\}`
+- **Target:** `span[data-clerk-content-id="3"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target`
   - **HTML:** `<ol id="{}" class="target clerk-slider products list items product-items">`
   - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: div
 
@@ -405,7 +409,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -413,16 +417,16 @@
   - **HTML:** `<li class="level0 nav-1 first level-top menu-item-home ui-menu-item active"><a href="https://www.extra-leker.no/" class="level-top ui-menu-item-wrapper" id="ui-id-2" tabindex="-1" role="menuitem"><span class="icon-text"><span>Hjem</span></…`
   - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
 
-- **Target:** `.nav-2.active.menu-type-subcategories`
-  - **HTML:** `<li class="level0 nav-2 category-item active level-top parent menu-type-subcategories has-6subcategories ui-menu-item">`
+- **Target:** `#ui-id-1 > .nav-2.menu-type-subcategories.has-6subcategories`
+  - **HTML:** `<li class="level0 nav-2 category-item level-top parent menu-type-subcategories has-6subcategories ui-menu-item">`
   - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
 
 - **Target:** `#ui-id-1 > .nav-3.menu-type-subcategories.has-6subcategories`
   - **HTML:** `<li class="level0 nav-3 category-item level-top parent menu-type-subcategories has-6subcategories ui-menu-item">`
   - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
 
-- **Target:** `#ui-id-1 > .nav-4.level0.level-top`
-  - **HTML:** `<li class="level0 nav-4 category-item level-top ui-menu-item"><a href="https://www.extra-leker.no/leker-pa-tilbud" class="level-top ui-menu-item-wrapper" id="ui-id-120" tabindex="-1" role="menuitem"><span class="icon-text"><span>Tilbud</sp…`
+- **Target:** `.nav-4.active.level0`
+  - **HTML:** `<li class="level0 nav-4 category-item active level-top ui-menu-item"><a href="https://www.extra-leker.no/leker-pa-tilbud" class="level-top ui-menu-item-wrapper" id="ui-id-120" tabindex="-1" role="menuitem"><span class="icon-text"><span>Til…`
   - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
 
 - **Target:** `#ui-id-1 > .nav-5.level0.level-top`
@@ -434,7 +438,11 @@
   - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
 
 - **Target:** `#ui-id-1 > .nav-7.level0.level-top`
-  - **HTML:** `<li class="level0 nav-7 category-item last level-top ui-menu-item"><a href="https://www.extra-leker.no/nye-varer" class="level-top ui-menu-item-wrapper" id="ui-id-123" tabindex="-1" role="menuitem"><span class="icon-text"><span>Nyheter</sp…`
+  - **HTML:** `<li class="level0 nav-7 category-item level-top ui-menu-item"><a href="https://www.extra-leker.no/nye-varer" class="level-top ui-menu-item-wrapper" id="ui-id-123" tabindex="-1" role="menuitem"><span class="icon-text"><span>Nyheter</span></…`
+  - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
+
+- **Target:** `#ui-id-1 > .nav-8.level0.level-top`
+  - **HTML:** `<li class="level0 nav-8 category-item last level-top ui-menu-item"><a href="https://www.extra-leker.no/pokemon/pokemon-plysjbamser/sovende-pokemon" class="level-top ui-menu-item-wrapper" id="ui-id-124" tabindex="-1" role="menuitem"><span c…`
   - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list". Ensure the parent element has role="list", or move the <li> inside a <ul> or <ol>.
 
 - **Target:** `#ui-id-1 > .ambrands-menu-item.level0[data-ambrands-js="brands-menu-link"]`

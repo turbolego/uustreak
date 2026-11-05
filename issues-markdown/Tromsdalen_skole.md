@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-11-04T05:39:33.636Z
+**Timestamp:** 2026-11-05T09:23:23.499Z
 **URL:** [https://tromsdalen.tromsoskolen.no/](https://tromsdalen.tromsoskolen.no/)
 **Total Violations:** 9
 
@@ -34,7 +34,7 @@
 #### Affected Elements:
 
 - **Target:** `iframe[allow="autoplay; encrypted-media"], #movie_player`
-  - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode" tabindex="" id="movie_player" data-version="/s/player/4a1e575f/player_embed_es6.vflset/nb…`
+  - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode" tabindex="" id="movie_player" data-version="/s/player/ef321720/player_embed_es6.vflset/nb…`
   - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on "div" elements with no valid role attribute.
 
 
@@ -221,7 +221,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 16
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -279,13 +279,5 @@
 
 - **Target:** `a[target="_blank"]:nth-child(9)`
   - **HTML:** `<a href="http://tromsoskolen.no/index.php?artID=674&amp;navB=1" target="_blank"><img alt="" src="https://tromsoskolen.no/files/2018/08/m-kontrakt_elev-pc.png" style="width: 160px; height: 89px;"></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f571d920b9e7c18e3"], #u_0_1_uz`
-  - **HTML:** `<a href="https://www.facebook.com/people/FAU-Tromsdalen-skole-informasjonsside/100064823536942/?ref=embed_page" target="_blank" id="u_0_1_uz"></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f571d920b9e7c18e3"], .lfloat._3-8_`
-  - **HTML:** `<a class="_3-8_ lfloat" href="https://www.facebook.com/905299739564918?ref=embed_page" target="_blank">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 

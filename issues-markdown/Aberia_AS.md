@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aberia AS
 
-**Timestamp:** 2026-11-04T05:03:36.575Z
+**Timestamp:** 2026-11-05T08:55:54.841Z
 **URL:** [https://www.aberia.no/](https://www.aberia.no/)
 **Total Violations:** 6
 
@@ -17,11 +17,11 @@
 
 #### Affected Elements:
 
-- **Target:** `#col-1630005372 > .dark.col-inner > p`
+- **Target:** `#col-1918260970 > .dark.col-inner > p`
   - **HTML:** `<p>Aberia Ung er et landsdekkende, ideelt aksjeselskap som tilbyr tiltak i institusjon.</p>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.15 (foreground color: #f1f1f1, background color: #529389, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#col-1329375218 > .dark.col-inner > p`
+- **Target:** `#col-1432818459 > .dark.col-inner > p`
   - **HTML:** `<p>Vi har drevet omsorgs- og avlastningstjenester siden 1981 og tilbyr våre tjenester til brukere i alle aldersgrupper.</p>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.08 (foreground color: #f1f1f1, background color: #1094c1, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1
 

@@ -1,10 +1,26 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-11-04T05:22:53.793Z
+**Timestamp:** 2026-11-05T08:56:59.076Z
 **URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 7
+**Total Violations:** 9
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #cbb`
+  - **HTML:** `<div id="cbb" class="cbb" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Headings should not be empty
 
@@ -26,32 +42,52 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Source:** Page content
+- **Source:** Embedded code from Annonser
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `iframe[goodvibes=""]`
-  - **HTML:** `<iframe goodvibes="" sandbox="allow-scripts allow-..." srcdoc="<!DOCTYPE html><meta..." style="width: 100%; margin:...">`
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
+  - **HTML:** `<iframe data-creative-load-listener="" id="200_287_express_html_inpage_0.if" src="https://s0.2mdn.net/sadbundle/13753956996787380125/leversykdom-980x300/index.html?ev=01_262" width="980" height="300" frameborder="0" scrolling="no" allowful…`
   - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 
-### Heading levels should only increase by one
+### Images must have alternative text
 
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 6
 
 #### Affected Elements:
 
-- **Target:** `.brick-c-igdZZU > .brick-c-iscXzK`
-  - **HTML:** `<h3 itemprop="alternative_headline" class="pretitle brick-c-iscXzK">Senatet og Representantenes hus:</h3>`
-  - **Failure summary:** Fix any of the following: Heading order invalid
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #logo`
+  - **HTML:** `<img id="logo" src="logo.svg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #cta`
+  - **HTML:** `<img id="cta" src="cta.svg" style="opacity: 1; transform: translate3d(-17.28px, 3.84px, 0px) scale(0.952, 0.952);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #maintext`
+  - **HTML:** `<img id="maintext" src="maintext.svg" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #subtext_01`
+  - **HTML:** `<img id="subtext_01" src="subtext_01.svg" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, -5);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #subtext_02`
+  - **HTML:** `<img id="subtext_02" src="subtext_02.svg" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #plaster`
+  - **HTML:** `<img id="plaster" src="plaster.png" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 
 ### Banner landmark should not be contained in another landmark
@@ -104,6 +140,22 @@
 - **Target:** `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
   - **HTML:** `<nav data-adp-clicklabel="brandheader-toplinks" class="nav lp_nav">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #banner`
+  - **HTML:** `<a id="banner" href="javascript:window.open(window.clickTag)">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 
 ### All page content should be contained by landmarks

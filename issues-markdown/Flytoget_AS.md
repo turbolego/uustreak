@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-11-04T05:16:32.146Z
+**Timestamp:** 2026-11-05T09:18:36.684Z
 **URL:** [https://flytoget.no/](https://flytoget.no/)
 **Total Violations:** 7
 
@@ -121,16 +121,16 @@
   - **HTML:** `<div class="date-label-container">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[title="06:30"]`
-  - **HTML:** `<div class="col-xs-4 departure" title="06:30" date-fulldate="2026-11-04_06-30">06:30</div>`
+- **Target:** `div[title="10:20"]`
+  - **HTML:** `<div class="col-xs-4 departure" title="10:20" date-fulldate="2026-11-05_10-20">2 min</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.primary-row > .arrival.col-xs-4`
-  - **HTML:** `<div class="col-xs-4 arrival">06:52<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M16.3 11.7L9 3.5l-7.3 8.2-1.4-1.4L9 .5l8.7 9.8z"></path></svg></div>`
+  - **HTML:** `<div class="col-xs-4 arrival">10:39<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M16.3 11.7L9 3.5l-7.3 8.2-1.4-1.4L9 .5l8.7 9.8z"></path></svg></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.secondary-row`
-  - **HTML:** `<div class="row secondary-row"><div class="col-xs-4 departure"><div class="track">Spor 3</div></div><div class="col-xs-4 center-col"></div><div class="col-xs-4 arrival"><div class="track">Spor 2</div></div></div>`
+  - **HTML:** `<div class="row secondary-row"><div class="col-xs-4 departure"><div class="track">Spor 3</div></div><div class="col-xs-4 center-col"></div><div class="col-xs-4 arrival"><div class="track">Spor 14</div></div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.travel-results-button-container`

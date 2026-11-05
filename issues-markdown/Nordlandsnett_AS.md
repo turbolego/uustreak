@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-11-04T05:29:53.816Z
+**Timestamp:** 2026-11-05T08:59:20.626Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 4
 
@@ -125,16 +125,12 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 7
 
 #### Affected Elements:
 
-- **Target:** `div[data-id="483468145"] > .block-title[data-v-b59ca79e=""]`
-  - **HTML:** `<h3 class="block-title" data-v-b59ca79e="">Strømstans</h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.layout-mixed_layout > .block-TextAreaAdvanced-inner[data-v-42c4cc6b=""] > .block-TextAreaAdvanced-html.editorContent[data-v-42c4cc6b=""]`
-  - **HTML:** `<div class="block-TextAreaAdvanced-html editorContent" data-v-42c4cc6b=""><p style="text-align: center;">Dersom strømmen har gått hos deg, finner du oversiktskart med status her.&nbsp;</p> <p style="text-align: center;"><a href="/?id=80368…`
+- **Target:** `#block-serial-483468145`
+  - **HTML:** `<div data-block-id="1195059177" id="block-serial-483468145" class="outer-block-wrapper block-width-100 custom-ArvaButton" data-admin-mode="false" data-v-00960bff="" style="--bb9e6468:100;" data-v-8deaecca="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `figure:nth-child(1)`
@@ -157,11 +153,7 @@
   - **HTML:** `<figure class="image">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[data-id="45619389"] > .block-title[data-v-b59ca79e=""]`
-  - **HTML:** `<h3 class="block-title" data-v-b59ca79e="">Siste nytt fra Arva</h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.block-TextAreaAdvanced-intro`
-  - **HTML:** `<div class="block-TextAreaAdvanced-intro" data-v-42c4cc6b="">Her får du siste nytt fra oss, hvor vi holder deg oppdatert.</div>`
+- **Target:** `#block-serial-45619389`
+  - **HTML:** `<div data-block-id="1877311209" id="block-serial-45619389" class="outer-block-wrapper block-width-100 custom-ArvaButton" data-admin-mode="false" data-v-00960bff="" style="--bb9e6468:100;" data-v-8deaecca="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

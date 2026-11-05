@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-11-04T05:30:25.392Z
+**Timestamp:** 2026-11-05T09:00:56.677Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
 **Total Violations:** 7
 
@@ -33,9 +33,9 @@
 
 #### Affected Elements:
 
-- **Target:** `.message-global--open-button`
-  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_6ede8a4e-22b6-4766-ab6f-a7d990cc2309" type="button" class="button message-global--open-button button--has-children">`
-  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="MG_6ede8a4e-22b6-4766-ab6f-a7d990cc2309"
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
+  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_e3a16ff4-1267-4658-9043-3133b24007e4" type="button" class="button message-global--open-button button--has-children">`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="MG_e3a16ff4-1267-4658-9043-3133b24007e4"
 
 
 ### Heading levels should only increase by one
@@ -65,8 +65,8 @@
 
 #### Affected Elements:
 
-- **Target:** `.message-global--open-button`
-  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_6ede8a4e-22b6-4766-ab6f-a7d990cc2309" type="button" class="button message-global--open-button button--has-children">`
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
+  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_e3a16ff4-1267-4658-9043-3133b24007e4" type="button" class="button message-global--open-button button--has-children">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 
@@ -113,11 +113,15 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `.message-global--collapse`
-  - **HTML:** `<div class="message-global--collapse message-global--collapse--use-intrinsic-height">`
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .html-string`
+  - **HTML:** `<div class="html-string"><p>Vakttelefonen +47 22 03 70 00 er open måndag 9. og tysdag 10. november kl. 08.00–15.45, og onsdag 11. november kl. 08.00–13.00.</p></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .message-global--navigation > .message-global--navigation-of`
+  - **HTML:** `<span class="message-global--navigation-of">Av</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2026-11-04T05:07:56.691Z
+**Timestamp:** 2026-11-05T09:05:41.606Z
 **URL:** [https://www.bouvet.no/](https://www.bouvet.no/)
 **Total Violations:** 6
 
@@ -101,7 +101,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 33
+- **Count:** 37
 
 #### Affected Elements:
 
@@ -177,20 +177,36 @@
   - **HTML:** `<div class="course-calendar-wrap-row.is-head">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[role="grid"] > .course-calendar-wrap-row > .course-calendar-row.util-flex-row > .course-calendar-name`
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
   - **HTML:** `<span class="course-calendar-name">Fra data til forretningsverdi</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `time`
+- **Target:** `time[datetime="2026-11-25"]`
   - **HTML:** `<time datetime="2026-11-25">25. nov.</time>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[role="grid"] > .course-calendar-wrap-row > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
   - **HTML:** `<span class="course-calendar-main-category">Frokostseminarer</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- **Target:** `.course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
   - **HTML:** `<span class="course-calendar-sub-category">Dampsentralen (Møterom: Eventspace i 1. etg), Keiser Wilhelms gate 22 </span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name"> Hvordan modernisere komplekse systemer som ikke kan stoppe?</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `time[datetime="2026-12-03"]`
+  - **HTML:** `<time datetime="2026-12-03">3. des.</time>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+  - **HTML:** `<span class="course-calendar-main-category">Frokostseminarer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+  - **HTML:** `<span class="course-calendar-sub-category">Oslo</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.part-container[data-portal-component-type="part"]:nth-child(10)`
@@ -217,11 +233,11 @@
   - **HTML:** `<span class="course-calendar-date">9. nov.</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
   - **HTML:** `<span class="course-calendar-name">Online kurs: SQL for viderekomne</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
   - **HTML:** `<span class="course-calendar-date">9. nov.</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

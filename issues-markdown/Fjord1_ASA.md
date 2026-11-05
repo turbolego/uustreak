@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fjord1 ASA
 
-**Timestamp:** 2026-11-04T05:17:03.652Z
+**Timestamp:** 2026-11-05T09:18:02.657Z
 **URL:** [https://www.fjord1.no/](https://www.fjord1.no/)
 **Total Violations:** 2
 
@@ -38,11 +38,11 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.whitespace-bottom-medium > .container > .justify-content-xl-center.row > .col.col-xl-10 > .inner-container > .bm-title.bm-vt-title.bm-block`
-  - **HTML:** `<div class="bm-block bm-title bm-vt-title "> <div class="inner-container "> <h2 class="title"> Kjøp billett til ekspressbåtar </h2> </div> </div>`
+  - **HTML:** `<div class="bm-block bm-title bm-vt-title "> <div class="inner-container "> <h2 class="title"> Kjøp billett til ekspressbåtane i dag! </h2> </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.bm-rich_text`
-  - **HTML:** `<div class="bm-block bm-rich_text bm-vt-rich_text "> <div class="inner-container "> <p>Fjord1 tek over ekspressbåtrutene mellom Bergen, Nordfjord og Sogn 1. desember 2026. Du kan allereie kjøpe billettar!</p> </div> </div>`
+  - **HTML:** `<div class="bm-block bm-rich_text bm-vt-rich_text "> <div class="inner-container "> <p>Fjord1 tek over ekspressbåtrutene mellom Bergen, Nordfjord og Sogn 1. desember 2026.</p> </div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `#lh-book-card, .css-pagp4d > .css-kv1gm8.MuiInputBase-root.MuiOutlinedInput-root > .MuiInputAdornment-positionStart.css-xzo7b7.MuiInputAdornment-root > .notranslate`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sparebank 1 DA
 
-**Timestamp:** 2026-11-04T05:35:25.920Z
+**Timestamp:** 2026-11-05T09:12:06.657Z
 **URL:** [https://www.sparebank1.no/nb/bank/privat.html](https://www.sparebank1.no/nb/bank/privat.html)
 **Total Violations:** 3
 
@@ -45,7 +45,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
@@ -55,10 +55,6 @@
 
 - **Target:** `#contact-tab2`
   - **HTML:** `<li class="customer-action__list-item" id="contact-tab2" data-menu-section="contact-appointment-template" aria-controls="panel2" role="tab">`
-  - **Failure summary:** Fix any of the following: Element has focusable descendants. Move them outside of the element, or remove them.
-
-- **Target:** `#contact-tab3`
-  - **HTML:** `<li class="customer-action__list-item" id="contact-tab3" data-menu-section="contact-message-template" aria-controls="panel3" role="tab">`
   - **Failure summary:** Fix any of the following: Element has focusable descendants. Move them outside of the element, or remove them.
 
 - **Target:** `#contact-tab4`

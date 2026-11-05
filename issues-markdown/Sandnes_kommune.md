@@ -1,26 +1,10 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-11-04T05:31:53.476Z
+**Timestamp:** 2026-11-05T09:08:40.716Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `.H-bg--lighter-green`
-  - **HTML:** `<button class="H-bg--lighter-green bg--transparent rounded-circle h--fit-content p-1 warning__close-btn"> <img src="/link/956118b86c234dfaaa427a3119b8d389.aspx"> </button>`
-  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
-
 
 ### Frames must have an accessible name
 
@@ -49,29 +33,9 @@
 
 #### Affected Elements:
 
-- **Target:** `#portalframe1, div[data-itemid="38637"] > .custom-event-info > h4`
-  - **HTML:** `<h4>Utvalg for by- og samfunnsutvikling</h4>`
+- **Target:** `#portalframe1, div[data-itemid="38638"] > .custom-event-info > h4`
+  - **HTML:** `<h4>Utvalg for idrett, miljø og tekniske saker</h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
-
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- **Target:** `.H-bg--lighter-green > img`
-  - **HTML:** `<img src="/link/956118b86c234dfaaa427a3119b8d389.aspx">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `.warning__icon`
-  - **HTML:** `<img src="/link/5dbce633c9ba44999063807003b6deb6.aspx" class="warning__icon mb-3 mb-lg-0 mr-lg-4">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 
 ### Links must have discernible text

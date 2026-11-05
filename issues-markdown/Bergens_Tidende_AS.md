@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-11-04T05:07:18.880Z
+**Timestamp:** 2026-11-05T09:03:44.353Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 2
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `iframe[title="Julebyen (annonsørinnhold)"], a`
-  - **HTML:** `<a class="ps-teaser__link" href="https://www.bt.no/brandstudio/feature/v/julebyen-bergen/2026/" target="_top" aria-label="Dette blir vi aldri enige om i julen">`
+  - **HTML:** `<a class="ps-teaser__link" href="https://www.bt.no/brandstudio/feature/v/julebyen-bergen/2026/" target="_top" aria-label="Disse juletradisjonene vekker sterke meninger">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

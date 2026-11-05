@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2026-11-04T05:15:10.039Z
+**Timestamp:** 2026-11-05T09:16:18.053Z
 **URL:** [https://www.fanasparebank.no/](https://www.fanasparebank.no/)
 **Total Violations:** 4
 
@@ -77,15 +77,15 @@
   - **HTML:** `<a class="skip-link" href="#body-main-content">Hopp til hovedinnhold</a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047, .question-header`
+- **Target:** `.PostHogSurvey-01a1a617-ea6e-0000-8a69-3ae36f0bfa06, .question-header`
   - **HTML:** `<div class="question-header"><h3 class="survey-question">Hvor fornøyd er du med hjemmesiden vår?</h3></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047, .rating-text`
+- **Target:** `.PostHogSurvey-01a1a617-ea6e-0000-8a69-3ae36f0bfa06, .rating-text`
   - **HTML:** `<div class="rating-text"><div>Veldig misfornøyd</div><div>Strålende fornøyd</div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047, .bottom-section`
+- **Target:** `.PostHogSurvey-01a1a617-ea6e-0000-8a69-3ae36f0bfa06, .bottom-section`
   - **HTML:** `<div class="bottom-section">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

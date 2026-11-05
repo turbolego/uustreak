@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-11-04T05:23:34.337Z
+**Timestamp:** 2026-11-05T08:58:11.526Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 7
 
@@ -89,7 +89,7 @@
 
 #### Affected Elements:
 
-- **Target:** `a[title="Nøtteknekker ledlys H38cm"][data-discover="true"][aria-label=""]:nth-child(2) > .h5.htmlDrawerWrapper--rQ6eisE:nth-child(2)`
+- **Target:** `a[title="Nøtteknekker ledlys H38cm"][data-discover="true"][aria-label=""]:nth-child(2) > .htmlDrawerWrapper--rQ6eisE.h5:nth-child(2)`
   - **HTML:** `<h3 class="htmlDrawerWrapper--rQ6eisE h5"></h3>`
   - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
 
@@ -137,12 +137,12 @@
 
 #### Affected Elements:
 
-- **Target:** `.swiper-slide-prev > a[title=""][data-discover="true"][aria-label=""]`
-  - **HTML:** `<a class="" title="" aria-label="" href="/produkter/lamper-og-belysning/" data-discover="true">`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
 - **Target:** `a[href$="baderom/"]`
   - **HTML:** `<a class="" title="" aria-label="" href="/produkter/baderom/" data-discover="true">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `div[data-swiper-slide-index="0"] > a[title=""][data-discover="true"][aria-label=""]`
+  - **HTML:** `<a class="" title="" aria-label="" href="/produkter/lamper-og-belysning/" data-discover="true">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 
@@ -153,15 +153,11 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - **Target:** `.topBar--hOWYROG`
   - **HTML:** `<div class="topBar--hOWYROG" style="background: rgba(105, 140, 151, 0.2); color: rgb(0, 0, 0);">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.content--QC6mDoR`
-  - **HTML:** `<div class="htmlDrawerWrapper--rQ6eisE content--QC6mDoR"><p style="text-align: center;"><span style="color: #ecf0f1;" data-teams="true">JULEN ER I GANG🎄<a style="color: #ecf0f1;" title="Kundeavis" href="/avis/">SE VÅR NYE KUNDEAVIS HER</a…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

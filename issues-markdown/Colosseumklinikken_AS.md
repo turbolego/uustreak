@@ -1,6 +1,6 @@
 # WCAG Violations Report for Colosseumklinikken AS
 
-**Timestamp:** 2026-11-04T05:09:13.449Z
+**Timestamp:** 2026-11-05T09:07:43.173Z
 **URL:** [https://colosseumtannlege.no/](https://colosseumtannlege.no/)
 **Total Violations:** 3
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__name`
-  - **HTML:** `<span class="random-specialists-block__name">Anette Vinorum</span>`
+  - **HTML:** `<span class="random-specialists-block__name">Per André Kulbraaten</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.64 (foreground color: #c2b7bc, background color: #f5eadf, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__position`

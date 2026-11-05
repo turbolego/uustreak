@@ -1,6 +1,6 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-11-04T05:35:45.110Z
+**Timestamp:** 2026-11-05T09:23:08.246Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
 **Total Violations:** 10
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `#trn-popover-10`
-  - **HTML:** `<div _ngcontent-ng-c3514474910="" class="trn-floating trn-popover-frame" data-placement="bottom" id="trn-popover-10" tabindex="-1" role="dialog" style="position: absolute; max-height: 684px; max-width: 1280px; transform: translate3d(953.24…`
+  - **HTML:** `<div _ngcontent-ng-c3514474910="" class="trn-floating trn-popover-frame" data-placement="bottom" id="trn-popover-10" tabindex="-1" role="dialog" style="position: absolute; max-height: 684px; max-width: 1280px; transform: translate3d(953.21…`
   - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
 
 
@@ -65,7 +65,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 42
+- **Count:** 43
 
 #### Affected Elements:
 
@@ -127,6 +127,10 @@
 
 - **Target:** `trn-product-card:nth-child(12) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
   - **HTML:** `<button _ngcontent-ng-c31249...="" class="button small solid-p..." type="button" aria-label="Legg i handlekurven ..." title="Legg i handlekurven ...">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
+- **Target:** `trn-product-card:nth-child(13) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+  - **HTML:** `<button _ngcontent-ng-c3124947742="" class="button small solid-primary-dark fill has-icon" type="button" aria-label="Legg i handlekurven Anthon Berg Raspberry in Orange Liqueur Anthon Berg 199,90 NOK" title="Legg i handlekurven Anthon Berg…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `trn-product-card:nth-child(14) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`

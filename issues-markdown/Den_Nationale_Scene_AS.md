@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-11-04T05:16:28.385Z
+**Timestamp:** 2026-11-05T09:11:30.939Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 6
 
@@ -138,7 +138,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(1) > td:nth-child(7)`
-  - **HTML:** `<td><div time="1793510175721" data-tooltip="" class="day toMonth valid ">1</div></td>`
+  - **HTML:** `<td><div time="1793524281082" data-tooltip="" class="day toMonth valid ">1</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(2)`
@@ -158,7 +158,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `tr:nth-child(6) > td:nth-child(1)`
-  - **HTML:** `<td><div time="1796015775721" data-tooltip="" class="day toMonth valid ">30</div></td>`
+  - **HTML:** `<td><div time="1796029881082" data-tooltip="" class="day toMonth valid ">30</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > thead > .caption > .month-name[colspan="5"]`
@@ -174,27 +174,27 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(2)`
-  - **HTML:** `<td><div time="1796102175721" data-tooltip="" class="day toMonth valid ">1</div></td>`
+  - **HTML:** `<td><div time="1796116281082" data-tooltip="" class="day toMonth valid ">1</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(3)`
-  - **HTML:** `<td><div time="1796188575721" data-tooltip="" class="day toMonth valid ">2</div></td>`
+  - **HTML:** `<td><div time="1796202681082" data-tooltip="" class="day toMonth valid ">2</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(4)`
-  - **HTML:** `<td><div time="1796274975721" data-tooltip="" class="day toMonth valid ">3</div></td>`
+  - **HTML:** `<td><div time="1796289081082" data-tooltip="" class="day toMonth valid ">3</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(5)`
-  - **HTML:** `<td><div time="1796361375721" data-tooltip="" class="day toMonth valid ">4</div></td>`
+  - **HTML:** `<td><div time="1796375481082" data-tooltip="" class="day toMonth valid ">4</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(6)`
-  - **HTML:** `<td><div time="1796447775721" data-tooltip="" class="day toMonth valid ">5</div></td>`
+  - **HTML:** `<td><div time="1796461881082" data-tooltip="" class="day toMonth valid ">5</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
-  - **HTML:** `<td><div time="1796534175721" data-tooltip="" class="day toMonth valid ">6</div></td>`
+  - **HTML:** `<td><div time="1796548281082" data-tooltip="" class="day toMonth valid ">6</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(2)`
@@ -210,19 +210,39 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(1)`
-  - **HTML:** `<td><div time="1798434975721" data-tooltip="" class="day toMonth valid ">28</div></td>`
+  - **HTML:** `<td><div time="1798449081082" data-tooltip="" class="day toMonth valid ">28</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(2)`
-  - **HTML:** `<td><div time="1798521375721" data-tooltip="" class="day toMonth valid ">29</div></td>`
+  - **HTML:** `<td><div time="1798535481082" data-tooltip="" class="day toMonth valid ">29</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(3)`
-  - **HTML:** `<td><div time="1798607775721" data-tooltip="" class="day toMonth valid ">30</div></td>`
+  - **HTML:** `<td><div time="1798621881082" data-tooltip="" class="day toMonth valid ">30</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(4)`
-  - **HTML:** `<td><div time="1798694175721" data-tooltip="" class="day toMonth valid ">31</div></td>`
+  - **HTML:** `<td><div time="1798708281082" data-tooltip="" class="day toMonth valid ">31</div></td>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="18727"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="18727"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+  - **HTML:** `<div class="attribute-spillested"> <p>Grieghallen</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="18727"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+  - **HTML:** `<div class="attribute-fritekst"> <p>Premiere 27. februar 2027</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="18727"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+  - **HTML:** `<a href="https://dns.no/forestillinger/matilda/"><h2>Matilda</h2></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="18727"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/matilda/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
@@ -363,26 +383,6 @@
 
 - **Target:** `div[data-postid="18631"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
   - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/julekort-pa-lille-dns/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-  - **HTML:** `<div class="attribute-spillested"> <p>Cornerteatret</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-  - **HTML:** `<div class="attribute-fritekst"> <p>Premiere 12. november</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-  - **HTML:** `<a href="https://dns.no/forestillinger/opphold-pa-ubestemt-tid/"><h2>Opphold på ubestemt tid</h2></a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/opphold-pa-ubestemt-tid/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.vc_custom_1597326627476 > .vc_col-has-fill.vc_col-sm-12.wpb_column > .vc_custom_1597326586251.vc_column-inner > .wpb_wrapper > .all-events.wpb_text_column.wpb_content_element`

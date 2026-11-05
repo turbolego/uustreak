@@ -1,6 +1,6 @@
 # WCAG Violations Report for Høgskulen på Vestlandet
 
-**Timestamp:** 2026-11-04T05:22:30.405Z
+**Timestamp:** 2026-11-05T09:24:15.044Z
 **URL:** [https://www.hvl.no/](https://www.hvl.no/)
 **Total Violations:** 3
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `li:nth-child(1) > .teaser-new.teaser-new--img-small > .teaser-new__body > .teaser-new__body-inner > .teaser-new__header > h4`
-  - **HTML:** `<h4 class="teaser-new__heading"> <a href="/aktuelt/mathias-brekke-mandelid-inn-i-akademiet-for-yngre-forskarar/">Mathias Brekke Mandelid inn i Akademiet for yngre forskarar </a> </h4>`
+  - **HTML:** `<h4 class="teaser-new__heading"> <a href="/aktuelt/debatt/">Debatt på HVL: Er de unge studieforberedt nok?</a> </h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
 

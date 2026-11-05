@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen norsk teknisk museum
 
-**Timestamp:** 2026-11-04T05:37:35.481Z
+**Timestamp:** 2026-11-05T09:16:59.591Z
 **URL:** [https://www.tekniskmuseum.no/](https://www.tekniskmuseum.no/)
 **Total Violations:** 9
 
@@ -138,15 +138,15 @@
 #### Affected Elements:
 
 - **Target:** `.fs-teaser-item-1`
-  - **HTML:** `<a class="el-item fs-teaser-item-1 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle" href="/helgeprogram-31-oktober-1-november">`
+  - **HTML:** `<a class="el-item fs-teaser-item-1 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle" href="/kvinnehelsefestival">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.fs-teaser-item-2`
-  - **HTML:** `<a class="el-item fs-teaser-item-2 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle" href="/kvinnehelsefestival">`
+  - **HTML:** `<a class="el-item fs-teaser-item-2 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle" href="/program/helgeprogram-7-8-november">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.fs-teaser-item-3`
-  - **HTML:** `<a class="el-item fs-teaser-item-3 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle" href="/program/helgeprogram-7-8-november">`
+  - **HTML:** `<a class="el-item fs-teaser-item-3 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle" href="/helgeprogram-14-15-november">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.uk-first-column.el-item > .uk-icon-button.el-link`

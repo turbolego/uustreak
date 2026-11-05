@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-11-04T05:40:11.818Z
+**Timestamp:** 2026-11-05T09:29:09.416Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
 **Total Violations:** 9
 
@@ -26,7 +26,7 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.61 (foreground color: #ffffff, background color: #a87f50, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#widgetContainer, div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-  - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">4 Nov 2026</p>`
+  - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">5 Nov 2026</p>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3 (foreground color: #b68e58, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#widgetContainer, div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
@@ -241,15 +241,15 @@
   - **HTML:** `<div class="fusion-fullwidth ful..." style="--link_hover_color: ...">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
-  - **HTML:** `<div class="rc-anchor-invisible-text"><span>beskyttet av <strong>reCAPTCHA</strong></span><div class="rc-anchor-pt"></div></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div:nth-child(29)`
+- **Target:** `div:nth-child(25)`
   - **HTML:** `<div style="position: fixed; wid...">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div:nth-child(30)`
+- **Target:** `div:nth-child(26)`
   - **HTML:** `<div style="position: fixed; lef...">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
+  - **HTML:** `<div class="rc-anchor-invisible-text"><span>beskyttet av <strong>reCAPTCHA</strong></span><div class="rc-anchor-pt"></div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

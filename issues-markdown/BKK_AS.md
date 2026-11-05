@@ -1,6 +1,6 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2026-11-04T05:07:53.022Z
+**Timestamp:** 2026-11-05T09:01:26.003Z
 **URL:** [https://www.bkk.no/](https://www.bkk.no/)
 **Total Violations:** 5
 
@@ -13,7 +13,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 12
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -63,6 +63,10 @@
 
 - **Target:** `a[href$="maalerbytte"]`
   - **HTML:** `<a class="rc_link-card rc_link-card--nyhet css-tf5rs8" href="/nyheter/maalerbytte" aria-label="Les mer om Alle målere av eldre type må byttes" text="">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
+- **Target:** `.startBubble-0-0-1`
+  - **HTML:** `<button class="startBubble-0-0-1 is-icon is-outline-focused" aria-label="Start samtale">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

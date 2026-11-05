@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-11-04T05:38:36.944Z
+**Timestamp:** 2026-11-05T09:30:30.716Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 4
 
@@ -34,35 +34,35 @@
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(1)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/DfSjDc5t8oi/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DfVWmaINSKA/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(2)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/DfQIyrpNGgs/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DfSjDc5t8oi/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(3)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/DfDTPCRt0OP/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DfQIyrpNGgs/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(4)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/De9e5vvNRPB/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DfDTPCRt0OP/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(5)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/DezxX5JtXLD/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/De9e5vvNRPB/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(6)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/DehnGTDNlm_/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DezxX5JtXLD/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(7)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/DefAoGJtrst/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DehnGTDNlm_/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(8)`
-  - **HTML:** `<a href="https://www.instagram.com/reel/Decd7wiN2m6/" role="listitem" class="group css-rnug4h" target="_blank">`
+  - **HTML:** `<a href="https://www.instagram.com/reel/DefAoGJtrst/" role="listitem" class="group css-rnug4h" target="_blank">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 

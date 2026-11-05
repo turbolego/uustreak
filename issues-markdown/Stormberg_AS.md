@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-11-04T05:35:44.879Z
+**Timestamp:** 2026-11-05T09:17:28.127Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -33,7 +33,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 32
+- **Count:** 31
 
 #### Affected Elements:
 
@@ -53,19 +53,19 @@
   - **HTML:** `<span class="jm i7 bd">699,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Ute vinterdress m/korte ben"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
-  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">35%</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-  - **HTML:** `<span class="jm i7 bd">1 299,-</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
-
 - **Target:** `a[aria-label="Svalbard lang dunparkas"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
   - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">57%</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `a[aria-label="Svalbard lang dunparkas"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+  - **HTML:** `<span class="jm i7 bd">1 299,-</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[aria-label="Ute vinterdress m/korte ben"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">35%</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
   - **HTML:** `<span class="jm i7 bd">1 299,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
@@ -85,14 +85,6 @@
   - **HTML:** `<span class="jm i7 bd">799,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
-  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-  - **HTML:** `<span class="jm i7 bd">799,-</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
-
 - **Target:** `a[aria-label="Hafjell vattert jakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
   - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
@@ -101,28 +93,36 @@
   - **HTML:** `<span class="jm i7 bd">799,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(3) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- **Target:** `a[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
   - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(3) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-  - **HTML:** `<span class="jm i7 bd">599,-</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
-
-- **Target:** `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
-  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- **Target:** `a[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
   - **HTML:** `<span class="jm i7 bd">799,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(5) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- **Target:** `a[aria-label="Gjesvær vinterjakke barn 8-14"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
   - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(5) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- **Target:** `a[aria-label="Gjesvær vinterjakke barn 8-14"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
   - **HTML:** `<span class="jm i7 bd">599,-</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[aria-label="Snøheim høy ullfôret tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[aria-label="Snøheim høy ullfôret tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+  - **HTML:** `<span class="jm i7 bd">699,-</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+  - **HTML:** `<span class="jm i7 bd">499,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `a[aria-label="Vinterfjord vanntett vintersko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
@@ -141,29 +141,25 @@
   - **HTML:** `<span class="jm i7 bd">399,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Kjellmoen vanntett fjellstøvel"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
-  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">47%</div>`
+- **Target:** `a[aria-label="Finnskogen vanntett høy tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">54%</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Kjellmoen vanntett fjellstøvel"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-  - **HTML:** `<span class="jm i7 bd">799,-</span>`
+- **Target:** `a[aria-label="Finnskogen vanntett høy tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+  - **HTML:** `<span class="jm i7 bd">599,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Nordlia ull tøffel"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
-  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">50%</div>`
+- **Target:** `a[aria-label="Rundhaugen vanntett boot"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">29%</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Nordlia ull tøffel"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-  - **HTML:** `<span class="jm i7 bd">199,-</span>`
+- **Target:** `a[aria-label="Rundhaugen vanntett boot"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+  - **HTML:** `<span class="jm i7 bd">499,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
-  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">INTROPRIS</div>`
+  - **HTML:** `<div class="iv bc bd aj ak ac iw ix iy bf ey j2 gz j3">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-  - **HTML:** `<span class="jm i7 bd">499,-</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 
 ### Headings should not be empty
@@ -189,7 +185,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 11
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -217,12 +213,16 @@
   - **HTML:** `<img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-vinterjakker.jpg?ref=A2711DD62A&amp;w=640&amp;scale=both">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
+- **Target:** `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
+  - **HTML:** `<img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-turutstyr.jpg?ref=C487C7BF4A&amp;w=640&amp;scale=both">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 - **Target:** `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
-  - **HTML:** `<img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-ull.jpg?ref=EAF6A25261&amp;w=640&amp;scale=both">`
+  - **HTML:** `<img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-fleece.jpg?ref=7F60EDDE68&amp;w=640&amp;scale=both">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
-  - **HTML:** `<img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-dresser.jpg?ref=89A5407250&amp;w=640&amp;scale=both">`
+  - **HTML:** `<img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-ull.jpg?ref=EAF6A25261&amp;w=640&amp;scale=both">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `.i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jo.ht.hu > .hx.a2.hw`
@@ -257,12 +257,12 @@
   - **HTML:** `<a data-test-id="product-link" aria-label="Beredo nødradio m/ Bluetooth" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/turutstyr/tilbehor/beredo-nodradio-m-bluetooth-11702260013">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `a[aria-label="Ute vinterdress m/korte ben"]`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Ute vinterdress m/korte ben" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/kjeledresser/ute-vinterdress-mkorte-ben-10965990001">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
 - **Target:** `a[aria-label="Svalbard lang dunparkas"]`
   - **HTML:** `<a data-test-id="product-link" aria-label="Svalbard lang dunparkas" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/jakker/dunjakker/svalbard-lang-dunparkas-10961090001">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
+- **Target:** `a[aria-label="Ute vinterdress m/korte ben"]`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Ute vinterdress m/korte ben" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/kjeledresser/ute-vinterdress-mkorte-ben-10965990001">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `a[aria-label="Ute vinterdress"]`
@@ -273,44 +273,44 @@
   - **HTML:** `<a data-test-id="product-link" aria-label="Hafjell vattert salopette selebukse" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/bukser/selebukser/hafjell-vattert-salopette-selebu…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `a[aria-label="Hafjell vinterjakke"]`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Hafjell vinterjakke" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/jakker/vinterjakker/hafjell-vinterjakke-11411890001">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
 - **Target:** `a[aria-label="Hafjell vattert jakke"]`
   - **HTML:** `<a data-test-id="product-link" aria-label="Hafjell vattert jakke" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/herre/jakker/vinterjakker/hafjell-vattert-jakke-11411790001">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `li:nth-child(3) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"]`
+- **Target:** `a[aria-label="Hafjell vinterjakke"]`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Hafjell vinterjakke" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/jakker/vinterjakker/hafjell-vinterjakke-11411890001">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
+- **Target:** `a[aria-label="Gjesvær vinterjakke barn 8-14"]`
   - **HTML:** `<a data-test-id="product-link" aria-label="Gjesvær vinterjakke barn 8-14" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/barn/jakker/vinterjakker/gjesvar-vinterjakke-barn-8-14-116343…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Henningsvær vanntett trenchcoat" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/jakker/parkas/henningsvar-vanntett-trenchcoat-11613490…`
+- **Target:** `a[aria-label="Snøheim høy ullfôret tursko"]`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Snøheim høy ullfôret tursko" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/snoheim-hoy-ullforet-tursko-11646070398">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `li:nth-child(5) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"]`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Gjesvær vinterjakke barn 8-14" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/barn/jakker/vinterjakker/gjesvar-vinterjakke-barn-8-14-116343…`
+- **Target:** `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Frostlek høy vanntett vintersko barn" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/frostlek-hoy-vanntett-vintersko-barn-116…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `a[aria-label="Vinterfjord vanntett vintersko"]`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Vinterfjord vanntett vintersko" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/vinterfjord-vanntett-vintersko-11538099428">`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Vinterfjord vanntett vintersko" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/vinterfjord-vanntett-vintersko-11538020092">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(2) > .ij.ik.il`
   - **HTML:** `<a data-test-id="product-link" aria-label="Vinterfjord ullfôret vanntett vinterstøvel" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/vinterfjord-ullforet-vanntett-vint…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `a[aria-label="Kjellmoen vanntett fjellstøvel"]`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Kjellmoen vanntett fjellstøvel" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/fjell--og-turstovler/kjellmoen-vanntett-fjellstovel-1148…`
+- **Target:** `a[aria-label="Finnskogen vanntett høy tursko"]`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Finnskogen vanntett høy tursko" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/tursko/hoye-tursko/finnskogen-vanntett-hoy-tursko-116252…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `a[aria-label="Nordlia ull tøffel"]`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Nordlia ull tøffel" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/tofler/nordlia-ull-toffel-11435180036">`
+- **Target:** `a[aria-label="Rundhaugen vanntett boot"]`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Rundhaugen vanntett boot" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/rundhaugen-vanntett-boot-11437690093">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il`
-  - **HTML:** `<a data-test-id="product-link" aria-label="Frostlek høy vanntett vintersko barn" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/sko/vintersko/frostlek-hoy-vanntett-vintersko-barn-116…`
+  - **HTML:** `<a data-test-id="product-link" aria-label="Varanger høy ullfôret softshellsko" class="an ao ap fr a4 a5 a6 fy fx fs ft bv d b c f1 dd ij ik il im in" data-scope-link="true" href="/no/dame/sko/tursko/hoye-tursko/varanger-hoy-ullforet-softsh…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 
@@ -321,7 +321,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -337,12 +337,16 @@
   - **HTML:** `<a class="a4 a5 a6" data-scope-link="true" href="/no/kampanje/black-november/vinterjakker"><div class="di e3 hr i5 ay ht hu"><img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-vinterjakker.jpg?…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
+- **Target:** `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+  - **HTML:** `<a class="a4 a5 a6" data-scope-link="true" href="/no/kampanje/black-november/turutstyr"><div class="di e3 hr i5 ay ht hu"><img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-turutstyr.jpg?ref=C4…`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 - **Target:** `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
-  - **HTML:** `<a class="a4 a5 a6" data-scope-link="true" href="/no/kampanje/black-november/ullundertoy"><div class="di e3 hr i5 ay ht hu"><img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-ull.jpg?ref=EAF6A2…`
+  - **HTML:** `<a class="a4 a5 a6" data-scope-link="true" href="/no/kampanje/black-november/fleece"><div class="di e3 hr i5 ay ht hu"><img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-fleece.jpg?ref=7F60EDDE…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
-  - **HTML:** `<a class="a4 a5 a6" data-scope-link="true" href="/no/kampanje/black-november/kjeledresser"><div class="di e3 hr i5 ay ht hu"><img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-dresser.jpg?ref=8…`
+  - **HTML:** `<a class="a4 a5 a6" data-scope-link="true" href="/no/kampanje/black-november/ullundertoy"><div class="di e3 hr i5 ay ht hu"><img class="ar as at au y bv hv hw hx" src="/globalassets/2026/black-november/portalside/800x500-ull.jpg?ref=EAF6A2…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.bl.bj.bk:nth-child(6) > div > .i0.i1.i2 > .i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`

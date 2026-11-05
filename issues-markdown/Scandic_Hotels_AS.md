@@ -1,6 +1,6 @@
 # WCAG Violations Report for Scandic Hotels AS
 
-**Timestamp:** 2026-11-04T05:32:17.469Z
+**Timestamp:** 2026-11-05T09:10:09.258Z
 **URL:** [https://www.scandichotels.com/no](https://www.scandichotels.com/no)
 **Total Violations:** 5
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `label[data-testid="bookingCode.flag"]`
-  - **HTML:** `<label data-testid="bookingCode.flag" aria-expanded="false" id="react-aria4098471793-_r_93_" data-react-aria-pressable="true" class="checkbox-module__L5OmLa__container " data-rac="">`
+  - **HTML:** `<label data-testid="bookingCode.flag" aria-expanded="false" id="react-aria6305081720-_r_93_" data-react-aria-pressable="true" class="checkbox-module__L5OmLa__container " data-rac="">`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 
@@ -53,12 +53,12 @@
 
 #### Affected Elements:
 
-- **Target:** `#react-aria4098471793-_r_8a_`
+- **Target:** `#react-aria6305081720-_r_8a_`
   - **HTML:** `<button type="button" tabindex="0" data-react-aria-pres...="true" aria-labelledby="bookingWidgetDatePic..." aria-haspopup="dialog" aria-expanded="false" aria-controls="datePickerPopover" class="date-picker-module__..." data-rac="" id="reac…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#react-aria4098471793-_r_8c_`
-  - **HTML:** `<button type="button" tabindex="0" data-react-aria-pres...="true" aria-labelledby="rooms-and-guests" aria-haspopup="dialog" aria-expanded="false" aria-controls="guestsPopover" class="guests-rooms-picker-..." data-rac="" id="react-aria40984…`
+- **Target:** `#react-aria6305081720-_r_8c_`
+  - **HTML:** `<button type="button" tabindex="0" data-react-aria-pres...="true" aria-labelledby="rooms-and-guests" aria-haspopup="dialog" aria-expanded="false" aria-controls="guestsPopover" class="guests-rooms-picker-..." data-rac="" id="react-aria63050…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 
@@ -74,7 +74,7 @@
 #### Affected Elements:
 
 - **Target:** `.booking-code-module__wWrYrG__container > .button-module__NbgNfa__variant-text.button-module__NbgNfa__size-lg.typography-module__vfKlZa__Body-Paragraph-mdBold`
-  - **HTML:** `<button type="button" tabindex="0" aria-expanded="false" id="react-aria4098471793-_r_93_" data-react-aria-pressable="true" class="button-module__NbgNfa__button button-module__NbgNfa__variant-text button-module__NbgNfa__size-lg typography-m…`
+  - **HTML:** `<button type="button" tabindex="0" aria-expanded="false" id="react-aria6305081720-_r_93_" data-react-aria-pressable="true" class="button-module__NbgNfa__button button-module__NbgNfa__variant-text button-module__NbgNfa__size-lg typography-m…`
   - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
 
 

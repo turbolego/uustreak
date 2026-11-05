@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-11-04T05:09:10.054Z
+**Timestamp:** 2026-11-05T09:04:17.725Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
 **Total Violations:** 3
 
@@ -77,7 +77,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -89,23 +89,19 @@
   - **HTML:** `<a class="inline-flex w-fit no-underline font-book text-2xs hover:text-on-surface-variant focus-visible:text-on-surface-variant gap-1 items-center" href="https://www.bestwestern.com/" tabindex="0" title="" aria-label="Til bestwestern.com">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1793768937786, .captcha__header`
+- **Target:** `#ddChallengeBody1793869448751, .captcha__header`
   - **HTML:** `<div class="captcha__header" data-dd-captcha-header="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1793768937786, .captcha__human`
-  - **HTML:** `<div class="captcha__human" style="padding: 0;" data-dd-captcha-human="">`
+- **Target:** `#ddChallengeBody1793869448751, .captcha__human`
+  - **HTML:** `<div class="captcha__human" data-dd-captcha-human="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1793768937786, .sliderText`
-  - **HTML:** `<div class="sliderText"><p class="no-margin">Skyv til høyre for å sikre tilgangen din</p></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#ddChallengeBody1793768937786, .captcha__robot__warning`
+- **Target:** `#ddChallengeBody1793869448751, .captcha__robot__warning`
   - **HTML:** `<div class="captcha__robot__warning" data-dd-captcha-robot-warning="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1793768937786, .captcha__robot__contact_support`
+- **Target:** `#ddChallengeBody1793869448751, .captcha__robot__contact_support`
   - **HTML:** `<div class="captcha__robot__contact_support" data-dd-captcha-robot-contact-support="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

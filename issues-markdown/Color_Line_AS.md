@@ -1,6 +1,6 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-11-04T05:09:18.465Z
+**Timestamp:** 2026-11-05T09:07:29.734Z
 **URL:** [https://www.colorline.no/](https://www.colorline.no/)
 **Total Violations:** 3
 
@@ -26,7 +26,7 @@
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.button-outlined-primary`
-  - **HTML:** `<a href="/oslo-kiel/cruise-til-kiel" class=" button button-outlined-primary button-small button-rectangle mt-20 md:mt-0 lg:mt-20 max-md:w-full static !text-inherit !border-current hover:!bg-white hover:!text-black hover:!border-transparent…`
+  - **HTML:** `<a href="/sandefjord-stroemst..." class=" button button-ou..." aria-label="Sandefjord–Strømstad...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 
