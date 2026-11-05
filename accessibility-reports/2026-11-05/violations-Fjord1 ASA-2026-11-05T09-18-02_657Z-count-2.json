@@ -1,0 +1,180 @@
+{
+  "project": "Fjord1 ASA",
+  "timestamp": "2026-11-05T09:18:02.657Z",
+  "url": "https://www.fjord1.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"button\" tabindex=\"0\" class=\"route-search-component \">",
+          "target": [
+            ".route-search-component"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants. Move them outside of the element, or remove them."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<div class=\"language-selector d-none d-md-block\">\n        \t\n\t                \t\t            \n\t\t\t\t\t\t\t\t\t<a href=\"https://www.fjord1.no/eng\">\n\t\t\t\t\tIn\n\t\t\t\t\tEnglish\n\t\t\t\t</a>\n\t\t\t\t\t\t                                    \n\t\t\t\t\t\t\t\t    </div>",
+          "target": [
+            ".d-none"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bm-block bm-title bm-vt-title \">\n                        <div class=\"inner-container \">\n                    <h2 class=\"title\">\n                                Kjøp billett til ekspressbåtane i dag!\n    \n            </h2>\n                </div>\n            </div>",
+          "target": [
+            ".whitespace-bottom-medium > .container > .justify-content-xl-center.row > .col.col-xl-10 > .inner-container > .bm-title.bm-vt-title.bm-block"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bm-block bm-rich_text bm-vt-rich_text \">\n                        <div class=\"inner-container \">\n                    <p>Fjord1 tek over ekspressbåtrutene mellom Bergen, Nordfjord og Sogn 1. desember 2026.</p>\n                </div>\n            </div>",
+          "target": [
+            ".bm-rich_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"notranslate\">​</span>",
+          "target": [
+            [
+              "#lh-book-card",
+              ".css-pagp4d > .css-kv1gm8.MuiInputBase-root.MuiOutlinedInput-root > .MuiInputAdornment-positionStart.css-xzo7b7.MuiInputAdornment-root > .notranslate"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"notranslate\">​</span>",
+          "target": [
+            [
+              "#lh-book-card",
+              ".lh-origin-field > .css-kv1gm8.MuiInputBase-root.MuiOutlinedInput-root > .MuiInputAdornment-positionStart.css-xzo7b7.MuiInputAdornment-root > .notranslate"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"notranslate\">​</span>",
+          "target": [
+            [
+              "#lh-book-card",
+              ".lh-destination-field > .css-kv1gm8.MuiInputBase-root.MuiOutlinedInput-root > .MuiInputAdornment-positionStart.css-xzo7b7.MuiInputAdornment-root > .notranslate"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label class=\"MuiFormLabel-root Mu...\" data-shrink=\"true\" for=\":r3:\" id=\":r3:-label\">",
+          "target": [
+            [
+              "#lh-book-card",
+              "#\\:r3\\:-label"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"notranslate\">​</span>",
+          "target": [
+            [
+              "#lh-book-card",
+              ".MuiInputBase-adornedEnd > .MuiInputAdornment-positionStart.css-xzo7b7.MuiInputAdornment-root > .notranslate"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input aria-invalid=\"false\" autocomplete=\"off\" id=\":r3:\" placeholder=\"DD.MM.YYYY\" readonly=\"\" type=\"text\" inputmode=\"text\" class=\"MuiInputBase-input M...\" value=\"01.12.2026\">",
+          "target": [
+            [
+              "#lh-book-card",
+              "#\\:r3\\:"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"notranslate\">​</span>",
+          "target": [
+            [
+              "#lh-book-card",
+              ".css-ul6kpk > .MuiInputAdornment-positionStart.css-xzo7b7.MuiInputAdornment-root > .notranslate"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bm-block bm-button bm-vt-button \">",
+          "target": [
+            ".bm-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bm-block bm-trafficmessages bm-vt-default  traffic-messages--list\">",
+          "target": [
+            ".bm-trafficmessages"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bm-block bm-column bm-vt-column  bg-color-secondary\">",
+          "target": [
+            ".bm-column.bm-vt-column.bg-color-secondary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bm-block bm-html_snippet bm-vt-html_snippet \">",
+          "target": [
+            ".bm-html_snippet.bm-vt-html_snippet.bm-block:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"zone zone-footer\">",
+          "target": [
+            ".zone-footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
