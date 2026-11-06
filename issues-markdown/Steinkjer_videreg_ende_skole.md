@@ -1,8 +1,8 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-11-05T09:14:40.242Z
+**Timestamp:** 2026-11-06T05:41:42.350Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -10,66 +10,67 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#declineButton`
-  - **HTML:** `<button type="button" tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Avvis alle" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;"> Avvis alle </button>`
-  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
-
+- `#declineButton`
 
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#coiOverlay`
-  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
-  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
-
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `#coiOverlay`
-  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+- `#coiOverlay`
+- `.top-menu`
 
-- **Target:** `.top-menu`
-  - **HTML:** `<nav class="top-menu top-menu--school u-hide-tablet-landscape-down">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+### Links must have discernible text
 
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `iframe[name="ff662d1a21664ae7a"], #u_0_1_bk`
+- `iframe[name="ff662d1a21664ae7a"], .lfloat._3-8_`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 8
 
 #### Affected Elements:
 
-- **Target:** `#main-content > .l-container`
-  - **HTML:** `<div class="l-container">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.hero-image`
+- `section`
+- `.card-grid.card-grid--equal-height:nth-child(3)`
+- `.card-grid.card-grid--equal-height:nth-child(4)`
+- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
+- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
+- `iframe[name="ff662d1a21664ae7a"], #u_0_0_OS`
+- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`

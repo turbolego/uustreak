@@ -1,8 +1,8 @@
 # WCAG Violations Report for Circle K AS
 
-**Timestamp:** 2026-11-05T09:06:58.033Z
+**Timestamp:** 2026-11-06T05:26:22.602Z
 **URL:** [https://www.circlek.no/](https://www.circlek.no/)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -10,230 +10,110 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 17
+- **Count:** 5
 
 #### Affected Elements:
 
-- **Target:** `a[data-href$="extra"]`
-  - **HTML:** `<a href="/extra" data-gtm-event="{"event": "main_menu_click", "click_text": "extra", "click_url": "/extra", "menu_level":"1"}" data-href="/extra" role="heading" aria-level="2" target="_self" data-drupal-link-system-path="node/1141">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
+- `#uk-slider-3`
+- `#uk-slider-6`
+- `#uk-slider-7`
+- `#uk-slider-8`
+- `#uk-slider-9`
 
-- **Target:** `a[data-href$="mastercard"]`
-  - **HTML:** `<a href="/mastercard" data-gtm-event="{"event": "main_menu_click", "click_text": "Mastercard", "click_url": "/mastercard", "menu_level":"1"}" data-href="/mastercard" role="heading" aria-level="2" data-drupal-link-system-path="node/640">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
+### ARIA dialog and alertdialog nodes should have an accessible name
 
-- **Target:** `a[href$="personkort"]`
-  - **HTML:** `<a href="/personkort" data-gtm-event="{"event": "main_menu_click", "click_text": "Personkort", "click_url": "/personkort", "menu_level":"1"}" data-href="/personkort" role="heading" aria-level="2" data-drupal-link-system-path="node/18">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="partnere"]`
-  - **HTML:** `<a href="/partnere" data-gtm-event="{"event": "main_menu_click", "click_text": "Partnere", "click_url": "/partnere", "menu_level":"1"}" data-href="/partnere" role="heading" aria-level="2" data-drupal-link-system-path="node/491">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[data-href$="mat"]`
-  - **HTML:** `<a href="/mat" data-gtm-event="{&quot;event&quot;: &quot;main_menu_click&quot;, &quot;click_text&quot;: &quot;Mat&quot;, &quot;click_url&quot;: &quot;/mat&quot;, &quot;menu_level&quot;:&quot;1&quot;}" data-href="/mat" role="heading" aria-l…`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="drikke"]`
-  - **HTML:** `<a href="/drikke" data-gtm-event="{"event": "main_menu_click", "click_text": "Drikke", "click_url": "/drikke", "menu_level":"1"}" data-href="/drikke" role="heading" aria-level="2" data-drupal-link-system-path="node/36">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[data-href$="koppen"]`
-  - **HTML:** `<a href="/koppen" data-gtm-event="{"event": "main_menu_click", "click_text": "Koppen", "click_url": "/koppen", "menu_level":"1"}" data-href="/koppen" role="heading" aria-level="2" data-drupal-link-system-path="node/59">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="produkter"]`
-  - **HTML:** `<a href="/produkter" data-gtm-event="{"event": "main_menu_click", "click_text": "Produkter", "click_url": "/produkter", "menu_level":"1"}" data-href="/produkter" role="heading" aria-level="2" data-drupal-link-system-path="node/60">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="tjenester"]`
-  - **HTML:** `<a href="/tjenester" data-gtm-event="{"event": "main_menu_click", "click_text": "Tjenester", "click_url": "/tjenester", "menu_level":"1"}" data-href="/tjenester" role="heading" aria-level="2" data-drupal-link-system-path="node/140">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `li:nth-child(1) > a[href$="drivstoff"]`
-  - **HTML:** `<a href="/drivstoff" data-gtm-event="{"event": "main_menu_click", "click_text": "Drivstoff", "click_url": "/drivstoff", "menu_level":"1"}" data-href="/drivstoff" role="heading" aria-level="2" data-drupal-link-system-path="node/19">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[data-drupal-link-system-path="node/786"]`
-  - **HTML:** `<a href="/lading" data-gtm-event="{"event": "main_menu_click", "click_text": "Lading av elbil ", "click_url": "/lading", "menu_level":"1"}" data-href="/lading" role="heading" aria-level="2" target="_self" data-drupal-link-system-path="node…`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `li:nth-child(3) > a[href$="bilvask"]`
-  - **HTML:** `<a href="/bilvask" data-gtm-event="{"event": "main_menu_click", "click_text": "Bilvask", "click_url": "/bilvask", "menu_level":"1"}" data-href="/bilvask" role="heading" aria-level="2" target="_self" data-drupal-link-system-path="node/20">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[data-href$="tilhengerutleie"]`
-  - **HTML:** `<a href="/tilhengerutleie" data-gtm-event="{"event": "main_menu_click", "click_text": "Tilhengerutleie", "click_url": "/tilhengerutleie", "menu_level":"1"}" data-href="/tilhengerutleie" role="heading" aria-level="2" data-drupal-link-system…`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="motorolje"]`
-  - **HTML:** `<a href="/motorolje" data-gtm-event="{"event": "main_menu_click", "click_text": "Motorolje", "click_url": "/motorolje", "menu_level":"1"}" data-href="/motorolje" role="heading" aria-level="2" data-drupal-link-system-path="node/24">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="barekraftig-fremtid"]`
-  - **HTML:** `<a href="/barekraftig-fremtid" data-gtm-event="{"event": "main_menu_click", "click_text": "Bærekraftig fremtid", "click_url": "/barekraftig-fremtid", "menu_level":"1"}" data-href="/barekraftig-fremtid" role="heading" aria-level="2" data-dr…`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[data-href="/helse-milj%C3%B8-og-sikkerhet"]`
-  - **HTML:** `<a href="/helse-milj%C3%B8-og..." data-gtm-event="{"event": "main_menu..." data-href="/helse-milj%C3%B8-og..." role="heading" aria-level="2" data-drupal-link-sys...="node/66">`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-- **Target:** `a[href$="aktivmotkreft"]`
-  - **HTML:** `<a href="/aktivmotkreft" data-gtm-event="{"event": "main_menu_click", "click_text": "Aktiv mot kreft", "click_url": "/aktivmotkreft", "menu_level":"1"}" data-href="/aktivmotkreft" role="heading" aria-level="2" data-drupal-link-system-path=…`
-  - **Failure summary:** Fix any of the following: ARIA role heading is not allowed for given element
-
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Impact:** serious
+- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=playwright
+- **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.uk-modal-close-default`
-  - **HTML:** `<button class="uk-modal-close-default" type="button" uk-close=""></button>`
-  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
-
+- `#main-menu`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
 
 #### Affected Elements:
 
-- **Target:** `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection`
-  - **HTML:** `<a id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="cb-button cb-default cb-align-center cb-text-bold">Tillat utvalgt</a>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.75 (foreground color: #909090, background color: #eeeeee, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1
-
-- **Target:** `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-  - **HTML:** `<a id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="cb-button cb-primary cb-align-center cb-text-bold">Tillat alle cookies</a>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.06 (foreground color: #f7f5f2, background color: #4cc36c, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1
-
-- **Target:** `.cb-details`
-  - **HTML:** `<a href="#cb-details" cb-toggle="" class="cb-details cb-align-center">DETALJER <span class="cb-icon"><svg width="14" height="10" viewBox="0 0 14 10" data-svg="chevron-down"><polyline fill="none" stroke="#313131" stroke-width="2" points="2 …`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.25 (foreground color: #4cc36c, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
-
+- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection`
+- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
+- `.cb-details`
 
 ### Elements must have their visible text as part of their accessible name
 
 - **Impact:** serious
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 5
 
 #### Affected Elements:
 
-- **Target:** `a[aria-label="Lading"]`
-  - **HTML:** `<a href="https://www.circlek.no/lading" linkview="button" data-gtm-event="{"event": "button_click", "click_text": "Les mer", "click_url": "https://www.circlek.no/lading"}" aria-label="Lading" class="uk-button-secondary uk-text-bold uk-box-…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+- `a[aria-label="Lading"]`
+- `a[aria-label="Finn din stasjon"]`
+- `a[aria-label="Circle K extra Mastercard"]`
+- `a[aria-label="Jobb hos oss"]`
+- `a[aria-label="Circle K Gavekort"]`
 
-- **Target:** `a[aria-label="Finn din stasjon"]`
-  - **HTML:** `<a href="/station-search" linkview="button" data-gtm-event="{"event": "button_click", "click_text": "Søk stasjon", "click_url": "/station-search"}" aria-label="Finn din stasjon" class="uk-button-secondary uk-text-bold uk-box-shadow-medium …`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Target:** `a[aria-label="Circle K extra Mastercard"]`
-  - **HTML:** `<a href="/mastercard" linkview="button" data-gtm-event="{"event": "button_click", "click_text": "LES MER", "click_url": "/mastercard"}" aria-label="Circle K extra Mastercard" class="uk-button-secondary uk-text-bold uk-box-shadow-medium uk-…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `a[aria-label="Jobb hos oss"]`
-  - **HTML:** `<a href="/jobb" linkview="button" data-gtm-event="{&quot;event&quot;: &quot;button_click&quot;, &quot;click_text&quot;: &quot;Les mer&quot;, &quot;click_url&quot;: &quot;/jobb&quot;}" aria-label="Jobb hos oss" class="uk-button-secondary uk…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `a[aria-label="Circle K Gavekort"]`
-  - **HTML:** `<a href="/gavekort" linkview="button" data-gtm-event="{"event": "button_click", "click_text": "Les mer", "click_url": "/gavekort"}" aria-label="Circle K Gavekort" class="uk-button-secondary uk-text-bold uk-box-shadow-medium uk-button">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.uk-position-center-left`
-  - **HTML:** `<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slider-item="previous" tabindex="0"><span hidden="">Previous slide</span></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+- `.uk-visible-toggle`
 
-- **Target:** `.uk-position-center-right`
-  - **HTML:** `<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slider-item="next" tabindex="0"><span hidden="">Next slide</span></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+### Elements marked as presentational should be consistently ignored
 
-- **Target:** `.slide-previous`
-  - **HTML:** `<a class="slide-previous uk-position-center-left-out uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous" uk-icon="ratio: 2; icon: chevron-left"><span hidden="">Previous slide</span></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+- **Impact:** minor
+- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
+- **Tags:** cat.aria, best-practice, ACT
+- **Count:** 2
 
-- **Target:** `.slide-next`
-  - **HTML:** `<a class="slide-next uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" uk-slider-item="next" uk-icon="ratio: 2; icon: chevron-right"><span hidden="">Next slide</span></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+#### Affected Elements:
 
+- `#uk-slider-1`
+- `#uk-slider-2`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 3
 
 #### Affected Elements:
 
-- **Target:** `#cookie-bot`
-  - **HTML:** `<div id="cookie-bot" class="cb-modal cb-modal-open" lang="nb" dir="ltr" ng-non-bindable="" name="cookie-bot" style="display: block; font-size: 0.9375rem;">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.focusable`
-  - **HTML:** `<a href="#main-content" class="visually-hidden focusable"> Hopp til hovedinnhold </a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.bottom-region`
-  - **HTML:** `<div class="d-region uk-container uk-container-large bottom-region">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `#cookie-bot`
+- `.focusable`
+- `.bottom-region`
 
 ### [role="img"] and [role="image"] elements must have alternative text
 
 - **Impact:** serious
 - **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 4
 
 #### Affected Elements:
 
-- **Target:** `span[uk-icon="icon: facebook;"]`
-  - **HTML:** `<span uk-icon="icon: facebook;" role="img" aria-hidden="false"></span>`
-  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-- **Target:** `span[uk-icon="icon: instagram;"]`
-  - **HTML:** `<span uk-icon="icon: instagram;" role="img" aria-hidden="false"></span>`
-  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-- **Target:** `span[uk-icon="icon: linkedin;"]`
-  - **HTML:** `<span uk-icon="icon: linkedin;" role="img" aria-hidden="false"></span>`
-  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-- **Target:** `span[uk-icon="icon: youtube;"]`
-  - **HTML:** `<span uk-icon="icon: youtube;" role="img" aria-hidden="false"></span>`
-  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
+- `span[uk-icon="icon: facebook;"]`
+- `span[uk-icon="icon: instagram;"]`
+- `span[uk-icon="icon: linkedin;"]`
+- `span[uk-icon="icon: youtube;"]`
