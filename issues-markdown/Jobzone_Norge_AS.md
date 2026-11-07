@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-11-06T05:32:19.568Z
+**Timestamp:** 2026-11-07T05:05:44.828Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -24,11 +24,11 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
+- `.buttons-href-button[href="/ledige-stillinger/73968"]`
+- `.buttons-href-button[href="/ledige-stillinger/74348"]`
 - `.buttons-href-button[href="/ledige-stillinger/74339"]`
-- `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
+- `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
 - `.buttons-href-button[href="/ledige-stillinger/74343"]`
-- `.buttons-href-button[href="/ledige-stillinger/74342"]`
-- `.buttons-href-button[href="/ledige-stillinger/74344"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -82,10 +82,10 @@
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
+- `div[data-position-id="73968"] > img`
+- `div[data-position-id="74348"] > img`
 - `div[data-position-id="74339"] > img`
 - `div[data-position-id="74343"] > img`
-- `div[data-position-id="74342"] > img`
-- `div[data-position-id="74344"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`
@@ -143,11 +143,11 @@
 - `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > .position-card-top-content`
 - `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
 - `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-bot`
-- `.position-list-card-wrapper:nth-child(2)`
+- `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > .position-card-top-content`
+- `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
+- `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-bot`
 - `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > .position-card-top-content`
 - `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
 - `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-bot`
-- `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > .position-card-top-content`
-- `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
-- `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-bot`
+- `.position-list-card-wrapper:nth-child(4)`
 - `.candidate-container > div > div:nth-child(3)`

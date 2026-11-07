@@ -1,8 +1,8 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-11-06T05:43:07.374Z
+**Timestamp:** 2026-11-07T05:10:37.604Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -76,18 +76,6 @@
 
 - `img[width="100"]`
 
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `img[alt="P5 Nonstop Hits"]`
-
 ### Form elements must have labels
 
 - **Impact:** critical
@@ -127,8 +115,8 @@
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
 - `.large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
 - `.container[data-v-30b48782=""]:nth-child(3) > div > .medium-large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
-- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
 - `.grid > .medium-large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
+- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(2) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-11-06T05:40:15.369Z
+**Timestamp:** 2026-11-07T05:15:26.480Z
 **URL:** [https://www.riksteatret.no/](https://www.riksteatret.no/)
 **Total Violations:** 3
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 15
+- **Count:** 8
 
 #### Affected Elements:
 
@@ -24,13 +24,6 @@
 - `#feature_6 > .module__grid > .module__content > .module__body > h4`
 - `#feature_7 > .module__grid > .module__content > .module__body > h4`
 - `#feature_8 > .module__grid > .module__content > .module__body > h4`
-- `a[href$="apestjernen/"] > .module__content > .module__head > h4`
-- `a[href$="triggersystemet/"] > .module__content > .module__head > h4`
-- `a[href$="ubesvart-anrop/"] > .module__content > .module__head > h4`
-- `a[href$="lareren/"] > .module__content > .module__head > h4`
-- `a[href$="1984-dub/"] > .module__content > .module__head > h4`
-- `a[href$="kakejazz/"] > .module__content > .module__head > h4`
-- `.module--grid[data-color=""]:nth-child(7) > .module__grid > a > .module__content > .module__head > h4`
 
 ### Images must have alternative text
 
@@ -43,7 +36,7 @@
 #### Affected Elements:
 
 - `.listItem__link-wrapper[data-content-reference="1173464"][data-epi-block-id="1170785"] > img`
-- `.listItem__link-wrapper[data-content-reference="1173389"][data-epi-block-id="1170785"] > img`
+- `.listItem__link-wrapper[data-content-reference="1173601"][data-epi-block-id="1170785"] > img`
 - `.listItem__link-wrapper[data-content-reference="1168970"][data-epi-block-id="1170785"] > img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

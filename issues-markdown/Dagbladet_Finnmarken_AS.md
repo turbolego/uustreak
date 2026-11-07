@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-11-06T05:27:03.276Z
+**Timestamp:** 2026-11-07T05:00:54.704Z
 **URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
 **Total Violations:** 5
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="3"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-teaser-group-v1[data-color-skin="sport"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Elements marked as presentational should be consistently ignored
 

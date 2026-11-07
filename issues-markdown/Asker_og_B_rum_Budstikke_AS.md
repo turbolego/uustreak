@@ -1,6 +1,6 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-11-06T05:24:30.690Z
+**Timestamp:** 2026-11-07T04:58:25.059Z
 **URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
 **Total Violations:** 6
 
@@ -36,49 +36,52 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 39
+- **Count:** 42
 
 #### Affected Elements:
 
 - `#eaframe, .avis-logo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10941539 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10941539 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947299 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947299 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10942937 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10942937 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10942939 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10939609 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10939609 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10941469 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10941469 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10940927 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10940927 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10942938 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10942938 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947301 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947301 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10941470 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10941470 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10940483 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10940483 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947051 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947051 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(13) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10942929 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10942929 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942938 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942938 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10947051 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10947051 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10947299 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10947299 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11315451 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11315451 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11315586 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11315586 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10947301 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10947301 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942939 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11318222 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11318222 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10941539 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10941539 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10941469 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10941469 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11319822 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11319822 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(13) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10941470 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10941470 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(14) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942937 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942937 > .brokerinfo-container > .brokerlogo`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

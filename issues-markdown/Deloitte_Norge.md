@@ -1,6 +1,6 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2026-11-06T05:28:11.698Z
+**Timestamp:** 2026-11-07T05:05:11.655Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
 **Total Violations:** 5
 
@@ -50,14 +50,14 @@
 
 - `#search-button`
 - `button[aria-label="nettstedvelger"]`
-- `#promo-v3-111f3f97`
-- `#promo-v3-3b6f9521`
-- `#promo-v3-550a5fd8`
-- `#promo-v3-b8680198`
-- `#promo-v3-70d9e14a`
-- `#promo-v3-03786fd5`
-- `#promo-v3-fe235b02`
-- `#promo-v3-301bed6f`
+- `#promo-v3-43a93851`
+- `#promo-v3-0ebb3968`
+- `#promo-v3-521d2c37`
+- `#promo-v3-8b1182b7`
+- `#promo-v3-99145012`
+- `#promo-v3-b00dd204`
+- `#promo-v3-3c273481`
+- `#promo-v3-7d318829`
 - `.ot-cookie-policy-link`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

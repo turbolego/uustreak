@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-11-06T05:30:18.239Z
+**Timestamp:** 2026-11-07T05:00:16.190Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -93,12 +93,44 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 153
+- **Count:** 141
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10622365 > .content > h2`
+- `time[datetime="2026-11-06T21:00:48.000Z"]`
+- `#notice-10622326 > .content > h2`
+- `time[datetime="2026-11-06T20:06:21.000Z"]`
+- `#notice-10622285 > .content > h2`
+- `time[datetime="2026-11-06T19:34:34.000Z"]`
+- `#notice-10622284 > .content > h2`
+- `time[datetime="2026-11-06T19:37:13.000Z"]`
+- `#notice-10622254 > .content > h2`
+- `time[datetime="2026-11-06T18:21:10.000Z"]`
+- `div[title="Trusselsituasjon i Bergen"] > h2`
+- `time[datetime="2026-11-06T17:58:55.000Z"]`
+- `div[title="Kristersson får utvidet frist"] > h2`
+- `time[datetime="2026-11-06T17:30:47.000Z"]`
+- `div[title="Togtrafikken i gang igjen"] > h2`
+- `time[datetime="2026-11-06T17:29:43.000Z"]`
+- `div[title="Anker ikke drapsforbund-dom"] > h2`
+- `time[datetime="2026-11-06T14:29:06.000Z"]`
+- `#notice-10621357 > .content > h2`
+- `time[datetime="2026-11-06T11:43:09.000Z"]`
+- `#notice-10621150 > .content > h2`
+- `time[datetime="2026-11-06T10:46:21.000Z"]`
+- `#notice-10620774 > .content > h2`
+- `time[datetime="2026-11-06T09:10:17.000Z"]`
+- `#notice-10620623 > .content > h2`
+- `time[datetime="2026-11-06T08:28:12.000Z"]`
+- `#notice-10620446 > .content > h2`
+- `time[datetime="2026-11-06T07:25:40.000Z"]`
+- `#notice-10620374 > .content > h2`
+- `time[datetime="2026-11-06T06:22:53.000Z"]`
+- `div[title="Rubio avviser rykter om avgang"] > h2`
+- `time[datetime="2026-11-06T06:21:47.000Z"]`
 - `#notice-10620274 > .content > h2`
 - `time[datetime="2026-11-05T19:45:48.000Z"]`
 - `div[title="Gjerpen slår seg selv konkurs"] > h2`
@@ -107,43 +139,11 @@
 - `time[datetime="2026-11-05T19:02:46.000Z"]`
 - `#notice-10620183 > .content > h2`
 - `time[datetime="2026-11-05T17:49:25.000Z"]`
-- `#notice-10620159 > .content > h2`
-- `time[datetime="2026-11-05T17:20:47.000Z"]`
-- `#notice-10620158 > .content > h2`
-- `time[datetime="2026-11-05T17:18:45.000Z"]`
-- `div[title="Paraguays president går av"] > h2`
-- `time[datetime="2026-11-05T17:19:15.000Z"]`
-- `#notice-10619925 > .content > h2`
-- `time[datetime="2026-11-05T16:36:52.000Z"]`
-- `div[title="Forlenger indre grensekontroll"] > h2`
-- `time[datetime="2026-11-05T14:06:36.000Z"]`
-- `div[title="Dalahesten får EU-vern"] > h2`
-- `time[datetime="2026-11-05T14:04:58.000Z"]`
-- `div[title=" Data fra nordmenn på avveie"] > h2`
-- `time[datetime="2026-11-05T13:58:51.000Z"]`
-- `#notice-10619562 > .content > h2`
-- `time[datetime="2026-11-05T12:50:36.000Z"]`
-- `#notice-10619049 > .content > h2`
-- `time[datetime="2026-11-05T13:59:35.000Z"]`
-- `#notice-10618877 > .content > h2`
-- `time[datetime="2026-11-05T11:42:21.000Z"]`
-- `div[title="Holder styringsrenten uendret"] > h2`
-- `time[datetime="2026-11-05T09:09:03.000Z"]`
-- `#notice-10618798 > .content > h2`
-- `time[datetime="2026-11-05T08:55:34.000Z"]`
-- `#notice-10618679 > .content > h2`
-- `time[datetime="2026-11-05T08:32:52.000Z"]`
-- `#notice-10618401 > .content > h2`
-- `time[datetime="2026-11-05T06:43:13.000Z"]`
-- `#notice-10618248 > .content > h2`
-- `time[datetime="2026-11-05T06:35:59.000Z"]`
-- `#notice-10618243 > .content > h2`
-- `time[datetime="2026-11-05T06:35:29.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
 - `.row.large-12.small-12:nth-child(5)`
-- `.row.large-12.small-12:nth-child(7)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(7)`
 - `#article_list_10616068 > .inner.fullwidthTarget.content > .articlescroller-header`
 - `#article_list_10616068 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.has-row-header`
@@ -154,7 +154,7 @@
 - `.row.large-12.small-12:nth-child(14)`
 - `#offer_56afa1b3874ca25dd5ca-2, img`
 - `#offer_56afa1b3874ca25dd5ca-2, .pw-text`
-- `.border-bg-quinary-light.mobile_border-bg-quinary-light.border-side-top`
+- `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(20)`
@@ -171,7 +171,7 @@
 - `.row.large-12.small-12:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.row.large-12.small-12:nth-child(32)`
-- `.lab-scrollbox-headline.t28.font-InterTight`
+- `.t28.lab-scrollbox-headline.font-InterTight`
 - `#markup_10614273 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10614272"] > .content > .floatingTextSubset.media > .floatingText`
 - `#markup_10614251 > .fullwidthTarget.content > unite-player,#status-container`
@@ -208,13 +208,13 @@
 - `.row.large-12.small-12:nth-child(44)`
 - `.row.large-12.small-12:nth-child(45)`
 - `.row.large-12.small-12:nth-child(46)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(47)`
+- `.row.large-12.small-12:nth-child(47)`
 - `.row.large-12.small-12:nth-child(49)`
 - `.row.large-12.small-12:nth-child(50)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(51)`
-- `.row.large-12.small-12:nth-child(52)`
+- `.row.large-12.small-12:nth-child(51)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(52)`
 - `.row.large-12.small-12:nth-child(53)`
-- `.row.large-12.small-12:nth-child(55)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(55)`
 - `.row.large-12.small-12:nth-child(56)`
 - `.row.large-12.small-12:nth-child(57)`
 - `.row.large-12.small-12:nth-child(58)`
@@ -222,33 +222,21 @@
 - `.row.large-12.small-12:nth-child(61)`
 - `.row.large-12.small-12:nth-child(62)`
 - `.row.large-12.small-12:nth-child(63)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(64)`
-- `.row.large-12.small-12:nth-child(65)`
-- `.row.large-12.small-12:nth-child(66)`
-- `.row.large-12.small-12:nth-child(67)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(68)`
-- `.row.large-12.small-12:nth-child(69)`
-- `.row.large-12.small-12:nth-child(70)`
-- `.row.large-12.small-12:nth-child(71)`
-- `.row.large-12.small-12:nth-child(72)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(73)`
-- `.row.large-12.small-12:nth-child(74)`
-- `.row.large-12.small-12:nth-child(75)`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(77)`
-- `.lab-scrollbox-headline.italic.m-italic`
-- `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.tm20`
-- `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(80)`
-- `.bg-black.color_mobile_bg-black.hasContentPadding:nth-child(81)`
+- `.row.large-12.small-12:nth-child(65)`
+- `.row.large-12.small-12:nth-child(66)`
+- `.bg-black.color_mobile_bg-black.hasContentPadding:nth-child(67)`
 - `#offer_56afa1b3874ca25dd5ca-1, img`
 - `#offer_56afa1b3874ca25dd5ca-1, .pw-text`
 - `#offer_6fcd7fa199cb7f539808-0, img`
 - `#offer_6fcd7fa199cb7f539808-0, .pw-subtitle`
 - `#offer_6fcd7fa199cb7f539808-0, .pw-offer`
 - `#offer_6fcd7fa199cb7f539808-0, #pw-countdown`
+- `.lab-scrollbox-headline.italic.m-italic`
+- `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.tm20`
+- `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

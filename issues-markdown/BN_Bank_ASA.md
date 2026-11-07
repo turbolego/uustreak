@@ -1,6 +1,6 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-11-06T05:25:36.733Z
+**Timestamp:** 2026-11-07T04:59:53.129Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
 **Total Violations:** 6
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.link-button:nth-child(1) > a > .link-button-with-bg-image > .link-button-with-bg-image__overlay > .link-button-with-bg-image__content.background--light-wine-red > .link-button-with-bg-image__text > h4`
 - `#heading-toggle-hvordan-bytter-jeg-til-bn-bank > h5`
 
 ### Images must have alternative text
@@ -36,12 +37,11 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.banner-content-card__cta`
-- `a[aria-label="Mer om forskudd på arv"]`
+- `.row-component__content > .link-button:nth-child(1) > a`
 - `a[aria-label="Les mer om boligbytte"]`
 - `a[aria-label="Les mer om å kjøpe bolig"]`
 
