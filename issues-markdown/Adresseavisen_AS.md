@@ -1,8 +1,8 @@
 # WCAG Violations Report for Adresseavisen AS
 
-**Timestamp:** 2026-11-07T04:55:49.211Z
+**Timestamp:** 2026-11-08T04:56:33.495Z
 **URL:** [https://www.adressa.no/](https://www.adressa.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -37,15 +37,16 @@
 - **Description:** Ensure the main landmark is at top level
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
-- `.hot80 > a > .t100`
+- `.is-section-kultur-skin > a > .t100`
 - `.gridfullsize-bundle > a > .t100`
-- `.hot60 > a > .t100`
-- `.hot20 > a > .t100`
-- `.gridspotlightside.hot50.card-size-small > a > .t100`
+- `.hot50.small-items.griddouble > a > .t100`
+- `.hot70 > a > .t100`
+- `.gridspotlightside.hot60.payed > a > .t100`
+- `.life20 > a > .t100`
 
 ### Document should not have more than one main landmark
 
@@ -71,6 +72,23 @@
 
 - `.top`
 - `.Layout`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 6
+
+#### Affected Elements:
+
+- `a:nth-child(5)`
+- `section:nth-child(4) > div > div > .Tips > dl > dd > a[href="tel:46407200"]`
+- `div > div > p > a:nth-child(1)`
+- `p > a:nth-child(2)`
+- `a[href$="medietilsynet.no/"]`
+- `p > a:nth-child(4)`
 
 ### Elements should not have tabindex greater than zero
 

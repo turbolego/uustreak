@@ -1,8 +1,8 @@
 # WCAG Violations Report for Accenture Norge
 
-**Timestamp:** 2026-11-07T04:56:25.672Z
+**Timestamp:** 2026-11-08T04:55:49.716Z
 **URL:** [https://www.accenture.com/en](https://www.accenture.com/en)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -18,16 +18,3 @@
 
 - `.rad-carousel-block__title`
 - `#editorialtext-99eb2d4213 > h4`
-
-### Elements must have their visible text as part of their accessible name
-
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#pc-policy-text-link-1`
-- `#pc-policy-text-link-2`

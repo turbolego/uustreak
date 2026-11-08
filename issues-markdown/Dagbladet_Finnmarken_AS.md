@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-11-07T05:00:54.704Z
+**Timestamp:** 2026-11-08T05:08:26.480Z
 **URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -12,11 +24,14 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 4
 
 #### Affected Elements:
 
 - `#eaframe, #topTextRight`
+- `a[aria-label="Ledig stilling: Miljødirektør"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `a[aria-label="Ledig stilling: Sjåfør"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -30,17 +45,31 @@
 
 - `#eaframe`
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Elements must have their visible text as part of their accessible name
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 3
+
+#### Affected Elements:
+
+- `a[aria-label="Ledig stilling: Miljødirektør"]`
+- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"]`
+- `a[aria-label="Ledig stilling: Sjåfør"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `brick-teaser-group-v1[data-color-skin="sport"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #aw0`
 
 ### Elements marked as presentational should be consistently ignored
 

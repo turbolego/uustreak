@@ -1,6 +1,6 @@
 # WCAG Violations Report for Scandic Hotels AS
 
-**Timestamp:** 2026-11-07T05:11:45.609Z
+**Timestamp:** 2026-11-08T05:07:28.974Z
 **URL:** [https://www.scandichotels.com/no](https://www.scandichotels.com/no)
 **Total Violations:** 5
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `#react-aria1537776556-_r_8a_`
-- `#react-aria1537776556-_r_8c_`
+- `#react-aria1768401308-_r_8a_`
+- `#react-aria1768401308-_r_8c_`
 
 ### Interactive controls must not be nested
 
