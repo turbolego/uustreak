@@ -1,8 +1,8 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-11-08T05:00:59.085Z
+**Timestamp:** 2026-11-09T04:56:31.658Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `#menuTarget,.nav__primary--icon`
-
-### Frames with focusable content must not have tabindex=-1
-
-- **Impact:** serious
-- **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-focusable-content?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#widget2, html`
 
 ### Elements must have their visible text as part of their accessible name
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-11-08T05:25:49.099Z
+**Timestamp:** 2026-11-09T05:18:27.901Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 4
 
@@ -20,14 +20,14 @@
 - `.css-43gtu1 > .css-1dc70b0[role="listitem"][data-discover="true"]`
 - `.css-1o36ap5 > .css-1dc70b0[role="listitem"][data-discover="true"]`
 - `.css-nans3h > .css-1dc70b0[role="listitem"][data-discover="true"]`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(1)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(2)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(3)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(4)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(5)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(6)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(7)`
-- `.css-rnug4h[target="_blank"][role="listitem"]:nth-child(8)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(1)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(2)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(3)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(4)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(5)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(6)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(7)`
+- `.css-rnug4h.group[target="_blank"]:nth-child(8)`
 
 ### Elements must have their visible text as part of their accessible name
 

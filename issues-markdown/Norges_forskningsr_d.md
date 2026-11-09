@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-11-08T04:59:51.778Z
+**Timestamp:** 2026-11-09T05:08:50.812Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
 **Total Violations:** 7
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
+- `.message-global--open-button`
 
 ### Heading levels should only increase by one
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
+- `.message-global--open-button`
 
 ### Document should not have more than one banner landmark
 
@@ -85,9 +85,8 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .html-string`
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .message-global--navigation > .message-global--navigation-of`
+- `.message-global--collapse`
