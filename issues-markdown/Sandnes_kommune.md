@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-11-09T05:10:19.271Z
+**Timestamp:** 2026-11-10T06:30:37.369Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#hero-BseT5-article-title`
+- `#hero-XVxHN-article-title`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `a[target="_blank"]`
+- `a[href$="sandnesloftet.no/"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

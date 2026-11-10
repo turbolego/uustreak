@@ -1,20 +1,55 @@
 # WCAG Violations Report for Fellesforbundet
 
-**Timestamp:** 2026-11-09T05:01:42.826Z
+**Timestamp:** 2026-11-10T06:22:01.317Z
 **URL:** [https://www.fellesforbundet.no/](https://www.fellesforbundet.no/)
-**Total Violations:** 1
+**Total Violations:** 3
 
 ## Violation Details
 
-### Elements must have their visible text as part of their accessible name
+### Heading levels should only increase by one
 
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 2
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `button[data-testid="actionButton-reject"]`
-- `button[data-testid="actionButton-adjust"]`
+- `.wp-elements-23`
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 13
+
+#### Affected Elements:
+
+- `.text-col`
+- `video`
+- `.wp-container-core-group-is-layout-2518a440`
+- `.max-1160 > .wp-block-heading`
+- `.post-16940 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .wp-container-core-group-is-layout-3fc47171.is-vertical.wp-block-group-is-layout-flex`
+- `.post-16940 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(1)`
+- `a[rel="tag"]:nth-child(3)`
+- `a[rel="tag"]:nth-child(5)`
+- `.post-16882`
+- `.post-16824`
+- `.max-1160 > .wp-container-core-buttons-is-layout-89ff3872.is-content-justification-left.wp-block-buttons`
+- `.has-dots`
+- `.alignwide.wp-block-group-is-layout-constrained.has-global-padding:nth-child(5)`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-11-09T05:16:07.871Z
+**Timestamp:** 2026-11-10T06:40:18.439Z
 **URL:** [https://www.telia.no/](https://www.telia.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `._teddy-heading--title-500_lke53_42`
 
 ### Images must have alternative text
 
@@ -36,7 +24,7 @@
 - `.slide:nth-child(12) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(13) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(15) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(1) > ._teddy-card--rich-card_139sd_168._teddy-card--gray_139sd_281._teddy-card--layout_139sd_61 > ._teddy-card__inset--top_139sd_426._teddy-card__inset--left_139sd_429._teddy-card__inset--right_139sd_432 > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(1) > ._teddy-card--rich-card_139sd_168._teddy-card--gray_139sd_281._teddy-grid_1dv1t_2 > ._teddy-card__inset--top_139sd_426._teddy-card__inset--left_139sd_429._teddy-card__inset--right_139sd_432 > ._teddy-image_jxcdf_2`
 
 ### Interactive controls must not be nested
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-11-09T05:03:29.982Z
+**Timestamp:** 2026-11-10T06:24:32.716Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 5
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `#slick-slide01 > div > .uagb-post__inner-wrap > h5`
-- `#slick-slide12 > div > .uagb-post__inner-wrap > h5`
+- `#slick-slide11 > div > .uagb-post__inner-wrap > h5`
+- `#slick-slide02 > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
 
@@ -54,10 +54,10 @@
 
 #### Affected Elements:
 
-- `#slick-slide01 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide02 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `#slick-slide11 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `#slick-slide12 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 

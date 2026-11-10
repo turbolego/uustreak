@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-11-09T04:57:58.836Z
+**Timestamp:** 2026-11-10T06:17:41.877Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
 **Total Violations:** 5
 
@@ -36,35 +36,14 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 25
+- **Count:** 4
 
 #### Affected Elements:
 
 - `#eaframe, .avis-logo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945607 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945607 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11317653 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11317653 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947300 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10947300 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11315522 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11315522 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11318216 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11318216 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945596 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945596 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945606 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945606 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945604 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10945604 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .shoutimage`
+- `#eaframe, .brokerimage`
+- `#eaframe, .brokerlogo`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-11-09T05:08:33.132Z
+**Timestamp:** 2026-11-10T06:32:43.555Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 4
 
@@ -38,13 +38,13 @@
 - `a[href="/?id=210386988"]`
 - `a[href="/?id=695199517"]`
 - `a[href$="el-sikkerhet"]`
+- `#Article-19319 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-19263 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-19242 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-18965 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-18877 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-18824 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-16073 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
-- `#Article-12709 > .clear[data-v-fab35f16=""][data-v-6fb9a7fe=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-6fb9a7fe=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 
 ### Page should contain a level-one heading
 
