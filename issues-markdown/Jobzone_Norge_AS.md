@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-11-10T06:25:01.673Z
+**Timestamp:** 2026-11-11T05:08:08.995Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -24,10 +24,10 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
-- `.buttons-href-button[href="/ledige-stillinger/74350"]`
-- `.buttons-href-button[href="/ledige-stillinger/74356"]`
-- `.buttons-href-button[href="/ledige-stillinger/74357"]`
-- `.buttons-href-button[href="/ledige-stillinger/74354"]`
+- `.buttons-href-button[href="/ledige-stillinger/74362"]`
+- `.buttons-href-button[href="/ledige-stillinger/74361"]`
+- `.buttons-href-button[href="/ledige-stillinger/74329"]`
+- `.buttons-href-button[href="/ledige-stillinger/74359"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -81,10 +81,10 @@
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
-- `div[data-position-id="74350"] > img`
-- `div[data-position-id="74356"] > img`
-- `div[data-position-id="74357"] > img`
-- `div[data-position-id="74354"] > img`
+- `div[data-position-id="74362"] > img`
+- `div[data-position-id="74361"] > img`
+- `div[data-position-id="74329"] > img`
+- `div[data-position-id="74359"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`

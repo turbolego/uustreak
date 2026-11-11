@@ -1,0 +1,64 @@
+{
+  "project": "Statistisk sentralbyrå",
+  "timestamp": "2026-11-11T05:20:00.380Z",
+  "url": "https://www.ssb.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"header-text\" id=\"popup-title\">Hvordan opplever du ssb.no?</h4>",
+          "target": [
+            "#popup-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"ssb-picture-card vertical w-100 group\" href=\"https://www.ssb.no/arbeid-og-lonn/sysselsetting/statistikk/antall-arbeidsforhold-og-lonn/artikler/hvor-mange-jobber-er-det-i-norge\" aria-label=\"Det finnes over 3,2 millioner jobber i Norge\" aria-describedby=\"0-text\">",
+          "target": [
+            "a[aria-describedby=\"0-text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"ssb-picture-card vertical w-100 group\" href=\"https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/fengslinger/artikler/faerre-soner-en-ubetinget-dom-i-fengsel\" aria-label=\"Færre sitter i fengsel\" aria-describedby=\"1-text\">",
+          "target": [
+            "a[aria-label=\"Færre sitter i fengsel\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ]
+}

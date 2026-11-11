@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-11-10T06:39:38.192Z
+**Timestamp:** 2026-11-11T05:22:24.678Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 4
 
@@ -17,9 +17,9 @@
 #### Affected Elements:
 
 - `.css-1096yyu`
-- `.css-43gtu1 > .css-1dc70b0[role="listitem"][data-discover="true"]`
-- `.css-1o36ap5 > .css-1dc70b0[role="listitem"][data-discover="true"]`
-- `.css-nans3h > .css-1dc70b0[role="listitem"][data-discover="true"]`
+- `.css-1dc70b0[aria-label="Göteborg, Tog"][role="listitem"]`
+- `.css-1dc70b0[aria-label="Kristiansand, Buss"][role="listitem"]`
+- `.css-1dc70b0[aria-label="Geilo, Tog"][role="listitem"]`
 - `.css-rnug4h.group[target="_blank"]:nth-child(1)`
 - `.css-rnug4h.group[target="_blank"]:nth-child(2)`
 - `.css-rnug4h.group[target="_blank"]:nth-child(3)`

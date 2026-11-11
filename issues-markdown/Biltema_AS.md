@@ -1,10 +1,22 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-11-10T06:17:01.791Z
+**Timestamp:** 2026-11-11T05:01:07.279Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
-**Total Violations:** 11
+**Total Violations:** 12
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#CybotCookiebotDialog`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -59,13 +71,13 @@
 
 - `#headerMyBiltemaButton`
 - `li:nth-child(11) > a[href$="kundeservice/"]`
-- `.block__grid.block:nth-child(4) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
-- `.block__grid.block:nth-child(6) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
-- `.block__grid.block:nth-child(8) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
 - `.content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `a[aria-label="Gå til: Vinterprodukter"]`
+- `.block__grid.block:nth-child(8) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(10) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
+- `.block__grid.block:nth-child(12) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
 - `a[aria-label="Gå til: Reflekser"]`
 - `.button__m.button__transparent--black[href$="kommende-produktnyheter/"]`
-- `a[aria-label="Gå til: Vinterprodukter"]`
 - `a[aria-label="Les mer om vår konsept"]`
 - `.inner > .footer__links > li:nth-child(6) > a`
 - `a[href$="bruksanvisninger/"]`
@@ -139,17 +151,19 @@
 - `.editorial__grid > li:nth-child(1)`
 - `.editorial__grid > li:nth-child(2)`
 
-### Page should contain a level-one heading
+### Interactive controls must not be nested
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `html`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(2) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(3) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(4) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
 
 ### All page content should be contained by landmarks
 

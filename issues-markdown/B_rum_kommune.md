@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-11-10T06:16:21.786Z
+**Timestamp:** 2026-11-11T05:03:38.243Z
 **URL:** [https://www.baerum.kommune.no/](https://www.baerum.kommune.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -16,7 +16,19 @@
 
 #### Affected Elements:
 
-- `.order-2 > .md\:gap-8.gap-6.flex-col > .md\:text-\[28px\].md\:leading-9.font-serif`
+- `.bg-peach-100 > .lg\:flex-row.lg\:gap-8.gap-8 > article > .order-2.md\:order-1.md\:gap-8 > .md\:gap-8.gap-6.flex-col > .md\:text-\[28px\].md\:leading-9.font-serif`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.bg-peach-100 > .lg\:flex-row.lg\:gap-8.gap-8 > article > .order-1.md\:order-2.flex-1 > .h-auto.aspect-video[loading="lazy"]`
 
 ### Main landmark should not be contained in another landmark
 

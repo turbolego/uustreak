@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fellesforbundet
 
-**Timestamp:** 2026-11-10T06:22:01.317Z
+**Timestamp:** 2026-11-11T05:05:12.186Z
 **URL:** [https://www.fellesforbundet.no/](https://www.fellesforbundet.no/)
 **Total Violations:** 3
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -44,12 +44,14 @@
 - `video`
 - `.wp-container-core-group-is-layout-2518a440`
 - `.max-1160 > .wp-block-heading`
+- `.post-16956 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .wp-container-core-group-is-layout-3fc47171.is-vertical.wp-block-group-is-layout-flex`
+- `.post-16956 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(1)`
+- `.post-16956 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(3)`
 - `.post-16940 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .wp-container-core-group-is-layout-3fc47171.is-vertical.wp-block-group-is-layout-flex`
 - `.post-16940 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(1)`
-- `a[rel="tag"]:nth-child(3)`
+- `.post-16940 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(3)`
 - `a[rel="tag"]:nth-child(5)`
 - `.post-16882`
-- `.post-16824`
 - `.max-1160 > .wp-container-core-buttons-is-layout-89ff3872.is-content-justification-left.wp-block-buttons`
 - `.has-dots`
 - `.alignwide.wp-block-group-is-layout-constrained.has-global-padding:nth-child(5)`

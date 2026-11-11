@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hosle skole
 
-**Timestamp:** 2026-11-10T06:25:07.901Z
+**Timestamp:** 2026-11-11T05:07:40.918Z
 **URL:** [https://www.hosle.no/](https://www.hosle.no/)
 **Total Violations:** 6
 
@@ -53,10 +53,10 @@
 
 #### Affected Elements:
 
+- `a[href="index.php?artID=2350&navB=1"]`
 - `a[href="index.php?artID=2299&navB=1"]`
 - `a[href="index.php?artID=2155&navB=1"]`
 - `a[href="index.php?artID=2153&navB=1"]`
-- `a[href="index.php?artID=2141&navB=1"]`
 
 ### Links must have discernible text
 

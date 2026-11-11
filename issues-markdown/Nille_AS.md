@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-11-10T06:29:33.936Z
+**Timestamp:** 2026-11-11T05:14:55.747Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 14
+- **Count:** 17
 
 #### Affected Elements:
 
@@ -42,18 +42,9 @@
 - `.swiper-slide:nth-child(12) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(13) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(14) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `span:nth-child(5)`
+- `.swiper-slide:nth-child(15) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(16) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(17) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Headings should not be empty
 
@@ -61,11 +52,16 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 6
 
 #### Affected Elements:
 
-- `a[title="Nøtteknekker ledlys H38cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Hjort stående H16cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Pia fugl  H6cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Oscar julestrømpe H50cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Granateple Ø10cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Julekongen Alexander H31cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Golden dekortre H22cm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
 
 ### Document should not have more than one banner landmark
 
@@ -97,13 +93,15 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
+- **Count:** 5
 
 #### Affected Elements:
 
-- `div[data-swiper-slide-index="0"] > a[title=""][data-discover="true"][aria-label=""]`
+- `a[href$="produkter/"][title=""][data-discover="true"]`
+- `a[href$="medlemsdager/"]`
 - `a[href$="baking/"]`
-- `div[data-swiper-slide-index="2"] > a[title=""][data-discover="true"][aria-label=""]`
+- `div[data-swiper-slide-index="3"] > a[title=""][data-discover="true"][aria-label=""]`
+- `div[data-swiper-slide-index="4"] > a[title=""][data-discover="true"][aria-label=""]`
 
 ### All page content should be contained by landmarks
 

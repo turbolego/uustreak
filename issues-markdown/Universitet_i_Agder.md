@@ -1,6 +1,6 @@
 # WCAG Violations Report for Universitet i Agder
 
-**Timestamp:** 2026-11-10T06:38:08.442Z
+**Timestamp:** 2026-11-11T05:20:47.316Z
 **URL:** [https://www.uia.no/](https://www.uia.no/)
 **Total Violations:** 1
 

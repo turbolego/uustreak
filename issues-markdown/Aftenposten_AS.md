@@ -1,8 +1,8 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-11-10T06:13:49.548Z
+**Timestamp:** 2026-11-11T04:58:40.504Z
 **URL:** [https://www.aftenposten.no/](https://www.aftenposten.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,3 +17,16 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
+
+### <svg> elements with an img or image role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 2
+
+#### Affected Elements:
+
+- `svg[viewBox="0 0 95 29"]`
+- `a[data-content-id="kMazdj"] > ._main_1676t_174 > ._meta_1676t_257 > ._inline_1676t_505._small_1676t_541._badges_1676t_478 > ._logo_1676t_536[viewBox="0 0 21 18"][role="img"]`

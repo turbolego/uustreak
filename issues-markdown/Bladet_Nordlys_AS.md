@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-11-10T06:18:10.544Z
+**Timestamp:** 2026-11-11T05:04:53.806Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#eaframe, button`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.rodimus-complex-front[data-group="ghost"]:nth-child(30) > brick-teaser-group-v1 > header > h2`
 
 ### Frames must have an accessible name
 
@@ -42,10 +54,10 @@
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11320370 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11317765 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11317765 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11320370 > .brokerinfo-container > .brokerlogo`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -57,7 +69,7 @@
 
 #### Affected Elements:
 
-- `.rodimus-complex-front[data-group="ghost"]:nth-child(39) > brick-teaser-group-v1 > div > brick-carousel-v3[data-slides="8"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-carousel-v3[data-slides="13"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-11-10T06:34:12.974Z
+**Timestamp:** 2026-11-11T05:20:00.380Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
 **Total Violations:** 2
 
@@ -24,10 +24,9 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `a[aria-describedby="0-text"]`
-- `a[aria-label="Utslipp av klimagasser går ned"]`
-- `a[aria-label="SSBs historie"]`
+- `a[aria-label="Færre sitter i fengsel"]`

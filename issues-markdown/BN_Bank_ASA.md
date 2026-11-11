@@ -1,8 +1,8 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-11-10T06:17:32.686Z
+**Timestamp:** 2026-11-11T05:01:25.232Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.link-button:nth-child(1) > a > .link-button-with-bg-image > .link-button-with-bg-image__overlay > .link-button-with-bg-image__content.background--light-wine-red > .link-button-with-bg-image__text > h4`
+- `a[href$="lan/"] > .link-button__vertical-content.link-button-with-arrow > .link-button-with-arrow__content > .link-button-with-arrow__text > h4`
 - `#heading-toggle-hvordan-bytter-jeg-til-bn-bank > h5`
 
 ### Images must have alternative text
@@ -37,12 +37,10 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.row-component__content > .link-button:nth-child(1) > a`
-- `.link-button:nth-child(2) > a[href$="sikkerhet/"]`
 - `a[aria-label="Les mer om boligbytte"]`
 - `a[aria-label="Les mer om å kjøpe bolig"]`
 
@@ -79,20 +77,3 @@
 - `.navigation__logo`
 - `#search-link-mobile`
 - `.navigation__actions > .navigation__link--become-customer.navigation__action-button[href$="bli-kunde/"]`
-
-### [role="img"] and [role="image"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 6
-
-#### Affected Elements:
-
-- `a[href$="lan/"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=""][role="img"]`
-- `a[href$="sparing/"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=""][role="img"]`
-- `a[aria-label="Kort"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=""][role="img"]`
-- `a[aria-label="Bytte bank"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=""][role="img"]`
-- `a[href$="kalkulatorer/"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=""][role="img"]`
-- `a[aria-label="Kundefavoritt"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=""][role="img"]`
