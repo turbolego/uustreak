@@ -1,0 +1,61 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-11-12T06:07:51.849Z",
+  "url": "https://www.dagbladet.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"_topnav_aogjo_45\">",
+          "target": [
+            "._topnav_aogjo_45"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"_skiplink_aogjo_13\"><a href=\"#main\" aria-label=\"Hopp til hovedinnholdet\">Hopp til hovedinnholdet</a></div>",
+          "target": [
+            "._skiplink_aogjo_13"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p> Dagbladet er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n    &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a> </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

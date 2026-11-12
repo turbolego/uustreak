@@ -1,0 +1,176 @@
+{
+  "project": "Verdens Gang AS",
+  "timestamp": "2026-11-12T06:26:56.358Z",
+  "url": "https://www.vg.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-14,2</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5612 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-14,1</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5610 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-11,6</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5520 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-11,5</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5524 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-10,7</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5628 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-8,9</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5512 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-8,5</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5518 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-8,3</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5605 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"td td-temp svelte-1584jvt\">-8,1</div>",
+          "target": [
+            [
+              "vg-sprengkulde-front",
+              "#kommune-5522 > .td-temp.td.svelte-1584jvt"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #1a8cb2, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "svg-img-alt",
+      "impact": "serious",
+      "description": "Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text",
+      "help": "<svg> elements with an img or image role must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/svg-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.5"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 90 45\" style=\"flex-shrink:0;height:var(--graphic-size, var(--space-l));width:auto\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 90 45\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
