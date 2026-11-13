@@ -1,30 +1,10 @@
 # WCAG Violations Report for Verdens Gang AS
 
-**Timestamp:** 2026-11-12T06:26:56.358Z
+**Timestamp:** 2026-11-13T05:54:23.701Z
 **URL:** [https://www.vg.no/](https://www.vg.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 9
-
-#### Affected Elements:
-
-- `vg-sprengkulde-front,#kommune-5612 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5610 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5520 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5524 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5628 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5512 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5518 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5605 > .td-temp.td.svelte-1584jvt`
-- `vg-sprengkulde-front,#kommune-5522 > .td-temp.td.svelte-1584jvt`
 
 ### All page content should be contained by landmarks
 

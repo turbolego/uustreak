@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-11-12T06:07:09.382Z
+**Timestamp:** 2026-11-13T05:25:08.815Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -107,81 +107,82 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 135
+- **Count:** 134
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
-- `#notice-10629518 > .content > h2`
-- `time[datetime="2026-11-11T20:06:16.000Z"]`
-- `div[title="120.000 demonstrerte i Spania"] > h2`
-- `time[datetime="2026-11-11T19:42:26.000Z"]`
-- `#notice-10629445 > .content > h2`
-- `time[datetime="2026-11-11T18:14:00.000Z"]`
-- `#notice-10629402 > .content > h2`
-- `time[datetime="2026-11-11T16:53:15.000Z"]`
-- `div[title="Død person funnet i Grimstad"] > h2`
-- `time[datetime="2026-11-11T15:06:29.000Z"]`
-- `#notice-10629007 > .content > h2`
-- `time[datetime="2026-11-11T14:31:19.000Z"]`
-- `#notice-10628411 > .content > h2`
-- `time[datetime="2026-11-11T12:13:19.000Z"]`
-- `div[title="Stanser flytrafikken i Finland"] > h2`
-- `div[title="Stanser flytrafikken i Finland"] > .meta`
-- `div[title="Giftig smog henger over India"] > h2`
-- `div[title="Giftig smog henger over India"] > .meta`
-- `#notice-10627528 > .content > h2`
-- `#notice-10627528 > .content > .meta`
-- `#notice-10627516 > .content > h2`
-- `#notice-10627516 > .content > .meta`
-- `#notice-10627515 > .content > h2`
-- `#notice-10627515 > .content > .meta`
-- `div[title="SAS legger ned rute"] > h2`
-- `time[datetime="2026-11-10T20:08:34.000Z"]`
-- `#notice-10627430 > .content > h2`
-- `time[datetime="2026-11-10T19:13:07.000Z"]`
-- `#notice-10627414 > .content > h2`
-- `time[datetime="2026-11-10T18:51:46.000Z"]`
-- `#notice-10627359 > .content > h2`
-- `time[datetime="2026-11-10T17:25:25.000Z"]`
-- `div[title="Ny byutviklingsbyråd i Oslo"] > h2`
-- `div[title="Ny byutviklingsbyråd i Oslo"] > .meta`
-- `div[title="Nvidia saksøkt av aksjeeiere"] > h2`
-- `time[datetime="2026-11-10T12:22:43.000Z"]`
-- `#notice-10626297 > .content > h2`
-- `#notice-10626297 > .content > .meta`
-- `div[title="Nå kommer snøen til Østlandet"] > h2`
-- `div[title="Nå kommer snøen til Østlandet"] > .meta`
+- `#notice-10632026 > .content > h2`
+- `time[datetime="2026-11-12T20:16:24.000Z"]`
+- `#notice-10631906 > .content > h2`
+- `time[datetime="2026-11-12T18:50:51.000Z"]`
+- `#notice-10631905 > .content > h2`
+- `time[datetime="2026-11-12T18:42:55.000Z"]`
+- `#notice-10631902 > .content > h2`
+- `time[datetime="2026-11-12T18:03:45.000Z"]`
+- `#notice-10631810 > .content > h2`
+- `time[datetime="2026-11-12T16:56:19.000Z"]`
+- `#notice-10631801 > .content > h2`
+- `time[datetime="2026-11-12T16:27:48.000Z"]`
+- `#notice-10631655 > .content > h2`
+- `time[datetime="2026-11-12T15:44:03.000Z"]`
+- `#notice-10631599 > .content > h2`
+- `time[datetime="2026-11-12T14:38:27.000Z"]`
+- `div[title="Kjøper mineryddere av Norge"] > h2`
+- `time[datetime="2026-11-12T14:28:29.000Z"]`
+- `div[title="Ny nordisk forsvarsavtale"] > h2`
+- `div[title="Ny nordisk forsvarsavtale"] > .meta`
+- `div[title="Stans i togtrafikken"] > h2`
+- `div[title="Stans i togtrafikken"] > .meta`
+- `#notice-10630071 > .content > h2`
+- `#notice-10630071 > .content > .meta`
+- `div[title="Jordskjelv rystet Helgeland"] > h2`
+- `time[datetime="2026-11-12T08:29:54.000Z"]`
+- `div[title="Bussruter innstilt i Oslo"] > h2`
+- `div[title="Bussruter innstilt i Oslo"] > .meta`
+- `div[title="Witkoff og Kushner i Moskva"] > h2`
+- `div[title="Witkoff og Kushner i Moskva"] > .meta`
+- `div[title="Uvær forverrer krisen i Gaza"] > h2`
+- `div[title="Uvær forverrer krisen i Gaza"] > .meta`
+- `#notice-10629697 > .content > h2`
+- `#notice-10629697 > .content > .meta`
+- `#notice-10629632 > .content > h2`
+- `#notice-10629632 > .content > .meta`
+- `#notice-10629610 > .content > h2`
+- `#notice-10629610 > .content > .meta`
+- `#notice-10629609 > .content > h2`
+- `#notice-10629609 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.row.large-12.small-12:nth-child(5)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(5)`
 - `.row.large-12.small-12:nth-child(7)`
 - `.has-row-header`
 - `.row.large-12.small-12:nth-child(9)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(10)`
 - `#offer_0cfaa4c18ebe058946bc-0, div[ng-show="!terminalError"]`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(11)`
 - `.row.large-12.small-12:nth-child(13)`
 - `.row.large-12.small-12:nth-child(14)`
+- `.row.large-12.small-12:nth-child(15)`
 - `#offer_59dc168a95d88c084eeb-0, div[ng-show="!terminalError"]`
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(20)`
 - `.row.large-12.small-12:nth-child(21)`
+- `.row.large-12.small-12:nth-child(22)`
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(23)`
-- `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(25)`
+- `.row.large-12.small-12:nth-child(25)`
+- `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(26)`
 - `.lab-scrollbox-headline.t25.tm18`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(27)`
+- `.row.large-12.small-12:nth-child(28)`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(29)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(31)`
+- `.row.large-12.small-12:nth-child(31)`
 - `.row.large-12.small-12:nth-child(32)`
+- `.row.large-12.small-12:nth-child(33)`
 - `.t28.lab-scrollbox-headline.font-InterTight`
 - `#markup_10614273 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10614272"] > .content > .floatingTextSubset.media > .floatingText`
@@ -207,15 +208,14 @@
 - `article[data-instance="10614268"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10614271 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10614270"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(35)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `.row.large-12.small-12:nth-child(40)`
+- `.row.large-12.small-12:nth-child(41)`
 - `#offer_59dc168a95d88c084eeb-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(43)`
-- `.row.large-12.small-12:nth-child(44)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(44)`
 - `.row.large-12.small-12:nth-child(45)`
 - `.row.large-12.small-12:nth-child(46)`
 - `.row.large-12.small-12:nth-child(47)`
@@ -235,10 +235,9 @@
 - `.row.large-12.small-12:nth-child(64)`
 - `.row.large-12.small-12:nth-child(65)`
 - `.row.large-12.small-12:nth-child(66)`
-- `.row.large-12.small-12:nth-child(67)`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(69)`
+- `.row.large-12.small-12:nth-child(68)`
 - `.page-content > .bg-black.color_mobile_bg-black.hasContentPadding`
 - `#offer_0cfaa4c18ebe058946bc-1, div[ng-show="!terminalError"]`
 - `.lab-scrollbox-headline.italic.m-italic`

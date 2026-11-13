@@ -1,6 +1,6 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-11-12T06:05:31.155Z
+**Timestamp:** 2026-11-13T05:23:57.256Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
 **Total Violations:** 12
 
@@ -70,14 +70,14 @@
 #### Affected Elements:
 
 - `#headerMyBiltemaButton`
+- `a[aria-label="Se nyheter fra Biltema"]`
 - `li:nth-child(11) > a[href$="kundeservice/"]`
 - `.content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
 - `a[aria-label="Gå til: Vinterprodukter"]`
-- `.block__grid.block:nth-child(8) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
-- `.block__grid.block:nth-child(10) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
-- `.block__grid.block:nth-child(12) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
-- `a[aria-label="Gå til: Reflekser"]`
-- `.button__m.button__transparent--black[href$="kommende-produktnyheter/"]`
+- `.block__grid.block:nth-child(10) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(12) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
+- `.block__grid.block:nth-child(14) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `a[aria-label="Gå til: Produktnyheter"]`
 - `a[aria-label="Les mer om vår konsept"]`
 - `.inner > .footer__links > li:nth-child(6) > a`
 - `a[href$="bruksanvisninger/"]`

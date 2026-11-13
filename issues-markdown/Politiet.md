@@ -1,6 +1,6 @@
 # WCAG Violations Report for Politiet
 
-**Timestamp:** 2026-11-12T06:18:32.766Z
+**Timestamp:** 2026-11-13T05:45:23.122Z
 **URL:** [https://www.politiet.no/](https://www.politiet.no/)
 **Total Violations:** 2
 
@@ -16,9 +16,9 @@
 
 #### Affected Elements:
 
-- `#politiloggen-thread-card--26zwrh`
-- `#politiloggen-thread-card--26lsrw`
-- `#politiloggen-thread-card--26qzt2`
+- `#politiloggen-thread-card--26n1fb`
+- `#politiloggen-thread-card--268frc`
+- `#politiloggen-thread-card--26ksgj`
 
 ### All page content should be contained by landmarks
 

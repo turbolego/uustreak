@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-11-12T06:21:29.619Z
+**Timestamp:** 2026-11-13T05:43:28.091Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -31,36 +31,36 @@
 
 - `.h2.e0.e1 > div > div`
 - `.h4.an[href$="black-november"]`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Rauland 2-lags ulltrøye"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `li:nth-child(1) > .ij.ik[aria-label="Ute vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(1) > .ij.ik[aria-label="Ute vinterdress"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Rauland 2-lags ulltrøye"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Rauland 2-lags ulltrøye"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Rauland 2-lags ullongs"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Rauland 2-lags ullongs"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Rauland 2-lags ullongs"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Ute vinterdress m/korte ben"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Ute vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Ute vinterdress"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(1) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(1) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Gjesvær thermo vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Gjesvær thermo vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Hafjell vattert selebukse"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Hafjell vattert selebukse"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Snøheim høy ullfôret tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Snøheim høy ullfôret tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Ute utvidbar vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `a[aria-label="Ute utvidbar vinterdress"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `li:nth-child(5) > .ij.ik[aria-label="Ute vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(5) > .ij.ik[aria-label="Ute vinterdress"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `li:nth-child(1) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `li:nth-child(1) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `li:nth-child(2) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `li:nth-child(2) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Nordisen vanntett høy piggsko"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `li:nth-child(2) > .ij.ik[aria-label="Snøheim høy ullfôret tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(2) > .ij.ik[aria-label="Snøheim høy ullfôret tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Gjesvær thermo vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `a[aria-label="Gjesvær thermo vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `li:nth-child(5) > .ij.ik[aria-label="Snøheim høy ullfôret tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(5) > .ij.ik[aria-label="Snøheim høy ullfôret tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Nordisen vanntett høy piggsko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Nordisen vanntett høy piggsko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Nordlia ull tøffel"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `li:nth-child(2) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(2) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Rundhaugen vanntett boot"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `a[aria-label="Rundhaugen vanntett boot"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `li:nth-child(4) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(4) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Nordlia ull tøffel"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Nordlia ull tøffel"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Kjellmoen vanntett fjellstøvel"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Kjellmoen vanntett fjellstøvel"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 
 ### Headings should not be empty
 
@@ -108,21 +108,21 @@
 #### Affected Elements:
 
 - `button[title="Tom handlekurv"]`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"]`
+- `li:nth-child(1) > .ij.ik[aria-label="Ute vinterdress"]`
 - `a[aria-label="Rauland 2-lags ulltrøye"]`
 - `a[aria-label="Rauland 2-lags ullongs"]`
-- `a[aria-label="Ute vinterdress m/korte ben"]`
-- `a[aria-label="Ute vinterdress"]`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(1) > .ij.ik.il`
-- `a[aria-label="Gjesvær thermo vinterjakke"]`
-- `a[aria-label="Hafjell vattert selebukse"]`
-- `a[aria-label="Snøheim høy ullfôret tursko"]`
+- `a[aria-label="Ute utvidbar vinterdress"]`
+- `li:nth-child(5) > .ij.ik[aria-label="Ute vinterdress"]`
 - `a[aria-label="Hafjell vinterjakke"]`
-- `li:nth-child(1) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"]`
-- `li:nth-child(2) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"]`
+- `li:nth-child(2) > .ij.ik[aria-label="Snøheim høy ullfôret tursko"]`
+- `a[aria-label="Gjesvær thermo vinterjakke"]`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il`
+- `li:nth-child(5) > .ij.ik[aria-label="Snøheim høy ullfôret tursko"]`
 - `a[aria-label="Nordisen vanntett høy piggsko"]`
+- `li:nth-child(2) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"]`
+- `a[aria-label="Rundhaugen vanntett boot"]`
+- `li:nth-child(4) > .ij.ik[aria-label="Finnskogen vanntett høy tursko"]`
 - `a[aria-label="Nordlia ull tøffel"]`
-- `a[aria-label="Kjellmoen vanntett fjellstøvel"]`
 
 ### Links must have discernible text
 

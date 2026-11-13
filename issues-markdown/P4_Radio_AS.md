@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-11-12T06:19:04.229Z
+**Timestamp:** 2026-11-13T05:47:15.648Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
 **Total Violations:** 7
 
@@ -18,12 +18,12 @@
 
 - `.icon-button`
 - `.is-live`
-- `.engagement-buttons[data-v-4b932298=""][data-v-746d67de=""] > .dislike[type="button"][data-v-4b932298=""]`
-- `.engagement-buttons[data-v-4b932298=""][data-v-746d67de=""] > .like[data-v-ff04d4eb=""][type="button"]`
-- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-746d67de=""] > .close[data-v-484baac5=""]`
-- `.image-container[data-v-b6f8812b=""] > .play-button.pulse.show`
-- `.play-button.pulse[data-v-4af17d0f=""]`
-- `.title-container[data-v-b6f8812b=""] > .stroked.inverted.play-button`
+- `.engagement-buttons[data-v-4b932298=""][data-v-a8d03b29=""] > .dislike[type="button"][data-v-4b932298=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-a8d03b29=""] > .like[data-v-ff04d4eb=""][type="button"]`
+- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-a8d03b29=""] > .close[data-v-484baac5=""]`
+- `.image-container[data-v-65f253e6=""] > .play-button.pulse.show`
+- `.play-button.pulse[data-v-2e87abb0=""]`
+- `.title-container[data-v-65f253e6=""] > .stroked.inverted.play-button`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
@@ -56,13 +56,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""]`
-- `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
-- `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .info[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
+- `.medium-large.contest-box.single > .content[data-v-263a82da=""] > .label[data-v-263a82da=""]`
+- `.grid > .medium-large.contest-box.item > .content[data-v-263a82da=""] > .label[data-v-263a82da=""]`
 
 ### Images must have alternative text
 
@@ -111,18 +110,18 @@
 
 #### Affected Elements:
 
-- `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
-- `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
-- `.large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
-- `.container[data-v-30b48782=""]:nth-child(3) > div > .medium-large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
-- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
-- `.grid > .medium-large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
-- `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
-- `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
-- `.small.section-box.item:nth-child(2) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
-- `.small.section-box.item:nth-child(3) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
-- `.small.section-box.item:nth-child(4) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
-- `.small.section-box.item:nth-child(5) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
+- `.image-container[data-v-2e87abb0=""] > a[data-v-2e87abb0=""]`
+- `.content-box.compact[data-v-ec5e8189=""] > .image-link[data-v-ec5e8189=""]`
+- `.large.contest-box.single > .image-link[data-v-263a82da=""]`
+- `.medium-large.contest-box.single > .image-link[data-v-263a82da=""]`
+- `.image-link[href$="fem-pa/"][data-v-ec5e8189=""]`
+- `.grid > .medium-large.contest-box.item > .image-link[data-v-263a82da=""]`
+- `.large.section-box.item > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
+- `.small.section-box.item:nth-child(1) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
+- `.small.section-box.item:nth-child(2) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
+- `.small.section-box.item:nth-child(3) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
+- `.small.section-box.item:nth-child(4) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
+- `.small.section-box.item:nth-child(5) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
 - `.editor-emblem > a[target="_blank"]`
 
 ### All page content should be contained by landmarks

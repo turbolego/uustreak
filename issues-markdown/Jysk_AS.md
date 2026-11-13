@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-11-12T06:13:50.977Z
+**Timestamp:** 2026-11-13T05:36:14.074Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -34,12 +34,12 @@
 #### Affected Elements:
 
 - `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="3288232-_r_3_"]`
+- `a[aria-describedby="3288232-_r_9_"]`
+- `.snap-start:nth-child(2) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 - `.snap-start:nth-child(3) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 - `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="5802103-_r_6_"]`
 
 ### All page content should be contained by landmarks
 

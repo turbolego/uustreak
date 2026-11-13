@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-11-12T06:04:44.055Z
+**Timestamp:** 2026-11-13T05:22:48.538Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#feed > smart-frame > iframe[allowfullscreen=""][allowtransparency=""][scrolling="no"]`
 
 ### Elements must have their visible text as part of their accessible name
 
