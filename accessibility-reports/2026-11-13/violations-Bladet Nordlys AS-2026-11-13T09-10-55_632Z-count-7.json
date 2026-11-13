@@ -1,0 +1,1288 @@
+{
+  "project": "Bladet Nordlys AS",
+  "timestamp": "2026-11-13T09:10:55.632Z",
+  "url": "https://www.nordlys.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a id=\"topTextRight\" class=\"shoutlink\" href=\"javascript:void(0)\" onclick=\"doEAClick('/vis/eiendomtilsalgs', '', '', 'classified.property.carousel.see_all')\">Eiendommer</a>",
+          "target": [
+            "#eaframe",
+            "#topTextRight"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.88 (foreground color: #f76d53, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Glomfjord</span>",
+          "target": [
+            ".swiper-slide-active > .tivoli-job-ad.fokus[target=\"_blank\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Narvik</span>",
+          "target": [
+            ".swiper-slide-next > .tivoli-job-ad.fokus[target=\"_blank\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Harstad</span>",
+          "target": [
+            "a[aria-label=\"Ledig stilling: Journalist\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://ads.creative...\" name=\"creatives_no\" frameborder=\"0\" scrolling=\"no\" allowtransparency=\"true\" style=\"width: 980px; height...\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe frameborder=\"no\" id=\"eaframe\" name=\"eaframe\" width=\"980\" height=\"350\" scrolling=\"no\" src=\"javascript:window[&quot;contents&quot;]\" style=\"height: 350px; width: 100%;\"></iframe>",
+          "target": [
+            "#eaframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 114,
+      "nodes": [
+        {
+          "html": "<img id=\"px\" src=\"px?t=1002&amp;e=vs&amp;i=d2cf2ad6-0581-42b6-a4b9-d08b0c3ab014&amp;c=\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "#px"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" style=\"object-fit:contain;object-position:74% 49%\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01jhjw4b6pnvccjxnayrhad5z5.1794300240141.webp\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-prev > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jjvsdbt20xh798y50y27cn99\" style=\"object-fit:contain;object-position:71% 50%\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01jjvsdbt20xh798y50y27cn99.1794300240142.webp\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-prev > div[data-layer-wrapper=\"01jjvsdbt2bt9y4fbk5jzby7yj\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jjvsdbt2bt9y4fbk5jzby7yj\"] > img[data-element=\"01jjvsdbt20xh798y50y27cn99\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01ktk53h85j624q71phzswra1w\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01ktk53h85j624q71phzswra1w.1794300240142.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01ktk53h85j624q71phzswra1w\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01ktk53h856e6zm7swdk6gr4pe\" style=\"width:112px;height:23px\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01ktk53h856e6zm7swdk6gr4pe.1794300240142.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01ktk53h856e6zm7swdk6gr4pe\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01ktk53h854am3d1zp62v386ww\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01ktk53h854am3d1zp62v386ww.1794300240143.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01ktk53h854am3d1zp62v386ww\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5w4dzgbayb7mjkyah4krzh8\" style=\"width:113px;height:73px\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m5w4dzgbayb7mjkyah4krzh8.1794300240143.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m5w4dzgbayb7mjkyah4krzh8\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01kcr6r6dnhd5ccksfg0pdg0cr.1794300240143.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-prev > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m6165mt0t6s688fqhhxxst4t\" style=\"width:162px;height:72px\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m6165mt0t6s688fqhhxxst4t.1794300240143.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m6165mt0t6s688fqhhxxst4t\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m6165mt1cshav67cg2gjw1zm\" style=\"width:157px;height:63px\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m6165mt1cshav67cg2gjw1zm.1794300240144.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m6165mt1cshav67cg2gjw1zm\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m6gh6t4kkzyw79sm51ha2pxg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m6gh6t4kkzyw79sm51ha2pxg.1794300240144.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m6gh6t4kkzyw79sm51ha2pxg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m6gh6t4k96a2j0dd06mset7e\" style=\"width:122px;height:22px\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m6gh6t4k96a2j0dd06mset7e.1794300240144.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m6gh6t4k96a2j0dd06mset7e\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m6gh6t4ka5ryb6d8337eh5z9\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m6gh6t4ka5ryb6d8337eh5z9.1794300240145.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m6gh6t4ka5ryb6d8337eh5z9\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m6gh6t4kyfc332qp5t4fxfn8\" style=\"width:125px;height:80px\" src=\"01m6ggy8x1ccdkb9vavmwkjv3k.01m6gh6t4kyfc332qp5t4fxfn8.1794300240145.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m6gh6t4kyfc332qp5t4fxfn8\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" style=\"object-fit:contain;object-position:91% 49%\" src=\"01m6ggyc5g6490938c40y7jhd1.01jhjw4b6pnvccjxnayrhad5z5.1794300243414.webp\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-active > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" style=\"width:220px;height:149px\" src=\"01m6ggyc5g6490938c40y7jhd1.01jtmt6kr63y7krg89y1ndg0cp.1794300243414.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-active > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m7rmc2f2fywd4tfa1raknk\" style=\"width:152px;height:152px\" src=\"01m6ggyc5g6490938c40y7jhd1.01m5m7rmc2f2fywd4tfa1raknk.1794300243414.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-active > div[data-layer-wrapper=\"01m5m7rmc2k4xc6hrvzt5qrr94\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m7rmc2k4xc6hrvzt5qrr94\"] > img[data-element=\"01m5m7rmc2f2fywd4tfa1raknk\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggyc5g6490938c40y7jhd1.01kcr6r6dnhd5ccksfg0pdg0cr.1794300243414.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-active > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" style=\"object-fit:contain;object-position:91% 49%\" src=\"01m6ggyae8msqh4bs9snnzc82w.01jhjw4b6pnvccjxnayrhad5z5.1794300241341.webp\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-next > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" style=\"width:220px;height:149px\" src=\"01m6ggyae8msqh4bs9snnzc82w.01jtmt6kr63y7krg89y1ndg0cp.1794300241341.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-next > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m7rmc2f2fywd4tfa1raknk\" style=\"width:152px;height:152px\" src=\"01m6ggyae8msqh4bs9snnzc82w.01m5m7rmc2f2fywd4tfa1raknk.1794300241341.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-next > div[data-layer-wrapper=\"01m5m7rmc2k4xc6hrvzt5qrr94\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m7rmc2k4xc6hrvzt5qrr94\"] > img[data-element=\"01m5m7rmc2f2fywd4tfa1raknk\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr6dpj13rg58kssj265\" style=\"width:138px;height:24px\" src=\"01m6ggyae8msqh4bs9snnzc82w.01jtmt6kr6dpj13rg58kssj265.1794300241341.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-next > div[data-layer-wrapper=\"01jtmt6kr661rpefcp6cmr7a1e\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr661rpefcp6cmr7a1e\"] > img[data-element=\"01jtmt6kr6dpj13rg58kssj265\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggyae8msqh4bs9snnzc82w.01kcr6r6dnhd5ccksfg0pdg0cr.1794300241341.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            ".swiper-slide-next > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01jhjw4b6pnvccjxnayrhad5z5.1794300240787.webp\" style=\"object-fit:contain;object-position:91% 49%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyab9vtep8dfvf6zempk5\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m616nx2rg6162xqv8wscqv4t\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01m616nx2rg6162xqv8wscqv4t.1794300240787.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m616nx2rg6162xqv8wscqv4t\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616nx2rq6rd0779326g3wh6\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01m616nx2rq6rd0779326g3wh6.1794300240787.svg\" style=\"width:163px;height:99px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m616nx2rq6rd0779326g3wh6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616nx2rdfknqpy8sy2gqe72\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01m616nx2rdfknqpy8sy2gqe72.1794300240787.svg\" style=\"width:135px;height:26px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m616nx2rdfknqpy8sy2gqe72\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jtn6a4fwdntm0ay6qn4qpjh9\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01jtn6a4fwdntm0ay6qn4qpjh9.1794300240788.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01jtn6a4fwdntm0ay6qn4qpjh9\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01jtmt6kr63y7krg89y1ndg0cp.1794300240788.svg\" style=\"width:220px;height:149px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyab9vtep8dfvf6zempk5\"] > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggya2qek83mv0jzmr9nb12.01kcr6r6dnhd5ccksfg0pdg0cr.1794300240788.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyab9vtep8dfvf6zempk5\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01jhjw4b6pnvccjxnayrhad5z5.1794300244026.webp\" style=\"object-fit:contain;object-position:97% 48%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jjvsdbt20xh798y50y27cn99\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01jjvsdbt20xh798y50y27cn99.1794300244026.webp\" style=\"object-fit:contain;object-position:98% 47%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01jjvsdbt2bt9y4fbk5jzby7yj\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jjvsdbt2bt9y4fbk5jzby7yj\"] > img[data-element=\"01jjvsdbt20xh798y50y27cn99\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m8ema51afnp8fyf10pv485\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01m5m8ema51afnp8fyf10pv485.1794300244026.svg\" style=\"width:132px;height:132px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01m5m8ema52xtjqmq14f9v1e05\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m8ema52xtjqmq14f9v1e05\"] > img[data-element=\"01m5m8ema51afnp8fyf10pv485\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01k6z50kej49e4tdm473kkksth\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01k6z50kej49e4tdm473kkksth.1794300244026.svg\" style=\"width:167px;height:69px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01k6z50kejavxcbrahrrrrwtg2\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01k6z50kejavxcbrahrrrrwtg2\"] > img[data-element=\"01k6z50kej49e4tdm473kkksth\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m8dcddzw76zetetad4fcgs\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01m5m8dcddzw76zetetad4fcgs.1794300244026.svg\" style=\"width:94px;height:20px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m5m8dcddzw76zetetad4fcgs\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01ks573fw9pech9a1jf6m3yq8h\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01ks573fw9pech9a1jf6m3yq8h.1794300244026.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01ks573fw9pech9a1jf6m3yq8h\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01ks573fw98w2smqxsnvd1ezcm\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01ks573fw98w2smqxsnvd1ezcm.1794300244026.svg\" style=\"width:37px;height:15px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01ks573fw98w2smqxsnvd1ezcm\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5w4mx3tpcgm1jte9szgchr6\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01m5w4mx3tpcgm1jte9szgchr6.1794300244026.svg\" style=\"width:36px;height:30px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m5w4mx3tpcgm1jte9szgchr6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5w53a3pt80c7tqwnrbc3dz8\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01m5w53a3pt80c7tqwnrbc3dz8.1794300244026.svg\" style=\"width:132px;height:132px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01m5w53a3pqn756vhkwz5g0s35\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5w53a3pqn756vhkwz5g0s35\"] > img[data-element=\"01m5w53a3pt80c7tqwnrbc3dz8\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01k6yy0js9ffnqpgq7c04hbxxf\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01k6yy0js9ffnqpgq7c04hbxxf.1794300244026.svg\" style=\"width:94px;height:20px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01k6yy0js9ffnqpgq7c04hbxxf\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01k99m1jrawkbed9xrf2fzvb1n\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01k99m1jrawkbed9xrf2fzvb1n.1794300244026.svg\" style=\"width:157px;height:69px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01k99m1jrafh14jcvqg36wjvbg\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01k99m1jrafh14jcvqg36wjvbg\"] > img[data-element=\"01k99m1jrawkbed9xrf2fzvb1n\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kz8gnf0t4bz0jn829a61z66z\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01kz8gnf0t4bz0jn829a61z66z.1794300244026.svg\" style=\"object-fit:cover;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01kz8gnf0t4bz0jn829a61z66z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01kz8gnf0t85hs3pmnsa35tecz\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01kz8gnf0t85hs3pmnsa35tecz.1794300244026.svg\" style=\"width:37px;height:15px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01kz8gnf0t85hs3pmnsa35tecz\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5w4p3m9k9504179wvqasmfq\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01m5w4p3m9k9504179wvqasmfq.1794300244026.svg\" style=\"width:36px;height:30px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m5w4p3m9k9504179wvqasmfq\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggyca5cjywp8v6ncdm93ka.01kcr6r6dnhd5ccksfg0pdg0cr.1794300244026.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycb9cftjst5qp2g73rss\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggyavxh9eppeqqve7nyzdx.01jhjw4b6pnvccjxnayrhad5z5.1794300242862.webp\" style=\"object-fit:contain;object-position:91% 49%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyb24qd2rdc73j4h4ykbp\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" data-lazy-src=\"01m6ggyavxh9eppeqqve7nyzdx.01jtmt6kr63y7krg89y1ndg0cp.1794300242862.svg\" style=\"width:220px;height:149px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyb24qd2rdc73j4h4ykbp\"] > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m7rmc2f2fywd4tfa1raknk\" data-lazy-src=\"01m6ggyavxh9eppeqqve7nyzdx.01m5m7rmc2f2fywd4tfa1raknk.1794300242863.svg\" style=\"width:152px;height:152px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyb24qd2rdc73j4h4ykbp\"] > div[data-layer-wrapper=\"01m5m7rmc2k4xc6hrvzt5qrr94\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m7rmc2k4xc6hrvzt5qrr94\"] > img[data-element=\"01m5m7rmc2f2fywd4tfa1raknk\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr6dpj13rg58kssj265\" data-lazy-src=\"01m6ggyavxh9eppeqqve7nyzdx.01jtmt6kr6dpj13rg58kssj265.1794300242863.svg\" style=\"width:138px;height:24px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyb24qd2rdc73j4h4ykbp\"] > div[data-layer-wrapper=\"01jtmt6kr661rpefcp6cmr7a1e\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr661rpefcp6cmr7a1e\"] > img[data-element=\"01jtmt6kr6dpj13rg58kssj265\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggyavxh9eppeqqve7nyzdx.01kcr6r6dnhd5ccksfg0pdg0cr.1794300242863.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyb24qd2rdc73j4h4ykbp\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01jhjw4b6pnvccjxnayrhad5z5.1794300237081.webp\" style=\"object-fit:contain;object-position:99% 48%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jjvsdbt20xh798y50y27cn99\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01jjvsdbt20xh798y50y27cn99.1794300237081.webp\" style=\"object-fit:contain;object-position:99% 46%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01jjvsdbt2bt9y4fbk5jzby7yj\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jjvsdbt2bt9y4fbk5jzby7yj\"] > img[data-element=\"01jjvsdbt20xh798y50y27cn99\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01kcr6r6dnhd5ccksfg0pdg0cr.1794300237081.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616rj7hx5fh48r3xj6gws2j\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m616rj7hx5fh48r3xj6gws2j.1794300237082.svg\" style=\"width:167px;height:65px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m616rj7hkrg16s80bcbk1bjz\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m616rj7hkrg16s80bcbk1bjz\"] > img[data-element=\"01m616rj7hx5fh48r3xj6gws2j\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5mnh4bdqe0zehn3ett\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5mnh4bdqe0zehn3ett.1794300237082.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5ms8x9n44c1wag8kgf\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5ms8x9n44c1wag8kgf\"] > img[data-element=\"01m615wk5mnh4bdqe0zehn3ett\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5m30npd6drq6h98dq5\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5m30npd6drq6h98dq5.1794300237082.svg\" style=\"width:122px;height:22px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5mddcyrdkb2213qf63\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mddcyrdkb2213qf63\"] > img[data-element=\"01m615wk5m30npd6drq6h98dq5\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5m1mb02z6mgk8pm64b\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5m1mb02z6mgk8pm64b.1794300237082.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5mzpamb7w1ef39h88p\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mzpamb7w1ef39h88p\"] > img[data-element=\"01m615wk5m1mb02z6mgk8pm64b\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5mppm9v17yxwtv50p1\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5mppm9v17yxwtv50p1.1794300237083.svg\" style=\"width:125px;height:80px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5mddbyz2q66dzwtd5p\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mddbyz2q66dzwtd5p\"] > img[data-element=\"01m615wk5mppm9v17yxwtv50p1\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5n8ctr4zhmv58sn4kg\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5n8ctr4zhmv58sn4kg.1794300237083.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5n4qwxjrb416sfpvz6\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n4qwxjrb416sfpvz6\"] > img[data-element=\"01m615wk5n8ctr4zhmv58sn4kg\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5ng20c53465enccn1v\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5ng20c53465enccn1v.1794300237083.svg\" style=\"width:122px;height:22px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5nhbnsncnr4hs9an4y\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5nhbnsncnr4hs9an4y\"] > img[data-element=\"01m615wk5ng20c53465enccn1v\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5ntcmwvn4rypdjpjrj\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5ntcmwvn4rypdjpjrj.1794300237083.svg\" style=\"width:125px;height:80px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5n2pnarhw74vh6169h\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n2pnarhw74vh6169h\"] > img[data-element=\"01m615wk5ntcmwvn4rypdjpjrj\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5n2m2eeaat1ekmws1z\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m615wk5n2m2eeaat1ekmws1z.1794300237083.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m615wk5n2hdetbnps3dyc6ck\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n2hdetbnps3dyc6ck\"] > img[data-element=\"01m615wk5n2m2eeaat1ekmws1z\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616rj7h7hgpq5nppr41sh16\" data-lazy-src=\"01m6ggqbp5qmvvxye64sg94vxk.01m616rj7h7hgpq5nppr41sh16.1794300237083.svg\" style=\"width:157px;height:65px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggqg30w191nwvn0z4kpvf1\"] > div[data-layer-wrapper=\"01m616rj7h18qs7hay6zm1gy3g\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m616rj7h18qs7hay6zm1gy3g\"] > img[data-element=\"01m616rj7h7hgpq5nppr41sh16\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01jhjw4b6pnvccjxnayrhad5z5.1794300238423.webp\" style=\"object-fit:contain;object-position:99% 48%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jjvsdbt20xh798y50y27cn99\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01jjvsdbt20xh798y50y27cn99.1794300238424.webp\" style=\"object-fit:contain;object-position:99% 46%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01jjvsdbt2bt9y4fbk5jzby7yj\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jjvsdbt2bt9y4fbk5jzby7yj\"] > img[data-element=\"01jjvsdbt20xh798y50y27cn99\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01kcr6r6dnhd5ccksfg0pdg0cr.1794300238424.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616rj7hx5fh48r3xj6gws2j\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m616rj7hx5fh48r3xj6gws2j.1794300238424.svg\" style=\"width:167px;height:65px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m616rj7hkrg16s80bcbk1bjz\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m616rj7hkrg16s80bcbk1bjz\"] > img[data-element=\"01m616rj7hx5fh48r3xj6gws2j\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5mnh4bdqe0zehn3ett\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5mnh4bdqe0zehn3ett.1794300238425.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5ms8x9n44c1wag8kgf\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5ms8x9n44c1wag8kgf\"] > img[data-element=\"01m615wk5mnh4bdqe0zehn3ett\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5m30npd6drq6h98dq5\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5m30npd6drq6h98dq5.1794300238425.svg\" style=\"width:122px;height:22px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5mddcyrdkb2213qf63\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mddcyrdkb2213qf63\"] > img[data-element=\"01m615wk5m30npd6drq6h98dq5\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5m1mb02z6mgk8pm64b\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5m1mb02z6mgk8pm64b.1794300238426.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5mzpamb7w1ef39h88p\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mzpamb7w1ef39h88p\"] > img[data-element=\"01m615wk5m1mb02z6mgk8pm64b\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5mppm9v17yxwtv50p1\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5mppm9v17yxwtv50p1.1794300238426.svg\" style=\"width:125px;height:80px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5mddbyz2q66dzwtd5p\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mddbyz2q66dzwtd5p\"] > img[data-element=\"01m615wk5mppm9v17yxwtv50p1\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5n8ctr4zhmv58sn4kg\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5n8ctr4zhmv58sn4kg.1794300238426.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5n4qwxjrb416sfpvz6\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n4qwxjrb416sfpvz6\"] > img[data-element=\"01m615wk5n8ctr4zhmv58sn4kg\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5ng20c53465enccn1v\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5ng20c53465enccn1v.1794300238426.svg\" style=\"width:122px;height:22px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5nhbnsncnr4hs9an4y\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5nhbnsncnr4hs9an4y\"] > img[data-element=\"01m615wk5ng20c53465enccn1v\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5ntcmwvn4rypdjpjrj\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5ntcmwvn4rypdjpjrj.1794300238426.svg\" style=\"width:125px;height:80px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5n2pnarhw74vh6169h\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n2pnarhw74vh6169h\"] > img[data-element=\"01m615wk5ntcmwvn4rypdjpjrj\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5n2m2eeaat1ekmws1z\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m615wk5n2m2eeaat1ekmws1z.1794300238426.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m615wk5n2hdetbnps3dyc6ck\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n2hdetbnps3dyc6ck\"] > img[data-element=\"01m615wk5n2m2eeaat1ekmws1z\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616rj7h7hgpq5nppr41sh16\" data-lazy-src=\"01m6ggy8rwy5bqxyjxn4fabtm4.01m616rj7h7hgpq5nppr41sh16.1794300238427.svg\" style=\"width:157px;height:65px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8spj5cnv5qp71j7ddxc\"] > div[data-layer-wrapper=\"01m616rj7h18qs7hay6zm1gy3g\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m616rj7h18qs7hay6zm1gy3g\"] > img[data-element=\"01m616rj7h7hgpq5nppr41sh16\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01jhjw4b6pnvccjxnayrhad5z5.1794300242104.webp\" style=\"object-fit:contain;object-position:97% 48%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jjvsdbt20xh798y50y27cn99\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01jjvsdbt20xh798y50y27cn99.1794300242104.webp\" style=\"object-fit:contain;object-position:98% 47%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01jjvsdbt2bt9y4fbk5jzby7yj\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jjvsdbt2bt9y4fbk5jzby7yj\"] > img[data-element=\"01jjvsdbt20xh798y50y27cn99\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m8ema51afnp8fyf10pv485\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01m5m8ema51afnp8fyf10pv485.1794300242104.svg\" style=\"width:132px;height:132px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01m5m8ema52xtjqmq14f9v1e05\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m8ema52xtjqmq14f9v1e05\"] > img[data-element=\"01m5m8ema51afnp8fyf10pv485\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01k6z50kej49e4tdm473kkksth\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01k6z50kej49e4tdm473kkksth.1794300242104.svg\" style=\"width:167px;height:69px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01k6z50kejavxcbrahrrrrwtg2\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01k6z50kejavxcbrahrrrrwtg2\"] > img[data-element=\"01k6z50kej49e4tdm473kkksth\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m8cypdmy27qb7aqs804bsg\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01m5m8cypdmy27qb7aqs804bsg.1794300242105.svg\" style=\"width:112px;height:19px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01m5m8cypdmy27qb7aqs804bsg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5w53a3pt80c7tqwnrbc3dz8\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01m5w53a3pt80c7tqwnrbc3dz8.1794300242105.svg\" style=\"width:132px;height:132px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01m5w53a3pqn756vhkwz5g0s35\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5w53a3pqn756vhkwz5g0s35\"] > img[data-element=\"01m5w53a3pt80c7tqwnrbc3dz8\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01k6yy2vat06rkf4zbedgzcggj\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01k6yy2vat06rkf4zbedgzcggj.1794300242105.svg\" style=\"width:112px;height:19px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01k6yy2vat06rkf4zbedgzcggj\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01k99m1jrawkbed9xrf2fzvb1n\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01k99m1jrawkbed9xrf2fzvb1n.1794300242105.svg\" style=\"width:157px;height:69px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01k99m1jrafh14jcvqg36wjvbg\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01k99m1jrafh14jcvqg36wjvbg\"] > img[data-element=\"01k99m1jrawkbed9xrf2fzvb1n\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggyahvq2ckc0znm4942emp.01kcr6r6dnhd5ccksfg0pdg0cr.1794300242105.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggyaxjhbnhmr9q5aawjagx\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggyckf6gaqge8tyyjxp4we.01jhjw4b6pnvccjxnayrhad5z5.1794300246519.webp\" style=\"object-fit:contain;object-position:91% 49%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycm9sr7q65x1n1kj5f18\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" data-lazy-src=\"01m6ggyckf6gaqge8tyyjxp4we.01jtmt6kr63y7krg89y1ndg0cp.1794300246519.svg\" style=\"width:220px;height:149px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycm9sr7q65x1n1kj5f18\"] > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m7rmc2f2fywd4tfa1raknk\" data-lazy-src=\"01m6ggyckf6gaqge8tyyjxp4we.01m5m7rmc2f2fywd4tfa1raknk.1794300246519.svg\" style=\"width:152px;height:152px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycm9sr7q65x1n1kj5f18\"] > div[data-layer-wrapper=\"01m5m7rmc2k4xc6hrvzt5qrr94\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m7rmc2k4xc6hrvzt5qrr94\"] > img[data-element=\"01m5m7rmc2f2fywd4tfa1raknk\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggyckf6gaqge8tyyjxp4we.01kcr6r6dnhd5ccksfg0pdg0cr.1794300246519.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycm9sr7q65x1n1kj5f18\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggye2tde7mf8tvxwx88thw.01jhjw4b6pnvccjxnayrhad5z5.1794300247645.webp\" style=\"object-fit:contain;object-position:91% 49%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggye3p4bk3sf47kx9p233z\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" data-lazy-src=\"01m6ggye2tde7mf8tvxwx88thw.01jtmt6kr63y7krg89y1ndg0cp.1794300247645.svg\" style=\"width:220px;height:149px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggye3p4bk3sf47kx9p233z\"] > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m7rmc2f2fywd4tfa1raknk\" data-lazy-src=\"01m6ggye2tde7mf8tvxwx88thw.01m5m7rmc2f2fywd4tfa1raknk.1794300247645.svg\" style=\"width:152px;height:152px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggye3p4bk3sf47kx9p233z\"] > div[data-layer-wrapper=\"01m5m7rmc2k4xc6hrvzt5qrr94\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m7rmc2k4xc6hrvzt5qrr94\"] > img[data-element=\"01m5m7rmc2f2fywd4tfa1raknk\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggye2tde7mf8tvxwx88thw.01kcr6r6dnhd5ccksfg0pdg0cr.1794300247645.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggye3p4bk3sf47kx9p233z\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" data-lazy-src=\"01m6ggycf1vrze0638ecwzgvrx.01jhjw4b6pnvccjxnayrhad5z5.1794300244662.webp\" style=\"object-fit:contain;object-position:91% 49%\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycfz7070e7vn4fghd3wy\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr63y7krg89y1ndg0cp\" data-lazy-src=\"01m6ggycf1vrze0638ecwzgvrx.01jtmt6kr63y7krg89y1ndg0cp.1794300244662.svg\" style=\"width:220px;height:149px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycfz7070e7vn4fghd3wy\"] > div[data-layer-wrapper=\"01jtmt6kr6z06s59zz9gna2hag\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr6z06s59zz9gna2hag\"] > img[data-element=\"01jtmt6kr63y7krg89y1ndg0cp\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m5m7rmc2f2fywd4tfa1raknk\" data-lazy-src=\"01m6ggycf1vrze0638ecwzgvrx.01m5m7rmc2f2fywd4tfa1raknk.1794300244662.svg\" style=\"width:152px;height:152px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycfz7070e7vn4fghd3wy\"] > div[data-layer-wrapper=\"01m5m7rmc2k4xc6hrvzt5qrr94\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m5m7rmc2k4xc6hrvzt5qrr94\"] > img[data-element=\"01m5m7rmc2f2fywd4tfa1raknk\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmt6kr6dpj13rg58kssj265\" data-lazy-src=\"01m6ggycf1vrze0638ecwzgvrx.01jtmt6kr6dpj13rg58kssj265.1794300244662.svg\" style=\"width:138px;height:24px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycfz7070e7vn4fghd3wy\"] > div[data-layer-wrapper=\"01jtmt6kr661rpefcp6cmr7a1e\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jtmt6kr661rpefcp6cmr7a1e\"] > img[data-element=\"01jtmt6kr6dpj13rg58kssj265\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" data-lazy-src=\"01m6ggycf1vrze0638ecwzgvrx.01kcr6r6dnhd5ccksfg0pdg0cr.1794300244662.svg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggycfz7070e7vn4fghd3wy\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw4b6pnvccjxnayrhad5z5\" style=\"object-fit:contain;object-position:99% 48%\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01jhjw4b6pnvccjxnayrhad5z5.1794300237802.webp\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01jhjw4b6nc63q20a4f82e27tp\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jhjw4b6nc63q20a4f82e27tp\"] > img[data-element=\"01jhjw4b6pnvccjxnayrhad5z5\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jjvsdbt20xh798y50y27cn99\" style=\"object-fit:contain;object-position:99% 46%\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01jjvsdbt20xh798y50y27cn99.1794300237802.webp\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01jjvsdbt2bt9y4fbk5jzby7yj\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01jjvsdbt2bt9y4fbk5jzby7yj\"] > img[data-element=\"01jjvsdbt20xh798y50y27cn99\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01kcr6r6dnhd5ccksfg0pdg0cr.1794300237802.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01kcr6r6dn6r0yavxnvppx4zv3\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01kcr6r6dn6r0yavxnvppx4zv3\"] > img[data-element=\"01kcr6r6dnhd5ccksfg0pdg0cr\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616rj7hx5fh48r3xj6gws2j\" style=\"width:167px;height:65px\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m616rj7hx5fh48r3xj6gws2j.1794300237803.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m616rj7hkrg16s80bcbk1bjz\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m616rj7hkrg16s80bcbk1bjz\"] > img[data-element=\"01m616rj7hx5fh48r3xj6gws2j\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5mnh4bdqe0zehn3ett\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5mnh4bdqe0zehn3ett.1794300237803.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5ms8x9n44c1wag8kgf\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5ms8x9n44c1wag8kgf\"] > img[data-element=\"01m615wk5mnh4bdqe0zehn3ett\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5m30npd6drq6h98dq5\" style=\"width:122px;height:22px\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5m30npd6drq6h98dq5.1794300237804.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5mddcyrdkb2213qf63\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mddcyrdkb2213qf63\"] > img[data-element=\"01m615wk5m30npd6drq6h98dq5\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5m1mb02z6mgk8pm64b\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5m1mb02z6mgk8pm64b.1794300237804.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5mzpamb7w1ef39h88p\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mzpamb7w1ef39h88p\"] > img[data-element=\"01m615wk5m1mb02z6mgk8pm64b\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5mppm9v17yxwtv50p1\" style=\"width:125px;height:80px\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5mppm9v17yxwtv50p1.1794300237804.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5mddbyz2q66dzwtd5p\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5mddbyz2q66dzwtd5p\"] > img[data-element=\"01m615wk5mppm9v17yxwtv50p1\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5n8ctr4zhmv58sn4kg\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5n8ctr4zhmv58sn4kg.1794300237804.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5n4qwxjrb416sfpvz6\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n4qwxjrb416sfpvz6\"] > img[data-element=\"01m615wk5n8ctr4zhmv58sn4kg\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5ng20c53465enccn1v\" style=\"width:122px;height:22px\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5ng20c53465enccn1v.1794300237805.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5nhbnsncnr4hs9an4y\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5nhbnsncnr4hs9an4y\"] > img[data-element=\"01m615wk5ng20c53465enccn1v\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m615wk5ntcmwvn4rypdjpjrj\" style=\"width:125px;height:80px\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5ntcmwvn4rypdjpjrj.1794300237805.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5n2pnarhw74vh6169h\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n2pnarhw74vh6169h\"] > img[data-element=\"01m615wk5ntcmwvn4rypdjpjrj\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01m615wk5n2m2eeaat1ekmws1z\" style=\"object-fit:contain;object-position:50% 50%;transform-origin:0 0\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m615wk5n2m2eeaat1ekmws1z.1794300237805.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m615wk5n2hdetbnps3dyc6ck\"][data-layer-type=\"image\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m615wk5n2hdetbnps3dyc6ck\"] > img[data-element=\"01m615wk5n2m2eeaat1ekmws1z\"][data-element-type=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01m616rj7h7hgpq5nppr41sh16\" style=\"width:157px;height:65px\" src=\"01m6ggy8p2v8gmk4v46ff537g8.01m616rj7h7hgpq5nppr41sh16.1794300237806.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "div[data-layout=\"01m6ggy8pxsz6jwabsa6382j7j\"] > div[data-layer-wrapper=\"01m616rj7h18qs7hay6zm1gy3g\"][data-layer-type=\"text2\"] > div[data-layer-clip-wrapper=\"\"] > div[data-layer-hover-wrapper=\"\"] > div[data-layer=\"01m616rj7h18qs7hay6zm1gy3g\"] > img[data-element=\"01m616rj7h7hgpq5nppr41sh16\"][data-element-type=\"text2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmte86paqh96zpndaba2jnw\" src=\"static.01jtmte86paqh96zpndaba2jnw.1794300237083.svg\" style=\"width:964px;height:35px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01jtmte86paqh96zpndaba2jnw\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"image\" data-element=\"01jhjw2193rae5bxw3q5c6xck3\" src=\"static.01jhjw2193rae5bxw3q5c6xck3.1794300237083.svg\" style=\"object-fit:contain;object-position:50% 100%;transform-origin:0 0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01jhjw2193rae5bxw3q5c6xck3\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-element-type=\"text2\" data-element=\"01jtmtdeyga50shmyx66sptz2v\" src=\"static.01jtmtdeyga50shmyx66sptz2v.1794300237084.svg\" style=\"width:219px;height:35px\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img[data-element=\"01jtmtdeyga50shmyx66sptz2v\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.nordlys.no/vis/stillingledig/4583926?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Elektroingeniør, Vedlikehold\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide-active > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.nordlys.no/vis/stillingledig/4583737?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Leder IKT og prosesskontroll – Region Nord-Norge\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide-next > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.nordlys.no/vis/stillingledig/4585178?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Journalist\" target=\"_blank\">",
+          "target": [
+            "a[aria-label=\"Ledig stilling: Journalist\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" data-sitekey=\"nrdlys\" data-paywall=\"false\" data-pagemodel=\"rodimus\" data-isfrontpage=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"en\" id=\"ad\" class=\"desktop initialized ready\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "#ad"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html xmlns=\"https://www.w3.org/1999/xhtml\" style=\"margin:0;padding:0;\">",
+          "target": [
+            "#eaframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.nordlys.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.nordlys.no/tilbud\" publication=\"www.nordlys.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" locale=\"nb-NO\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layou...=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_topp...\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.nordlys.no/toppb...\" has-bid=\"\" render-count=\"1\" ...>",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

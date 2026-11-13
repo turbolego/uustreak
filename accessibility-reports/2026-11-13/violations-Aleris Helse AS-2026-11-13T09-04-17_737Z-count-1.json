@@ -1,0 +1,31 @@
+{
+  "project": "Aleris Helse AS",
+  "timestamp": "2026-11-13T09:04:17.737Z",
+  "url": "https://www.aleris.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>Bli med i trekningen av et gavekort på 1 000 kr</h3>",
+          "target": [
+            ".d100 > .styles_fade__h9B8v.styles_contentBlock___1KCQ.has-media > .styles_content__qFxgO.styles_contentPadding__AZGh2.styles_contentOnTop__9Vt15 > .styles_container__Qq32L.styles_alignLeft__YLs2e.styles_alignLeftLg__PUX2R > .styles_structuredText__G6NhJ.styles_html__zz6xy > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}
