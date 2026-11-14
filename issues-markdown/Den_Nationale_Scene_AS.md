@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-11-13T05:25:54.848Z
+**Timestamp:** 2026-11-14T08:45:52.637Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 6
 
@@ -138,7 +138,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(1) > td:nth-child(7)`
-  - **HTML:** `<td><div time="1793510742562" data-tooltip="" class="day toMonth valid ">1</div></td>`
+  - **HTML:** `<td><div time="1793522743286" data-tooltip="" class="day toMonth valid ">1</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(2)`
@@ -158,7 +158,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `tr:nth-child(6) > td:nth-child(1)`
-  - **HTML:** `<td><div time="1796016342562" data-tooltip="" class="day toMonth valid ">30</div></td>`
+  - **HTML:** `<td><div time="1796028343286" data-tooltip="" class="day toMonth valid ">30</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > thead > .caption > .month-name[colspan="5"]`
@@ -174,27 +174,27 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(2)`
-  - **HTML:** `<td><div time="1796102742562" data-tooltip="" class="day toMonth valid ">1</div></td>`
+  - **HTML:** `<td><div time="1796114743286" data-tooltip="" class="day toMonth valid ">1</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(3)`
-  - **HTML:** `<td><div time="1796189142562" data-tooltip="" class="day toMonth valid ">2</div></td>`
+  - **HTML:** `<td><div time="1796201143286" data-tooltip="" class="day toMonth valid ">2</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(4)`
-  - **HTML:** `<td><div time="1796275542562" data-tooltip="" class="day toMonth valid ">3</div></td>`
+  - **HTML:** `<td><div time="1796287543286" data-tooltip="" class="day toMonth valid ">3</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(5)`
-  - **HTML:** `<td><div time="1796361942562" data-tooltip="" class="day toMonth valid ">4</div></td>`
+  - **HTML:** `<td><div time="1796373943286" data-tooltip="" class="day toMonth valid ">4</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(6)`
-  - **HTML:** `<td><div time="1796448342562" data-tooltip="" class="day toMonth valid ">5</div></td>`
+  - **HTML:** `<td><div time="1796460343286" data-tooltip="" class="day toMonth valid ">5</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
-  - **HTML:** `<td><div time="1796534742562" data-tooltip="" class="day toMonth valid ">6</div></td>`
+  - **HTML:** `<td><div time="1796546743286" data-tooltip="" class="day toMonth valid ">6</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(2)`
@@ -210,19 +210,99 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(1)`
-  - **HTML:** `<td><div time="1798435542562" data-tooltip="" class="day toMonth valid ">28</div></td>`
+  - **HTML:** `<td><div time="1798447543286" data-tooltip="" class="day toMonth valid ">28</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(2)`
-  - **HTML:** `<td><div time="1798521942562" data-tooltip="" class="day toMonth valid ">29</div></td>`
+  - **HTML:** `<td><div time="1798533943286" data-tooltip="" class="day toMonth valid ">29</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(3)`
-  - **HTML:** `<td><div time="1798608342562" data-tooltip="" class="day toMonth valid ">30</div></td>`
+  - **HTML:** `<td><div time="1798620343286" data-tooltip="" class="day toMonth valid ">30</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(5) > td:nth-child(4)`
-  - **HTML:** `<td><div time="1798694742562" data-tooltip="" class="day toMonth valid ">31</div></td>`
+  - **HTML:** `<td><div time="1798706743286" data-tooltip="" class="day toMonth valid ">31</div></td>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+  - **HTML:** `<div class="attribute-spillested"> <p>Kipo Askøy / Fana kulturhus</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+  - **HTML:** `<div class="attribute-fritekst"> <p>Premiere 30. oktober</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+  - **HTML:** `<a href="https://dns.no/forestillinger/legenden-om-narnia-loven-heksa-og-klesskapet/"><h2>Legenden om Narnia – løven, heksa og klesskapet</h2></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/legenden-om-narnia-loven-heksa-og-klesskapet/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+  - **HTML:** `<div class="attribute-spillested"> <p>Fana kulturhus</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+  - **HTML:** `<div class="attribute-fritekst"> <p>Relæxt-forestilling 25. november</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+  - **HTML:** `<a href="https://dns.no/forestillinger/relaext-legenden-om-narnia-loven-heksa-og-klesskapet/"><h2>Relæxt Legenden om Narnia – løven, heksa og klesskapet</h2></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/relaext-legenden-om-narnia-loven-heksa-og-klesskapet/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+  - **HTML:** `<div class="attribute-spillested"> <p>Hallen USF</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+  - **HTML:** `<div class="attribute-fritekst"> <p>Spilles til 5. desember</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+  - **HTML:** `<a href="https://dns.no/forestillinger/ildens-historie/"><h2>Ildens historie</h2></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/ildens-historie/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+  - **HTML:** `<div class="attribute-spillested"> <p>Lille DNS</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+  - **HTML:** `<div class="attribute-fritekst"> <p>Tilbake fra 14. november</p> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+  - **HTML:** `<a href="https://dns.no/forestillinger/jul-i-brakmakergata/"><h2>Jul i Bråkmakergata</h2></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/jul-i-brakmakergata/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `div[data-postid="18786"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
@@ -283,86 +363,6 @@
 
 - **Target:** `div[data-postid="18037"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
   - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/triggersystemet/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-  - **HTML:** `<div class="attribute-spillested"> <p>Lille DNS</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-  - **HTML:** `<div class="attribute-fritekst"> <p>Tilbake fra 14. november</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-  - **HTML:** `<a href="https://dns.no/forestillinger/jul-i-brakmakergata/"><h2>Jul i Bråkmakergata</h2></a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/jul-i-brakmakergata/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-  - **HTML:** `<div class="attribute-spillested"> <p>Hallen USF</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-  - **HTML:** `<div class="attribute-fritekst"> <p>Spilles til 5. desember</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-  - **HTML:** `<a href="https://dns.no/forestillinger/ildens-historie/"><h2>Ildens historie</h2></a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/ildens-historie/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-  - **HTML:** `<div class="attribute-spillested"> <p>Kipo Askøy / Fana kulturhus</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-  - **HTML:** `<div class="attribute-fritekst"> <p>Premiere 30. oktober</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-  - **HTML:** `<a href="https://dns.no/forestillinger/legenden-om-narnia-loven-heksa-og-klesskapet/"><h2>Legenden om Narnia – løven, heksa og klesskapet</h2></a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/legenden-om-narnia-loven-heksa-og-klesskapet/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-  - **HTML:** `<div class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_fadeIn fadeIn wpb_start_animation animated">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-  - **HTML:** `<div class="attribute-spillested"> <p>Fana kulturhus</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-  - **HTML:** `<div class="attribute-fritekst"> <p>Relæxt-forestilling 25. november</p> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-  - **HTML:** `<a href="https://dns.no/forestillinger/relaext-legenden-om-narnia-loven-heksa-og-klesskapet/"><h2>Relæxt Legenden om Narnia – løven, heksa og klesskapet</h2></a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-  - **HTML:** `<div class="cal-ticketlink"> <p><a href="https://dns.no/forestillinger/relaext-legenden-om-narnia-loven-heksa-og-klesskapet/">Kjøp billetter <i class="fal fa-long-arrow-right"></i></a></p> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`

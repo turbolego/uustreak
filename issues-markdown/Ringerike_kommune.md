@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-11-13T05:46:21.681Z
+**Timestamp:** 2026-11-14T08:41:31.922Z
 **URL:** [https://www.ringerike.kommune.no/](https://www.ringerike.kommune.no/)
 **Total Violations:** 5
 
@@ -49,11 +49,15 @@
 
 #### Affected Elements:
 
+- **Target:** `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
+  - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/43a94943024d4bdc92c5ea3b6fe36c53.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 - **Target:** `a[href$="snokaos/"] > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
   - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/f52d8e5700e6443daf23114bf1f7e0c3.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(2) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
+- **Target:** `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(3) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
   - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/d78a8a49855543c4b6199aa2fc44988c.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -61,12 +65,8 @@
   - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/14e8bcd8e51b4df48c0141e1d73b63af.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(4) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
-  - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/a7234157ec7948e3b1a721b628d49cc2.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
 - **Target:** `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(5) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
-  - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/b3cf5618162e4ef2a868ba5d1f3c9e38.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
+  - **HTML:** `<img class="ssp__panel__news-image" data-original="/link/a7234157ec7948e3b1a721b628d49cc2.aspx" data-responsiveimage="true" width="204" height="" src="https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.komm…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `div[data-blockid="12423"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`

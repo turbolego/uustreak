@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-11-13T05:49:51.719Z
+**Timestamp:** 2026-11-14T09:00:30.186Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 5
 
@@ -57,7 +57,7 @@
 
 #### Affected Elements:
 
-- **Target:** `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+- **Target:** `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
   - **HTML:** `<div class="carousel" role="region" aria-roledescription="carousel">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
@@ -113,15 +113,15 @@
 
 #### Affected Elements:
 
-- **Target:** `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-  - **HTML:** `<ul class="carousel__slides">`
-  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
-
 - **Target:** `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
   - **HTML:** `<ul class="carousel__slides">`
   - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
 
-- **Target:** `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- **Target:** `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+  - **HTML:** `<ul class="carousel__slides">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+
+- **Target:** `.cms-recomendations:nth-child(14) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
   - **HTML:** `<ul class="carousel__slides">`
   - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
 

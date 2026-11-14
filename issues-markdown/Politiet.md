@@ -1,6 +1,6 @@
 # WCAG Violations Report for Politiet
 
-**Timestamp:** 2026-11-13T05:45:23.122Z
+**Timestamp:** 2026-11-14T08:39:47.544Z
 **URL:** [https://www.politiet.no/](https://www.politiet.no/)
 **Total Violations:** 2
 
@@ -17,16 +17,16 @@
 
 #### Affected Elements:
 
-- **Target:** `#politiloggen-thread-card--26n1fb`
-  - **HTML:** `<a href="https://www.politiet.no/politiloggen/hendelse/26n1fb/ost-politidistrikt-brann-moss" id="politiloggen-thread-card--26n1fb" aria-label="Gå til hendelse: Brann i Moss" class="relative flex flex-col p-sds-xs bg-neutral-surface-default…`
+- **Target:** `#politiloggen-thread-card--264n5l`
+  - **HTML:** `<a href="https://www.politiet..." id="politiloggen-thread-..." aria-label="Gå til hendelse: Ro ..." class="relative flex flex-c...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#politiloggen-thread-card--268frc`
-  - **HTML:** `<a href="https://www.politiet..." id="politiloggen-thread-..." aria-label="Gå til hendelse: Tra..." class="relative flex flex-c...">`
+- **Target:** `#politiloggen-thread-card--266j9j`
+  - **HTML:** `<a href="https://www.politiet..." id="politiloggen-thread-..." aria-label="Gå til hendelse: Ro ..." class="relative flex flex-c...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#politiloggen-thread-card--26ksgj`
-  - **HTML:** `<a href="https://www.politiet..." id="politiloggen-thread-..." aria-label="Gå til hendelse: Uly..." class="relative flex flex-c...">`
+- **Target:** `#politiloggen-thread-card--26vf9d`
+  - **HTML:** `<a href="https://www.politiet..." id="politiloggen-thread-..." aria-label="Gå til hendelse: Ro ..." class="relative flex flex-c...">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

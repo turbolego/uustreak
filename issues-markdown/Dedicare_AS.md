@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2026-11-13T05:25:37.728Z
+**Timestamp:** 2026-11-14T08:45:16.475Z
 **URL:** [https://www.dedicare.no/](https://www.dedicare.no/)
 **Total Violations:** 9
 
@@ -142,7 +142,7 @@
 #### Affected Elements:
 
 - **Target:** `iframe[title="reCAPTCHA"]`
-  - **HTML:** `<iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-rzfmwwugp1pj" frameborder="0" scrolling="no" sandbox="allow-forms allow-po..." src="https://www.google.c..." tabindex="-1">`
+  - **HTML:** `<iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-gl43tyc55gc0" frameborder="0" scrolling="no" sandbox="allow-forms allow-po..." src="https://www.google.c..." tabindex="-1">`
   - **Failure summary:** Fix all of the following: Element is not focusable.
 
 

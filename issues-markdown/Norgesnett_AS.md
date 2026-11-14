@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-11-13T05:45:55.021Z
+**Timestamp:** 2026-11-14T08:36:33.516Z
 **URL:** [https://www.glitrenett.no/](https://www.glitrenett.no/)
 **Total Violations:** 4
 
@@ -29,7 +29,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
@@ -39,10 +39,6 @@
 
 - **Target:** `.header__side-link--hidden-md.header__side-link.svelte-zoaqc2:nth-child(2) > .language-picker.svelte-rt3927 > .language-picker__list.svelte-rt3927 > .language-picker__option[lang="no"] > .language-picker__button--active.language-picker__button[aria-label="Norsk"]`
   - **HTML:** `<button class="language-picker__button svelte-rt3927 language-picker__button--active" aria-label="Norsk">NO</button>`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `.video__play-button`
-  - **HTML:** `<button class="video__play-button svelte-iv19hb" aria-label="Spill av">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

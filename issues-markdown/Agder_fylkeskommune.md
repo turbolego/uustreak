@@ -1,6 +1,6 @@
 # WCAG Violations Report for Agder fylkeskommune
 
-**Timestamp:** 2026-11-13T05:20:23.799Z
+**Timestamp:** 2026-11-14T08:32:45.067Z
 **URL:** [https://agderfk.no/](https://agderfk.no/)
 **Total Violations:** 1
 
@@ -13,9 +13,13 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
+
+- **Target:** `.global-message-box`
+  - **HTML:** `<div class="global-message-box">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.visually-hidden`
   - **HTML:** `<h1 class="visually-hidden"> Agder fylkeskommune </h1>`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vy Buss AS
 
-**Timestamp:** 2026-11-13T05:48:58.817Z
+**Timestamp:** 2026-11-14T09:00:43.843Z
 **URL:** [https://www.vybuss.no/#!/](https://www.vybuss.no/#!/)
 **Total Violations:** 6
 
@@ -18,19 +18,19 @@
 #### Affected Elements:
 
 - **Target:** `.expand-block__container:nth-child(1) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#9bfb6899d6e84d33bffff4f35868083a">Billettkjøp <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#05c8f45180004a95830c48a127db2400">Billettkjøp <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 - **Target:** `.expand-block__container:nth-child(2) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#e8e76f3ecfc649edb2006421575e5503">Reiseinformasjon <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#0fafae84eca54e01b02184352b96f126">Reiseinformasjon <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 - **Target:** `.expand-block__container:nth-child(3) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#6ec4b2151a2b463eb96506062c615bf2">Endring og avbestilling <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#f2a70b346ae94ccdbb5742de6f246b1c">Endring og avbestilling <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 - **Target:** `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#367c58efecc24de2af4690b63bdea2e2">Kundeservice <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#b7dae6414f534dd0b3561de53d4d4914">Kundeservice <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 
@@ -154,19 +154,19 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(1) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#9bfb6899d6e84d33bffff4f35868083a">Billettkjøp <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#05c8f45180004a95830c48a127db2400">Billettkjøp <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(2) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#e8e76f3ecfc649edb2006421575e5503">Reiseinformasjon <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#0fafae84eca54e01b02184352b96f126">Reiseinformasjon <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(3) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#6ec4b2151a2b463eb96506062c615bf2">Endring og avbestilling <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#f2a70b346ae94ccdbb5742de6f246b1c">Endring og avbestilling <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#367c58efecc24de2af4690b63bdea2e2">Kundeservice <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#b7dae6414f534dd0b3561de53d4d4914">Kundeservice <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.js-group-block.block__wrapper:nth-child(4)`

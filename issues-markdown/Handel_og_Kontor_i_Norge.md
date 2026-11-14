@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-11-13T05:30:57.913Z
+**Timestamp:** 2026-11-14T08:55:13.680Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 5
 
@@ -53,11 +53,11 @@
 
 #### Affected Elements:
 
-- **Target:** `#slick-slide11 > div > .uagb-post__inner-wrap > h5`
+- **Target:** `#slick-slide01 > div > .uagb-post__inner-wrap > h5`
   - **HTML:** `<h5 class="uagb-post__title uagb-post__text"> <a href="https://hk.no/2026/11/temu-shein-og-uregulert-netthandel/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">Temu, Shein og uregulert netthandel</a> </h5>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
-- **Target:** `#slick-slide02 > div > .uagb-post__inner-wrap > h5`
+- **Target:** `#slick-slide12 > div > .uagb-post__inner-wrap > h5`
   - **HTML:** `<h5 class="uagb-post__title uagb-post__text"> <a href="https://hk.no/bransjer/fagbevegelse/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">Fagbevegelse</a> </h5>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
@@ -73,19 +73,19 @@
 
 #### Affected Elements:
 
-- **Target:** `#slick-slide11 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- **Target:** `#slick-slide01 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
   - **HTML:** `<a href="https://hk.no/2026/11/temu-shein-og-uregulert-netthandel/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#slick-slide12 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- **Target:** `#slick-slide02 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
   - **HTML:** `<a href="https://hk.no/2026/11/resultatet-for-ansatte-i-norsk-sykepleierforbund-er-klart/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- **Target:** `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
   - **HTML:** `<a href="https://hk.no/2026/11/enighet-om-ny-overenskomst-for-ansatte-i-norges-fiskarlag-m-fl/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- **Target:** `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
   - **HTML:** `<a href="https://hk.no/bransjer/finans-og-eiendom/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 

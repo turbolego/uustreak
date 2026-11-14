@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2026-11-13T05:25:55.528Z
+**Timestamp:** 2026-11-14T08:43:51.412Z
 **URL:** [https://www.dn.no/](https://www.dn.no/)
 **Total Violations:** 7
 
@@ -13,89 +13,73 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 43
+- **Count:** 45
 
 #### Affected Elements:
 
+- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(1) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,25% </span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,27% </span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
 - **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,11% </span>`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,17% </span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,12% </span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,12% </span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2073660"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>utenriks</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2072111"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>energi</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2073666"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>dn ekspress</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2073219"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- **Target:** `a[data-id="2-1-2070785"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
   - **HTML:** `<span>jus</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2073473"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>børs</span>`
+- **Target:** `a[data-id="2-1-2074248"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>utenriks</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2073086"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>politikk</span>`
+- **Target:** `a[data-id="6-1-bOC6FtUg"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
+  - **HTML:** `<span>smak</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2070824"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-  - **HTML:** `<span>Helg</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2070824"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-  - **HTML:** `<span>bøker</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2055770"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- **Target:** `a[data-id="2-1-2073941"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
   - **HTML:** `<span>eiendom</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="6-1-6ttTmBYA"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
-  - **HTML:** `<span>næringsliv</span>`
+- **Target:** `a[data-id="2-1-2073748"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>eiendom</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2068073"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- **Target:** `a[data-id="2-1-2074130"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>børs</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2073828"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>makroøkonomi</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="6-1-fTmqLkY7"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
+  - **HTML:** `<span>d2</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2073781"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>forsvar og sikkerhet</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2063477"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
   - **HTML:** `<span>D2</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2068073"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-  - **HTML:** `<span>stilkoden</span>`
+- **Target:** `a[data-id="2-1-2063477"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>mine penger</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2073016"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>finans</span>`
+- **Target:** `a[data-id="2-1-2062535"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>jus</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2073087"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- **Target:** `a[data-id="6-1-LLKV82Ak"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
   - **HTML:** `<span>finans</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2060649"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-  - **HTML:** `<span>Helg</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2060649"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-  - **HTML:** `<span>biltest</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(3) > article > .kicker > span`
-  - **HTML:** `<span>Skuld</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(4) > article > .kicker > span`
   - **HTML:** `<span>Vow ASA</span>`
@@ -109,77 +93,101 @@
   - **HTML:** `<span>Eltera Gruppen AS</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2064069"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>finans</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+- **Target:** `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(7) > article > .kicker > span`
+  - **HTML:** `<span>Lyse AS</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2067626"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>privatøkonomi</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="6-1-LLKV82Ak"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
-  - **HTML:** `<span>finans</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2072580"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>politikk</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2072639"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>finans</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2072590"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>politikk</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="6-1-UfR8IegY"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
-  - **HTML:** `<span>finans</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `a[data-id="2-1-2065991"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-  - **HTML:** `<span>D2</span>`
+- **Target:** `a[data-id="2-1-2070820"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+  - **HTML:** `<span>Helg</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2065991"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-  - **HTML:** `<span>mitt kjøretøy</span>`
+- **Target:** `a[data-id="2-1-2070820"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>musikk</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2067699"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>politikk</span>`
+- **Target:** `a[data-id="2-1-2070823"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+  - **HTML:** `<span>Helg</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2070823"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>film og serier</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2067765"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+  - **HTML:** `<span>Smak</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2067765"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>restaurantguiden</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `article[data-teaser_type="cpp-article-custom"] > .meta > span`
+  - **HTML:** `<span>Nyhetsstudio</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2073752"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>finans</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2068139"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>finans</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `a[data-id="2-1-2071442"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
   - **HTML:** `<span>finans</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2062442"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>teknologi</span>`
+- **Target:** `a[data-id="2-1-2072639"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>finans</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2073035"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-  - **HTML:** `<span>børs</span>`
+- **Target:** `a[data-id="2-1-2072111"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>energi</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2072940"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- **Target:** `.dn-teaser-card-b\+ > article[data-teaser_type="cpp-video-common"] > .meta > span`
+  - **HTML:** `<span>finans</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2067227"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+  - **HTML:** `<span>Smak</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2067227"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>vin</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2073719"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
   - **HTML:** `<span>utenriks</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2063662"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- **Target:** `a[data-id="2-1-2068073"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
   - **HTML:** `<span>D2</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-2063662"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-  - **HTML:** `<span>arkitektur</span>`
+- **Target:** `a[data-id="2-1-2068073"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>stilkoden</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-1993823"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-  - **HTML:** `<span>D2</span>`
+- **Target:** `a[data-id="2-1-2073730"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>børs</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[data-id="2-1-1993823"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-  - **HTML:** `<span>tingenes tilstand</span>`
+- **Target:** `a[data-id="2-1-2074065"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>fiske</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2067699"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+  - **HTML:** `<span>politikk</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2019191"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+  - **HTML:** `<span>Helg</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[data-id="2-1-2019191"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+  - **HTML:** `<span>lederintervjuet</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `a[data-id="6-1-kS0ptoU9"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
   - **HTML:** `<span>finans</span>`
@@ -277,7 +285,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 97
+- **Count:** 100
 
 #### Affected Elements:
 
@@ -285,80 +293,120 @@
   - **HTML:** `<span data-v-a56f3944="">Investor</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(1)`
-  - **HTML:** `<a data-v-a56f3944="" class="item item-increased" href="https://www.dn.no/investor/indeks/X3/Hovedindeksen+p%c3%a5+Oslo+B%c3%b8rs">`
+- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(1) > .item-holder[data-v-a56f3944=""]`
+  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">Oslo Børs</span><span data-v-a56f3944="" class="item-value">2&nbsp;111,77</span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-decreased > .item-holder[data-v-a56f3944=""]`
-  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">Oljepris</span><span data-v-a56f3944="" class="item-value">95,47</span></div>`
+- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(1) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,25% </span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-difference-decreased`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage item-difference-decreased">−0,34% </span>`
+- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(2) > .item-holder[data-v-a56f3944=""]`
+  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">Oljepris</span><span data-v-a56f3944="" class="item-value">96,06</span></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,27% </span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-holder[data-v-a56f3944=""]`
-  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">USD</span><span data-v-a56f3944="" class="item-value">9,56</span></div>`
+  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">USD</span><span data-v-a56f3944="" class="item-value">9,57</span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,11% </span>`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,17% </span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
-  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">SEK</span><span data-v-a56f3944="" class="item-value">95,38</span></div>`
+- **Target:** `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
+  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">SEK</span><span data-v-a56f3944="" class="item-value">94,93</span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,12% </span>`
+- **Target:** `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage item-difference-decreased">−0,36% </span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
-  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">EUR</span><span data-v-a56f3944="" class="item-value">10,58</span></div>`
+- **Target:** `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
+  - **HTML:** `<div data-v-a56f3944="" class="item-holder"><span data-v-a56f3944="" class="item-name">EUR</span><span data-v-a56f3944="" class="item-value">10,55</span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage investor-bar__item-difference-increased">0,12% </span>`
+- **Target:** `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+  - **HTML:** `<span data-v-a56f3944="" class="item-difference item-percentage item-difference-decreased">−0,18% </span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.dn-edition-collection-top > .layout-b.dn-grid.dn-grid-layout:nth-child(2)`
-  - **HTML:** `<section class="dn-grid dn-grid-layout layout-b" data-list="">`
+- **Target:** `a[data-id="2-1-2073754"]`
+  - **HTML:** `<a href="/magasinet/marked/ma..." rel="noopener" class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073754" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2072111"]`
-  - **HTML:** `<a href="/energi/aker/norsk-i..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2072111" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+- **Target:** `a[data-id="2-1-2070785"]`
+  - **HTML:** `<a href="/jus/kvotering/hunte..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2070785" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073628"]`
-  - **HTML:** `<a href="/bors/jensen-huang/r..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073628" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- **Target:** `a[data-id="2-1-2073716"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
   - **HTML:** `<div class="dn-card_assets">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-  - **HTML:** `<span>Eva Grinde</span>`
+- **Target:** `a[data-id="2-1-2073716"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Simen Ekern</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->KI-influenser eller oljefondssjef?<!--]--></h3>`
+- **Target:** `a[data-id="2-1-2073716"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Ny roman om lyssky tek­fyrste legger seg ubehagelig tett opp til virkeligheten<!--]--></h3>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- **Target:** `a[data-id="2-1-2073716"] > article[data-teaser_type="cpp-article-dn"] > .meta`
   - **HTML:** `<div class="meta"><!--[--><!----><span>kommentar</span><!----><!----><!--]--></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(3) > .layout-b.dn-grid.dn-grid-layout`
+- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(2) > .layout-b.dn-grid.dn-grid-layout`
   - **HTML:** `<section class="dn-grid dn-grid-layout layout-b" data-list="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.layout-b.dn-grid.dn-grid-layout:nth-child(5)`
+- **Target:** `div[disallowadsbelow="true"]`
+  - **HTML:** `<div class="dn-group" disallowadsbelow="true" allowads="false">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="6-1-bOC6FtUg"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
+  - **HTML:** `<div class="dn-card_assets">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="6-1-bOC6FtUg"] > article[data-teaser_type="cpp-video-common"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Slik serverer Bent Stiansen søndags­middagen<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="6-1-bOC6FtUg"] > article[data-teaser_type="cpp-video-common"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>smak</span><!----><!----><!--]--></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="6-1-bOC6FtUg"] > article[data-teaser_type="cpp-video-common"] > .badge > span`
+  - **HTML:** `<span>01:51</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073941"]`
+  - **HTML:** `<a href="/eiendom/strandeiend..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073941" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2072514"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+  - **HTML:** `<div class="dn-card_assets">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2072514"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Bård Bjerkholt</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2072514"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Et overpriset røverkjøp<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2072514"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>kommentar</span><!----><!----><!--]--></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(5) > .layout-b.dn-grid.dn-grid-layout`
   - **HTML:** `<section class="dn-grid dn-grid-layout layout-b" data-list="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073219"]`
-  - **HTML:** `<a href="/jus/miris/jan-gunna..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2073219" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
+- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(7) > .layout-abb.dn-grid.dn-grid-layout`
+  - **HTML:** `<section class="dn-grid dn-grid-layout layout-abb" data-list="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-id="6-1-fTmqLkY7"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
@@ -366,171 +414,59 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-id="6-1-fTmqLkY7"] > article[data-teaser_type="cpp-video-common"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->– Uten merch hadde jeg ikke jobbet her<!--]--></h3>`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->– Uten merch hadde jeg ikke jobbet i Wiersholm<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="6-1-fTmqLkY7"] > article[data-teaser_type="cpp-video-common"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>d2</span><!----><!----><!--]--></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-id="6-1-fTmqLkY7"] > article[data-teaser_type="cpp-video-common"] > .badge > span`
   - **HTML:** `<span>01:05</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073473"]`
-  - **HTML:** `<a href="/bors/wall-street-fa..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073473" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(6) > .layout-bb.dn-grid.dn-grid-layout`
-  - **HTML:** `<section class="dn-grid dn-grid-layout layout-bb" data-list="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `div[disallowadsbelow="true"]`
-  - **HTML:** `<div class="dn-group" disallowadsbelow="true" allowads="false">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.brand[allowads="false"][disallowadsbelow="false"]:nth-child(9) > .dn-group-header`
-  - **HTML:** `<div class="dn-group-header"><!--[--><h3 class="dn-headline--subhead header" data-v-95b1487b=""><!--[--><!----> Nvidia-skandalen<!--]--></h3><!--]--><!----></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.dn-teaser-card-b\+`
-  - **HTML:** `<a href="/bors/nvidia/colette..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073505" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-nlc_180497"]`
-  - **HTML:** `<a href="https://direkte.dn.no/nyhetsstudio/#180497" rel="noopener" class="dn-link dn-teaser-card dn-teaser-card-b dn-image-auto dn-image-format-auto dn-image-mobile-auto" style="" data-id="2-1-nlc_180497" data_layout="" state="published" …`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.opinion-font > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- **Target:** `a[data-id="2-1-2073225"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
   - **HTML:** `<div class="dn-card_assets">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.opinion-font > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-  - **HTML:** `<span>Bård Bjerkholt</span>`
+- **Target:** `a[data-id="2-1-2073225"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Håkon Tretvoll</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.opinion-font > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->I en annen liga<!--]--></h3>`
+- **Target:** `a[data-id="2-1-2073225"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Norge gir bistand til kunder av russisk militær­industri<!--]--></h3>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.opinion-font > article[data-teaser_type="cpp-article-dn"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>kommentar</span><!----><!----><!--]--></div>`
+- **Target:** `a[data-id="2-1-2073225"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>innlegg</span><!----><!----><!--]--></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="6-1-ufn1NJiL"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
+- **Target:** `a[data-id="2-1-2073783"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
   - **HTML:** `<div class="dn-card_assets">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="6-1-ufn1NJiL"] > article[data-teaser_type="cpp-video-common"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b="">DNs finansredaktør:<br>– Fra «self-made man» til «self-destruction man»</h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-ufn1NJiL"] > article[data-teaser_type="cpp-video-common"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>finans</span><!----><!----><!--]--></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-ufn1NJiL"] > article[data-teaser_type="cpp-video-common"] > .badge > span`
-  - **HTML:** `<span>01:40</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2055770"]`
-  - **HTML:** `<a href="/eiendom/bygdoy/boli..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2055770" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-6ttTmBYA"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
-  - **HTML:** `<div class="dn-card_assets">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-6ttTmBYA"] > article[data-teaser_type="cpp-video-common"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Disse koster mer enn 14.000<!--]--></h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-6ttTmBYA"] > article[data-teaser_type="cpp-video-common"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>næringsliv</span><!----><!----><!--]--></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-6ttTmBYA"] > article[data-teaser_type="cpp-video-common"] > .badge > span`
-  - **HTML:** `<span>00:55</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2068073"]`
-  - **HTML:** `<a href="/d2/stilkoden/nrk/st..." rel="noopener" class="dn-link dn-teaser-ca..." style="" data-id="2-1-2068073" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2072501"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-  - **HTML:** `<div class="dn-card_assets">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2072501"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-  - **HTML:** `<span>Håvarstein og Mogstad</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2072501"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Stoltenberg vil kutte feil skatt<!--]--></h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2072501"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>fredagskronikken</span><!----><!----><!--]--></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2073016"]`
-  - **HTML:** `<a href="/marked/nvidia/jense..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2073016" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2073098"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-  - **HTML:** `<div class="dn-card_assets">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2073098"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- **Target:** `a[data-id="2-1-2073783"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
   - **HTML:** `<span>DN mener:</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073098"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Frp sier en ting og gjør noe annet<!--]--></h3>`
+- **Target:** `a[data-id="2-1-2073783"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Interesse­konflikten kan få NHO til å revne på midten<!--]--></h3>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073098"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- **Target:** `a[data-id="2-1-2073783"] > article[data-teaser_type="cpp-article-dn"] > .meta`
   - **HTML:** `<div class="meta"><!--[--><!----><span>leder</span><!----><!----><!--]--></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073087"]`
-  - **HTML:** `<a href="/marked/dn-investor/..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2073087" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+- **Target:** `a[data-id="2-1-2073781"]`
+  - **HTML:** `<a href="/forsvar-og-sikkerhe..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073781" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(14) > .layout-b.dn-grid.dn-grid-layout`
+- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(10) > .layout-b.dn-grid.dn-grid-layout`
   - **HTML:** `<section class="dn-grid dn-grid-layout layout-b" data-list="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[href$="dnjobb.no/"] > span`
-  - **HTML:** `<span>DN Jobb</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.dn-job-button`
-  - **HTML:** `<div class="dn-job-button">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.dn-job-carousel`
-  - **HTML:** `<div class="dn-job-carousel">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2064069"]`
-  - **HTML:** `<a href="/marked/espen-aubert..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2064069" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2067626"]`
-  - **HTML:** `<a href="/privatokonomi/betal..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2067626" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2068110"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-  - **HTML:** `<div class="dn-card_assets">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2068110"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-  - **HTML:** `<span>Anne Rokkan</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2068110"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Folk tåler ikke sannheten<!--]--></h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="2-1-2068110"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>kommentar</span><!----><!----><!--]--></div>`
+- **Target:** `div[grouptype="Audience Engagement 1"] > .layout-abb.dn-grid.dn-grid-layout`
+  - **HTML:** `<section class="dn-grid dn-grid-layout layout-abb" data-list="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-id="6-1-LLKV82Ak"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
@@ -549,64 +485,132 @@
   - **HTML:** `<span>00:59</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.dn-group[allowads="false"][disallowadsbelow="false"]:nth-child(18) > .layout-bba.dn-grid.dn-grid-layout`
+- **Target:** `a[href$="dnjobb.no/"] > span`
+  - **HTML:** `<span>DN Jobb</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.dn-job-button`
+  - **HTML:** `<div class="dn-job-button">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.dn-job-carousel`
+  - **HTML:** `<div class="dn-job-carousel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.layout-bba.dn-grid.dn-grid-layout:nth-child(14)`
   - **HTML:** `<section class="dn-grid dn-grid-layout layout-bba" data-list="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-UfR8IegY"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
-  - **HTML:** `<div class="dn-card_assets">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-UfR8IegY"] > article[data-teaser_type="cpp-video-common"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->DNB-duo: – Uansett hva du sier, blir det feil<!--]--></h3>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-UfR8IegY"] > article[data-teaser_type="cpp-video-common"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>finans</span><!----><!----><!--]--></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `a[data-id="6-1-UfR8IegY"] > article[data-teaser_type="cpp-video-common"] > .badge > span`
-  - **HTML:** `<span>02:34</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `dn-video-carousel, .carousel__header`
   - **HTML:** `<div class="carousel__header"> <h2>Korte videoer</h2> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.brand[allowads="false"][disallowadsbelow="false"]:nth-child(21)`
-  - **HTML:** `<div class="dn-group brand" disallowadsbelow="false" allowads="false">`
+- **Target:** `a[data-id="2-1-2073833"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+  - **HTML:** `<div class="dn-card_assets">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073833"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Thor Chr. Jensen</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073833"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Nscale kan bare glemme nødhjelp<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073833"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>børskommentar</span><!----><!----><!--]--></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-nlc_180519"]`
+  - **HTML:** `<a href="https://direkte.dn.no/nyhetsstudio/#180519" rel="noopener" class="dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-auto dn-image-mobile-auto" style="" data-id="2-1-nlc_180519" data_layout="" state="pu…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073752"]`
+  - **HTML:** `<a href="/marked/nscale/aker/..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073752" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `div[grouptype="Audience Engagement 2"]`
   - **HTML:** `<div class="dn-group" grouptype="Audience Engagement 2" disallowadsbelow="false">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073194"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- **Target:** `a[data-id="2-1-2072111"]`
+  - **HTML:** `<a href="/energi/aker/norsk-i..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2072111" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073364"]`
+  - **HTML:** `<a href="/marked/dn-investor/..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073364" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.dn-teaser-card-b\+ > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
   - **HTML:** `<div class="dn-card_assets">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073194"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-  - **HTML:** `<span>Thor Chr. Jensen</span>`
+- **Target:** `.dn-teaser-card-b\+ > article[data-teaser_type="cpp-video-common"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b="">DNs finansredaktør:<br>– Fra «self-made man» til «self-destruction man»</h3>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073194"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Selvfølgelig er det flere tilfeller av utroskap<!--]--></h3>`
+- **Target:** `.dn-teaser-card-b\+ > article[data-teaser_type="cpp-video-common"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>finans</span><!----><!----><!--]--></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073194"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-  - **HTML:** `<div class="meta"><!--[--><!----><span>børskommentar</span><!----><!----><!--]--></div>`
+- **Target:** `.dn-teaser-card-b\+ > article[data-teaser_type="cpp-video-common"] > .badge > span`
+  - **HTML:** `<span>01:40</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2073035"]`
-  - **HTML:** `<a href="/bors/oslo-bors/flat..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2073035" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
+- **Target:** `a[data-id="2-1-2067227"]`
+  - **HTML:** `<a href="/smak/vin/bordeaux-e..." rel="noopener" class="dn-link dn-teaser-ca..." style="" data-id="2-1-2067227" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-id="2-1-2072940"]`
-  - **HTML:** `<a href="/utenriks/nvidia/jen..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2072940" data_layout="" state="published" body_length="0" headline_font="" life_span="1" data-v-f09df42b="">`
+- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+  - **HTML:** `<div class="dn-card_assets">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[grouptype="Audience Engagement 3"] > .layout-abb.dn-grid.dn-grid-layout`
+- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Eva Grinde</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->I beste fall umusikalsk<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2072982"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>kommentar</span><!----><!----><!--]--></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073719"]`
+  - **HTML:** `<a href="/utenriks/nvidia/jen..." class="dn-link dn-teaser-ca..." style="--title-chars-estima..." data-id="2-1-2073719" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.layout-abb.dn-grid.dn-grid-layout:nth-child(22)`
   - **HTML:** `<section class="dn-grid dn-grid-layout layout-abb" data-list="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073770"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+  - **HTML:** `<div class="dn-card_assets">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073770"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Vegard Bye</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073770"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->Kan få konsekvenser langt utover det vi aner<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073770"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>innlegg</span><!----><!----><!--]--></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2074065"]`
+  - **HTML:** `<a href="/fiske/krill/aker/ak..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2074065" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2067699"]`
+  - **HTML:** `<a href="/politikk/jens-stolt..." class="dn-link dn-teaser-ca..." style="" data-id="2-1-2067699" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2019191"]`
+  - **HTML:** `<a href="/magasinet/lederinte..." rel="noopener" class="dn-link dn-teaser-ca..." style="" data-id="2-1-2019191" data_layout="" state="published" body_length="0" headline_font="" life_span="3" data-v-f09df42b="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-id="6-1-kS0ptoU9"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`
@@ -623,6 +627,22 @@
 
 - **Target:** `a[data-id="6-1-kS0ptoU9"] > article[data-teaser_type="cpp-video-common"] > .badge > span`
   - **HTML:** `<span>00:57</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073183"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+  - **HTML:** `<div class="dn-card_assets">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073183"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+  - **HTML:** `<span>Bård Bjerkholt</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073183"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+  - **HTML:** `<h3 class="dn-headline--subhead title" data-v-95b1487b=""><!--[-->I en annen liga<!--]--></h3>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-id="2-1-2073183"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+  - **HTML:** `<div class="meta"><!--[--><!----><span>kommentar</span><!----><!----><!--]--></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-id="6-1-YVWJntEY"] > article[data-teaser_type="cpp-video-common"] > .dn-card_assets`

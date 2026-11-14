@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-11-13T05:50:10.787Z
+**Timestamp:** 2026-11-14T08:46:48.058Z
 **URL:** [https://www.stavanger.kommune.no/](https://www.stavanger.kommune.no/)
 **Total Violations:** 2
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `div[role="complementary"]`
-  - **HTML:** `<div class="row" role="complementary"> <div class="col wider"> <div> <div></div> </div> </div> </div>`
+  - **HTML:** `<div class="row" role="complementary">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
 

@@ -1,10 +1,66 @@
 # WCAG Violations Report for Norgesbuss AS
 
-**Timestamp:** 2026-11-13T05:42:38.273Z
+**Timestamp:** 2026-11-14T08:36:19.743Z
 **URL:** [https://www.connectbus.no/](https://www.connectbus.no/)
-**Total Violations:** 1
+**Total Violations:** 4
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#\35 50531764993`
+  - **HTML:** `<iframe width="1" height="1" src="about:blank" id="550531764993" scrolling="no" marginwidth="0" marginheight="0" noresize="0" border="0" frameborder="0" framespacing="0" background="transparent" allowtransparency="allowTransparency" style=…`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- **Target:** `html`
+  - **HTML:** `<html lang="no">`
+  - **Failure summary:** Fix all of the following: Document does not have a main landmark
+
+- **Target:** `#\35 50531764993, html`
+  - **HTML:** `<html><head></head><body marginwidth="0" marginheight="0"></body></html>`
+  - **Failure summary:** Fix all of the following: Document does not have a main landmark
+
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- **Target:** `html`
+  - **HTML:** `<html lang="no">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
+- **Target:** `#\35 50531764993, html`
+  - **HTML:** `<html><head></head><body marginwidth="0" marginheight="0"></body></html>`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### All page content should be contained by landmarks
 

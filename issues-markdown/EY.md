@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-11-13T05:27:39.662Z
+**Timestamp:** 2026-11-14T08:47:41.458Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -61,8 +61,8 @@
 
 #### Affected Elements:
 
-- **Target:** `img[width="1280"]`
-  - **HTML:** `<img src="/adobe/dynamicmedia/..." srcset="/adobe/dynamicmedia/..." loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="1280" height="854" alt="Bildeav vinnere unde..." title="EY Entrepreneur Of T...">`
+- **Target:** `#image-render-bd6c3e038a > .cmp-image__image[height="2561"][width="3840"]`
+  - **HTML:** `<img src="/adobe/dynamicmedia/..." srcset="/adobe/dynamicmedia/..." loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="3840" height="2561" alt="Nasjonal finalist fr..." title="Vinner region Midt- ...">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.swiper-slide-visible > .up-hero-carousel__content-wrapper[data-up-hook-hero-carousel="contentWrapper"]`

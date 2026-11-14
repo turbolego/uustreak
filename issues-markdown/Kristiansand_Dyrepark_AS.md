@@ -1,10 +1,26 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-11-13T05:37:31.383Z
+**Timestamp:** 2026-11-14T09:02:28.148Z
 **URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Source:** Embedded code from Innhold i iframe
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.entered, #movie_player`
+  - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color ytp-fit-cover-video ytp-large-width-mode" tabindex="" id="movie_player" data-version="/s/player/fad7e4e9/player_embed_es…`
+  - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on "div" elements with no valid role attribute.
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -85,7 +101,7 @@
   - **HTML:** `<a href="https://www.dyreparken.no/opplevelser/dyrepresentasjon-orangutang/" title="" data-object-fit="cover" class="c-grid__item__image">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.c-billboard--poster > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- **Target:** `.c-billboard--right.c-billboard--poster.c-billboard--variant-default > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
   - **HTML:** `<a href="https://www.dyreparken.no/ekstradag/" target="_blank" itemscope="itemscope" itemtype="http://schema.org/ImageObject" data-object-fit="cover" class="c-billboard__image">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 

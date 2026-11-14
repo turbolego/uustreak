@@ -1,6 +1,6 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2026-11-13T05:26:37.237Z
+**Timestamp:** 2026-11-14T08:45:38.802Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
 **Total Violations:** 5
 
@@ -89,36 +89,36 @@
   - **HTML:** `<button type="button" aria-expanded="false" aria-controls="cmp-site-selector-dialog" aria-label="nettstedvelger">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-3f521d3c`
-  - **HTML:** `<a class="cmp-promo-tracking cmp-promo-curated" target="_self" data-promo-category="curated" aria-label="Eventer" data-promo-name="Eventer" data-cq-id="199cde92" href="/no/no/events.html" data-bs-target="#promo-modal-3f521d3c" id="promo-v3…`
+- **Target:** `#promo-v3-c86adeb9`
+  - **HTML:** `<a class="cmp-promo-tracking cmp-promo-curated" target="_self" data-promo-category="curated" aria-label="Eventer" data-promo-name="Eventer" data-cq-id="199cde92" href="/no/no/events.html" data-bs-target="#promo-modal-c86adeb9" id="promo-v3…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-f170c60b`
+- **Target:** `#promo-v3-a1ba5e1d`
   - **HTML:** `<a class="cmp-promo-tracking c..." target="_self" data-promo-category="curated" aria-label="Slik jobber vi med f..." data-promo-name="Slik jobber vi med f..." data-cq-id="a3e31ea3" href="/no/no/Industries/de..." data-bs-target="#promo-moda…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-9bcff264`
+- **Target:** `#promo-v3-b7a2265c`
   - **HTML:** `<a class="cmp-promo-tracking c..." target="_self" data-promo-category="curated" aria-label="The Future of Consum..." data-promo-content-t...="Industry" data-promo-name="The Future of Consum..." data-cq-id="a1fcea96" href="/no/no/Industries…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-cd61f86e`
+- **Target:** `#promo-v3-5026eb34`
   - **HTML:** `<a class="cmp-promo-tracking c..." target="_self" data-promo-category="curated" aria-label="State of AI in the N..." data-promo-content-t...="Research" data-promo-name="State of AI in the N..." data-cq-id="f1ab7601" href="/no/no/Industries…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-2a5cf120`
+- **Target:** `#promo-v3-a085e864`
   - **HTML:** `<a class="cmp-promo-tracking c..." target="_self" data-promo-category="curated" aria-label="AI Customer Agent Se..." data-promo-content-t...="Collection" data-promo-name="AI Customer Agent Se..." data-cq-id="b3d2f3c7" href="/no/no/services…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-f57ad8f2`
+- **Target:** `#promo-v3-3af94328`
   - **HTML:** `<a class="cmp-promo-tracking c..." target="_self" data-promo-category="curated" aria-label="Års- og bærekraftsra..." data-promo-name="Års- og bærekraftsra..." data-cq-id="43e4fa5" href="/no/no/about/governa..." data-bs-target="#promo-modal…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-73da91cf`
+- **Target:** `#promo-v3-5e6c9663`
   - **HTML:** `<a class="cmp-promo-tracking c..." target="_self" data-promo-category="curated" aria-label="A Nordic outlook on ..." data-promo-name="A Nordic outlook on ..." data-cq-id="72a317f6" href="/no/no/services/cons..." data-bs-target="#promo-moda…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `#promo-v3-e8c85031`
-  - **HTML:** `<a class="cmp-promo-tracking c..." rel="noopener" target="_blank" data-promo-category="curated" aria-label="Meld deg på vårt nyh..." data-promo-name="Meld deg på vårt nyh..." href="https://nor.deloitte..." data-bs-target="#promo-modal-e8c8…`
+- **Target:** `#promo-v3-fbbbbd3a`
+  - **HTML:** `<a class="cmp-promo-tracking c..." rel="noopener" target="_blank" data-promo-category="curated" aria-label="Meld deg på vårt nyh..." data-promo-name="Meld deg på vårt nyh..." href="https://nor.deloitte..." data-bs-target="#promo-modal-fbbb…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.ot-cookie-policy-link`

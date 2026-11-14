@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2026-11-13T05:21:09.653Z
+**Timestamp:** 2026-11-14T08:33:30.745Z
 **URL:** [https://aktiv.no/](https://aktiv.no/)
 **Total Violations:** 3
 
@@ -38,7 +38,7 @@
 #### Affected Elements:
 
 - **Target:** `.ProjectsSliderContentV2_item__XyMYZ:nth-child(1) > .ProjectsSliderContentV2_link__jiC_D.ProjectsSliderContentV2_linkInheritsColor__8yyxz > .ProjectsSliderContentV2_contentWrapper__F2Xkp > .ProjectsSliderContentV2_title__Jz1iE.ProjectsSliderContentV2_addressTitle__hh_pM`
-  - **HTML:** `<h3 class="ProjectsSliderContentV2_title__Jz1iE ProjectsSliderContentV2_addressTitle__hh_pM">Stordalsvegen 11</h3>`
+  - **HTML:** `<h3 class="ProjectsSliderContentV2_title__Jz1iE ProjectsSliderContentV2_addressTitle__hh_pM">Myklandvegen 114B</h3>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
 

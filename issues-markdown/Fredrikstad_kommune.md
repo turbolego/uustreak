@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-11-13T05:29:51.206Z
+**Timestamp:** 2026-11-14T08:53:42.926Z
 **URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -53,7 +53,7 @@
   - **HTML:** `<p class="font-semibold text-xl"> <a href="/driftsmeldinger" class="no-underline hover:underline text-black">Driftsmeldinger</a> </p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.wrapper > ul > li > .hover\:underline.text-black.no-underline`
+- **Target:** `.wrapper > ul > li > .text-black.hover\:underline.no-underline`
   - **HTML:** `<a href="/driftsmeldinger/feil-i-rutetider-paa-byferga-aalekilene-gamlebyen/" title="Feil i rutetider på byferga Ålekilene - Gamlebyen" class="no-underline hover:underline text-black">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -68,64 +68,4 @@
 - **Target:** `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`
   - **HTML:** `<p class="text-xl font-medium text-gray-700">Fant du det du lette etter?</p>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-
-### <svg> elements with an img or image role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 12
-
-#### Affected Elements:
-
-- **Target:** `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" width="1em" height="1em" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1695449"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" width="1em" height="1em" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1695449"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1695449"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1756543"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" width="1em" height="1em" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1756543"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1756543"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1753506"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" width="1em" height="1em" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1753506"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
-
-- **Target:** `a[href="/kalender?id=1753506"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-fk-blue" fill="none" viewBox="0 0 24 24" focusable="false" role="img">`
-  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
 

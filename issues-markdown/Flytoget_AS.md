@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-11-13T05:28:58.124Z
+**Timestamp:** 2026-11-14T08:52:35.686Z
 **URL:** [https://flytoget.no/](https://flytoget.no/)
 **Total Violations:** 7
 
@@ -101,16 +101,12 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 10
+- **Count:** 9
 
 #### Affected Elements:
 
 - **Target:** `.skip-to-main`
   - **HTML:** `<a class="skip-to-main" href="#main-content">Gå til hovedinnholdet</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.travel-warning`
-  - **HTML:** `<div class="travel-warning">Sjekk din avgang for detaljer om reisen</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.travel-input-from`
@@ -125,16 +121,16 @@
   - **HTML:** `<div class="date-label-container">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[title="06:36"]`
-  - **HTML:** `<div class="col-xs-4 departure" title="06:36" date-fulldate="2026-11-13_06-36">8 min</div>`
+- **Target:** `div[title="10:10"]`
+  - **HTML:** `<div class="col-xs-4 departure" title="10:10" date-fulldate="2026-11-14_10-10">10:10</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.primary-row > .arrival.col-xs-4`
-  - **HTML:** `<div class="col-xs-4 arrival">07:07<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M16.3 11.7L9 3.5l-7.3 8.2-1.4-1.4L9 .5l8.7 9.8z"></path></svg></div>`
+  - **HTML:** `<div class="col-xs-4 arrival">10:32<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M16.3 11.7L9 3.5l-7.3 8.2-1.4-1.4L9 .5l8.7 9.8z"></path></svg></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.secondary-row`
-  - **HTML:** `<div class="row secondary-row"><div class="col-xs-4 departure"><div class="track">Spor null</div></div><div class="col-xs-4 center-col"></div><div class="col-xs-4 arrival"><div class="track">Spor null</div></div></div>`
+  - **HTML:** `<div class="row secondary-row"><div class="col-xs-4 departure"><div class="track">Spor 3</div></div><div class="col-xs-4 center-col"></div><div class="col-xs-4 arrival"><div class="track">Spor 2</div></div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.travel-results-button-container`

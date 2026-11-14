@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-11-13T05:48:36.395Z
+**Timestamp:** 2026-11-14T08:59:43.147Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
-**Total Violations:** 9
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -25,11 +25,11 @@
   - **HTML:** `<button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="en">Allow all</button>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.61 (foreground color: #ffffff, background color: #a87f50, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#widgetContainer, div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-  - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">13 Nov 2026</p>`
+- **Target:** `#widgetContainer, button[aria-controls="radix-P0-2"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+  - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">Choose date</p>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3 (foreground color: #b68e58, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#widgetContainer, div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+- **Target:** `#widgetContainer, button[aria-controls="radix-P0-3"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
   - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">1 accommodation, 2 guests</p>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3 (foreground color: #b68e58, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
@@ -88,26 +88,6 @@
 - **Target:** `.fusion-title-12 > h6`
   - **HTML:** `<h6 class="fusion-title-heading title-heading-center" style="margin:0;text-transform:uppercase;">Arranger ditt</h6>`
   - **Failure summary:** Fix any of the following: Heading order invalid
-
-
-### Elements must have their visible text as part of their accessible name
-
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 2
-
-#### Affected Elements:
-
-- **Target:** `#widgetContainer, div[aria-label="Choose date"]`
-  - **HTML:** `<div aria-label="Choose date" aria-expanded="false" aria-haspopup="dialog" role="button" tabindex="0" class="flex w-full max-w-fu...">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `#widgetContainer, div[aria-label="Accommodations and guests"]`
-  - **HTML:** `<div aria-label="Accommodations and g..." role="button" tabindex="0" class="flex w-full max-w-fu...">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 
 ### Main landmark should not be contained in another landmark
@@ -174,26 +154,6 @@
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 
-### Interactive controls must not be nested
-
-- **Impact:** serious
-- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- **Target:** `#widgetContainer, button[aria-controls="radix-P0-2"]`
-  - **HTML:** `<button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-P0-2" data-state="closed">`
-  - **Failure summary:** Fix any of the following: Element has focusable descendants. Move them outside of the element, or remove them.
-
-- **Target:** `#widgetContainer, button[aria-controls="radix-P0-3"]`
-  - **HTML:** `<button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-P0-3" data-state="closed">`
-  - **Failure summary:** Fix any of the following: Element has focusable descendants. Move them outside of the element, or remove them.
-
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -241,15 +201,15 @@
   - **HTML:** `<div class="fusion-fullwidth ful..." style="--link_hover_color: ...">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div:nth-child(25)`
+- **Target:** `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
+  - **HTML:** `<div class="rc-anchor-invisible-text"><span>beskyttet av <strong>reCAPTCHA</strong></span><div class="rc-anchor-pt"></div></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div:nth-child(29)`
   - **HTML:** `<div style="position: fixed; wid...">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div:nth-child(26)`
+- **Target:** `div:nth-child(30)`
   - **HTML:** `<div style="position: fixed; lef...">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
-  - **HTML:** `<div class="rc-anchor-invisible-text"><span>beskyttet av <strong>reCAPTCHA</strong></span><div class="rc-anchor-pt"></div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

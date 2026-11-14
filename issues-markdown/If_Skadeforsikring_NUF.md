@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-11-13T05:35:19.733Z
+**Timestamp:** 2026-11-14T08:58:13.412Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 3
 
@@ -37,7 +37,7 @@
   - **HTML:** `<img class="if size-100p object-..." loading="lazy" alt="Vi forsikrer bedrift..." src="https://v.imgi.no/yy..." srcset="https://v.imgi.no/yy..." sizes="(max-width: 450px) 4..." role="presentation">`
   - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
 
-- **Target:** `#\30 fc2750271e54262b02e59d84ea43005 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- **Target:** `#\39 01f5871b0c0450cbafb17b570a17aac > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
   - **HTML:** `<img class="if size-100p object-..." loading="lazy" alt="Kan navnet på en sto..." src="https://v.imgi.no/up..." srcset="https://v.imgi.no/up..." sizes="(max-width: 450px) 4..." role="presentation">`
   - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#\32 8a8dfdb8eea4a6cb4c540295fd870d0 > .weight-medium`
+- **Target:** `#\32 0f228ea3ec648f5b601b2a50a3ad8f6 > .weight-medium`
   - **HTML:** `<h4 class="if typography ui medium weight-medium">Jeg vil ...</h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
@@ -69,7 +69,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#\32 8a8dfdb8eea4a6cb4c540295fd870d0`
-  - **HTML:** `<nav class="if flex-column gap-16" id="28a8dfdb8eea4a6cb4c540295fd870d0">`
+- **Target:** `#\32 0f228ea3ec648f5b601b2a50a3ad8f6`
+  - **HTML:** `<nav class="if flex-column gap-16" id="20f228ea3ec648f5b601b2a50a3ad8f6">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 

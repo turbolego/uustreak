@@ -1,6 +1,6 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-11-13T05:20:39.164Z
+**Timestamp:** 2026-11-14T08:32:03.974Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
 **Total Violations:** 6
 
@@ -61,7 +61,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
@@ -91,10 +91,6 @@
 
 - **Target:** `img[width="5700"]`
   - **HTML:** `<img alt="" width="5700" height="3798" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
-  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
-
-- **Target:** `.tile-solutions-icon.icon-accent[aria-label=""]`
-  - **HTML:** `<img alt="" title="" aria-label="" sizes="100vw" class="material-icons-outli..." loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
   - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
 
 - **Target:** `.SWPImage_islhh-image__Hi_E2`

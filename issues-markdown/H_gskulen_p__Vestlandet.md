@@ -1,6 +1,6 @@
 # WCAG Violations Report for Høgskulen på Vestlandet
 
-**Timestamp:** 2026-11-13T05:30:45.892Z
+**Timestamp:** 2026-11-14T08:58:00.591Z
 **URL:** [https://www.hvl.no/](https://www.hvl.no/)
 **Total Violations:** 3
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `li:nth-child(1) > .teaser-new.teaser-new--img-small > .teaser-new__body > .teaser-new__body-inner > .teaser-new__header > h4`
-  - **HTML:** `<h4 class="teaser-new__heading"> <a href="/aktuelt/hvl-blir-med-i-europeisk-ki-nettverk/">HVL blir med i europeisk KI-nettverk</a> </h4>`
+  - **HTML:** `<h4 class="teaser-new__heading"> <a href="/aktuelt/malthe/">Tek tak i anbefalingane frå Malthe-Sørenssen-utvalet</a> </h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
 

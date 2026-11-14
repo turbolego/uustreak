@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-11-13T05:37:46.543Z
+**Timestamp:** 2026-11-14T08:59:49.245Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 6
 
@@ -13,9 +13,21 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 11
+- **Count:** 14
 
 #### Affected Elements:
+
+- **Target:** `.et_pb_slide_title > a[href$="jvbtur.no"]`
+  - **HTML:** `<a href="https://jvbtur.no">REIS KOMFORTABELT MED JVB TUR</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2 between the foreground and shadow color (foreground color: #4c4e5b, text-shadow color: #181e33, font size: 39.8pt (53px), font weight: normal). Expected contrast ratio …
+
+- **Target:** `.et_pb_slide_1 > .et_pb_container.clearfix > .et_pb_slider_container_inner > .et_pb_slide_description > .et_pb_slide_content > p > span`
+  - **HTML:** `<span>Bli med på innholdsrike bussreiser i Norge og Europa. Vi sørger for trygg transport, gode opplevelser og hyggelig reisefølge hele veien.</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.98 between the foreground and shadow color (foreground color: #4c4e5b, text-shadow color: #181f34, font size: 13.5pt (18px), font weight: normal). Expected contrast rat…
+
+- **Target:** `.et_pb_more_button.et_pb_button[href$="jvbtur.no"]`
+  - **HTML:** `<a class="et_pb_button et_pb_more_button" href="https://jvbtur.no">Se våre turer</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.9 (foreground color: #4c4e5b, background color: #1b223a, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.et_pb_text_5 > .et_pb_text_inner > p`
   - **HTML:** `<p>Mer info om r<span>utetider og billettkjøp finner du her</span>&nbsp;›</p>`

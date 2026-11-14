@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-11-13T05:39:42.818Z
+**Timestamp:** 2026-11-14T09:05:43.149Z
 **URL:** [https://kuben.vgs.no/](https://kuben.vgs.no/)
 **Total Violations:** 6
 
@@ -38,7 +38,7 @@
 #### Affected Elements:
 
 - **Target:** `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, #movie_player`
-  - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode" tabindex="" id="movie_player" data-version="/s/player/d65a3158/player_embed_es6.vflset/nb…`
+  - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode" tabindex="" id="movie_player" data-version="/s/player/fad7e4e9/player_embed_es6.vflset/nb…`
   - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on "div" elements with no valid role attribute.
 
 - **Target:** `iframe[title="YouTube-video"], #movie_player`

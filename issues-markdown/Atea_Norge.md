@@ -1,8 +1,8 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-11-13T05:22:07.881Z
+**Timestamp:** 2026-11-14T08:36:28.462Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -36,6 +36,38 @@
 - **Target:** `#menuTarget, .nav__primary--icon`
   - **HTML:** `<span _ngcontent-ng-c4232304864="" role="button" tabindex="0" class="nav__primary--icon offline ng-star-inserted">`
   - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Source:** Embedded code from Innhold i iframe
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#widget2, #movie_player`
+  - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color ytp-fit-cover-video ytp-large-width-mode" tabindex="" id="movie_player" data-version="/s/player/fad7e4e9/player_embed_es…`
+  - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on "div" elements with no valid role attribute.
+
+
+### Frames with focusable content must not have tabindex=-1
+
+- **Impact:** serious
+- **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
+- **Source:** Embedded code from Innhold i iframe
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-focusable-content?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#widget2, html`
+  - **HTML:** `<html lang="no" dir="ltr" data-cast-api-enabled="true">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
 
 
 ### Elements must have their visible text as part of their accessible name

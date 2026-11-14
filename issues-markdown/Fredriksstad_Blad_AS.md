@@ -1,10 +1,26 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-11-13T05:29:39.535Z
+**Timestamp:** 2026-11-14T08:53:19.048Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 6
+**Total Violations:** 10
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cbb`
+  - **HTML:** `<div id="cbb" class="cbb" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Buttons must have discernible text
 
@@ -22,6 +38,22 @@
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+  - **HTML:** `<span class="ad-text_location">Gamle Fredrikstad</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
 ### Frames must have an accessible name
 
 - **Impact:** serious
@@ -29,9 +61,13 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
+  - **HTML:** `<iframe data-creative-load-l...="" id="200_287_express_html..." src="https://s0.2mdn.net/..." width="980" height="300" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 980px; height...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 - **Target:** `#eaframe`
   - **HTML:** `<iframe frameborder="no" id="eaframe" name="eaframe" width="980" height="350" scrolling="no" src="javascript:window[&quot;contents&quot;]" style="width: 100%; height: 350px;"></iframe>`
@@ -42,30 +78,74 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Source:** Embedded code from Innhold i iframe
+- **Source:** Embedded code from Annonser and Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 45
+- **Count:** 50
 
 #### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #logo`
+  - **HTML:** `<img id="logo" src="logo.svg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #cta`
+  - **HTML:** `<img id="cta" src="cta.svg" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #maintext`
+  - **HTML:** `<img id="maintext" src="maintext.svg" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #subtext_01`
+  - **HTML:** `<img id="subtext_01" src="subtext_01.svg" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, -5);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #subtext_02`
+  - **HTML:** `<img id="subtext_02" src="subtext_02.svg" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #plaster`
+  - **HTML:** `<img id="plaster" src="plaster.png" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .avis-logo`
   - **HTML:** `<img class="avis-logo" src="//r.api.no/local/v3/publications/www.f-b.no/gfx/small-positive.svg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794424121_67520.webp" loading="lazy">`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794240496_82146.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11327054 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/d8/43/d84321266fdd70f8d4416dd04914f514" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11327054 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png">`
+- **Target:** `#eaframe, #brokerimage-container-11323324 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1517400455_16105.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794500806_85099.webp" loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, #brokerimage-container-11332071 > .brokerimage[loading="lazy"]`
+  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/f3/00/f3004806c3d0eb411436f83a29aabaf6" loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, #brokerimage-container-11332071 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1677573007_73935.png">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794586202_48752.webp" loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, #brokerimage-container-11336234 > .brokerimage[loading="lazy"]`
+  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/99/a0/99a01d77cc81c732c2a1227f59ca02eb" loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, #brokerimage-container-11336234 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
   - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794228833_63063.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -77,51 +157,19 @@
   - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/data/groups/51/1789683930_20556.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794542920_43238.webp" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11332984 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/26/aa/26aa0f79fac7b631f98af564f2bb810e" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11332984 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794510270_72034.webp" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11332606 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/33/13/3313313fc9a9d2e5e274ca80407fa5ab" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11332606 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1674057976_45843.png">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794424119_76138.webp" loading="lazy">`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794424121_67520.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11327053 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/ad/48/ad48b13b3887d0dcab313cd082f5f7cf" loading="lazy">`
+- **Target:** `#eaframe, #brokerimage-container-11327054 > .brokerimage[loading="lazy"]`
+  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/d8/43/d84321266fdd70f8d4416dd04914f514" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11327053 > .brokerinfo-container > .brokerlogo`
+- **Target:** `#eaframe, #brokerimage-container-11327054 > .brokerinfo-container > .brokerlogo`
   - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794326915_41519.webp" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11324972 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1745321478_96686.png">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
   - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794240492_30577.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -133,8 +181,8 @@
   - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1530169795_64954.jpg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794542905_13984.webp" loading="lazy">`
+- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1794581722_89508.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, #brokerimage-container-11332982 > .brokerimage[loading="lazy"]`
@@ -145,7 +193,7 @@
   - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1677573007_73935.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
   - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794251262_99944.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -155,6 +203,18 @@
 
 - **Target:** `#eaframe, #brokerimage-container-11323666 > .brokerinfo-container > .brokerlogo`
   - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1745321478_96686.png">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794456505_88996.webp" loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, #brokerimage-container-11327447 > .brokerimage[loading="lazy"]`
+  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/49/e2/49e289d99cd5f454e041d5b6be8fa35a" loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `#eaframe, #brokerimage-container-11327447 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1517400455_16105.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
@@ -170,39 +230,35 @@
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794067693_89920.webp" loading="lazy">`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794326915_41519.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11321446 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/8a/61/8a61f6f95190eba7749adf8d2fb3b75b" loading="lazy">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `#eaframe, #brokerimage-container-11321446 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/data/groups/51/1789683930_20556.png">`
+- **Target:** `#eaframe, #brokerimage-container-11324972 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1745321478_96686.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794500806_85099.webp" loading="lazy">`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794424119_76138.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11332071 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/f3/00/f3004806c3d0eb411436f83a29aabaf6" loading="lazy">`
+- **Target:** `#eaframe, #brokerimage-container-11327053 > .brokerimage[loading="lazy"]`
+  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/ad/48/ad48b13b3887d0dcab313cd082f5f7cf" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11332071 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1677573007_73935.png">`
+- **Target:** `#eaframe, #brokerimage-container-11327053 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(13) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794067706_42585.webp" loading="lazy">`
+  - **HTML:** `<img class="shoutimage" src="https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1794510270_72034.webp" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11321449 > .brokerimage[loading="lazy"]`
-  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/d1/00/d1007ecd45aaa60fb3867787999269d1" loading="lazy">`
+- **Target:** `#eaframe, #brokerimage-container-11332606 > .brokerimage[loading="lazy"]`
+  - **HTML:** `<img class="brokerimage" src="https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/33/13/3313313fc9a9d2e5e274ca80407fa5ab" loading="lazy">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `#eaframe, #brokerimage-container-11321449 > .brokerinfo-container > .brokerlogo`
-  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1517400455_16105.png">`
+- **Target:** `#eaframe, #brokerimage-container-11332606 > .brokerinfo-container > .brokerlogo`
+  - **HTML:** `<img class="brokerlogo" src="https://cdn.easy-ads.com/subscriber/upload/groups/1674057976_45843.png">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `#eaframe, .ad-container.swiper-slide:nth-child(14) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
@@ -230,6 +286,22 @@
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"]`
+  - **HTML:** `<a href="https://www.f-b.no/vis/stillingledig/4583729?ref=jobcarousel" class="tivoli-job-ad fokus" tabindex="0" aria-label="Ledig stilling: Assisterende driftssjef - avløpsrensing og biogass" target="_blank">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
@@ -242,8 +314,24 @@
 #### Affected Elements:
 
 - **Target:** `brick-carousel-v3[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
-  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-b560b115-fc26-4298-941b-ad604f7fccb4">`
+  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-04c5e271-da54-41de-9ccc-a7fe15245ef6">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #banner`
+  - **HTML:** `<a id="banner" href="javascript:window.open(window.clickTag)">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 
 ### Elements marked as presentational should be consistently ignored

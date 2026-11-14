@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-11-13T05:50:53.653Z
+**Timestamp:** 2026-11-14T08:52:54.587Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 5
 
@@ -54,31 +54,31 @@
 #### Affected Elements:
 
 - **Target:** `.swiper-slide-active > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 - **Target:** `.swiper-slide-next > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 - **Target:** `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(3) > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 - **Target:** `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(4) > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 - **Target:** `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(5) > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 - **Target:** `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(6) > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 - **Target:** `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(7) > .spotlight-product-card.border[ondragstart="return false"] > .main-stock.stock[size="14px"]`
-  - **HTML:** `<li data-v-add167ed="" data-v-3b329d1d="" class="main-stock stock" size="14px">`
+  - **HTML:** `<li data-v-add167ed="" data-v-e94a8129="" class="main-stock stock" size="14px">`
   - **Failure summary:** Fix any of the following: List item does not have a <ul> or <ol> parent element. Ensure the <li> is a direct child of a <ul> or <ol>, or that the parent has role="list".
 
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2026-11-13T05:31:20.941Z
+**Timestamp:** 2026-11-14T08:57:34.650Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 4
 
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - **Target:** `.styles_contact__3TsYS > ul`
-  - **HTML:** `<ul><a href="tel:+4775987781">+4775987781</a><a href="mailto:booking@hurtigruten.com">booking@hurtigruten.com</a><a href="/nb-no/hjelp/kontakt-oss">Kontakt oss</a></ul>`
+  - **HTML:** `<ul><a href="tel:+4777597046">775 97 046</a><a href="mailto:booking@hurtigruten.com">booking@hurtigruten.com</a><a href="/nb-no/hjelp/kontakt-oss">Kontakt oss</a></ul>`
   - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: a
 
 

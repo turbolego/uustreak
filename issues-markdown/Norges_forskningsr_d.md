@@ -1,8 +1,8 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-11-13T05:44:42.647Z
+**Timestamp:** 2026-11-14T08:35:51.878Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
-**Total Violations:** 4
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -22,6 +22,22 @@
   - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
 
 
+### ARIA attributes must conform to valid values
+
+- **Impact:** critical
+- **Description:** Ensure all ARIA attributes have valid values
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.message-global--open-button`
+  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_7d7658ba-d707-4858-a2ec-79fe0224034e" type="button" class="button message-global--open-button button--has-children">`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="MG_7d7658ba-d707-4858-a2ec-79fe0224034e"
+
+
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
@@ -36,6 +52,22 @@
 - **Target:** `.link-with-text:nth-child(1) > h3`
   - **HTML:** `<h3>`
   - **Failure summary:** Fix any of the following: Heading order invalid
+
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.message-global--open-button`
+  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_7d7658ba-d707-4858-a2ec-79fe0224034e" type="button" class="button message-global--open-button button--has-children">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 
 ### Document should not have more than one banner landmark
@@ -72,4 +104,20 @@
 - **Target:** `.tab-menu`
   - **HTML:** `<nav class="tab-menu">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.message-global--collapse`
+  - **HTML:** `<div class="message-global--collapse message-global--collapse--use-intrinsic-height">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

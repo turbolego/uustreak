@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-11-13T05:36:14.074Z
+**Timestamp:** 2026-11-14T09:00:01.083Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -49,36 +49,32 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
+- **Target:** `.snap-start:nth-child(1) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
+  - **HTML:** `<a aria-label="Se mer Sovesofa m/sjeselong TEGLHUSE beige stoff" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/stue/sovesofaer/sovesofa-m-sjeselong-teglhuse-beige-stoff#DyProductRecommendations">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
 - **Target:** `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/soverom/madrasser/overmadrasser/overmadrass-90x200-wellpur-gulen-hvit#DyProductRecommendations">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `a[aria-describedby="3288232-_r_9_"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" aria-describedby="3288232-_r_9_" class="cursor-pointer text-left no-underline text-xs font-bold pt-1 pb-2" href="/soverom/madrasser/overmadrasser/overmadrass-90x200-wellpur-gulen-hvit#DyProductRecommendati…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `.snap-start:nth-child(2) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
-  - **HTML:** `<a aria-label="Se mer Gardinskinne FIXI 250cm (2x125) hvit" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/gardiner/gardinstenger-og-tilbehor/gardinstenger-og-gardinskinner/gardinskinne-fixi-250cm-2x125-hv…`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/stue/sovesofaer/sovesofa-m-sjeselong-teglhuse-beige-stoff#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/gardiner/gardinstenger-og-tilbehor/gardinstenger-og-gardinskinner/gardinskinne-fixi-250cm-2x125-hvit#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/baderom/handklaer/badehandkle-nora-70x140cm-mork-sand#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
-- **Target:** `.snap-start:nth-child(3) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
-  - **HTML:** `<a aria-label="Se mer Reolmodul SKALS skap 2 dører hvit" data-testid="product-pdp-link" tabindex="0" class="cursor-pointer w-full" href="/oppbevaring/bokhyller-og-reoler/reolmodul-skals-skap-2-dorer-hvit#DyProductRecommendations">`
+- **Target:** `.pt-1`
+  - **HTML:** `<a aria-label="Lenke til produkt" aria-describedby="2349451-_r_7_" class="cursor-pointer text-left no-underline text-xs font-bold pt-1 pb-2" href="/baderom/handklaer/badehandkle-nora-70x140cm-mork-sand#DyProductRecommendations">+ flere stø…`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/oppbevaring/bokhyller-og-reoler/reolmodul-skals-skap-2-dorer-hvit#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/inngangsparti/entremobler/entrebenker/benk-badsted-m-oppbevaring-beige-stoff#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 - **Target:** `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/oppbevaring/bokhyller-og-reoler/bokreol-mosbjerg-10-hyller-natur-villeikfarget#DyProductRecommendations">`
+  - **HTML:** `<a aria-label="Lenke til produkt" class="cursor-pointer text-left no-underline" href="/spisestue/spisestoler/spisestol-purhus-offwhite-svart#DyProductRecommendations">`
   - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
 
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-11-13T05:47:15.648Z
+**Timestamp:** 2026-11-14T08:39:14.724Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
 **Total Violations:** 7
 
@@ -22,91 +22,91 @@
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.is-live`
-  - **HTML:** `<button class="play-button is-large-button is-live pulse show play" style="--primary-color:#c7017f;--contrast-color:#ffffff;--pulse-color-visible:rgba(199,1,127,0.4);--pulse-color-invisible:rgba(199,1,127,0);" data-v-a8d03b29="" data-v-db0…`
+  - **HTML:** `<button class="play-button is-large-button is-live pulse show play" style="--primary-color:#c7017f;--contrast-color:#ffffff;--pulse-color-visible:rgba(199,1,127,0.4);--pulse-color-invisible:rgba(199,1,127,0);" data-v-d0ba64b7="" data-v-db0…`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `.engagement-buttons[data-v-4b932298=""][data-v-a8d03b29=""] > .dislike[type="button"][data-v-4b932298=""]`
+- **Target:** `.engagement-buttons[data-v-4b932298=""][data-v-d0ba64b7=""] > .dislike[type="button"][data-v-4b932298=""]`
   - **HTML:** `<button data-v-4b932298="" type="button" class="dislike" disabled="" style="--button-size: 36px;">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `.engagement-buttons[data-v-4b932298=""][data-v-a8d03b29=""] > .like[data-v-ff04d4eb=""][type="button"]`
+- **Target:** `.engagement-buttons[data-v-4b932298=""][data-v-d0ba64b7=""] > .like[data-v-ff04d4eb=""][type="button"]`
   - **HTML:** `<button data-v-ff04d4eb="" data-v-4b932298="" type="button" class="like" disabled="" style="--button-size: 36px;"><div data-v-ff04d4eb="" class="lottie"><canvas width="54" height="54" style="height: 100%; width: 100%;"></canvas></div></but…`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-a8d03b29=""] > .close[data-v-484baac5=""]`
+- **Target:** `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-d0ba64b7=""] > .close[data-v-484baac5=""]`
   - **HTML:** `<button class="close" data-v-484baac5="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `.image-container[data-v-65f253e6=""] > .play-button.pulse.show`
-  - **HTML:** `<button class="play-button pulse show" style="" data-v-65f253e6="" data-v-db0c13d4="">`
+- **Target:** `.image-container[data-v-bbce7311=""] > .play-button.pulse.show`
+  - **HTML:** `<button class="play-button pulse show" style="" data-v-bbce7311="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.play-button.pulse[data-v-2e87abb0=""]`
   - **HTML:** `<button class="play-button pulse show" style="" data-v-2e87abb0="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
-- **Target:** `.title-container[data-v-65f253e6=""] > .stroked.inverted.play-button`
-  - **HTML:** `<button class="play-button pulse inverted stroked" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-65f253e6="" data-v-db0c13d4="">`
+- **Target:** `.title-container[data-v-bbce7311=""] > .stroked.inverted.play-button`
+  - **HTML:** `<button class="play-button pulse inverted stroked" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-bbce7311="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-a63fea2a="" data-v-db0c13d4="">`
+  - **HTML:** `<button class="play-button pulse inverted stroked show-progress" style="--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);" data-v-79f722c4="" data-v-db0c13d4="">`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
 
 - **Target:** `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .dislike[type="button"][data-v-4b932298=""]`
@@ -157,16 +157,12 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.medium-large.contest-box.single > .content[data-v-263a82da=""] > .label[data-v-263a82da=""]`
-  - **HTML:** `<div class="label" data-v-263a82da="">Konkurranse på P4</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.31 (foreground color: #eeb2d8, background color: #6d6365, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `.grid > .medium-large.contest-box.item > .content[data-v-263a82da=""] > .label[data-v-263a82da=""]`
-  - **HTML:** `<div class="label" data-v-263a82da="">Konkurranse på P4</div>`
+- **Target:** `.medium-large.contest-box.single > .content[data-v-42edf967=""] > .label[data-v-42edf967=""]`
+  - **HTML:** `<div class="label" data-v-42edf967="">Konkurranse på P4</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.31 (foreground color: #eeb2d8, background color: #6d6365, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 
@@ -182,7 +178,7 @@
 #### Affected Elements:
 
 - **Target:** `img[width="100"]`
-  - **HTML:** `<img data-v-a8d03b29="" src="https://ddjh0q34m0xak.cloudfront.net/mmo/MusicLibrary/4937e750-efe2-4352-ac1a-337e681b7f83.jpg?w=200&amp;ar=1x1" width="100" height="100" style="opacity: 1;">`
+  - **HTML:** `<img data-v-d0ba64b7="" src="https://ddjh0q34m0xak.cloudfront.net/mmo/MusicLibrary/cf1a52ab-0a43-4202-8279-e8b1f995d3b4.jpg?w=200&amp;ar=1x1" width="100" height="100" style="opacity: 1;">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 
@@ -234,51 +230,51 @@
 #### Affected Elements:
 
 - **Target:** `.image-container[data-v-2e87abb0=""] > a[data-v-2e87abb0=""]`
-  - **HTML:** `<a href="/podkast/5/p4s-radiofrokost/episode/348888/vikinger-vs-nazister" class="" data-v-2e87abb0="">`
+  - **HTML:** `<a href="/podkast/4/misjonen-med-antonsen-og-golden/episode/348995/fredag-13-rammer-hele-verden-snoe-i-soer-igjen-nvidia-og-honningfella" class="" data-v-2e87abb0="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.content-box.compact[data-v-ec5e8189=""] > .image-link[data-v-ec5e8189=""]`
-  - **HTML:** `<a href="/p4/om/endelig-tilbake-pa-google-assistant/artikkel/980673/" class="image-link" data-v-ec5e8189="" style="background: none;">`
+- **Target:** `.content-box.compact[data-v-af7af042=""] > .image-link[data-v-af7af042=""]`
+  - **HTML:** `<a href="/p4/om/endelig-tilbake-pa-google-assistant/artikkel/980673/" class="image-link" data-v-af7af042="" style="background: none;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.large.contest-box.single > .image-link[data-v-263a82da=""]`
-  - **HTML:** `<a href="/konkurranse/lastebil/vil-du-bli-yrkessjafor/artikkel/1013674/" class="image-link" data-v-263a82da="" style="background: none;">`
+- **Target:** `.large.contest-box.single > .image-link[data-v-42edf967=""]`
+  - **HTML:** `<a href="/konkurranse/lastebil/vil-du-bli-yrkessjafor/artikkel/1013674/" class="image-link" data-v-42edf967="" style="background: none;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.medium-large.contest-box.single > .image-link[data-v-263a82da=""]`
-  - **HTML:** `<a href="/p4/aktiviteter/jackpot/prov-deg-pa-jackpot-og-vinn-100000-/artikkel/692930/" class="image-link" data-v-263a82da="" style="background: none;">`
+- **Target:** `.medium-large.contest-box.single > .image-link[data-v-42edf967=""]`
+  - **HTML:** `<a href="/p4/aktiviteter/jackpot/prov-deg-pa-jackpot-og-vinn-100000-/artikkel/692930/" class="image-link" data-v-42edf967="" style="background: none;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.image-link[href$="fem-pa/"][data-v-ec5e8189=""]`
-  - **HTML:** `<a href="/p4/underholdning/fem-pa/" class="image-link" data-v-ec5e8189="" style="background: none;">`
+- **Target:** `.image-link[href$="fem-pa/"][data-v-af7af042=""]`
+  - **HTML:** `<a href="/p4/underholdning/fem-pa/" class="image-link" data-v-af7af042="" style="background: none;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.grid > .medium-large.contest-box.item > .image-link[data-v-263a82da=""]`
-  - **HTML:** `<a href="/p4/bli-popkonge-og-vinn-kule-premier/artikkel/1013655/" class="image-link" data-v-263a82da="" style="background: none;">`
+- **Target:** `.grid > .medium-large.contest-box.item > .image-link[data-v-42edf967=""]`
+  - **HTML:** `<a href="/delta/bli-popkonge-og-vinn-kule-premier/artikkel/1013655/" class="image-link" data-v-42edf967="" style="background: none;">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.large.section-box.item > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
-  - **HTML:** `<a href="/p4/programmer/frokost/sopprisotto-med-parmesan-og-edamamebonner/artikkel/911468/" class="" data-v-a74e5f11="">`
+- **Target:** `.large.section-box.item > .image-container[data-v-431fd6a7=""] > a[data-v-431fd6a7=""]`
+  - **HTML:** `<a href="/p4/programmer/frokost/sopprisotto-med-parmesan-og-edamamebonner/artikkel/911468/" class="" data-v-431fd6a7="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.small.section-box.item:nth-child(1) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
-  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/grillet-makrell-med-stuet-spinat/artikkel/907181/" class="" data-v-a74e5f11="">`
+- **Target:** `.small.section-box.item:nth-child(1) > .image-container[data-v-431fd6a7=""] > a[data-v-431fd6a7=""]`
+  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/grillet-makrell-med-stuet-spinat/artikkel/907181/" class="" data-v-431fd6a7="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.small.section-box.item:nth-child(2) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
-  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/svensk-midsommarfeiring-med-christers-gubbrora/artikkel/906511/" class="" data-v-a74e5f11="">`
+- **Target:** `.small.section-box.item:nth-child(2) > .image-container[data-v-431fd6a7=""] > a[data-v-431fd6a7=""]`
+  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/svensk-midsommarfeiring-med-christers-gubbrora/artikkel/906511/" class="" data-v-431fd6a7="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.small.section-box.item:nth-child(3) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
-  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/rabarbrasuppe-med-jordber/artikkel/905311/" class="" data-v-a74e5f11="">`
+- **Target:** `.small.section-box.item:nth-child(3) > .image-container[data-v-431fd6a7=""] > a[data-v-431fd6a7=""]`
+  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/rabarbrasuppe-med-jordber/artikkel/905311/" class="" data-v-431fd6a7="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.small.section-box.item:nth-child(4) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
-  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/ostesmorbrod-med-fransk-vri/artikkel/903360/" class="" data-v-a74e5f11="">`
+- **Target:** `.small.section-box.item:nth-child(4) > .image-container[data-v-431fd6a7=""] > a[data-v-431fd6a7=""]`
+  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/ostesmorbrod-med-fransk-vri/artikkel/903360/" class="" data-v-431fd6a7="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
-- **Target:** `.small.section-box.item:nth-child(5) > .image-container[data-v-a74e5f11=""] > a[data-v-a74e5f11=""]`
-  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/p4s-lille-skagenrore/artikkel/903140/" class="" data-v-a74e5f11=""><!--[--><img data-v-a74e5f11="" src="https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/5/6f7ebaf6-e735-40ca-a5a2-39f0be571…`
+- **Target:** `.small.section-box.item:nth-child(5) > .image-container[data-v-431fd6a7=""] > a[data-v-431fd6a7=""]`
+  - **HTML:** `<a href="/p4/programmer/frokost/nytelsesfredag/p4s-lille-skagenrore/artikkel/903140/" class="" data-v-431fd6a7=""><!--[--><img data-v-431fd6a7="" src="https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/5/6f7ebaf6-e735-40ca-a5a2-39f0be571…`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.editor-emblem > a[target="_blank"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fagforbundet
 
-**Timestamp:** 2026-11-13T05:27:51.436Z
+**Timestamp:** 2026-11-14T08:49:56.718Z
 **URL:** [https://www.fagforbundet.no/](https://www.fagforbundet.no/)
 **Total Violations:** 3
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `#bai-open-chat-btn`
-  - **HTML:** `<button id="bai-open-chat-btn" aria-hidden="true" class="tooltiped-element" title="Spør vår chatbot" type="button" onclick="javascript:openChat()" style="background: url("https://pubdata.fagforbundet.no/chatbot_pics/sarah_100.png") 0px 0px…`
+  - **HTML:** `<button id="bai-open-chat-btn" aria-hidden="true" class="tooltiped-element" title="Spør vår chatbot" type="button" onclick="javascript:openChat()" style="background: url(&quot;https://pubdata.fagforbundet.no/chatbot_pics/jan_100.png&quot;)…`
   - **Failure summary:** Fix all of the following: Focusable content should be disabled, be removed from the DOM, or not be hidden with aria-hidden
 
 

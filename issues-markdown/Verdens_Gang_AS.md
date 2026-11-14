@@ -1,6 +1,6 @@
 # WCAG Violations Report for Verdens Gang AS
 
-**Timestamp:** 2026-11-13T05:54:23.701Z
+**Timestamp:** 2026-11-14T08:59:04.152Z
 **URL:** [https://www.vg.no/](https://www.vg.no/)
 **Total Violations:** 2
 
@@ -34,6 +34,6 @@
 #### Affected Elements:
 
 - **Target:** `svg[viewBox="0 0 90 45"]`
-  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 90 45" style="flex-shrink:0;height:var(--graphic-size, var(--space-l));width:auto" role="img">`
+  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 90 45" role="img" style="flex-shrink: 0; height: var(--graphic-size, var(--space-l)); width: auto;">`
   - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
 

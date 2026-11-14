@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-11-13T05:39:37.156Z
+**Timestamp:** 2026-11-14T08:42:34.981Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
 **Total Violations:** 5
 
@@ -17,8 +17,8 @@
 
 #### Affected Elements:
 
-- **Target:** `#hero-myc9n-article-title`
-  - **HTML:** `<h3 class="hero-module__article-title" id="hero-myc9n-article-title">Kommunen har fått nye nettsider</h3>`
+- **Target:** `#hero-ZtPVj-article-title`
+  - **HTML:** `<h3 class="hero-module__article-title" id="hero-ZtPVj-article-title">Kommunen har fått nye nettsider</h3>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
 
