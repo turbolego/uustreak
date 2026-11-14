@@ -1,0 +1,172 @@
+{
+  "project": "Atea Norge",
+  "timestamp": "2026-11-14T08:36:28.462Z",
+  "url": "https://www.atea.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input _ngcontent-ng-c4183246691=\"\" role=\"search\" type=\"search\" autocomplete=\"off\" class=\"nav__search--input\" name=\"q\" placeholder=\"Søk\">",
+          "target": [
+            [
+              "#menuTarget",
+              ".nav__search--input"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role search is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span _ngcontent-ng-c4232304864=\"\" role=\"button\" tabindex=\"0\" class=\"nav__primary--icon offline ng-star-inserted\">",
+          "target": [
+            [
+              "#menuTarget",
+              ".nav__primary--icon"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color ytp-fit-cover-video ytp-large-width-mode\" tabindex=\"\" id=\"movie_player\" data-version=\"/s/player/fad7e4e9/player_embed_es6.vflset/nb_NO/base.js\" ...>",
+          "target": [
+            "#widget2",
+            "#movie_player"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on \"div\" elements with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "frame-focusable-content",
+      "impact": "serious",
+      "description": "Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1",
+      "help": "Frames with focusable content must not have tabindex=-1",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-focusable-content?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" dir=\"ltr\" data-cast-api-enabled=\"true\">",
+          "target": [
+            "#widget2",
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"ot-cookie-policy-link\" href=\"https://www.atea.com/data-privacy-policy/\" target=\"_blank\" aria-label=\"More information about your privacy, opens in a new tab\" rel=\"noopener noreferrer\">Read more about that here</a>",
+          "target": [
+            ".ot-cookie-policy-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ad__skip ng-tns-c1965232523-0 ng-star-inserted\"><a class=\"ng-tns-c1965232523-0 ng-star-inserted\" href=\"#skiptocontent\">Hopp til innhold</a><!----><!----><!----></nav>",
+          "target": [
+            [
+              "#menuTarget",
+              ".ad__skip"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
