@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2026-11-15T05:10:51.883Z
+**Timestamp:** 2026-11-15T05:29:39.958Z
 **URL:** [https://www.dn.no/](https://www.dn.no/)
 **Total Violations:** 7
 
@@ -35,10 +35,10 @@
 - `a[data-id="2-1-2063477"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-2062535"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="6-1-LLKV82Ak"] > article[data-teaser_type="cpp-video-common"] > .meta > span`
-- `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(3) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(4) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(5) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(6) > article > .kicker > span`
+- `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(7) > article > .kicker > span`
 - `a[data-id="2-1-2074248"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-2073748"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-2073828"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`

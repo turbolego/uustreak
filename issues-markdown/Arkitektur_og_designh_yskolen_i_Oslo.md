@@ -1,6 +1,6 @@
 # WCAG Violations Report for Arkitektur og designhøyskolen i Oslo
 
-**Timestamp:** 2026-11-15T05:06:57.323Z
+**Timestamp:** 2026-11-15T05:21:02.325Z
 **URL:** [https://www.aho.no/](https://www.aho.no/)
 **Total Violations:** 1
 

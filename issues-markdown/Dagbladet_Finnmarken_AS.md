@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-11-15T05:11:40.843Z
+**Timestamp:** 2026-11-15T05:29:25.571Z
 **URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#eaframe, #topTextRight`
+- `.ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -24,11 +25,36 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, iframe`
+- `#eaframe`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe`
+- `.lp_pos1 > .headline > .title`
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `a[aria-label="Ledig stilling: Sjåfør"]`
 
 ### Elements marked as presentational should be consistently ignored
 

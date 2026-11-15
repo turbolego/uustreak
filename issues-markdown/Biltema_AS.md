@@ -1,6 +1,6 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-11-15T05:08:42.746Z
+**Timestamp:** 2026-11-15T05:25:33.956Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
 **Total Violations:** 12
 

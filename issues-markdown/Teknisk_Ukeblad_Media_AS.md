@@ -1,10 +1,22 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-11-15T05:33:28.338Z
+**Timestamp:** 2026-11-15T05:41:09.627Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
-**Total Violations:** 6
+**Total Violations:** 8
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -17,9 +29,9 @@
 #### Affected Elements:
 
 - `.placement-top > .display-label.google-ad.disable-initial-load > .ad-label`
-- `#sp_message_iframe_1517700, .acceptButton`
-- `#sp_message_iframe_1517700, .rejectButton`
-- `#sp_message_iframe_1517700, .customiseButton`
+- `.row.large-12.small-12:nth-child(14) > .display-label.google-ad.disable-initial-load > .ad-label`
+- `.row.large-12.small-12:nth-child(25) > .display-label.google-ad.disable-initial-load > .ad-label`
+- `.row.large-12.small-12:nth-child(29) > .display-label.google-ad.disable-initial-load > .ad-label`
 
 ### Heading levels should only increase by one
 
@@ -46,10 +58,10 @@
 
 #### Affected Elements:
 
-- `a[data-k5a-url="https://www.tu.no/a/7182870"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
-- `a[data-k5a-url="https://www.tu.no/a/7179783"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
-- `a[data-k5a-url="https://www.tu.no/a/7146844"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
-- `a[data-k5a-url="https://www.tu.no/a/7141083"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
+- `a[data-k5a-url="https://www.tu.no/a/7182870"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
+- `a[data-k5a-url="https://www.tu.no/a/7179783"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
+- `a[data-k5a-url="https://www.tu.no/a/7146844"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
+- `a[data-k5a-url="https://www.tu.no/a/7141083"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
 - `img[width="80"]`
 - `img[width="128"]`
 
@@ -64,6 +76,18 @@
 #### Affected Elements:
 
 - `.grid-vas-center`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #aw0`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-11-15T05:34:43.027Z
+**Timestamp:** 2026-11-15T05:43:32.310Z
 **URL:** [https://tromsdalen.tromsoskolen.no/](https://tromsdalen.tromsoskolen.no/)
 **Total Violations:** 9
 
@@ -128,7 +128,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 15
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -146,4 +146,3 @@
 - `p:nth-child(3) > a:nth-child(5)`
 - `a:nth-child(7)`
 - `a[target="_blank"]:nth-child(9)`
-- `iframe[name="fbe986996c1f9d97b"], #u_0_1_5P`

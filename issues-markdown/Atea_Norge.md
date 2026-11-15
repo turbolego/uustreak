@@ -1,8 +1,8 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-11-15T05:08:04.183Z
+**Timestamp:** 2026-11-15T05:22:27.915Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -29,6 +29,30 @@
 #### Affected Elements:
 
 - `#menuTarget,.nav__primary--icon`
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#widget2, #movie_player`
+
+### Frames with focusable content must not have tabindex=-1
+
+- **Impact:** serious
+- **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-focusable-content?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#widget2, html`
 
 ### Elements must have their visible text as part of their accessible name
 

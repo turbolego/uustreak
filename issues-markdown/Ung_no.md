@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ung.no
 
-**Timestamp:** 2026-11-15T05:35:36.840Z
+**Timestamp:** 2026-11-15T05:45:24.305Z
 **URL:** [https://www.ung.no/](https://www.ung.no/)
 **Total Violations:** 1
 

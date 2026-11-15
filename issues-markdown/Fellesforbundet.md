@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fellesforbundet
 
-**Timestamp:** 2026-11-15T05:14:21.354Z
+**Timestamp:** 2026-11-15T05:36:28.771Z
 **URL:** [https://www.fellesforbundet.no/](https://www.fellesforbundet.no/)
 **Total Violations:** 3
 

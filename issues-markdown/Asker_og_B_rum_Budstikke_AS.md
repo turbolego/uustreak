@@ -1,8 +1,8 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-11-15T05:07:18.732Z
+**Timestamp:** 2026-11-15T05:21:43.854Z
 **URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
-**Total Violations:** 5
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -17,6 +17,19 @@
 #### Affected Elements:
 
 - `#eaframe, button`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -42,34 +55,60 @@
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11335732 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11335732 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11326695 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11326695 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11336224 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11336224 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11323307 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11337408 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11337408 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11335732 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11335732 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11331852 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11331852 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11336224 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11336224 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11336223 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11336223 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11338242 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11338242 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11336218 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11336218 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11324961 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11324961 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11337408 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11337408 > .brokerinfo-container > .brokerlogo`
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"]`
+- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-11-15T05:11:21.482Z
+**Timestamp:** 2026-11-15T05:30:06.257Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -12,11 +12,21 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 11
 
 #### Affected Elements:
 
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(6) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(12) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(18) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(24) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(30) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(36) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(42) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(48) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(54) > .google-ad.display-label.large-abs-12 > .ad-label`
+- `.row.large-12.small-12:nth-child(60) > .google-ad.display-label.large-abs-12 > .ad-label`
 
 ### Headings should not be empty
 
@@ -91,10 +101,11 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/38586112\/dagsavisen\/toppbanner_0, #aw0`
 - `#offer_0cfaa4c18ebe058946bc-0, a`
 - `#offer_59dc168a95d88c084eeb-0, a`
 - `#offer_59dc168a95d88c084eeb-1, a`
@@ -107,7 +118,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 128
+- **Count:** 138
 
 #### Affected Elements:
 
@@ -157,15 +168,18 @@
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
 - `.row.large-12.small-12:nth-child(5)`
+- `.row.large-12.small-12:nth-child(6) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(7)`
 - `.has-row-header`
 - `.row.large-12.small-12:nth-child(9)`
 - `#offer_0cfaa4c18ebe058946bc-0, div[ng-show="!terminalError"]`
 - `.row.large-12.small-12:nth-child(11)`
+- `.row.large-12.small-12:nth-child(12) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(13)`
 - `#offer_59dc168a95d88c084eeb-0, div[ng-show="!terminalError"]`
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `.row.large-12.small-12:nth-child(17)`
+- `.row.large-12.small-12:nth-child(18) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(20)`
@@ -173,6 +187,7 @@
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(23)`
+- `.row.large-12.small-12:nth-child(24) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(25)`
 - `.lab-scrollbox-headline.t25.tm18`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
@@ -180,6 +195,7 @@
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(29)`
+- `.row.large-12.small-12:nth-child(30) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(31)`
 - `.row.large-12.small-12:nth-child(32)`
 - `.t28`
@@ -209,26 +225,31 @@
 - `article[data-instance="10614270"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(35)`
+- `.row.large-12.small-12:nth-child(36) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `.row.large-12.small-12:nth-child(40)`
 - `#offer_59dc168a95d88c084eeb-1, div[ng-show="!terminalError"]`
+- `.row.large-12.small-12:nth-child(42) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(43)`
 - `.row.large-12.small-12:nth-child(44)`
 - `.row.large-12.small-12:nth-child(45)`
 - `.row.large-12.small-12:nth-child(46)`
 - `.row.large-12.small-12:nth-child(47)`
+- `.row.large-12.small-12:nth-child(48) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(49)`
 - `.row.large-12.small-12:nth-child(50)`
 - `.row.large-12.small-12:nth-child(51)`
 - `.row.large-12.small-12:nth-child(52)`
 - `.row.large-12.small-12:nth-child(53)`
+- `.row.large-12.small-12:nth-child(54) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(55)`
 - `.row.large-12.small-12:nth-child(56)`
 - `.row.large-12.small-12:nth-child(57)`
 - `.row.large-12.small-12:nth-child(58)`
 - `.row.large-12.small-12:nth-child(59)`
+- `.row.large-12.small-12:nth-child(60) > .google-ad.display-label.large-abs-12 > .ad-label`
 - `.row.large-12.small-12:nth-child(61)`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.mobile_text_align_align-left.align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
