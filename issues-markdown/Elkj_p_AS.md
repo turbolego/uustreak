@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-11-13T05:27:12.690Z
+**Timestamp:** 2026-11-15T05:13:06.840Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 1
 
@@ -10,14 +10,10 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.cms-header`
-  - **HTML:** `<div class="cms-header top-header print:hidden bg-background" style="--theme-background:#fff100;--theme-countdown:#78BF26;--theme-detail-foreground:#000000">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.cms-header`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-11-14T08:46:00.351Z
+**Timestamp:** 2026-11-15T05:28:20.997Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
 **Total Violations:** 2
 
@@ -10,38 +10,24 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#popup-title`
-  - **HTML:** `<h4 class="header-text" id="popup-title">Hvordan opplever du ssb.no?</h4>`
-  - **Failure summary:** Fix any of the following: Heading order invalid
-
+- `#popup-title`
 
 ### Elements must have their visible text as part of their accessible name
 
 - **Impact:** serious
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 3
 
 #### Affected Elements:
 
-- **Target:** `a[aria-describedby="0-text"]`
-  - **HTML:** `<a class="ssb-picture-card vertical w-100 group" href="https://www.ssb.no/arbeid-og-lonn/sysselsetting/statistikk/antall-arbeidsforhold-og-lonn/artikler/hvor-mange-jobber-er-det-i-norge" aria-label="Det finnes over 3,2 millioner jobber i N…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `a[aria-label="Færre sitter i fengsel"]`
-  - **HTML:** `<a class="ssb-picture-card vertical w-100 group" href="https://www.ssb.no/sosiale-forhold-og-kriminalitet/kriminalitet-og-rettsvesen/statistikk/fengslinger/artikler/faerre-soner-en-ubetinget-dom-i-fengsel" aria-label="Færre sitter i fengse…`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `a[aria-label="15 prosent hadde bil i 1960"]`
-  - **HTML:** `<a class="ssb-picture-card vertical w-100 group" href="https://www.ssb.no/befolkning/artikler-og-publikasjoner/grunnlaget-for-et-sentralt-personregister" aria-label="15 prosent hadde bil i 1960" aria-describedby="2-text">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
+- `a[aria-describedby="0-text"]`
+- `a[aria-label="Færre sitter i fengsel"]`
+- `a[aria-label="15 prosent hadde bil i 1960"]`
