@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-11-17T05:32:10.715Z
+**Timestamp:** 2026-11-17T06:53:57.732Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -113,6 +113,12 @@
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `div[title="Angrep mot to broer i Kyiv"] > h2`
+- `time[datetime="2026-11-17T06:13:59.000Z"]`
+- `div[title="Nytt angrep på Krym-broen"] > h2`
+- `time[datetime="2026-11-17T06:13:20.000Z"]`
+- `div[title="UP kniper flere råkjørere"] > h2`
+- `time[datetime="2026-11-17T06:12:09.000Z"]`
 - `div[title="Trump åpen for Huang-comeback"] > h2`
 - `div[title="Trump åpen for Huang-comeback"] > .meta`
 - `div[title="Nytt hundevirus i Norge"] > h2`
@@ -145,14 +151,8 @@
 - `time[datetime="2026-11-16T07:12:26.000Z"]`
 - `div[title="Go-Ahead vil fortsette i Norge"] > h2`
 - `time[datetime="2026-11-16T06:53:21.000Z"]`
-- `#notice-10634827 > .content > h2`
-- `time[datetime="2026-11-16T06:08:37.000Z"]`
 - `div[title="Oslo: Innbrudd i luksusbutikk"] > h2`
 - `time[datetime="2026-11-16T06:52:17.000Z"]`
-- `div[title="Elleve døde i brann på Phuket"] > h2`
-- `time[datetime="2026-11-16T06:06:19.000Z"]`
-- `#notice-10634787 > .content > h2`
-- `#notice-10634787 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Verdens Gang AS
 
-**Timestamp:** 2026-11-17T05:52:40.940Z
+**Timestamp:** 2026-11-17T07:14:59.277Z
 **URL:** [https://www.vg.no/](https://www.vg.no/)
 **Total Violations:** 1
 
