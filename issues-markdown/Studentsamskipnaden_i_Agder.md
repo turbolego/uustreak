@@ -1,10 +1,34 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2026-11-15T05:38:35.967Z
+**Timestamp:** 2026-11-17T05:51:41.500Z
 **URL:** [https://www.sia.no/](https://www.sia.no/)
-**Total Violations:** 7
+**Total Violations:** 11
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.item-list__title`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.imageshop-image`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -12,11 +36,22 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 2
+- **Count:** 13
 
 #### Affected Elements:
 
 - `.desktop-navbar__search-btn`
+- `a[title="Studentkalenderen"]`
+- `a[title="Finn ditt pensum"]`
+- `a[title="Noen å snakke med?"]`
+- `.two-col-cta__cta`
+- `.item-list__item__content > a[title="SiA Miljø"][aria-label="Go to /miljoe-og-baerekraft/"][href$="miljoe-og-baerekraft/"]`
+- `.large-image-cta__card__btn`
+- `.cta-card-rounded-link-wrapper:nth-child(1)`
+- `.cta-card-rounded-link-wrapper:nth-child(2)`
+- `.cta-card-rounded-link-wrapper:nth-child(3)`
+- `.btn--white`
+- `.opening-hours-box__cta__btn`
 - `a[aria-label="Go to /personvernerklaering/"]`
 
 ### Contentinfo landmark should not be contained in another landmark
@@ -67,6 +102,38 @@
 
 - `ion-content`
 
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.large-image-cta__card__text > .richtext > p:nth-child(2) > a`
+
+### <object> elements must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <object> elements have alternative text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/object-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-1.1.6
+- **Count:** 9
+
+#### Affected Elements:
+
+- `object[alt="Bolig Outlined"]`
+- `object[alt="Helse Outlined"]`
+- `object[alt="Barnehage Outlined"]`
+- `object[alt="Studentliv Outlined"]`
+- `object[alt="Mat Og Drikke Outlined"]`
+- `object[alt="Bok Outlined"]`
+- `object[alt="Trening Outlined"]`
+- `a[aria-label="Go to /studentfordeler/"][href$="studentfordeler/"][title="Studentfordeler"] > .umb-img > object`
+- `object[alt="Miljo Outlined"]`
+
 ### <svg> elements with an img or image role must have alternative text
 
 - **Impact:** serious
@@ -99,7 +166,7 @@
 #### Affected Elements:
 
 - `.desktop-navbar__logo`
-- `#react-select-2-input`
-- `#react-select-3-input`
+- `#react-select-6-input`
+- `#react-select-7-input`
 - `.desktop-navbar__search-btn`
 - `.desktop-navbar__hamburger`

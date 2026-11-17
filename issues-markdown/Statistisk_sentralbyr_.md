@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-11-15T05:33:53.498Z
+**Timestamp:** 2026-11-17T05:50:00.651Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
 **Total Violations:** 2
 
@@ -29,5 +29,5 @@
 #### Affected Elements:
 
 - `a[aria-describedby="0-text"]`
-- `a[aria-label="Færre sitter i fengsel"]`
+- `a[aria-describedby="1-text"]`
 - `a[aria-label="15 prosent hadde bil i 1960"]`

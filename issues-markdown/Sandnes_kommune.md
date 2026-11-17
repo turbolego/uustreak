@@ -1,22 +1,10 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-11-15T05:30:10.372Z
+**Timestamp:** 2026-11-17T05:52:02.443Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#hero-Oqz4v-article-title`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -29,18 +17,6 @@
 #### Affected Elements:
 
 - `a[href$="sandnesloftet.no/"]`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.navbar`
 
 ### All page content should be contained by landmarks
 

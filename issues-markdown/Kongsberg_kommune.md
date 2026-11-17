@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kongsberg kommune
 
-**Timestamp:** 2026-11-15T05:46:48.426Z
+**Timestamp:** 2026-11-17T05:39:16.991Z
 **URL:** [https://www.kongsberg.kommune.no/](https://www.kongsberg.kommune.no/)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -19,15 +19,3 @@
 - `.campaign__item[target="_blank"]:nth-child(1)`
 - `.campaign__item[target="_blank"]:nth-child(2)`
 - `.campaign__item[target="_blank"]:nth-child(3)`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.navbar`

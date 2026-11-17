@@ -1,6 +1,6 @@
 # WCAG Violations Report for Synsam Norge AS
 
-**Timestamp:** 2026-11-15T05:40:01.277Z
+**Timestamp:** 2026-11-17T05:48:39.146Z
 **URL:** [https://www.synsam.no/](https://www.synsam.no/)
 **Total Violations:** 2
 
@@ -24,47 +24,62 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 59
+- **Count:** 74
 
 #### Affected Elements:
 
 - `.SiteHeader_site-header-search-toggle-desktop__s4YJm`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(1)`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(2)`
+- `a[aria-label="Tom Ford FT1212 01A 4824"]`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC[aria-label="Prada PR 26ZS 14L09Z 5516"][href$="prada-pr-26zs-14l09z-5516"]`
+- `a[aria-label="Tom Ford FT1283 01A 5220"]`
+- `a[aria-label="Maui Jim KEHA MJ0663S 003 6215"]`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(7)`
+- `a[aria-label="Saint Laurent SL M161 003 4823"]`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(9)`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC[aria-label="Saint Laurent SL M94 001 5320"][href="/saint-laurent-sl-m94-001-5320"]`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(11)`
+- `a[aria-label="Tom Ford  FT1039 05D 5915 "]`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(13)`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(14)`
+- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(15)`
 - `a[aria-label="Erling Haaland HAL S60 C1 5917"]`
 - `a[aria-label="Erling Haaland HAL S60 C6 5917"]`
 - `a[aria-label="Erling Haaland HAL S61 C1 5521"]`
 - `a[aria-label="Erling Haaland HAL S61 C6 5521"]`
-- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(5)`
+- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(5)`
 - `a[aria-label="Erling Haaland HAL S62 C1 4925"]`
 - `a[aria-label="Erling Haaland HAL S63 C1 5321"]`
-- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(8)`
-- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(9)`
-- `.ContentSection_content-section__roiLZ:nth-child(5) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(10)`
+- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(8)`
+- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(9)`
+- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(10)`
 - `a[aria-label="Erling Haaland HAL S6 C20 5717"]`
 - `a[aria-label="Erling Haaland HAL S6 C89 5717"]`
 - `a[aria-label="Erling Haaland HAL S5 C20 5815"]`
 - `a[aria-label="Erling Haaland HAL S5 C6 5815"]`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(1)`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(2)`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(3)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(1)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(2)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(3)`
 - `a[aria-label="Prada PR 17WS 1AB5S0 4920"]`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(5)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(5)`
 - `a[aria-label="Gucci GG0748S 001 5917"]`
 - `a[aria-label="Ray-Ban Wayfarer RB4340 601 50"]`
-- `a[aria-label="Saint Laurent SL M94 001 5320"]`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC[aria-label="Saint Laurent SL M94 001 5320"][href="/saint-laurent-sl-m94-001-5320"]`
 - `a[aria-label="Prada PR 26ZS 16K08Z 5516"]`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(10)`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(11)`
-- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(12)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(10)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(11)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(12)`
 - `a[aria-label="Gucci GG0998S 001 5221"]`
 - `a[aria-label="Erling Haaland HAL S46 C5 5518"]`
-- `.ProductCard_product-card__ccISC:nth-child(15)`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(15)`
 - `.ProductCard_product-card__ccISC:nth-child(16)`
 - `a[aria-label="Gucci GG1680S 001 5217"]`
 - `a[aria-label="Ray-Ban Wayfarer RB2140 901 50"]`
 - `.ProductCard_product-card__ccISC:nth-child(19)`
 - `.ProductCard_product-card__ccISC:nth-child(20)`
 - `a[aria-label="Prada PR 17WS 2AU8C1 4920"]`
-- `a[aria-label="Prada PR 26ZS 14L09Z 5516"]`
+- `.ContentSection_content-section__roiLZ:nth-child(10) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC[aria-label="Prada PR 26ZS 14L09Z 5516"][href$="prada-pr-26zs-14l09z-5516"]`
 - `.ProductCard_product-card__ccISC:nth-child(23)`
 - `a[aria-label="Gucci GG0636SK 002 5617"]`
 - `.ProductCard_product-card__ccISC:nth-child(25)`

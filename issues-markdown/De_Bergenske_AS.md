@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-11-15T05:30:50.486Z
+**Timestamp:** 2026-11-17T05:32:50.594Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 4
 
@@ -61,13 +61,13 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4)`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-4e61ed59=""] > .container[data-v-4e61ed59=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].pb-12`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-4e61ed59=""] > .container[data-v-4e61ed59=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6) > .py-15[data-v-4e61ed59=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(7) > .py-15[data-v-4e61ed59=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(8)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10)`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(11) > .py-15[data-v-4e61ed59=""] > .container[data-v-4e61ed59=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].pb-12`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(11) > .py-15[data-v-4e61ed59=""] > .container[data-v-4e61ed59=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
 - `.xl\:col-span-6 > .lg\:text-center`
 - `.xl\:col-span-6 > div:nth-child(2)`

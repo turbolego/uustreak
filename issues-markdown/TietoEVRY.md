@@ -1,6 +1,6 @@
 # WCAG Violations Report for TietoEVRY
 
-**Timestamp:** 2026-11-15T05:42:22.824Z
+**Timestamp:** 2026-11-17T05:49:27.159Z
 **URL:** [https://www.tieto.com/no/](https://www.tieto.com/no/)
 **Total Violations:** 3
 
@@ -24,7 +24,7 @@
 - `.news-item.border-t.border-grey-300:nth-child(2) > .align-center.gap-8.border-r-4`
 - `.news-item.border-t.border-grey-300:nth-child(3) > .align-center.gap-8.border-r-4`
 - `.news-item.border-t.border-grey-300:nth-child(4) > .align-center.gap-8.border-r-4`
-- `.btn-blue-600.outline-white.before\:h-4`
+- `button[data-loc="footer"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

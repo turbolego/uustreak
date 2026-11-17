@@ -1,8 +1,8 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-11-15T05:46:35.840Z
+**Timestamp:** 2026-11-17T05:38:44.762Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -44,3 +44,17 @@
 
 - `#coiOverlay`
 - `.header__menu`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `komplett-banners[largedesktopcolumns="3"] > .content > .banner:nth-child(1)`
+- `komplett-banners[largedesktopcolumns="3"] > .content > .banner:nth-child(2)`
+- `komplett-banners[largedesktopcolumns="3"] > .content > .banner:nth-child(3)`
