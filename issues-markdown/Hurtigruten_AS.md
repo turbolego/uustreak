@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2026-11-17T06:59:37.208Z
+**Timestamp:** 2026-11-18T06:34:30.183Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 4
 
@@ -43,7 +43,7 @@
 #### Affected Elements:
 
 - `.promoStyles_lgView__S_OoW > span`
-- `.promoStyles_lgView__S_OoW > .styles_linkButton__ELdsG[rel=""][target="_self"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
+- `.styles_linkButton__ELdsG.styles_button___ow6S[rel="noopener noreferrer"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
 - `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_titleWrapper__BalEl`
 - `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_contentWrapper__ASMNd`
 - `a[href$="nyhetsbrev"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`

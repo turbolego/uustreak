@@ -1,10 +1,22 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-11-17T07:18:00.134Z
+**Timestamp:** 2026-11-18T06:49:38.513Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.banner--full-width.banner:nth-child(1) > .banner__content-wrapper > .banner__text > .cms-content > h2`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -19,7 +31,7 @@
 - `a[href$="cart"]`
 - `.campaign-banner--left.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper`
-- `a[href$="salte"]`
+- `.campaign-banner--left.campaign-banner.banner:nth-child(3) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner__content-wrapper.banner__content-wrapper[href$="intimpleie"]`
@@ -68,10 +80,9 @@
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(12) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`

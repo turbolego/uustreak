@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fellesforbundet
 
-**Timestamp:** 2026-11-17T06:57:07.667Z
+**Timestamp:** 2026-11-18T06:32:07.372Z
 **URL:** [https://www.fellesforbundet.no/](https://www.fellesforbundet.no/)
 **Total Violations:** 3
 
@@ -44,11 +44,11 @@
 - `video`
 - `.wp-container-core-group-is-layout-2518a440`
 - `.max-1160 > .wp-block-heading`
+- `.post-17638 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .wp-container-core-group-is-layout-3fc47171.is-vertical.wp-block-group-is-layout-flex`
+- `.post-17638 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(1)`
+- `a[rel="tag"]:nth-child(3)`
 - `.post-17255`
 - `.post-17212`
-- `.post-16956 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .wp-container-core-group-is-layout-3fc47171.is-vertical.wp-block-group-is-layout-flex`
-- `.post-16956 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(1)`
-- `a[rel="tag"]:nth-child(3)`
 - `.max-1160 > .wp-container-core-buttons-is-layout-89ff3872.is-content-justification-left.wp-block-buttons`
 - `.has-dots`
 - `.alignwide.wp-block-group-is-layout-constrained.has-global-padding:nth-child(5)`

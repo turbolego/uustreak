@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-11-17T06:52:20.917Z
+**Timestamp:** 2026-11-18T06:27:02.807Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
 **Total Violations:** 5
 
@@ -42,14 +42,14 @@
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11339930 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11339930 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339928 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339928 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339926 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339926 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11339930 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11339930 > .brokerinfo-container > .brokerlogo`
 
 ### Elements marked as presentational should be consistently ignored
 

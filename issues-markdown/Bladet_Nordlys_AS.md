@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-11-17T06:52:44.611Z
+**Timestamp:** 2026-11-18T06:27:28.730Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.rodimus-complex-front[data-group="ghost"]:nth-child(39) > brick-teaser-group-v1 > header > h2`
+- `header > h2`
 
 ### Frames must have an accessible name
 
@@ -48,29 +48,23 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 7
+- **Count:** 13
 
 #### Affected Elements:
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11336211 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11338233 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11341078 > .brokerinfo-container > .brokerlogo`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `brick-carousel-v3[data-slides="8"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11342373 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11342373 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11342372 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11342372 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11336211 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11338233 > .brokerinfo-container > .brokerlogo`
 
 ### Elements marked as presentational should be consistently ignored
 

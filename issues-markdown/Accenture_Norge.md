@@ -1,6 +1,6 @@
 # WCAG Violations Report for Accenture Norge
 
-**Timestamp:** 2026-11-17T06:48:59.357Z
+**Timestamp:** 2026-11-18T06:23:37.749Z
 **URL:** [https://www.accenture.com/en](https://www.accenture.com/en)
 **Total Violations:** 2
 

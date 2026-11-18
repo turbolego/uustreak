@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-11-17T07:04:59.576Z
+**Timestamp:** 2026-11-18T06:40:15.415Z
 **URL:** [https://www.glitrenett.no/](https://www.glitrenett.no/)
 **Total Violations:** 4
 

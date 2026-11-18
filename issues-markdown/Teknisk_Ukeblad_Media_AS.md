@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-11-17T07:11:49.303Z
+**Timestamp:** 2026-11-18T06:46:51.384Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 6
 
@@ -31,9 +31,9 @@
 
 #### Affected Elements:
 
-- `.has-row-header.row.large-12:nth-child(28) > h5`
-- `.border-side-bottom.mobile_border-side-bottom.has-row-header:nth-child(81) > h5`
-- `.has-row-header.color_mobile_no_bg_color.row:nth-child(120) > h5`
+- `.has-row-header.row.large-12:nth-child(35) > h5`
+- `.border-side-bottom.mobile_border-side-bottom.has-row-header:nth-child(82) > h5`
+- `.has-row-header.color_mobile_no_bg_color.row:nth-child(100) > h5`
 - `.border-style-solid > h5`
 
 ### Images must have alternative text
@@ -46,10 +46,10 @@
 
 #### Affected Elements:
 
-- `a[data-k5a-url="https://www.tu.no/a/7182870"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
-- `a[data-k5a-url="https://www.tu.no/a/7179783"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
-- `a[data-k5a-url="https://www.tu.no/a/7146844"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
-- `a[data-k5a-url="https://www.tu.no/a/7141083"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
+- `a[data-k5a-url="https://www.tu.no/a/7182870"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
+- `a[data-k5a-url="https://www.tu.no/a/7179783"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
+- `a[data-k5a-url="https://www.tu.no/a/7146844"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
+- `a[data-k5a-url="https://www.tu.no/a/7141083"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"]`
 - `img[width="80"]`
 - `img[width="128"]`
 
@@ -71,101 +71,116 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 378
+- **Count:** 331
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .display-label.google-ad.disable-initial-load > .ad-label`
-- `a[data-k5a-url="https://www.tu.no/a/7184923"] > .media`
-- `.t27.below.kicker`
-- `.t76`
+- `a[data-k5a-url="https://www.tu.no/a/7185356"] > .t26.below.kicker`
+- `.t63`
+- `.row.large-12.small-12:nth-child(2)`
+- `article[data-instance="7185360"]`
+- `a[data-k5a-url="https://www.digi.no/a/7184775"] > .t35.tm26.headline`
 - `.t58.tm30.headline`
-- `article[data-instance="7185107"]`
-- `a[data-k5a-url="https://www.tu.no/a/7184225"] > .t43.headline[itemprop="headline"]`
-- `a[data-k5a-url="https://www.digi.no/a/7183972"] > .t25.below.kicker`
-- `.t26.tm20.headline`
-- `article[data-tag="ntb,datasenter,energi,utenriks"]`
-- `.row.large-12.small-12:nth-child(6)`
+- `a[data-k5a-url="https://www.tu.no/a/7185269"] > .media`
+- `a[data-k5a-url="https://www.tu.no/a/7185269"] > .t24.below.kicker`
+- `a[data-k5a-url="https://www.tu.no/a/7185269"] > .t28.headline[itemprop="headline"]`
+- `a[data-k5a-url="https://www.tu.no/a/7184923"] > .media`
+- `a[data-k5a-url="https://www.tu.no/a/7184923"] > .t26.below.kicker`
+- `a[data-k5a-url="https://www.tu.no/a/7184923"] > .t48.tm26.headline`
 - `.row.large-12.small-12:nth-child(9)`
+- `article[data-tag="romfart"]`
+- `a[data-k5a-url="https://www.tu.no/a/7184225"] > .t28.headline[itemprop="headline"]`
+- `article[data-instance="7185107"]`
+- `.row.large-12.small-12:nth-child(12)`
+- `a[data-k5a-url="https://www.digi.no/a/7183972"] > .t25.below.kicker`
+- `.t36.tm20.headline`
+- `a[data-k5a-url="https://www.tu.no/a/7185176"] > .below.kicker`
+- `.t24.tm17.headline`
+- `.row.large-12.small-12:nth-child(15)`
+- `.row.large-12.small-12:nth-child(16)`
+- `.adZone-parallax > .ad-label`
+- `a[data-k5a-url="https://www.digi.no/a/7185165"] > .media`
+- `a[data-k5a-url="https://www.digi.no/a/7185165"] > .t30.headline[itemprop="headline"]`
+- `article[data-tag="energi,ntb,utenriks,datasenter"]`
+- `.row.large-12.small-12:nth-child(20)`
 - `.t25.tm18.below`
 - `.t43.tm23.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7183484"] > .t20.below.kicker`
 - `a[data-k5a-url="https://www.digi.no/a/7183484"] > .tm27.t33.headline`
 - `.tm19.t32.headline`
 - `.t46.tm22.headline`
-- `.row.large-12.small-12:nth-child(13)`
-- `.row.large-12.small-12:nth-child(15)`
+- `.row.large-12.small-12:nth-child(24)`
+- `.row.large-12.small-12:nth-child(25) > .display-label.google-ad.disable-initial-load > .ad-label`
 - `article[data-instance="7184671"]`
 - `a[data-k5a-url="https://www.tu.no/a/7180787"] > .mobile-floatLeft.media`
 - `a[data-k5a-url="https://www.tu.no/a/7180787"] > .tm29.t29.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7183602"] > .t29.headline[itemprop="headline"]`
-- `.adZone-parallax > .ad-label`
 - `a[data-k5a-url="https://www.tu.no/a/7184684"] > .media`
-- `a[data-k5a-url="https://www.tu.no/a/7184684"] > .t41.tm29.headline`
-- `article[data-tag="tog,samferdsel,ntb,innenriks"]`
-- `.row.large-12.small-12:nth-child(20)`
+- `.t41.tm29.headline`
+- `article[data-tag="innenriks,tog,samferdsel,ntb"]`
+- `.row.large-12.small-12:nth-child(28)`
+- `.row.large-12.small-12:nth-child(29) > .display-label.google-ad.disable-initial-load > .ad-label`
 - `a[data-k5a-url="https://www.digi.no/a/7183630"] > .t56.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.tu.no/a/7183578"] > .t29.tm20.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7182335"] > .t46.headline[itemprop="headline"]`
-- `.hasTextPadding.mobile-hasTextPadding.t40`
+- `.t40.hasTextPadding.mobile-hasTextPadding`
 - `a[data-k5a-url="https://www.tu.no/a/7141034"] > .media`
 - `article[data-instance="7184552"]`
-- `.row.large-12.small-12:nth-child(25) > .display-label.google-ad.disable-initial-load > .ad-label`
-- `.row.large-12.small-12:nth-child(26)`
+- `.row.large-12.small-12:nth-child(33)`
 - `a[data-k5a-url="https://www.digi.no/a/7184424"] > .media`
 - `.t58.tm17.headline`
-- `.has-row-header.row.large-12:nth-child(28) > h5`
+- `.has-row-header.row.large-12:nth-child(35) > h5`
 - `.tm39`
 - `.tm45`
-- `.row.large-12.small-12:nth-child(29) > .display-label.google-ad.disable-initial-load > .ad-label`
 - `article[data-tag="microsoft,it-bransjen,outlook"]`
 - `a[data-k5a-url="https://www.tu.no/a/7183585"] > .below.kicker`
-- `a[data-k5a-url="https://www.tu.no/a/7183585"] > .t33.tm23.headline`
+- `a[data-k5a-url="https://www.tu.no/a/7183585"] > .tm23.t33.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7184214"] > .t56.tm28.headline`
 - `article[data-instance="7179511"]`
 - `.t61`
 - `a[data-k5a-url="https://www.tu.no/a/7183224"] > .desktop-floatLeft.mobile-floatLeft.media`
 - `.t54.tm20.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7184256"] > .tm19.headline[itemprop="headline"]`
-- `.t43.tm31.headline`
-- `.row.large-12.small-12:nth-child(35)`
+- `a[data-k5a-url="https://www.digi.no/a/7184201"] > .t43.tm31.headline`
+- `.row.large-12.small-12:nth-child(41)`
 - `a[data-k5a-url="https://www.digi.no/a/7183686"] > .t30.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.digi.no/a/7183739"] > .media`
-- `.row.large-12.small-12:nth-child(37)`
+- `.row.large-12.small-12:nth-child(43)`
 - `a[data-k5a-url="https://www.tu.no/a/7183380"] > .t21.below.kicker`
 - `.tm47`
-- `article[data-tag="nvidia,it-bransjen"]`
+- `article[data-tag="it-bransjen,nvidia"]`
 - `a[data-k5a-url="https://www.tu.no/a/7179601"] > .t25.below.kicker`
 - `.t42.tm22.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7183753"] > .t31.tm23.headline`
-- `.t35.tm19.headline`
+- `.tm19.t35.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7183954"] > .desktop-floatLeft.mobile-floatLeft.media`
 - `.t47.tm19.headline`
-- `.t23.tm17.below`
+- `.tm17.t23.below`
 - `.t67`
-- `article[data-tag="debatt,klima,energi"]`
+- `article[data-tag="klima,debatt,energi"]`
 - `a[data-k5a-url="https://www.tu.no/a/7183553"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7183553"] > .t49.tm25.headline`
 - `.t25.tm22.below`
 - `.t92`
 - `a[data-k5a-url="https://www.tu.no/a/7183513"] > .mobile-floatLeft.media`
-- `a[data-k5a-url="https://www.tu.no/a/7183513"] > .t32.tm23.headline`
+- `.t32.tm23.headline`
 - `.tm36.t53.headline`
 - `.t37.tm22.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7183222"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7183222"] > .t34.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.tu.no/a/7183173"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7183173"] > .t33.headline[itemprop="headline"]`
-- `.t26.tm29.headline`
+- `.tm29.t26.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7183320"] > .below.kicker`
 - `a[data-k5a-url="https://www.digi.no/a/7183320"] > .t31.tm23.headline`
 - `article[data-instance="7182870"]`
-- `.row.large-12.small-12:nth-child(49)`
+- `.row.large-12.small-12:nth-child(55)`
 - `a[data-k5a-url="https://www.tu.no/a/7181460"] > .below.kicker`
 - `a[data-k5a-url="https://www.tu.no/a/7181460"] > .t39.headline[itemprop="headline"]`
-- `article[data-tag="forsvar,ntb,innenriks"]`
-- `.row.large-12.small-12:nth-child(51)`
+- `article[data-tag="innenriks,ntb,forsvar"]`
+- `.row.large-12.small-12:nth-child(57)`
 - `a[data-k5a-url="https://www.tu.no/a/7183145"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7183145"] > .below.kicker`
 - `.t24.tm22.headline`
@@ -173,7 +188,7 @@
 - `article[data-instance="7183294"]`
 - `a[data-k5a-url="https://www.tu.no/a/7183098"] > .t42.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.tu.no/a/7181064"] > .media`
-- `a[data-k5a-url="https://www.tu.no/a/7181064"] > .t30.tm20.headline`
+- `a[data-k5a-url="https://www.tu.no/a/7181064"] > .tm20.t30.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7183147"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7183147"] > .tm16.t23.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7182874"] > .below.kicker`
@@ -182,27 +197,21 @@
 - `a[data-k5a-url="https://www.tu.no/a/7182985"] > .media`
 - `.t29.tm26.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7182785"] > .below.kicker`
-- `a[data-k5a-url="https://www.tu.no/a/7182785"] > .tm31.t40.headline`
+- `a[data-k5a-url="https://www.tu.no/a/7182785"] > .t40.tm31.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7182852"] > .below.kicker`
 - `a[data-k5a-url="https://www.digi.no/a/7182852"] > .t27.headline[itemprop="headline"]`
-- `article[data-tag="datasenter,ntb,innenriks"]`
+- `article[data-tag="innenriks,datasenter,ntb"]`
 - `a[data-k5a-url="https://www.tu.no/a/7182755"] > .below.kicker`
 - `.tm32.t33.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7180616"] > .media`
 - `a[data-k5a-url="https://www.digi.no/a/7180616"] > .below.kicker`
 - `.tm37.t56.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7180590"] > .headline[itemprop="headline"]`
-- `article[data-tag="datasenter,energi"]`
-- `a[data-k5a-url="https://www.tu.no/a/7179560"] > .media`
-- `.row.large-12.small-12:nth-child(61)`
-- `article[data-tag="klima,klimatoppmøte"]`
-- `a[data-k5a-url="https://www.tu.no/a/7179450"] > .t43.headline[itemprop="headline"]`
-- `a[data-k5a-url="https://www.digi.no/a/7180740"] > .t42.headline[itemprop="headline"]`
-- `.row.large-12.small-12:nth-child(64)`
-- `article[data-tag="cyberangrep,cybersikkerhet,it"]`
-- `a[data-k5a-url="https://www.tu.no/a/7181262"] > .media`
-- `a[data-k5a-url="https://www.tu.no/a/7181262"] > .below.kicker`
-- `a[data-k5a-url="https://www.tu.no/a/7181262"] > .t32.headline[itemprop="headline"]`
+- `article[data-tag="energi,datasenter"]`
+- `.tm15`
+- `.t41.tm23.headline`
+- `a[data-k5a-url="https://www.digi.no/a/7180740"] > .t30.headline[itemprop="headline"]`
+- `.row.large-12.small-12:nth-child(67)`
 - `a[data-k5a-url="https://www.tu.no/a/7182117"] > .below.kicker`
 - `.tm40.t35.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7182421"] > .below.kicker`
@@ -214,95 +223,39 @@
 - `a[data-k5a-url="https://www.tu.no/a/7181747"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7181747"] > .t29.tm20.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7181555"] > .media`
-- `a[data-k5a-url="https://www.tu.no/a/7181970"] > .media`
-- `.t22.tm17.below`
-- `a[data-k5a-url="https://www.tu.no/a/7181970"] > .tm31.t40.headline`
 - `article[data-instance="7182247"]`
 - `a[data-k5a-url="https://www.tu.no/a/7182303"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7182303"] > .t43.headline[itemprop="headline"]`
 - `article[data-instance="7182010"]`
-- `a[data-k5a-url="https://www.tu.no/a/7181388"] > .t30.tm20.headline`
+- `a[data-k5a-url="https://www.tu.no/a/7181388"] > .tm20.t30.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7181751"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7181751"] > .tm17.below.kicker`
 - `a[data-k5a-url="https://www.tu.no/a/7181751"] > .t38.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.tu.no/a/7181749"] > .mobile-floatLeft.media`
-- `.t21.tm17.below`
+- `.tm17.t21.below`
 - `.t38.tm18.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7181952"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7181952"] > .below.kicker`
 - `.t39.tm26.headline`
 - `article[data-tag="debatt,klima"]`
-- `article[data-tag="satellitt,telekom,ntb,utenriks"]`
+- `article[data-tag="ntb,utenriks,satellitt,telekom"]`
 - `article[data-tag="automatisering,debatt"]`
-- `a[data-k5a-url="https://www.tu.no/a/7181251"] > .t19.tm19.headline`
+- `.t19.tm19.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7181671"] > .media`
 - `.t78`
 - `a[data-k5a-url="https://www.tu.no/a/7181336"] > .media`
 - `a[data-k5a-url="https://www.digi.no/a/7181551"] > .t19.below.kicker`
-- `.t48.tm26.headline`
+- `a[data-k5a-url="https://www.digi.no/a/7181551"] > .t48.tm26.headline`
 - `.t14`
 - `.t41.tm17.headline`
 - `.t33.tm22.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7181185"] > .media`
 - `a[data-k5a-url="https://www.digi.no/a/7181185"] > .t20.below.kicker`
 - `a[data-k5a-url="https://www.digi.no/a/7181185"] > .t43.headline[itemprop="headline"]`
-- `.row.large-12.small-12:nth-child(80)`
-- `.border-side-bottom.mobile_border-side-bottom.has-row-header:nth-child(81) > h5`
-- `.tm26.t37.headline`
+- `.row.large-12.small-12:nth-child(81)`
+- `.border-side-bottom.mobile_border-side-bottom.has-row-header:nth-child(82) > h5`
+- `.t37.tm26.headline`
 - `.t35.tm29.headline`
-- `a[data-k5a-url="https://www.tu.no/a/7178977"] > .below.kicker`
-- `.tm36.t46.headline`
-- `.t33.tm25.headline`
-- `article[data-tag="innenriks,energi,ntb,kraft"]`
-- `a[data-k5a-url="https://www.tu.no/a/7181503"] > .below.kicker`
-- `a[data-k5a-url="https://www.tu.no/a/7181503"] > .t33.tm23.headline`
-- `a[data-k5a-url="https://www.tu.no/a/7180175"] > .t22.below.kicker`
-- `.t48.tm25.headline`
-- `a[data-k5a-url="https://www.tu.no/a/7181015"] > .desktop-floatLeft.media`
-- `a[data-k5a-url="https://www.tu.no/a/7181015"] > .t22.below.kicker`
-- `.t48.tm24.headline`
-- `a[data-k5a-url="https://www.digi.no/a/7181132"] > .t20.below.kicker`
-- `a[data-k5a-url="https://www.digi.no/a/7181132"] > .t32.tm23.headline`
-- `article[data-instance="7181446"]`
-- `a[data-k5a-url="https://www.digi.no/a/7181098"] > .t22.below.kicker`
-- `a[data-k5a-url="https://www.digi.no/a/7181098"] > .t51.headline[itemprop="headline"]`
-- `a[data-k5a-url="https://www.tu.no/a/7181025"] > .desktop-floatLeft.media`
-- `.t46.tm25.headline`
-- `article[data-instance="7180664"]`
-- `a[data-k5a-url="https://www.tu.no/a/7179629"] > .media`
-- `.t31.tm24.headline`
-- `a[data-k5a-url="https://www.digi.no/a/7178857"] > .media`
-- `a[data-k5a-url="https://www.tu.no/a/7181210"] > .mobile-floatLeft.media`
-- `.t29.tm23.headline`
-- `.t50.tm20.headline`
-- `.row.large-12.small-12:nth-child(92)`
-- `a[data-k5a-url="https://www.tu.no/a/7181077"] > .media`
-- `.t21.tm23.headline`
-- `article[data-tag="oljefondet,klima"]`
-- `.t18.tm21.headline`
-- `.t56.tm20.headline`
-- `a[data-k5a-url="https://www.tu.no/a/7179281"] > .desktop-floatLeft.mobile-floatLeft.media`
-- `a[data-k5a-url="https://www.tu.no/a/7179281"] > .tm17.below.kicker`
-- `.t39.tm23.headline`
-- `a[data-k5a-url="https://www.tu.no/a/7179706"] > .tm17.below.kicker`
-- `.tm41.t37.headline`
-- `a[data-k5a-url="https://www.digi.no/a/7180555"] > .media`
-- `a[data-k5a-url="https://www.digi.no/a/7180555"] > .below.kicker`
-- `a[data-k5a-url="https://www.digi.no/a/7180555"] > .t27.headline[itemprop="headline"]`
-- `article[data-tag="datasenter,innenriks,ntb"]`
-- `a[data-k5a-url="https://www.digi.no/a/7179962"] > .t22.below.kicker`
-- `a[data-k5a-url="https://www.digi.no/a/7179962"] > .t41.tm29.headline`
-- `a[data-k5a-url="https://www.digi.no/a/7180635"] > .t20.below.kicker`
-- `.t64`
-- `a[data-k5a-url="https://www.tu.no/a/7179870"] > .desktop-floatLeft.media`
-- `.t41.tm20.headline`
-- `.row.large-12.small-12:nth-child(99)`
-- `.row.large-12.small-12:nth-child(100)`
-- `a[data-k5a-url="https://www.tu.no/a/7179760"] > .media`
-- `article[data-tag="samferdsel,fra forskning"]`
-- `a[data-k5a-url="https://www.tu.no/a/7178237"] > .t21.below.kicker`
-- `.t47.tm25.headline`
-- `article[data-tag="universet,romfart"]`
 - `.lab-scrollbox-headline`
 - `#markup_7181130 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="7181131"] > .content > .floatingTextSubset.media > .floatingText`
@@ -320,44 +273,44 @@
 - `.tm21.t30.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7180366"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7180366"] > .t23.below.kicker`
-- `a[data-k5a-url="https://www.tu.no/a/7180366"] > .tm31.t40.headline`
+- `a[data-k5a-url="https://www.tu.no/a/7180366"] > .t40.tm31.headline`
 - `.t53.tm25.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7180106"] > .mobile-floatLeft.media`
 - `.tm14`
 - `.tm36.t38.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7180028"] > .t34.headline[itemprop="headline"]`
-- `.row.large-12.small-12:nth-child(108)`
-- `.row.large-12.small-12:nth-child(109)`
-- `.row.large-12.small-12:nth-child(110)`
+- `.row.large-12.small-12:nth-child(88)`
+- `.row.large-12.small-12:nth-child(89)`
+- `.row.large-12.small-12:nth-child(90)`
 - `.t35.tm27.headline`
 - `article[data-instance="7148212"]`
-- `a[data-k5a-url="https://www.tu.no/a/7148327"] > .t37.tm27.headline`
-- `.row.large-12.small-12:nth-child(113)`
+- `.t37.tm27.headline`
+- `.row.large-12.small-12:nth-child(93)`
 - `.border-tum-green`
 - `a[data-k5a-url="https://www.digi.no/a/7146728"] > .mobile-floatLeft.media`
 - `a[data-k5a-url="https://www.digi.no/a/7146728"] > .t26.tm18.headline`
 - `article[data-instance="7146844"]`
-- `.row.large-12.small-12:nth-child(116)`
+- `.row.large-12.small-12:nth-child(96)`
 - `.t55.tm30.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7147360"] > .mobile-floatLeft.media`
 - `a[data-k5a-url="https://www.tu.no/a/7147360"] > .t31.tm23.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7147154"] > .media`
 - `.t37.tm24.headline`
 - `a[data-k5a-url="https://www.digi.no/a/7143934"] > .below.kicker`
-- `.align-left.mobile_text_align_align-left.tm21`
-- `.has-row-header.color_mobile_no_bg_color.row:nth-child(120) > h5`
+- `.align-left.mobile_text_align_align-left.t40`
+- `.has-row-header.color_mobile_no_bg_color.row:nth-child(100) > h5`
 - `.t22.tm18.below`
 - `.t35.tm28.headline`
 - `.align-left.mobile_text_align_align-left.tm30`
 - `a[data-k5a-url="https://www.digi.no/a/7146087"] > .below.kicker`
-- `.tm26.t33.color_mobile_no_bg_color`
-- `article[data-tag="klima,pfas,miljø,helse"]`
+- `.t33.tm26.color_mobile_no_bg_color`
+- `article[data-tag="helse,klima,pfas,miljø"]`
 - `a[data-k5a-url="https://www.digi.no/a/7146151"] > .desktop-floatLeft.media`
-- `.t23.tm20.below`
+- `.tm20.t23.below`
 - `.t53.tm31.headline`
-- `a[data-k5a-url="https://www.tu.no/a/7145088"] > .t32.tm25.headline`
+- `.t32.tm25.headline`
 - `.t21.tm18.below`
-- `.t51.tm26.headline`
+- `.t51`
 - `.mobile_no_border_color.mobile_no_border_side.color_mobile_no_bg_color > unite-player,#status-container`
 - `.text_singleline`
 - `article[data-instance="7145966"]`
@@ -365,11 +318,11 @@
 - `.t26.tm26.headline`
 - `article[data-tag="datasenter,energi,vindkraft"]`
 - `.t53.tm27.headline`
-- `.row.large-12.small-12:nth-child(124) > .columns.large-4.large-abs-4`
+- `.row.large-12.small-12:nth-child(104) > .columns.large-4.large-abs-4`
 - `a[data-k5a-url="https://www.tu.no/a/7142746"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7144423"] > .t36.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.tu.no/a/7145539"] > .media`
-- `.tm31.t27.headline`
+- `.t27.tm31.headline`
 - `article[data-instance="7143617"]`
 - `article[data-tag="energi,vannkraft"]`
 - `a[data-k5a-url="https://www.digi.no/a/7144018"] > .t20.below.kicker`
@@ -378,7 +331,7 @@
 - `.t45.tm22.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7142874"] > .below.kicker`
 - `.t46.tm29.headline`
-- `article[data-tag="energi,utenriks,ntb,equinor"]`
+- `article[data-tag="ntb,utenriks,energi,equinor"]`
 - `a[data-k5a-url="https://www.digi.no/a/7144043"] > .media`
 - `.t29.tm27.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7140996"] > .desktop-floatLeft.media`
@@ -387,36 +340,36 @@
 - `.tm28.t33.headline`
 - `a[data-k5a-url="https://www.tu.no/a/6445917"] > .media`
 - `.t25.tm28.headline`
-- `article[data-tag="nito,kommentar,arbeidsliv"]`
+- `article[data-tag="kommentar,arbeidsliv,nito"]`
 - `a[data-k5a-url="https://www.tu.no/a/7141633"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7141633"] > .below.kicker`
 - `.t38.tm29.headline`
 - `article[data-instance="7141950"]`
 - `a[data-k5a-url="https://www.digi.no/a/7141845"] > .t20.below.kicker`
-- `a[data-k5a-url="https://www.digi.no/a/7141845"] > .t33.tm23.headline`
+- `a[data-k5a-url="https://www.digi.no/a/7141845"] > .tm23.t33.headline`
 - `article[data-instance="7140962"]`
 - `a[data-k5a-url="https://www.tu.no/a/7141917"] > .mobile-floatLeft.media`
 - `.t17`
 - `.t29.tm25.headline`
-- `article[data-tag="samferdsel,klima"]`
-- `article[data-tag="industri,eu"]`
+- `article[data-tag="klima,samferdsel"]`
+- `article[data-tag="eu,industri"]`
 - `article[data-instance="7142185"]`
 - `a[data-k5a-url="https://www.digi.no/a/5705943"] > .t27.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.digi.no/a/7141598"] > .t23.below.kicker`
 - `.t52.tm29.headline`
 - `.t31.tm25.headline`
-- `.row.large-12.small-12:nth-child(136)`
+- `.row.large-12.small-12:nth-child(116)`
 - `a[data-k5a-url="https://www.tu.no/a/5704819"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/5704819"] > .t39.tm28.headline`
 - `a[data-k5a-url="https://www.tu.no/a/7141196"] > .mobile-floatLeft.media`
 - `a[data-k5a-url="https://www.tu.no/a/7141196"] > .tm27.t33.headline`
-- `.row.large-12.small-12:nth-child(138)`
+- `.row.large-12.small-12:nth-child(118)`
 - `article[data-tag="andøya,romfart"]`
 - `a[data-k5a-url="https://www.digi.no/a/7141732"] > .below.kicker`
 - `a[data-k5a-url="https://www.digi.no/a/7141732"] > .t31.headline[itemprop="headline"]`
 - `article[data-tag="datasenter,it"]`
-- `article[data-tag="telenor,telekom"]`
-- `.t26.below.kicker`
+- `article[data-tag="telekom,telenor"]`
+- `a[data-k5a-url="https://www.tu.no/a/7141244"] > .t26.below.kicker`
 - `.t62.tm36.headline`
 - `a[data-k5a-url="https://www.tu.no/a/5706079"] > .t45.headline[itemprop="headline"]`
 - `a[data-k5a-url="https://www.tu.no/a/7141373"] > .t25.below.kicker`
@@ -440,7 +393,7 @@
 - `unite-player[muted=""],#status-container`
 - `.t30.below.kicker`
 - `.t86`
-- `.row.large-12.small-12:nth-child(148)`
+- `.row.large-12.small-12:nth-child(128)`
 - `a[data-k5a-url="https://www.tu.no/a/7140700"] > .media`
 - `a[data-k5a-url="https://www.tu.no/a/7140700"] > .t23.below.kicker`
 - `.tm49`
@@ -451,7 +404,7 @@
 - `a[data-k5a-url="https://www.digi.no/a/5705812"] > .media`
 - `a[data-k5a-url="https://www.digi.no/a/5705812"] > .t21.below.kicker`
 - `.tm42`
-- `article[data-tag="utenriks,ntb,forsvar"]`
+- `article[data-tag="forsvar,ntb,utenriks"]`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

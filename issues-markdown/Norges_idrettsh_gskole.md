@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges idrettshøgskole
 
-**Timestamp:** 2026-11-17T07:08:16.099Z
+**Timestamp:** 2026-11-18T06:39:16.831Z
 **URL:** [https://www.nih.no/](https://www.nih.no/)
 **Total Violations:** 1
 

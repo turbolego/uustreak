@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-11-17T06:59:29.383Z
+**Timestamp:** 2026-11-18T06:31:14.966Z
 **URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
 **Total Violations:** 6
 
@@ -89,9 +89,9 @@
 - `#boligreise`
 - `#boliglan`
 - `#mer-om-bolig`
-- `.bg-none`
+- `.emn-column.bg-none:nth-child(1)`
 - `.has-label-above > .wp-block-make-newsletter-subscription-form__controls > .wp-block-make-newsletter-subscription-form__field`
-- `#make-newsletter-note-2`
+- `#make-newsletter-note-3`
 - `h6`
 - `#boligsok > .emn-section > h2`
 - `#vi-gjor-boligen-din-synlig`

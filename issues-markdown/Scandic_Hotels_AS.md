@@ -1,6 +1,6 @@
 # WCAG Violations Report for Scandic Hotels AS
 
-**Timestamp:** 2026-11-17T07:07:01.632Z
+**Timestamp:** 2026-11-18T06:42:08.428Z
 **URL:** [https://www.scandichotels.com/no](https://www.scandichotels.com/no)
 **Total Violations:** 5
 
@@ -28,8 +28,8 @@
 
 #### Affected Elements:
 
-- `.contentCard-module__HLpyJG__link[href$="julebord"] > .contentCard-module__HLpyJG__card > .contentCard-module__HLpyJG__content > h4`
-- `a[href$="scandic-hotels"] > .contentCard-module__HLpyJG__card > .contentCard-module__HLpyJG__content > h4`
+- `.contentCard-module__iL1q4W__link[href$="julebord"] > .contentCard-module__iL1q4W__card > .contentCard-module__iL1q4W__content > h4`
+- `a[href$="scandic-hotels"] > .contentCard-module__iL1q4W__card > .contentCard-module__iL1q4W__content > h4`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `#react-aria9813668893-_r_8a_`
-- `#react-aria9813668893-_r_8c_`
+- `#react-aria6108944261-_r_8a_`
+- `#react-aria6108944261-_r_8c_`
 
 ### Interactive controls must not be nested
 
@@ -54,7 +54,7 @@
 
 #### Affected Elements:
 
-- `.booking-code-module__wWrYrG__container > .button-module__NbgNfa__variant-text.button-module__NbgNfa__size-lg.typography-module__vfKlZa__Body-Paragraph-mdBold`
+- `.booking-code-module__wWrYrG__container > .button-module__dyJZCG__variant-text.button-module__dyJZCG__size-lg.typography-module__WuwJsW__Body-Paragraph-mdBold`
 
 ### All page content should be contained by landmarks
 

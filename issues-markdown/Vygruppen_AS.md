@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-11-17T07:15:58.111Z
+**Timestamp:** 2026-11-18T06:49:42.615Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 4
 
@@ -17,17 +17,17 @@
 #### Affected Elements:
 
 - `.css-1096yyu`
-- `.css-1dc70b0[aria-label="Göteborg, Tog"][role="listitem"]`
-- `.css-1dc70b0[aria-label="Kristiansand, Buss"][role="listitem"]`
-- `.css-1dc70b0[aria-label="Geilo, Tog"][role="listitem"]`
-- `.css-rnug4h.group[target="_blank"]:nth-child(1)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(2)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(3)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(4)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(5)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(6)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(7)`
-- `.css-rnug4h.group[target="_blank"]:nth-child(8)`
+- `.css-43gtu1 > .css-1dc70b0[role="listitem"][data-discover="true"]`
+- `.css-1o36ap5 > .css-1dc70b0[role="listitem"][data-discover="true"]`
+- `.css-nans3h > .css-1dc70b0[role="listitem"][data-discover="true"]`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(1)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(2)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(3)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(4)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(5)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(6)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(7)`
+- `.css-1gaoxdw[target="_blank"][role="listitem"]:nth-child(8)`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -39,8 +39,8 @@
 
 #### Affected Elements:
 
-- `.css-g2hmy8[href$="leie-buss"][data-discover="true"]`
-- `.css-g2hmy8[href$="gruppereise"][data-discover="true"]`
+- `.css-9t0pm3[href$="leie-buss"][data-discover="true"]`
+- `.css-9t0pm3[href$="gruppereise"][data-discover="true"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -53,7 +53,7 @@
 #### Affected Elements:
 
 - `.css-d7200m > .css-79elbk > .css-jdcmw5[role="region"]`
-- `.css-34w79r[data-scope="toast"][data-part="group"]:nth-child(10)`
+- `.css-34w79r[data-scope="toast"][data-part="group"]:nth-child(22)`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
