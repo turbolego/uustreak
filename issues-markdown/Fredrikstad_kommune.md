@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-11-18T06:32:44.765Z
+**Timestamp:** 2026-11-18T12:47:07.412Z
 **URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
 **Total Violations:** 4
 
@@ -57,12 +57,12 @@
 - `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
 - `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
 - `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1763241"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1763241"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1763241"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
 - `a[href="/kalender?id=1761789"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
 - `a[href="/kalender?id=1761789"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
 - `a[href="/kalender?id=1761789"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1762860"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1762860"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1762860"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
 - `a[href="/kalender?id=1731556"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
 - `a[href="/kalender?id=1731556"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
 - `a[href="/kalender?id=1731556"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`

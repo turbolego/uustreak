@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-11-18T06:45:32.794Z
+**Timestamp:** 2026-11-18T13:17:30.291Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
 **Total Violations:** 5
 
@@ -12,10 +12,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 5
 
 #### Affected Elements:
 
+- `.link[href$="camp-hudoy/"]`
+- `.link[href$="sommerjobb/"]`
+- `.link[href$="utleie/"]`
 - `.av-countdown-time`
 - `.av-countdown-time-label`
 

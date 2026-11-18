@@ -1,6 +1,6 @@
 # WCAG Violations Report for Husbanken
 
-**Timestamp:** 2026-11-18T06:34:04.218Z
+**Timestamp:** 2026-11-18T12:52:52.676Z
 **URL:** [https://www.husbanken.no/person/](https://www.husbanken.no/person/)
 **Total Violations:** 1
 

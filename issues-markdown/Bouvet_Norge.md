@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2026-11-18T06:27:51.098Z
+**Timestamp:** 2026-11-18T12:36:13.724Z
 **URL:** [https://www.bouvet.no/](https://www.bouvet.no/)
 **Total Violations:** 6
 

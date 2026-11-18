@@ -1,0 +1,411 @@
+{
+  "project": "Tromsø brann og redning KF",
+  "timestamp": "2026-11-18T13:20:47.960Z",
+  "url": "https://www.tromsobrannogredning.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<li role=\"button\" class=\"FeedItem__Container-sc-bfdm7q-3 eHAlfv\">",
+          "target": [
+            "iframe",
+            "li:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe loading=\"lazy\" src=\"https://embed.acast.com/65005f30e154e80011154cf2?feed=true\" frameborder=\"0\" width=\"100%\" height=\"280px\"></iframe>",
+          "target": [
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<a class=\"breakdance-link button-atom button-atom--text bde-loop-item__button ee-post-button\" href=\"https://www.tromsobrannogredning.no/tjenester/beredskap/\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Beredskap\">",
+          "target": [
+            "a[aria-label=\"Read more about Beredskap\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link button-atom button-atom--text bde-loop-item__button ee-post-button\" href=\"https://www.tromsobrannogredning.no/tjenester/forebyggende/forebyggende-bolig/\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Forebyggende / bolig\">",
+          "target": [
+            ".bde-post-list-25-106 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(2) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link button-atom button-atom--text bde-loop-item__button ee-post-button\" href=\"https://www.tromsobrannogredning.no/tjenester/forebyggende/forebyggende-virksomheter/\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Forebyggende / virksomheter\">",
+          "target": [
+            ".bde-post-list-25-106 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(3) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link button-atom button-atom--text bde-loop-item__button ee-post-button\" href=\"https://www.tromsobrannogredning.no/tjenester/tromso-110-sentral/\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Tromsø 110-sentral\">",
+          "target": [
+            ".bde-post-list-25-106 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(4) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link button-atom button-atom--text bde-loop-item__button ee-post-button\" href=\"https://www.tromsobrannogredning.no/na-er-balforbudet-i-gang/\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Nå er bålforbudet i gang!\">",
+          "target": [
+            ".bde-post-list-25-129 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(1) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link button-atom button-atom--text bde-loop-item__button ee-post-button\" href=\"https://www.tromsobrannogredning.no/brannovelse-pa-sandneshamn/\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Brannøvelse på Sandneshamn\">",
+          "target": [
+            ".bde-post-list-25-129 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(2) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link butt...\" href=\"https://www.tromsobr...\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Tilb...\">",
+          "target": [
+            ".bde-post-list-25-129 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(3) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"breakdance-link butt...\" href=\"https://www.tromsobr...\" target=\"_self\" data-type=\"url\" aria-label=\"Read more about Sama...\">",
+          "target": [
+            ".bde-post-list-25-129 > .bde-loop.bde-loop-grid.ee-posts > article:nth-child(4) > .bde-loop-item__wrap.ee-post-wrap > .button-atom--text.bde-loop-item__button.ee-post-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul data-test-id=\"Feed\" class=\"Feed__Container-sc-t7v7m-0 dOlSBp\">",
+          "target": [
+            "iframe",
+            "ul"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: div"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 16,
+      "nodes": [
+        {
+          "html": "<div class=\"section-background-video\">\n              <video autoplay=\"\" muted=\"\" loop=\"\">\n        <source src=\"https://www.tromsobrannogredning.no/wp-content/uploads/2026/03/Nettsted-1366-×-768-px-7.mp4\" type=\"video/mp4\">\n      </video>\n      </div>",
+          "target": [
+            ".section-background-video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h4 class=\"bde-heading-25-101 bde-heading\">\nEtablert 1870\n</h4>",
+          "target": [
+            "h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1 class=\"bde-heading-25-102 bde-heading\">\nTromsø brann og redning\n</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"bde-section-25-104 bde-section\">",
+          "target": [
+            ".bde-section-25-104"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-grid-25-109 bde-grid\">",
+          "target": [
+            ".bde-grid-25-109"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"bde-heading-25-118 bde-heading\">\nHjelp oss å forebygge brann!\n</h2>",
+          "target": [
+            ".bde-heading-25-118"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-text-25-119 bde-text\">",
+          "target": [
+            ".bde-text-25-119"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"bde-section-25-121 bde-section\">",
+          "target": [
+            ".bde-section-25-121"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"bde-heading-79-114 bde-heading\">\nTreff oss<br>\n</h2>",
+          "target": [
+            ".bde-heading-79-114"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-text-79-115 bde-text\">\nMandag – Fredag<br>09.00-14.00\n</div>",
+          "target": [
+            ".bde-text-79-115"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"bde-heading-79-118 bde-heading\">\nRing oss\n</h2>",
+          "target": [
+            ".bde-heading-79-118"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-text-79-119 bde-text\">\n415 24 110\n</div>",
+          "target": [
+            ".bde-text-79-119"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"bde-heading-79-122 bde-heading\">\nSkriv til oss\n</h2>",
+          "target": [
+            ".bde-heading-79-122"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-text-79-123 bde-text\">\nForsøket 9, 9010 Tromsø<br><a href=\"mailto:brannstasjonen@tromso.kommune.no\">brannstasjonen@tromso.kommune.no</a>\n</div>",
+          "target": [
+            ".bde-text-79-123"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-div-79-110 bde-div\">",
+          "target": [
+            ".bde-div-79-110"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bde-text-79-125 bde-text\">",
+          "target": [
+            ".bde-text-79-125"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] and [role=\"image\"] elements have alternative text",
+      "help": "[role=\"img\"] and [role=\"image\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div role=\"img\" class=\"ShareControl__ShareIcon-sc-1pwe6vd-0 dtOXQU\">",
+          "target": [
+            "iframe",
+            ".ShareControl__ShareIcon-sc-1pwe6vd-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"img\" class=\"SubscribeLink__PlusIcon-sc-q4x3v7-0 hFQxFV\">",
+          "target": [
+            "iframe",
+            ".SubscribeLink__PlusIcon-sc-q4x3v7-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul data-test-id=\"Feed\" class=\"Feed__Container-sc-t7v7m-0 dOlSBp\">",
+          "target": [
+            "iframe",
+            "ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

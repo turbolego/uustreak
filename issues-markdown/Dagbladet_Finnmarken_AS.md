@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-11-18T06:29:24.121Z
+**Timestamp:** 2026-11-18T12:39:23.360Z
 **URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -29,6 +29,18 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v3[data-slides="3"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Elements marked as presentational should be consistently ignored
 

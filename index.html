@@ -260,6 +260,7 @@
     <script src="js/summary.js"></script>
     <script src="js/invalid_urls.js"></script>
     <script src="js/achievements.js"></script>
+    <script src="js/forenkla-kontroll.js"></script>
     <script>
         const reportListUrl = 'historical-data/report-list.json';
         let currentDate = new Date().toISOString().split('T')[0];
@@ -1395,7 +1396,10 @@
             tableContainer.innerHTML = '';
 
             const latestReports = reports;
-            const achievementsByProject = await loadProjectAchievements();
+            const [projectsByName, forenklaKontrollScores] = await Promise.all([
+                loadProjects(),
+                loadForenklaKontrollScores(),
+            ]);
             const reportStreaks = new Map();
             const reportDayCounts = new Map();
             const viewMode = document.getElementById('view-selector').value;
@@ -1433,6 +1437,7 @@
                 'Streak',
                 'Dager med brudd',
                 'Feil pga. embedded kode',
+                'Score forenkla kontroll 2025',
                 ...(viewMode === 'types' ? Array.from(allViolationTypes) : Array.from(allViolationTags)),
             ];
 
@@ -1494,6 +1499,7 @@
             const tbody = document.createElement('tbody');
             latestReports.forEach((report, reportIndex) => {
                 const row = document.createElement('tr');
+                const project = projectsByName.get(report.project);
                 const totalViolations = Number.isFinite(report.total_violations) ? report.total_violations : 0;
                 const trendData = getProjectTrendData(report.project, date);
                 const trendChangeCount = countViolationChanges(trendData);
@@ -1526,7 +1532,7 @@
                         cell.appendChild(button);
                     } else if (index === 3) {
                         // Achievements column: sorted by number of achievements
-                        const achievements = achievementsByProject.get(report.project) || [];
+                        const achievements = project?.achievements || [];
                         cell.dataset.sortValue = achievements.length;
                         cell.appendChild(createAchievementsButton(report.project, achievements));
                     } else if (index === 4) {
@@ -1563,6 +1569,19 @@
                             : { count: 0, providers: [] };
                         cell.dataset.sortValue = count;
                         cell.textContent = count > 0 && providers.length ? `${count} (${providers.join(', ')})` : count;
+                    } else if (index === FORENKLA_KONTROLL_COLUMN_INDEX) {
+                        const key = forenklaKontrollUrlKey(project?.baseURL ?? report.url);
+                        const result = forenklaKontrollScores.get(key);
+                        if (result) {
+                            const link = document.createElement('a');
+                            link.href = result.reportUrl;
+                            link.textContent = result.score;
+                            link.setAttribute('aria-label', `${result.score} – forenkla kontroll 2025 for ${report.project}`);
+                            cell.dataset.sortValue = result.score;
+                            cell.appendChild(link);
+                        } else {
+                            cell.textContent = '–';
+                        }
                     } else {
                         if (viewMode === 'types') {
                             cell.textContent = report.violations.find(v => v.id === col)?.violation_count || 0;
@@ -1604,8 +1623,9 @@
             sortTable(table, 6, true);
         }
 
-        // Columns after 'Feil pga. embedded kode' (per violation type / WCAG tag) are collapsed by default
-        const FIRST_DETAIL_COLUMN_INDEX = 9;
+        const FORENKLA_KONTROLL_COLUMN_INDEX = 9;
+        // Per-violation-type and WCAG-tag columns are collapsed by default.
+        const FIRST_DETAIL_COLUMN_INDEX = FORENKLA_KONTROLL_COLUMN_INDEX + 1;
         let detailColumnsExpanded = false;
 
         function applyDetailColumnsState(table, detailColumnCount) {
@@ -1639,7 +1659,8 @@
             if (!rows.length) return;
 
             const firstCell = rows[0].children[columnIndex];
-            const isNumeric = firstCell?.dataset.sortValue !== undefined ||
+            const isScoreColumn = columnIndex === FORENKLA_KONTROLL_COLUMN_INDEX;
+            const isNumeric = isScoreColumn || firstCell?.dataset.sortValue !== undefined ||
                 !isNaN(firstCell?.textContent);
             
             // Determine sort direction based on whether we're sorting the same column
@@ -1701,6 +1722,11 @@
                 
                 const aCell = a.children[columnIndex];
                 const bCell = b.children[columnIndex];
+                if (isScoreColumn) {
+                    const missingOrder = Number(aCell.dataset.sortValue === undefined) -
+                        Number(bCell.dataset.sortValue === undefined);
+                    if (missingOrder !== 0) return missingOrder;
+                }
                 aValue = aCell?.dataset.sortValue ?? aCell?.textContent ?? '';
                 bValue = bCell?.dataset.sortValue ?? bCell?.textContent ?? '';
 

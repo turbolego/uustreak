@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-11-18T06:31:14.966Z
+**Timestamp:** 2026-11-18T12:42:46.920Z
 **URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
 **Total Violations:** 6
 
@@ -12,15 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#declineButton`
-- `#menu-item-1064875 > a`
-- `#menu-item-1064874 > a`
-- `#menu-item-1064876 > a`
-- `.site-header__toggle-label`
 
 ### Heading levels should only increase by one
 

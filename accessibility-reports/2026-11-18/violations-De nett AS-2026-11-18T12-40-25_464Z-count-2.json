@@ -1,0 +1,108 @@
+{
+  "project": "De nett AS",
+  "timestamp": "2026-11-18T12:40:25.465Z",
+  "url": "https://denett.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<a aria-label=\"Gå til https://quantinsight.net/outage/index.html#7080010003614\" href=\"https://quantinsight.net/outage/index.html#7080010003614\" target=\"_blank\">",
+          "target": [
+            ".bot-cta > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Gå til https://powercatch-drangedal.atlassian.net/servicedesk/customer/portals\" href=\"https://powercatch-drangedal.atlassian.net/servicedesk/customer/portals\">\n                                                                        Kundeportal\n                                </a>",
+          "target": [
+            ".arrow-link-external.bot-cta.home-entry > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Gå til https://denett.no/norgespris-2\" href=\"https://denett.no/norgespris-2\">\n                                                                        Les mer\n                                </a>",
+          "target": [
+            ".bot-cta.home-entry > a[href$=\"norgespris-2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Gå til https://denett.no/kompensasjon-ved-langvarige-strømbrudd\" href=\"https://denett.no/kompensasjon-ved-langvarige-strømbrudd\" class=\"article-card-in\">",
+          "target": [
+            ".article-card._s6._l4:nth-child(1) > .article-card-in"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Gå til https://denett.no/vi-takker-for-innsatsen\" href=\"https://denett.no/vi-takker-for-innsatsen\" class=\"article-card-in\">",
+          "target": [
+            ".article-card._s6._l4:nth-child(2) > .article-card-in"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Gå til https://denett.no/arbeid-på-nakksjø-linja-2-2\" href=\"https://denett.no/arbeid-på-nakksjø-linja-2-2\" class=\"article-card-in\">",
+          "target": [
+            ".article-card._s6._l4:nth-child(3) > .article-card-in"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Gå til https://www.facebook.com/denett2022\" href=\"https://www.facebook.com/denett2022\" target=\"_blank\">\n                                                    DE Nett på Facebook\n                                                </a>",
+          "target": [
+            "._xl4.ql:nth-child(3) > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"cm__content \">\n                <h3>Denne nettsiden benytter seg av tredjeparts cookies</h3>\n          </div>",
+          "target": [
+            "div[data-cm-view=\"default\"] > .cm__content:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cm__content \" style=\"\">",
+          "target": [
+            "div[data-cm-view=\"default\"] > .cm__content:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

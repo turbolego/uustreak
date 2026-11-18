@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-11-18T06:27:02.807Z
+**Timestamp:** 2026-11-18T12:35:30.923Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
-**Total Violations:** 5
+**Total Violations:** 9
 
 ## Violation Details
+
+### Certain ARIA roles must contain particular children
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#mnemonic-iframe-eff11b51-4886-4ab8-b73a-a8c3e9f36e68, iframe, .hunt-strip`
 
 ### Buttons must have discernible text
 
@@ -17,6 +29,18 @@
 #### Affected Elements:
 
 - `#eaframe, button`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#mnemonic-iframe-eff11b51-4886-4ab8-b73a-a8c3e9f36e68, iframe, .hunt-kicker-time`
 
 ### Frames must have an accessible name
 
@@ -42,14 +66,38 @@
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11339928 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11339928 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339926 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339926 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11339928 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11339928 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339930 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11339930 > .brokerinfo-container > .brokerlogo`
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#mnemonic-iframe-eff11b51-4886-4ab8-b73a-a8c3e9f36e68, iframe, a`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.lp_header`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -61,7 +109,7 @@
 
 #### Affected Elements:
 
-- `img[height="80"]`
+- `img[loading="eager"]`
 
 ### All page content should be contained by landmarks
 

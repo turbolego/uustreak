@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-11-18T06:27:28.730Z
+**Timestamp:** 2026-11-18T12:36:42.330Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `header > h2`
+- `.rodimus-complex-front[data-group="ghost"]:nth-child(40) > brick-teaser-group-v1[data-color-skin="custom-one"] > header > h2`
 
 ### Frames must have an accessible name
 
@@ -59,12 +59,24 @@
 - `#eaframe, #brokerimage-container-11342373 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11342373 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11338233 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11342372 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11342372 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11336211 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11338233 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-11336211 > .brokerinfo-container > .brokerlogo`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v3[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

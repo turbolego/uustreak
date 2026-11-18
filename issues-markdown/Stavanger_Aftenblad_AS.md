@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-11-18T06:43:03.452Z
+**Timestamp:** 2026-11-18T13:17:31.899Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 3
 

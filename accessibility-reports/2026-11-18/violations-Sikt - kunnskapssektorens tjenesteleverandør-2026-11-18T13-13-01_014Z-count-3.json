@@ -1,0 +1,92 @@
+{
+  "project": "Sikt - kunnskapssektorens tjenesteleverandør",
+  "timestamp": "2026-11-18T13:13:01.014Z",
+  "url": "https://www.sikt.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" class=\"header__search\" aria-controls=\"search\">",
+          "target": [
+            ".header__search"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"search\""
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img alt=\"FS 30 år: Ett system...\" loading=\"lazy\" width=\"785\" height=\"528\" decoding=\"async\" data-nimg=\"1\" sizes=\"(max-width: 599px) 1...\" srcset=\"/_next/image?url=htt...\" src=\"/_next/image?url=htt...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".news-article:nth-child(1) > .news-article__link > .news-article__image > img[width=\"785\"][height=\"528\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Ny økonomiløsning fo...\" loading=\"lazy\" width=\"785\" height=\"528\" decoding=\"async\" data-nimg=\"1\" sizes=\"(max-width: 599px) 1...\" srcset=\"/_next/image?url=htt...\" src=\"/_next/image?url=htt...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".news-article:nth-child(2) > .news-article__link > .news-article__image > img[width=\"785\"][height=\"528\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Midler til videreutv...\" loading=\"lazy\" width=\"785\" height=\"528\" decoding=\"async\" data-nimg=\"1\" sizes=\"(max-width: 599px) 1...\" srcset=\"/_next/image?url=htt...\" src=\"/_next/image?url=htt...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".news-article:nth-child(3) > .news-article__link > .news-article__image > img[width=\"785\"][height=\"528\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"nav-section\" aria-label=\"\">",
+          "target": [
+            ".nav-section[aria-label=\"\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

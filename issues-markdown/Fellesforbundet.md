@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fellesforbundet
 
-**Timestamp:** 2026-11-18T06:32:07.372Z
+**Timestamp:** 2026-11-18T12:44:24.179Z
 **URL:** [https://www.fellesforbundet.no/](https://www.fellesforbundet.no/)
 **Total Violations:** 3
 
@@ -43,7 +43,7 @@
 - `.text-col`
 - `video`
 - `.wp-container-core-group-is-layout-2518a440`
-- `.max-1160 > .wp-block-heading`
+- `#nyheter`
 - `.post-17638 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .wp-container-core-group-is-layout-3fc47171.is-vertical.wp-block-group-is-layout-flex`
 - `.post-17638 > .wp-container-core-group-is-layout-13fec421.has-white-background-color.is-content-justification-left > .taxonomy-category.wp-block-post-terms > a[rel="tag"]:nth-child(1)`
 - `a[rel="tag"]:nth-child(3)`
