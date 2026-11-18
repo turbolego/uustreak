@@ -22,8 +22,9 @@ test('all 2025 scores match project URLs, including labels that require correcti
     assert.equal(scores.get(key('http://www.abakus.as/')).score, 100);
     assert.equal(scores.get(key('http://www.abakus.as/')).reportUrl,
         'https://kontroll.uutilsynet.no/base/resultat/rapport/fc39bbee4e58d76a/organisasjon/983335543');
-    assert.equal(scores.get(key('https://bremanger.kommune.no/')).score, Math.round(report.find(row => row.loeysingId === 271).score * 100));
-    assert.equal(scores.get(key('https://bygland.kommune.no/')).score, Math.round(report.find(row => row.loeysingId === 214).score * 100));
+    assert.equal(scores.get(key('https://www.sporveien.no/')).score, 99);
+    assert.equal(scores.get(key('https://bremanger.kommune.no/')).score, 82);
+    assert.equal(scores.get(key('https://bygland.kommune.no/')).score, 91);
     assert.equal(scores.get(key('https://www.politiet.no/')), undefined);
 });
 
@@ -33,6 +34,6 @@ test('keeps pages on the same host separate and preserves a real zero score', ()
         { loeysingNamn: 'www.example.com/avdeling', score: 0.856 },
     ].map(row => ({ ...row, rapportId: 'fc39bbee4e58d76a', organisasjonsnummer: '940152496' })));
     assert.equal(scores.get(key('https://www.example.com/')).score, 0);
-    assert.equal(scores.get(key('http://example.com/avdeling/')).score, 86);
+    assert.equal(scores.get(key('http://example.com/avdeling/')).score, 85);
     assert.equal(scores.get(key('https://example.com/annet/')), undefined);
 });

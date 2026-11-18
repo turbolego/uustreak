@@ -16,8 +16,8 @@ Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levende T
 er UUtilsynets årlige automatiserte kontroll av et utvalg nettsteder i offentlig
 sektor. Kolonnen «Score forenkla kontroll 2025» i WCAG-brudd topplista viser
 poengsummen hvert nettsted fikk i [kontrollen for 2025](https://kontroll.uutilsynet.no/base/resultat/rapport/fc39bbee4e58d76a),
-avrundet til hele prosent. Poengsummen lenker direkte til virksomhetens
-rapport hos UUtilsynet.
+rundet ned til nærmeste hele prosent, slik UUtilsynet viser den. Poengsummen
+lenker direkte til virksomhetens rapport hos UUtilsynet.
 
 Poengsummene hentes fra [2025-datasettet](forenkla_kontroll_2025.json) og
 knyttes til eksisterende nettsteder i [projects.json](projects.json).

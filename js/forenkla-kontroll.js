@@ -34,7 +34,7 @@ function indexForenklaKontrollScores(rows) {
             throw new Error(`Ugyldige data for løsning ${loeysingId}`);
         }
         scores.set(key, {
-            score: Math.round(score * 100),
+            score: Math.floor(score * 100),
             reportUrl: `https://kontroll.uutilsynet.no/base/resultat/rapport/${rapportId}/organisasjon/${organisasjonsnummer}`,
         });
     }
