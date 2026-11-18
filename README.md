@@ -10,6 +10,21 @@ Løsningen kjører Playwright med AXE på GitHub Actions.
 
 Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levende Tilgjengelighetserklæring"](https://event.dataforeningen.no/odin2025/program/) med [Tobias Müller Andersen](https://www.linkedin.com/in/turbolego/) og [Lilly Arstad Helmersen](https://www.linkedin.com/in/lillyahelmersen/)
 
+## Score fra UUtilsynets forenkla kontroll 2025
+
+[Forenkla kontroll av nettstader](https://www.uutilsynet.no/tilsyn/om-forenkla-kontroll-av-nettstader/3065)
+er UUtilsynets årlige automatiserte kontroll av et utvalg nettsteder i offentlig
+sektor. Kolonnen «Score forenkla kontroll 2025» i WCAG-brudd topplista viser
+poengsummen hvert nettsted fikk i [kontrollen for 2025](https://kontroll.uutilsynet.no/base/resultat/rapport/fc39bbee4e58d76a),
+avrundet til hele prosent. Poengsummen lenker direkte til virksomhetens
+rapport hos UUtilsynet.
+
+Poengsummene hentes fra [2025-datasettet](forenkla_kontroll_2025.json) og
+knyttes til eksisterende nettsteder i [projects.json](projects.json).
+Poengsummen endres ikke når du velger en annen dato i topplista: Den viser
+resultatet fra UUtilsynets kontroll i 2025, ikke fra UUStreaks egne målinger.
+En tankestrek betyr at nettstedet ikke har en tilgjengelig poengsum.
+
 ## WCAG-skill for KI-agenter
 
 [wcag-skill på ClawHub](https://clawhub.ai/turbolego/skills/wcag-skill) er en
