@@ -689,8 +689,8 @@ jobs:
           # Copy assets folder (includes favicons and images)
           cp -r assets gh-pages-branch/
           
-          # Copy projects.json with achievements data
-          cp projects.json gh-pages-branch/
+          # Copy project achievements and the 2025 score dataset
+          cp projects.json forenkla_kontroll_2025.json gh-pages-branch/
           
           # Copy discovery and metadata files
           cp CNAME gh-pages-branch/

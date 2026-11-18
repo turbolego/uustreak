@@ -74,27 +74,26 @@ function getAchievementDescription(achievement) {
     return descriptions[achievement.type] || achievement.type;
 }
 
-let projectAchievementsPromise = null;
+let projectsPromise = null;
 
 /**
- * Load achievements for all projects from projects.json (fetched once per page view)
- * @returns {Promise<Map<string, array>>} - Project name -> achievements
+ * Load projects once per page view, indexed by name.
  */
-function loadProjectAchievements() {
-    if (!projectAchievementsPromise) {
-        projectAchievementsPromise = fetch('projects.json')
+function loadProjects() {
+    if (!projectsPromise) {
+        projectsPromise = fetch('projects.json')
             .then(response => {
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 return response.json();
             })
-            .then(projects => new Map(projects.map(project => [project.name, project.achievements || []])))
+            .then(projects => new Map(projects.map(project => [project.name, project])))
             .catch(error => {
-                console.error('Error loading achievements:', error);
-                projectAchievementsPromise = null; // Allow a retry on the next render
+                console.error('Error loading projects:', error);
+                projectsPromise = null; // Allow a retry on the next render
                 return new Map();
             });
     }
-    return projectAchievementsPromise;
+    return projectsPromise;
 }
 
 /**

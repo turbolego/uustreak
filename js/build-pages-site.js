@@ -237,6 +237,7 @@ function overlayStaticSite(sourceDir, outputDir) {
         'site.webmanifest',
         'styles.css',
         'projects.json',
+        'forenkla_kontroll_2025.json',
         'results.json',
         'test-results.json',
         'favicon.ico',
