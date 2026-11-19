@@ -10,10 +10,14 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.footer-core-pages > h4`
+- **Target:** `.footer-core-pages > h4`
+  - **HTML:** `<h4 class="type-h4-bold text-white footer-txt">Les mer</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
