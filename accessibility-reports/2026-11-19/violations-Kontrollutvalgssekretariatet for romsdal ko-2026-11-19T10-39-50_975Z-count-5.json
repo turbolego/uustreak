@@ -1,0 +1,249 @@
+{
+  "project": "Kontrollutvalgssekretariatet for romsdal ko",
+  "timestamp": "2026-11-19T10:39:50.975Z",
+  "url": "https://www.kontrollutvalgromsdal.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: -116px; top: -40px; z-index: -3;\" tabindex=\"0\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: -21px; top: -102px; z-index: -65;\" tabindex=\"-1\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: -117px; top: -86px; z-index: -49;\" tabindex=\"-1\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: -20px; top: 27px; z-index: 64;\" tabindex=\"-1\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: 140px; top: -15px; z-index: 22;\" tabindex=\"-1\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: -128px; top: 6px; z-index: 43;\" tabindex=\"-1\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"button\" style=\"width: 26px; height: 37px; overflow: hidden; position: absolute; left: -165px; top: -67px; z-index: -30;\" tabindex=\"-1\">",
+          "target": [
+            "div[role=\"button\"]:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/3663465.2496.tpvwdwaxqa/392x0/Aukra.png\" alt=\"Aukra\">",
+          "target": [
+            "img[alt=\"Aukra\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/3664844.2496.xtfrducwyx/392x0/Gjemenes.png\" alt=\"Gjemnes\">",
+          "target": [
+            "img[alt=\"Gjemnes\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/4708752.2496.jiqillimzsbmtl/392x0/hustadvika-kommvapen.png\" alt=\"Hustadvika\">",
+          "target": [
+            "img[alt=\"Hustadvika\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/3664842.2496.ypvpfcsfyu/392x0/Molde_60x83.png\" alt=\"Molde\">",
+          "target": [
+            "img[alt=\"Molde\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/3663467.2496.cqfvfqtxyp/392x0/Rauma.png\" alt=\"Rauma\">",
+          "target": [
+            "img[alt=\"Rauma\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/3660996.2496.qtvwvvuwsy/392x0/Sunndal.png\" alt=\"Sunndal\">",
+          "target": [
+            "img[alt=\"Sunndal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"pagelogo\" src=\"https://img6.custompublish.com/getfile.php/3660997.2496.bayyruwrcf/392x0/Vestnes.jpg\" alt=\"Vestnes\">",
+          "target": [
+            "img[alt=\"Vestnes\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button draggable=\"false\" aria-label=\"Endre kartstil\" title=\"Endre kartstil\" type=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\" id=\"1AEE8D2C-77FB-40CB-8...\" style=\"background: padding-...\">",
+          "target": [
+            "#\\31 AEE8D2C-77FB-40CB-8453-1965FC4DD368"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" xml:lang=\"no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<div class=\"slideshow\" style=\"height: 400px;\">",
+          "target": [
+            ".slideshow"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            "div:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"\">Kartdata ©2026 Google</span>",
+          "target": [
+            ".gmnoprint:nth-child(2) > .gm-style-cc[draggable=\"false\"] > div:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"gmnoprint gm-style-cc\" draggable=\"false\" style=\"z-index: 1000001; user-select: none; position: relative; height: 14px; line-height: 14px;\">",
+          "target": [
+            ".gm-style-cc.gmnoprint[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div draggable=\"false\" class=\"gm-style-cc\" style=\"user-select: none; position: relative; height: 14px; line-height: 14px;\">",
+          "target": [
+            ".gm-style-cc[draggable=\"false\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"width: 99%; text-align: right; position: relative; padding-right: 5px; font-size: 12px;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"#bigmap\" id=\"bigmapclick\" onclick=\"return cgmapBiggerMap(this);\">Større kart</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".googlemapcontainer > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

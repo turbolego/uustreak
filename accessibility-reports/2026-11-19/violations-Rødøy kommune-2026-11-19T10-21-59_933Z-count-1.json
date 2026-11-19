@@ -1,0 +1,103 @@
+{
+  "project": "Rødøy kommune",
+  "timestamp": "2026-11-19T10:21:59.933Z",
+  "url": "https://www.rodoy.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<div class=\"webPart wp-banner-text\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_206\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_206"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"text\" class=\"kari-query\" aria-label=\"Søkeboks\" placeholder=\"Hva lurer du du på?\">",
+          "target": [
+            ".kari-query"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart wp-banner-buttons\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_208\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_208"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart wp-main-links\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl02_WebpartId_209\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl02_WebpartId_209"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart wp-focus-links\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl02_WebpartId_210\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl02_WebpartId_210"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl02_WebpartId_211 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl02_WebpartId_211_WebpartId_211_rptItems_ctl01_ucDisplayControl_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle aktuelle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"focus-section\">",
+          "target": [
+            ".focus-section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section\">",
+          "target": [
+            ".section:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"back-to-top-button js-back-to-top-button\" href=\"#top\">\n                        Til toppen\n                    </a>",
+          "target": [
+            ".back-to-top-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

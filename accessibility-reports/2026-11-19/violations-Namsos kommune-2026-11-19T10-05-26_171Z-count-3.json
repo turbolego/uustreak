@@ -1,0 +1,239 @@
+{
+  "project": "Namsos kommune",
+  "timestamp": "2026-11-19T10:05:26.171Z",
+  "url": "https://namsos.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Namsos kommune\" src=\"/handlers/bv.ashx/ie173daef-47b9-4018-94eb-9a9a28575381/group-533.svg\">",
+          "target": [
+            "img[alt=\"Namsos kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#vFact_audioFrame",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 23,
+      "nodes": [
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$in...\" type=\"text\" id=\"ctl00_ctl00_ctl00_in...\" class=\"js-liten-trigger-sea...\" aria-label=\"Søketekst\" placeholder=\"Hva kan vi hjelpe de...\" data-handled=\"true\" autocomplete=\"off\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_51_WebpartId_51_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart frontpage__service-menu-shortcuts accessible-title frontpage__service-menu--lower\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_52\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_52"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Barnehage, skole, student</span>",
+          "target": [
+            "a[data-id=\"35\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Helse, omsorg og folkehelse</span>",
+          "target": [
+            "a[data-id=\"36\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Sosiale tjenester og bolig</span>",
+          "target": [
+            "a[data-id=\"12397\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Plan, bygg, brann og eiendom</span>",
+          "target": [
+            "a[data-id=\"37\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Kultur, idrett og fritid</span>",
+          "target": [
+            "a[data-id=\"38\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Renovasjon og miljø</span>",
+          "target": [
+            "a[data-id=\"39\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Vei, parkering og havn</span>",
+          "target": [
+            "a[data-id=\"40\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Næring og landbruk</span>",
+          "target": [
+            "a[data-id=\"41\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Økonomi</span>",
+          "target": [
+            "a[data-id=\"43\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart egendef\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1562\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1562"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"middle-boxes middle-boxes--upper\">",
+          "target": [
+            ".middle-boxes--upper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt fra kommunen</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kortMnd\">\n                         <span class=\"datoKortDag\">18</span><span class=\"datoKortMnd\">nov</span>\n                    </div>",
+          "target": [
+            "li:nth-child(1) > .kortMnd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_rptArtikler_ctl01_hlLink\" class=\"MargLink\" href=\"/aktuelt/novemberstatus-for-nytt-helsehus-i-namsos-sentrum.39350.aspx\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_rptArtikler_ctl01_hlLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kortMnd\">\n                         <span class=\"datoKortDag\">17</span><span class=\"datoKortMnd\">nov</span>\n                    </div>",
+          "target": [
+            "li:nth-child(2) > .kortMnd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_rptArtikler_ctl02_hlLink\" class=\"MargLink\" href=\"/aktuelt/gratis-kurs-for-skogeiere.39336.aspx\">\n                        <span class=\"tittel\">Gratis kurs for skogeiere</span>\n                    </a>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_rptArtikler_ctl02_hlLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kortMnd\">\n                         <span class=\"datoKortDag\">04</span><span class=\"datoKortMnd\">nov</span>\n                    </div>",
+          "target": [
+            "li:nth-child(3) > .kortMnd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_rptArtikler_ctl03_hlLink\" class=\"MargLink\" href=\"/aktuelt/novembernytt-for-lag-og-foreninger.39300.aspx\">\n                        <span class=\"tittel\">Novembernytt for lag og foreninger</span>\n                    </a>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_rptArtikler_ctl03_hlLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_56_WebpartId_56_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se flere aktuelle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<audio id=\"vfact_testaudio\" controls=\"\"> not supported</audio>",
+          "target": [
+            "#vFact_audioFrame",
+            "#vfact_testaudio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Her er framen</h1>",
+          "target": [
+            "#vFact_audioFrame",
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
