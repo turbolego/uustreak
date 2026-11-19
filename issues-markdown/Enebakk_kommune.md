@@ -1,6 +1,6 @@
 # WCAG Violations Report for Enebakk kommune
 
-**Timestamp:** 2026-11-18T12:43:53.820Z
+**Timestamp:** 2026-11-19T05:38:06.794Z
 **URL:** [https://www.enebakk.kommune.no/](https://www.enebakk.kommune.no/)
 **Total Violations:** 2
 

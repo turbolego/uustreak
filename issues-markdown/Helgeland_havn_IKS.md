@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helgeland havn IKS
 
-**Timestamp:** 2026-11-18T12:50:19.124Z
+**Timestamp:** 2026-11-19T05:42:39.075Z
 **URL:** [https://www.helgelandhavn.no/](https://www.helgelandhavn.no/)
 **Total Violations:** 6
 

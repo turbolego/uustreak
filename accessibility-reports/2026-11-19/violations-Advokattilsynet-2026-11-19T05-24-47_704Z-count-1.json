@@ -1,0 +1,71 @@
+{
+  "project": "Advokattilsynet",
+  "timestamp": "2026-11-19T05:24:47.704Z",
+  "url": "https://tilsynet.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a class=\"articleItem\" href=\"/aktuelt/byter-advokatverksemda-organisasjonsnummer\" aria-label=\"Byter advokatverksemda organisasjonsnummer? Hugs å melde frå i god tid!\">",
+          "target": [
+            ".articleItem:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"articleItem\" href=\"/aktuelt/sands-advokatfirma-ilegges-1-9-millioner-kroner-i-overtredelsesgebyr\" aria-label=\"SANDS Advokatfirma ilegges 1,9 millioner kroner i overtredelsesgebyr\">",
+          "target": [
+            ".articleItem:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"articleItem\" href=\"/aktuelt/oppdatert-liste-over-hoyrisikoland\" aria-label=\"Oppdatert liste over høyrisikoland \">",
+          "target": [
+            ".articleItem:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"articleItem\" href=\"/aktuelt/advokater-sokes-til-forvalteroppdrag\" aria-label=\"Advokater søkes til forvalteroppdrag\">",
+          "target": [
+            ".articleItem:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"articleItem\" href=\"/aktuelt/ny-forskrift-pep\" aria-label=\"Ny forskrift om politisk eksponerte personer (PEP): frist 1. januar 2027\">",
+          "target": [
+            "a[href$=\"ny-forskrift-pep\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"articleItem\" href=\"/aktuelt/risikovurdering-advokatbransjen\" aria-label=\"Ny risikovurdering gir advokatbransjen et bedre verktøy mot hvitvasking\">",
+          "target": [
+            ".articleItem:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Varanger museum IKS
 
-**Timestamp:** 2026-11-18T13:23:25.750Z
+**Timestamp:** 2026-11-19T06:05:07.428Z
 **URL:** [https://www.varangermuseum.no/](https://www.varangermuseum.no/)
 **Total Violations:** 5
 
@@ -70,8 +70,8 @@
 - `#slider > .idium-section-header.screenreader-container`
 - `a[href$="#skip-slider"]`
 - `.cycle-slide-active`
-- `#\36 63D7178-2F98-4D33-9F23-CC8A9F1B2E48`
-- `#\35 EA6124D-2E27-4141-9B92-8AB8643726F7`
+- `#\32 AE8DA5E-2AAB-45B3-8A26-73298A7BC9EE`
+- `#\32 9CAC7C2-B83D-40EA-B0B4-7877740E2571`
 - `.gm-style > div:nth-child(14)`
 - `.gmnoprint:nth-child(2) > .gm-style-cc[draggable="false"] > div:nth-child(2) > span`
 - `.gm-style-cc.gmnoprint[draggable="false"]`

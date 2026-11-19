@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lotteri- og stiftelsestilsynet
 
-**Timestamp:** 2026-11-18T12:59:06.976Z
+**Timestamp:** 2026-11-19T05:46:37.798Z
 **URL:** [https://lottstift.no/](https://lottstift.no/)
 **Total Violations:** 1
 

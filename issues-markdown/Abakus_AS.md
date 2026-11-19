@@ -1,6 +1,6 @@
 # WCAG Violations Report for Abakus AS
 
-**Timestamp:** 2026-11-18T12:29:06.249Z
+**Timestamp:** 2026-11-19T05:26:11.810Z
 **URL:** [https://www.abakus.as/](https://www.abakus.as/)
 **Total Violations:** 1
 

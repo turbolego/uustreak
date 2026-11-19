@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-11-18T13:08:41.013Z
+**Timestamp:** 2026-11-19T05:49:52.977Z
 **URL:** [https://oslonye.no/](https://oslonye.no/)
 **Total Violations:** 4
 

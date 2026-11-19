@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse fonna HF
 
-**Timestamp:** 2026-11-18T12:49:37.033Z
+**Timestamp:** 2026-11-19T05:37:58.903Z
 **URL:** [https://www.helse-fonna.no/](https://www.helse-fonna.no/)
 **Total Violations:** 1
 

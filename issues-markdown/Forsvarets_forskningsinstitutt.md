@@ -1,6 +1,6 @@
 # WCAG Violations Report for Forsvarets forskningsinstitutt
 
-**Timestamp:** 2026-11-18T12:46:30.482Z
+**Timestamp:** 2026-11-19T05:35:29.099Z
 **URL:** [https://www.ffi.no/](https://www.ffi.no/)
 **Total Violations:** 1
 

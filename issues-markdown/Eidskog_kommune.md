@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eidskog kommune
 
-**Timestamp:** 2026-11-18T12:42:17.953Z
+**Timestamp:** 2026-11-19T05:34:47.277Z
 **URL:** [https://www.eidskog.kommune.no/](https://www.eidskog.kommune.no/)
 **Total Violations:** 8
 

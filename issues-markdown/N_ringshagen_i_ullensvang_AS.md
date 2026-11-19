@@ -1,6 +1,6 @@
 # WCAG Violations Report for Næringshagen i ullensvang AS
 
-**Timestamp:** 2026-11-18T13:00:58.896Z
+**Timestamp:** 2026-11-19T05:45:35.313Z
 **URL:** [https://www.nhullensvang.no/](https://www.nhullensvang.no/)
 **Total Violations:** 1
 

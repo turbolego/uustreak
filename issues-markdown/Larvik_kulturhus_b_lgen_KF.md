@@ -1,6 +1,6 @@
 # WCAG Violations Report for Larvik kulturhus bølgen KF
 
-**Timestamp:** 2026-11-18T12:58:13.001Z
+**Timestamp:** 2026-11-19T05:45:48.777Z
 **URL:** [https://www.bolgenkulturhus.no/](https://www.bolgenkulturhus.no/)
 **Total Violations:** 6
 

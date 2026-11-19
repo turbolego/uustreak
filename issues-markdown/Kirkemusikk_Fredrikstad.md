@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kirkemusikk Fredrikstad
 
-**Timestamp:** 2026-11-18T12:55:28.151Z
+**Timestamp:** 2026-11-19T05:43:10.917Z
 **URL:** [https://www.kirkemusikkfredrikstad.no/](https://www.kirkemusikkfredrikstad.no/)
 **Total Violations:** 3
 

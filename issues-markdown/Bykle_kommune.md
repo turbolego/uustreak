@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bykle kommune
 
-**Timestamp:** 2026-11-18T12:37:40.338Z
+**Timestamp:** 2026-11-19T05:29:42.759Z
 **URL:** [https://www.bykle.kommune.no/](https://www.bykle.kommune.no/)
 **Total Violations:** 2
 

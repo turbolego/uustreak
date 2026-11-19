@@ -1,6 +1,6 @@
 # WCAG Violations Report for Extra Leker Butikker AS
 
-**Timestamp:** 2026-11-18T12:44:06.203Z
+**Timestamp:** 2026-11-19T05:35:20.597Z
 **URL:** [https://www.extra-leker.no/](https://www.extra-leker.no/)
 **Total Violations:** 9
 
@@ -79,8 +79,8 @@
 - `.photo.product-item-photo[data-clerk-product-id="15215"] > .product-image-container > .product-image-wrapper > .product-image-photo`
 - `.photo.product-item-photo[data-clerk-product-id="15219"] > .product-image-container > .product-image-wrapper > .product-image-photo`
 - `.product-item-info > .photo.product-item-photo[data-clerk-product-id="105417"] > .product-image-container > .product-image-wrapper > .product-image-photo`
-- `.photo.product-item-photo[data-clerk-product-id="47955"] > .product-image-container > .product-image-wrapper > .product-image-photo`
 - `.photo.product-item-photo[data-clerk-product-id="15217"] > .product-image-container > .product-image-wrapper > .product-image-photo`
+- `.photo.product-item-photo[data-clerk-product-id="47955"] > .product-image-container > .product-image-wrapper > .product-image-photo`
 - `.photo.product-item-photo[data-clerk-product-id="105416"] > .product-image-container > .product-image-wrapper > .product-image-photo`
 - `.photo.product-item-photo[data-clerk-product-id="15232"] > .product-image-container > .product-image-wrapper > .product-image-photo`
 - `.photo.product-item-photo[data-clerk-product-id="15224"] > .product-image-container > .product-image-wrapper > .product-image-photo`
@@ -118,8 +118,8 @@
 - `.photo.product-item-photo[data-clerk-product-id="15215"]`
 - `.photo.product-item-photo[data-clerk-product-id="15219"]`
 - `.product-item-info > .photo.product-item-photo[data-clerk-product-id="105417"]`
-- `.photo.product-item-photo[data-clerk-product-id="47955"]`
 - `.photo.product-item-photo[data-clerk-product-id="15217"]`
+- `.photo.product-item-photo[data-clerk-product-id="47955"]`
 - `.photo.product-item-photo[data-clerk-product-id="105416"]`
 - `.photo.product-item-photo[data-clerk-product-id="15232"]`
 - `.photo.product-item-photo[data-clerk-product-id="15224"]`
@@ -173,7 +173,7 @@
 - `#ui-id-1 > .nav-4.level0.level-top`
 - `#ui-id-1 > .nav-5.level0.level-top`
 - `#ui-id-1 > .nav-6.level0.level-top`
-- `.nav-7.active.level0`
+- `#ui-id-1 > .nav-7.level0.level-top`
 - `#ui-id-1 > .nav-8.level0.level-top`
 - `#ui-id-1 > .ambrands-menu-item.level0[data-ambrands-js="brands-menu-link"]`
 

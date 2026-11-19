@@ -1,0 +1,124 @@
+{
+  "project": "Røros kommune",
+  "timestamp": "2026-11-19T05:58:08.887Z",
+  "url": "https://www.roros.kommune.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Røros kommune\" src=\"/handlers/bv.ashx/i32cd50b7-6977-4aac-9f4f-38e866065b34/rossentjielte_roroskommune_svart.svg\">",
+          "target": [
+            "img[alt=\"Røros kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a _ngcontent-ng-c1042105423=\"\" href=\"https://hvaskjeriroros.no/arrangement/hundekjoring-i-nydelig-roros-natur-lGOj8\" target=\"_self\" aria-label=\"See details for Hundekjøring i nydelig Røros-natur\"> Se detaljer </a>",
+          "target": [
+            [
+              "hsk-event-list",
+              ".hundekjoring-i-nydelig-roros-natur-lGOj8 > footer > a[target=\"_self\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a _ngcontent-ng-c1042105423=\"\" href=\"https://hvaskjeriroros.no/arrangement/kunstutstilling-en-av-oss-174xt\" target=\"_self\" aria-label=\"See details for Kunstutstilling: En av oss\"> Se detaljer </a>",
+          "target": [
+            [
+              "hsk-event-list",
+              ".kunstutstilling-en-av-oss-174xt > footer > a[target=\"_self\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a _ngcontent-ng-c1042105423=\"\" href=\"https://hvaskjeriroros.no/arrangement/seniornett-1Ls5D\" target=\"_self\" aria-label=\"See details for Seniornett\"> Se detaljer </a>",
+          "target": [
+            [
+              "hsk-event-list",
+              "a[aria-label=\"See details for Seniornett\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--bc-primary-color-500: #B5351E; --bc-primary-color-400: #BC4934; --bc-primary-color-300: #C96D5C; --bc-primary-color-200: #D9988C; --bc-primary-color-100: #E8C1BA;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"global-area-message\">",
+          "target": [
+            ".global-area-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

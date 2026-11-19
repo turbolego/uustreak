@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sirkla ressurs AS
 
-**Timestamp:** 2026-11-18T13:14:13.584Z
+**Timestamp:** 2026-11-19T05:55:40.719Z
 **URL:** [https://www.sirklaressurs.no/](https://www.sirklaressurs.no/)
 **Total Violations:** 5
 

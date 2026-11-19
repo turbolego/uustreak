@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tana arbeidsservice AS
 
-**Timestamp:** 2026-11-18T13:20:53.264Z
+**Timestamp:** 2026-11-19T06:05:26.028Z
 **URL:** [https://www.tana-arbeidsservice.no/](https://www.tana-arbeidsservice.no/)
 **Total Violations:** 1
 

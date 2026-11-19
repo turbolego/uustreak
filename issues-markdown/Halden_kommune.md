@@ -1,6 +1,6 @@
 # WCAG Violations Report for Halden kommune
 
-**Timestamp:** 2026-11-18T12:48:01.414Z
+**Timestamp:** 2026-11-19T05:36:45.620Z
 **URL:** [https://www.halden.kommune.no/](https://www.halden.kommune.no/)
 **Total Violations:** 2
 

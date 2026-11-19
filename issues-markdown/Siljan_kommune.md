@@ -1,6 +1,6 @@
 # WCAG Violations Report for Siljan kommune
 
-**Timestamp:** 2026-11-18T13:14:57.570Z
+**Timestamp:** 2026-11-19T05:59:29.747Z
 **URL:** [https://siljan.kommune.no/](https://siljan.kommune.no/)
 **Total Violations:** 6
 

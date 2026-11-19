@@ -1,6 +1,6 @@
 # WCAG Violations Report for Åmli kommune
 
-**Timestamp:** 2026-11-18T12:30:59.280Z
+**Timestamp:** 2026-11-19T05:27:51.414Z
 **URL:** [https://www.amli.kommune.no/](https://www.amli.kommune.no/)
 **Total Violations:** 1
 

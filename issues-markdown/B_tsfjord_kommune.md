@@ -1,6 +1,6 @@
 # WCAG Violations Report for Båtsfjord kommune
 
-**Timestamp:** 2026-11-18T12:34:08.562Z
+**Timestamp:** 2026-11-19T05:29:35.583Z
 **URL:** [https://www.batsfjord.kommune.no/](https://www.batsfjord.kommune.no/)
 **Total Violations:** 1
 

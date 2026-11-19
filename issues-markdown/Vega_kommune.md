@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vega kommune
 
-**Timestamp:** 2026-11-18T13:23:26.912Z
+**Timestamp:** 2026-11-19T06:03:43.642Z
 **URL:** [https://www.vega.kommune.no/](https://www.vega.kommune.no/)
 **Total Violations:** 2
 

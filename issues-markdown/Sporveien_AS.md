@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sporveien AS
 
-**Timestamp:** 2026-11-18T13:15:15.459Z
+**Timestamp:** 2026-11-19T05:54:51.742Z
 **URL:** [https://www.sporveien.no/](https://www.sporveien.no/)
 **Total Violations:** 5
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-11-18T12:39:56.416Z
+**Timestamp:** 2026-11-19T05:32:42.369Z
 **URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
 **Total Violations:** 6
 
@@ -60,7 +60,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-carousel-v3[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

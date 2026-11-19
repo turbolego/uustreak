@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nord-odal kommune
 
-**Timestamp:** 2026-11-18T13:02:43.586Z
+**Timestamp:** 2026-11-19T05:46:34.572Z
 **URL:** [https://www.nord-odal.kommune.no/](https://www.nord-odal.kommune.no/)
 **Total Violations:** 6
 

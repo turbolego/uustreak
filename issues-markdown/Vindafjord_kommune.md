@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vindafjord kommune
 
-**Timestamp:** 2026-11-18T13:24:25.230Z
+**Timestamp:** 2026-11-19T06:04:46.652Z
 **URL:** [https://www.vindafjord.kommune.no/](https://www.vindafjord.kommune.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-11-18T13:10:32.400Z
+**Timestamp:** 2026-11-19T05:53:01.793Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
 **Total Violations:** 7
 

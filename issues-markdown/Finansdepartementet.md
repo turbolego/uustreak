@@ -1,6 +1,6 @@
 # WCAG Violations Report for Finansdepartementet
 
-**Timestamp:** 2026-11-18T12:44:54.552Z
+**Timestamp:** 2026-11-19T05:34:31.071Z
 **URL:** [https://finanspolitikkutvalget.no/](https://finanspolitikkutvalget.no/)
 **Total Violations:** 1
 

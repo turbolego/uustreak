@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse vest IKT AS
 
-**Timestamp:** 2026-11-18T12:51:06.897Z
+**Timestamp:** 2026-11-19T05:43:16.098Z
 **URL:** [https://www.helse-vest-ikt.no/](https://www.helse-vest-ikt.no/)
 **Total Violations:** 1
 

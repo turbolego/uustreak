@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-11-18T12:36:42.330Z
+**Timestamp:** 2026-11-19T05:33:55.615Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
 **Total Violations:** 7
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.rodimus-complex-front[data-group="ghost"]:nth-child(40) > brick-teaser-group-v1[data-color-skin="custom-one"] > header > h2`
+- `.rodimus-complex-front[data-group="ghost"]:nth-child(28) > brick-teaser-group-v1[data-color-skin="custom-one"][data-layout="block"] > header > h2`
 
 ### Frames must have an accessible name
 
@@ -56,15 +56,15 @@
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11341078 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11342373 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11342373 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-11338233 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11342372 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11342372 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-11336211 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11338233 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .property-image-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11342373 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-11342373 > .brokerinfo-container > .brokerlogo`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -76,7 +76,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-teaser-group-v1[data-color-skin="sport"] > div > brick-carousel-v3[data-slides="5"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nibio - norsk institutt for bioøkonomi
 
-**Timestamp:** 2026-11-18T13:02:46.282Z
+**Timestamp:** 2026-11-19T05:51:41.912Z
 **URL:** [https://nibio.no/](https://nibio.no/)
 **Total Violations:** 3
 

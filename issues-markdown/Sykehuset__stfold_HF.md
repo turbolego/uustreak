@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sykehuset østfold HF
 
-**Timestamp:** 2026-11-18T13:19:37.368Z
+**Timestamp:** 2026-11-19T06:00:56.921Z
 **URL:** [https://www.sykehuset-ostfold.no/](https://www.sykehuset-ostfold.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ålesund og volsdalen sokn
 
-**Timestamp:** 2026-11-18T12:30:42.490Z
+**Timestamp:** 2026-11-19T05:27:34.476Z
 **URL:** [https://aalesund.menighet.no/](https://aalesund.menighet.no/)
 **Total Violations:** 3
 
@@ -62,9 +62,12 @@
 - `#section3`
 - `.hele-kalender`
 - `.calendar-item-front:nth-child(2) > .calendar-data-front`
-- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front > .event-time-front`
-- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`
-- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
 - `.calendar-item-front-alt:nth-child(3) > .calendar-data-front`
 - `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
 - `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
@@ -73,12 +76,9 @@
 - `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
 - `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
 - `.calendar-item-front:nth-child(4) > .calendar-data-front`
-- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
-- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
-- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front`
-- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
-- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-time-front`
+- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`
+- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
 - `.calendar-item-front-alt:nth-child(5) > .calendar-data-front`
 - `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-time-front`
 - `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`

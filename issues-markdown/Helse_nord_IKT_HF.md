@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse nord IKT HF
 
-**Timestamp:** 2026-11-18T12:50:30.649Z
+**Timestamp:** 2026-11-19T05:39:49.271Z
 **URL:** [https://www.helsenordikt.no/](https://www.helsenordikt.no/)
 **Total Violations:** 1
 

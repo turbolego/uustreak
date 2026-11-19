@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kulturfabrikken sortland KF
 
-**Timestamp:** 2026-11-18T12:57:55.676Z
+**Timestamp:** 2026-11-19T05:48:03.336Z
 **URL:** [https://kulturfabrikkensortland.no/](https://kulturfabrikkensortland.no/)
 **Total Violations:** 5
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
-- `.active.carousel-item > .carousel-caption.d-xs-block.text-left > .date > b`
-- `.active.carousel-item > .carousel-caption.d-xs-block.text-left > p`
-- `.carousel-caption.d-xs-block.text-left > .btn-block.btn-default[href$="ylvis-og-calle/"]`
+- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > .date > b`
+- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > p`
+- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > .btn-block.btn-default.btn`
 
 ### Headings should not be empty
 
@@ -38,11 +38,12 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.active.carousel-item > .carousel-caption.d-xs-block.text-left > h5`
+- `.carousel-item-left.active.carousel-item > .carousel-caption.d-xs-block.text-left > h5`
+- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > h5`
 
 ### Links must have discernible text
 
@@ -62,30 +63,31 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 29
+- **Count:** 30
 
 #### Affected Elements:
 
-- `.active.carousel-item`
+- `.carousel-item-left.active.carousel-item`
+- `.carousel-item-next`
 - `.main-page-navigation`
 - `.\35 491.item.\35 441:nth-child(1) > .image-wrapper`
 - `.\35 491.item.\35 441:nth-child(1) > .item-link`
-- `.item.\35 441.col-lg-4:nth-child(3) > .image-wrapper`
-- `.item.\35 441.col-lg-4:nth-child(3) > .item-link`
-- `.\31 1811.item.\35 441:nth-child(4) > .image-wrapper`
-- `.\31 1811.item.\35 441:nth-child(4) > .item-link`
-- `.\35 574.\31 090.item:nth-child(6) > .image-wrapper`
-- `.\35 574.\31 090.item:nth-child(6) > .item-link`
 - `.\35 576.item.\35 441 > .image-wrapper`
 - `.\35 576.item.\35 441 > .item-link`
 - `.\31 4487.\35 495.item > .image-wrapper`
 - `.\31 4487.\35 495.item > .item-link`
-- `.\31 1811.item.\35 441:nth-child(9) > .image-wrapper`
-- `.\31 1811.item.\35 441:nth-child(9) > .item-link`
-- `.item.\35 441.col-lg-4:nth-child(13) > .image-wrapper`
-- `.item.\35 441.col-lg-4:nth-child(13) > .item-link`
+- `.\31 1811.item.\35 441:nth-child(4) > .image-wrapper`
+- `.\31 1811.item.\35 441:nth-child(4) > .item-link`
+- `.item.\35 441.col-lg-4:nth-child(8) > .image-wrapper`
+- `.item.\35 441.col-lg-4:nth-child(8) > .item-link`
 - `.\37 455.\31 1811.item > .image-wrapper`
 - `.\37 455.\31 1811.item > .item-link`
+- `.item.\35 441.col-lg-4:nth-child(11) > .image-wrapper`
+- `.item.\35 441.col-lg-4:nth-child(11) > .item-link`
+- `.\35 578.\31 090.item:nth-child(14) > .image-wrapper`
+- `.\35 578.\31 090.item:nth-child(14) > .item-link`
+- `.\35 494.\35 491.item:nth-child(15) > .image-wrapper`
+- `.\35 494.\35 491.item:nth-child(15) > .item-link`
 - `#grid > .see-all[onclick="ShowAllPrograms(event, this);"][href="#"]`
 - `.bottom-section > .container`
 - `.order-item.col-sm-6.col-12:nth-child(1) > .order-title`

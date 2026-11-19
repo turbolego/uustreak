@@ -1,0 +1,31 @@
+{
+  "project": "Narvik kommune",
+  "timestamp": "2026-11-19T05:48:13.214Z",
+  "url": "https://www.narvik.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Narvik kommune\" src=\"/handlers/bv.ashx/if1a2a44c-48bc-4c8f-92a1-3725423ab847/80a86narvik_logo.svg\">",
+          "target": [
+            "img[alt=\"Narvik kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

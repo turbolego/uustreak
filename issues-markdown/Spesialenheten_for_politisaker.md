@@ -1,6 +1,6 @@
 # WCAG Violations Report for Spesialenheten for politisaker
 
-**Timestamp:** 2026-11-18T13:15:39.095Z
+**Timestamp:** 2026-11-19T05:56:21.759Z
 **URL:** [https://www.spesialenheten.no/](https://www.spesialenheten.no/)
 **Total Violations:** 3
 

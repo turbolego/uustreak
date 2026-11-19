@@ -1,6 +1,6 @@
 # WCAG Violations Report for Innherred renovasjon IKS
 
-**Timestamp:** 2026-11-18T12:52:52.906Z
+**Timestamp:** 2026-11-19T05:40:01.148Z
 **URL:** [https://innherredrenovasjon.no/](https://innherredrenovasjon.no/)
 **Total Violations:** 7
 

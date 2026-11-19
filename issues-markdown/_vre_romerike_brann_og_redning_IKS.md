@@ -1,6 +1,6 @@
 # WCAG Violations Report for Øvre romerike brann og redning IKS
 
-**Timestamp:** 2026-11-18T13:09:39.745Z
+**Timestamp:** 2026-11-19T05:50:28.344Z
 **URL:** [https://www.orbrann.no/](https://www.orbrann.no/)
 **Total Violations:** 2
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse stavanger HF
 
-**Timestamp:** 2026-11-18T12:49:58.330Z
+**Timestamp:** 2026-11-19T05:38:16.365Z
 **URL:** [https://www.helse-stavanger.no/](https://www.helse-stavanger.no/)
 **Total Violations:** 1
 

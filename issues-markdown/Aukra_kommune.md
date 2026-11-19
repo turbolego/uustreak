@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aukra kommune
 
-**Timestamp:** 2026-11-18T12:32:52.409Z
+**Timestamp:** 2026-11-19T05:27:28.409Z
 **URL:** [https://www.aukra.kommune.no/](https://www.aukra.kommune.no/)
 **Total Violations:** 1
 

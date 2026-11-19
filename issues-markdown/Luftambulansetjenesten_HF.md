@@ -1,6 +1,6 @@
 # WCAG Violations Report for Luftambulansetjenesten HF
 
-**Timestamp:** 2026-11-18T12:59:36.303Z
+**Timestamp:** 2026-11-19T05:46:33.037Z
 **URL:** [https://www.luftambulanse.no/](https://www.luftambulanse.no/)
 **Total Violations:** 1
 

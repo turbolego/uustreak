@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse møre og romsdal HF
 
-**Timestamp:** 2026-11-18T12:49:44.492Z
+**Timestamp:** 2026-11-19T05:40:01.225Z
 **URL:** [https://www.helse-mr.no/](https://www.helse-mr.no/)
 **Total Violations:** 1
 

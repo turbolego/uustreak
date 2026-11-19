@@ -1,6 +1,6 @@
 # WCAG Violations Report for Våler kommune
 
-**Timestamp:** 2026-11-18T13:23:09.251Z
+**Timestamp:** 2026-11-19T06:03:20.107Z
 **URL:** [https://www.valer.kommune.no/](https://www.valer.kommune.no/)
 **Total Violations:** 6
 

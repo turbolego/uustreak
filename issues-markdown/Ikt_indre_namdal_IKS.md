@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ikt indre namdal IKS
 
-**Timestamp:** 2026-11-18T12:52:22.964Z
+**Timestamp:** 2026-11-19T05:39:43.168Z
 **URL:** [https://iktin.no/](https://iktin.no/)
 **Total Violations:** 2
 

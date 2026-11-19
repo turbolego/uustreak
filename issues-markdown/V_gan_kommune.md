@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vågan kommune
 
-**Timestamp:** 2026-11-18T13:23:41.196Z
+**Timestamp:** 2026-11-19T06:08:02.071Z
 **URL:** [https://vagan.kommune.no/](https://vagan.kommune.no/)
 **Total Violations:** 2
 

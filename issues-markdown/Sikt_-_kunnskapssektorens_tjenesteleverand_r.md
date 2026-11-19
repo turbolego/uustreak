@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sikt - kunnskapssektorens tjenesteleverandør
 
-**Timestamp:** 2026-11-18T13:13:01.014Z
+**Timestamp:** 2026-11-19T05:53:14.889Z
 **URL:** [https://www.sikt.no/](https://www.sikt.no/)
 **Total Violations:** 3
 

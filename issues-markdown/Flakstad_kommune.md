@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flakstad kommune
 
-**Timestamp:** 2026-11-18T12:46:36.114Z
+**Timestamp:** 2026-11-19T05:36:53.919Z
 **URL:** [https://flakstad.kommune.no/](https://flakstad.kommune.no/)
 **Total Violations:** 3
 

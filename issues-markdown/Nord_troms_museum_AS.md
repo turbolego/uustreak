@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nord troms museum AS
 
-**Timestamp:** 2026-11-18T13:02:41.880Z
+**Timestamp:** 2026-11-19T05:48:52.514Z
 **URL:** [https://ntrm.no/](https://ntrm.no/)
 **Total Violations:** 9
 

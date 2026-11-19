@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sygnir AS
 
-**Timestamp:** 2026-11-18T13:19:21.360Z
+**Timestamp:** 2026-11-19T06:00:24.948Z
 **URL:** [https://www.sygnir.no/](https://www.sygnir.no/)
 **Total Violations:** 2
 

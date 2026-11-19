@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hasvik kommune
 
-**Timestamp:** 2026-11-18T12:48:34.914Z
+**Timestamp:** 2026-11-19T05:39:10.382Z
 **URL:** [https://www.hasvik.kommune.no/](https://www.hasvik.kommune.no/)
 **Total Violations:** 1
 

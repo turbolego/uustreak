@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen helgeland museum
 
-**Timestamp:** 2026-11-18T13:17:46.636Z
+**Timestamp:** 2026-11-19T05:58:46.788Z
 **URL:** [https://helgelandmuseum.no/](https://helgelandmuseum.no/)
 **Total Violations:** 3
 

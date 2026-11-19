@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-11-18T12:48:54.044Z
+**Timestamp:** 2026-11-19T05:38:40.566Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#slick-slide11`
+- `#slick-slide01`
 - `#bai-open-chat-btn`
 
 ### Buttons must have discernible text
@@ -42,8 +42,8 @@
 
 #### Affected Elements:
 
-- `#slick-slide12 > div > .uagb-post__inner-wrap > h5`
 - `#slick-slide02 > div > .uagb-post__inner-wrap > h5`
+- `#slick-slide12 > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
 
@@ -55,10 +55,10 @@
 
 #### Affected Elements:
 
-- `#slick-slide12 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide14 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `#slick-slide02 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `#slick-slide04 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 

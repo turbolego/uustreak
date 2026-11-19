@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hægebostad og åseral renovasjonsselskap-hår IKS
 
-**Timestamp:** 2026-11-18T12:48:26.699Z
+**Timestamp:** 2026-11-19T05:38:20.538Z
 **URL:** [https://har-renovasjon.no/](https://har-renovasjon.no/)
 **Total Violations:** 6
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.post-item.col:nth-child(1) > .col-inner > .box.box-normal.box-text-bottom > .box-text.text-center > .box-text-inner.blog-post-inner > h5`
-- `#text-3971934829 > h3`
+- `#text-2025914255 > h3`
 
 ### Main landmark should not be contained in another landmark
 

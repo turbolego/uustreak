@@ -1,6 +1,6 @@
 # WCAG Violations Report for Innovasjon norge
 
-**Timestamp:** 2026-11-18T12:53:43.873Z
+**Timestamp:** 2026-11-19T05:45:05.811Z
 **URL:** [https://www.innovasjonnorge.no/](https://www.innovasjonnorge.no/)
 **Total Violations:** 1
 

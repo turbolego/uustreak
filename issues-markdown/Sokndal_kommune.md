@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sokndal kommune
 
-**Timestamp:** 2026-11-18T13:14:24.707Z
+**Timestamp:** 2026-11-19T05:54:12.383Z
 **URL:** [https://www.sokndal.kommune.no/](https://www.sokndal.kommune.no/)
 **Total Violations:** 4
 

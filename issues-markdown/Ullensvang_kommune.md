@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ullensvang kommune
 
-**Timestamp:** 2026-11-18T13:22:10.172Z
+**Timestamp:** 2026-11-19T06:03:43.153Z
 **URL:** [https://ullensvang.kommune.no/](https://ullensvang.kommune.no/)
 **Total Violations:** 1
 

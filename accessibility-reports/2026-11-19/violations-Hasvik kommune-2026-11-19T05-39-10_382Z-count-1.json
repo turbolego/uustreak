@@ -1,0 +1,31 @@
+{
+  "project": "Hasvik kommune",
+  "timestamp": "2026-11-19T05:39:10.382Z",
+  "url": "https://www.hasvik.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"sv-vertical sv-layout svp-header sv-template-layout\" id=\"svid10_e6106cc19936f872c429e73\">",
+          "target": [
+            "#svid10_e6106cc19936f872c429e73"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

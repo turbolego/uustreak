@@ -1,6 +1,6 @@
 # WCAG Violations Report for Åmot kommune
 
-**Timestamp:** 2026-11-18T12:30:50.146Z
+**Timestamp:** 2026-11-19T05:26:07.160Z
 **URL:** [https://www.amot.kommune.no/](https://www.amot.kommune.no/)
 **Total Violations:** 5
 
@@ -60,10 +60,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
+- `.global-area-message`
 - `.ac-banner-field--search-box > .ac-banner-field-header`
 - `.ac-banner-field--search-box > .ac-banner-field-footer`
 - `.frontpage-top`

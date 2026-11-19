@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kontrollutvalgssekretariatet for romsdal ko
 
-**Timestamp:** 2026-11-18T12:56:50.724Z
+**Timestamp:** 2026-11-19T05:47:07.753Z
 **URL:** [https://www.kontrollutvalgromsdal.no/](https://www.kontrollutvalgromsdal.no/)
 **Total Violations:** 5
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `#BC859743-33F4-4A94-A29A-20C3B70C75A5`
+- `#DFB382C6-A159-43BA-8536-9854C6885B25`
 
 ### Page should contain a level-one heading
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ås kommune
 
-**Timestamp:** 2026-11-18T12:31:38.802Z
+**Timestamp:** 2026-11-19T05:26:51.082Z
 **URL:** [https://www.as.kommune.no/](https://www.as.kommune.no/)
 **Total Violations:** 1
 

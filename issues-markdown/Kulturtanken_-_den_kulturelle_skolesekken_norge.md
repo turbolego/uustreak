@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kulturtanken - den kulturelle skolesekken norge
 
-**Timestamp:** 2026-11-18T12:57:30.998Z
+**Timestamp:** 2026-11-19T05:45:08.321Z
 **URL:** [https://www.kulturtanken.no/](https://www.kulturtanken.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, .e-101111-type-list`
 
 ### Elements must have their visible text as part of their accessible name
 

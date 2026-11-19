@@ -1,6 +1,6 @@
 # WCAG Violations Report for Notodden kommune
 
-**Timestamp:** 2026-11-18T13:08:17.874Z
+**Timestamp:** 2026-11-19T05:50:55.647Z
 **URL:** [https://notodden.kommune.no/](https://notodden.kommune.no/)
 **Total Violations:** 1
 

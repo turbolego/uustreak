@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nesodden kommune
 
-**Timestamp:** 2026-11-18T13:01:29.926Z
+**Timestamp:** 2026-11-19T05:45:55.333Z
 **URL:** [https://www.nesodden.kommune.no/](https://www.nesodden.kommune.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jomfruland nasjonalpark
 
-**Timestamp:** 2026-11-18T12:54:11.495Z
+**Timestamp:** 2026-11-19T05:42:59.940Z
 **URL:** [https://jomfrulandnasjonalpark.no/](https://jomfrulandnasjonalpark.no/)
 **Total Violations:** 10
 

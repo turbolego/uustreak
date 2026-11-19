@@ -1,0 +1,31 @@
+{
+  "project": "Åmli kommune",
+  "timestamp": "2026-11-19T05:27:51.414Z",
+  "url": "https://www.amli.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Åmli kommune\" src=\"/handlers/bv.ashx/i096ddb6b-152d-4033-a7a9-c29c03646f5d/76f8bamli_kommunelogo.svg\">",
+          "target": [
+            "img[alt=\"Åmli kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

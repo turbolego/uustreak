@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lier kommune
 
-**Timestamp:** 2026-11-18T12:59:09.911Z
+**Timestamp:** 2026-11-19T05:49:06.669Z
 **URL:** [https://www.lier.kommune.no/?spama](https://www.lier.kommune.no/?spama)
 **Total Violations:** 5
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `#portalframe1, a[data-itemid="39600"] > .custom-event-info.col-xs-10 > h4`
+- `#portalframe1, a[data-itemid="40277"] > .custom-event-info.col-xs-10 > h4`
 
 ### All page content should be contained by landmarks
 

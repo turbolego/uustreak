@@ -1,6 +1,6 @@
 # WCAG Violations Report for Agder kommunerevisjon IKS
 
-**Timestamp:** 2026-11-18T12:29:43.715Z
+**Timestamp:** 2026-11-19T05:25:04.363Z
 **URL:** [https://agderkomrev.no/](https://agderkomrev.no/)
 **Total Violations:** 5
 

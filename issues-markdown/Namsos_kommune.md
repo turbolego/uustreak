@@ -1,6 +1,6 @@
 # WCAG Violations Report for Namsos kommune
 
-**Timestamp:** 2026-11-18T13:02:20.310Z
+**Timestamp:** 2026-11-19T05:51:20.064Z
 **URL:** [https://namsos.kommune.no/](https://namsos.kommune.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Rindal kommune
 
-**Timestamp:** 2026-11-18T13:12:01.546Z
+**Timestamp:** 2026-11-19T05:54:13.070Z
 **URL:** [https://www.rindal.kommune.no/](https://www.rindal.kommune.no/)
 **Total Violations:** 1
 

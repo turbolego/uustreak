@@ -1,0 +1,227 @@
+{
+  "project": "Varanger museum IKS",
+  "timestamp": "2026-11-19T06:05:07.428Z",
+  "url": "https://www.varangermuseum.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"https://www.varanger...\" class=\"attachment-shortcuts...\" alt=\"Besøkssteder\" title=\"Besøkssteder\" decoding=\"async\" loading=\"lazy\" srcset=\"https://www.varanger...\" sizes=\"(max-width: 287px) 1...\">",
+          "target": [
+            "img[alt=\"Besøkssteder\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"https://www.varanger...\" class=\"attachment-shortcuts...\" alt=\"Utstillinger\" title=\"Utstillinger\" decoding=\"async\" loading=\"lazy\" srcset=\"https://www.varanger...\" sizes=\"(max-width: 287px) 1...\">",
+          "target": [
+            "img[alt=\"Utstillinger\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"https://www.varanger...\" class=\"attachment-shortcuts...\" alt=\"Barn, familier, skol...\" title=\"Barn, familier, skol...\" decoding=\"async\" loading=\"lazy\" srcset=\"https://www.varanger...\" sizes=\"(max-width: 287px) 1...\">",
+          "target": [
+            ".column-3[itemscope=\"itemscope\"][itemtype=\"http://schema.org/Article\"] > .idium-linked-post > .attachment-shortcuts.size-shortcuts.wp-post-image"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html class=\"no-js\" lang=\"nb-NO\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"accessibility-top clearfix\">",
+          "target": [
+            ".accessibility-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"\" class=\"btn-next \"></a>",
+          "target": [
+            ".btn-next"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"btn-prev \"></a>",
+          "target": [
+            ".btn-prev"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<header class=\"idium-section-header screenreader-container\">\n\n    \n    <h1 tabindex=\"0\" class=\"idium-section-title screenreader focusable\">\n        slider    </h1>\n\n</header>",
+          "target": [
+            "#slider > .idium-section-header.screenreader-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#skip-slider\" class=\"screenreader focusable\">Skip Karusell.</a>",
+          "target": [
+            "a[href$=\"#skip-slider\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"slide cycle-slide cycle-slide-active\" style=\"position: absolute; top: 0px; left: 0px; z-index: 99; visibility: visible; opacity: 1; display: block;\">",
+          "target": [
+            ".cycle-slide-active"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<button draggable=\"false\" aria-label=\"Vis gatekart\" title=\"Vis gatekart\" type=\"button\" role=\"menuitemradio\" aria-checked=\"true\" aria-haspopup=\"true\" style=\"background: padding-...\" id=\"2AE8DA5E-2AAB-45B3-8...\">",
+          "target": [
+            "#\\32 AE8DA5E-2AAB-45B3-8A26-73298A7BC9EE"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<button draggable=\"false\" aria-label=\"Vis satellittbilder\" title=\"Vis satellittbilder\" type=\"button\" role=\"menuitemradio\" aria-checked=\"false\" aria-haspopup=\"true\" style=\"background: padding-...\" id=\"29CAC7C2-B83D-40EA-B...\">",
+          "target": [
+            "#\\32 9CAC7C2-B83D-40EA-B0B4-7877740E2571"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".gm-style > div:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"\">Kartdata ©2026 Google</span>",
+          "target": [
+            ".gmnoprint:nth-child(2) > .gm-style-cc[draggable=\"false\"] > div:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"gmnoprint gm-style-cc\" draggable=\"false\" style=\"z-index: 1000001; user-select: none; position: relative; height: 14px; line-height: 14px;\">",
+          "target": [
+            ".gm-style-cc.gmnoprint[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"shortcut\" class=\"idium-section shortcut\">",
+          "target": [
+            "#shortcut"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"event\" class=\"idium-section event\">",
+          "target": [
+            "#event"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"news\" class=\"idium-section news\">",
+          "target": [
+            "#news"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"idium-cookies-link\" id=\"idium-cookies-notification-show\" href=\"javascript:void(0)\">\n    Privacy policy and cookies</a>",
+          "target": [
+            "#idium-cookies-notification-show"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

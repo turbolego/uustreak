@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fauske kommune
 
-**Timestamp:** 2026-11-18T12:45:10.120Z
+**Timestamp:** 2026-11-19T05:39:00.381Z
 **URL:** [https://www.fauske.kommune.no/](https://www.fauske.kommune.no/)
 **Total Violations:** 2
 

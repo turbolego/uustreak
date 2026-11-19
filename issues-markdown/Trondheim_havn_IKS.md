@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trondheim havn IKS
 
-**Timestamp:** 2026-11-18T13:21:09.337Z
+**Timestamp:** 2026-11-19T06:00:52.198Z
 **URL:** [https://trondheimhavn.no/](https://trondheimhavn.no/)
 **Total Violations:** 2
 

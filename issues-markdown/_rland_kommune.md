@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ørland kommune
 
-**Timestamp:** 2026-11-18T13:09:13.611Z
+**Timestamp:** 2026-11-19T05:52:00.172Z
 **URL:** [https://www.orland.kommune.no/](https://www.orland.kommune.no/)
 **Total Violations:** 2
 

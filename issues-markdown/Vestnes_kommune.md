@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestnes kommune
 
-**Timestamp:** 2026-11-18T13:23:34.293Z
+**Timestamp:** 2026-11-19T06:04:50.661Z
 **URL:** [https://www.vestnes.kommune.no/](https://www.vestnes.kommune.no/)
 **Total Violations:** 2
 

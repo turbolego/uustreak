@@ -1,6 +1,6 @@
 # WCAG Violations Report for Øfas husholdning AS
 
-**Timestamp:** 2026-11-18T13:09:32.178Z
+**Timestamp:** 2026-11-19T05:55:08.918Z
 **URL:** [https://www.ofas.no/](https://www.ofas.no/)
 **Total Violations:** 5
 

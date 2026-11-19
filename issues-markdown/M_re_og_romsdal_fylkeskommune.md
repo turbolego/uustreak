@@ -1,6 +1,6 @@
 # WCAG Violations Report for Møre og romsdal fylkeskommune
 
-**Timestamp:** 2026-11-18T13:00:51.361Z
+**Timestamp:** 2026-11-19T05:47:53.214Z
 **URL:** [https://mrfylke.no/](https://mrfylke.no/)
 **Total Violations:** 2
 

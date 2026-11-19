@@ -1,6 +1,6 @@
 # WCAG Violations Report for Uloba - Independent Living Norge SA
 
-**Timestamp:** 2026-11-18T13:21:36.262Z
+**Timestamp:** 2026-11-19T06:02:40.752Z
 **URL:** [https://www.uloba.no/](https://www.uloba.no/)
 **Total Violations:** 6
 

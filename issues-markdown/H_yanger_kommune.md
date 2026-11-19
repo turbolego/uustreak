@@ -1,6 +1,6 @@
 # WCAG Violations Report for Høyanger kommune
 
-**Timestamp:** 2026-11-18T12:52:25.931Z
+**Timestamp:** 2026-11-19T05:44:08.904Z
 **URL:** [https://www.hoyanger.kommune.no/](https://www.hoyanger.kommune.no/)
 **Total Violations:** 2
 

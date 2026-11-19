@@ -1,6 +1,6 @@
 # WCAG Violations Report for Time kommune tenesteområde samfunn
 
-**Timestamp:** 2026-11-18T13:20:38.560Z
+**Timestamp:** 2026-11-19T06:02:03.210Z
 **URL:** [https://www.time.kommune.no/](https://www.time.kommune.no/)
 **Total Violations:** 4
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statskog SF
 
-**Timestamp:** 2026-11-18T13:16:08.474Z
+**Timestamp:** 2026-11-19T05:55:48.084Z
 **URL:** [https://www.statskog.no/](https://www.statskog.no/)
 **Total Violations:** 1
 

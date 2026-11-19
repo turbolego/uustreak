@@ -1,6 +1,6 @@
 # WCAG Violations Report for Advokattilsynet
 
-**Timestamp:** 2026-11-18T12:29:13.493Z
+**Timestamp:** 2026-11-19T05:24:47.704Z
 **URL:** [https://tilsynet.no/](https://tilsynet.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2026-11-18T12:44:48.133Z
+**Timestamp:** 2026-11-19T05:38:43.106Z
 **URL:** [https://www.fanasparebank.no/](https://www.fanasparebank.no/)
 **Total Violations:** 4
 
@@ -50,11 +50,8 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.skip-link`
-- `.PostHogSurvey-01a1a617-ea6e-0000-8a69-3ae36f0bfa06,.question-header`
-- `.PostHogSurvey-01a1a617-ea6e-0000-8a69-3ae36f0bfa06,.rating-text`
-- `.PostHogSurvey-01a1a617-ea6e-0000-8a69-3ae36f0bfa06,.bottom-section`

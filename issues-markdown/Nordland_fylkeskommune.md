@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordland fylkeskommune
 
-**Timestamp:** 2026-11-18T13:03:33.947Z
+**Timestamp:** 2026-11-19T05:46:52.763Z
 **URL:** [https://www.nfk.no/](https://www.nfk.no/)
 **Total Violations:** 1
 

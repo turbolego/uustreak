@@ -1,6 +1,6 @@
 # WCAG Violations Report for Øystre slidre kommune
 
-**Timestamp:** 2026-11-18T13:11:19.850Z
+**Timestamp:** 2026-11-19T05:56:23.972Z
 **URL:** [https://www.oystre-slidre.kommune.no/](https://www.oystre-slidre.kommune.no/)
 **Total Violations:** 5
 
@@ -30,8 +30,8 @@
 
 - `iframe[data-load-src$="true"], .col-sm-6.col-md-4.col-lg-3:nth-child(1) > article > a > .g-pa-10 > table > tbody > tr:nth-child(5) > .g-color-primary`
 - `iframe[data-load-src$="true"], .col-sm-6.col-md-4.col-lg-3:nth-child(2) > article > a > .g-pa-10 > table > tbody > tr:nth-child(5) > .g-color-primary`
-- `iframe[data-load-src$="true"], .col-sm-6.col-md-4.col-lg-3:nth-child(3) > article > a > .g-pa-10 > table > tbody > tr:nth-child(5) > .g-color-primary`
 - `iframe[data-load-src$="true"], tr:nth-child(4) > .g-color-primary`
+- `iframe[data-load-src$="true"], .col-sm-6.col-md-4.col-lg-3:nth-child(4) > article > a > .g-pa-10 > table > tbody > tr:nth-child(5) > .g-color-primary`
 
 ### Frames must have an accessible name
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordhordland og gulen interkommunale renovasjonsselskap IKS
 
-**Timestamp:** 2026-11-18T13:03:35.248Z
+**Timestamp:** 2026-11-19T05:49:11.689Z
 **URL:** [https://www.ngir.no/](https://www.ngir.no/)
 **Total Violations:** 6
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-11-18T13:16:15.641Z
+**Timestamp:** 2026-11-19T05:56:56.308Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
 **Total Violations:** 2
 

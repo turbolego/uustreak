@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kunst i offentlige rom KORO
 
-**Timestamp:** 2026-11-18T12:57:45.134Z
+**Timestamp:** 2026-11-19T05:44:55.221Z
 **URL:** [https://koro.no/](https://koro.no/)
 **Total Violations:** 2
 

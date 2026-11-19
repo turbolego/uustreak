@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sula kommune
 
-**Timestamp:** 2026-11-18T13:19:04.002Z
+**Timestamp:** 2026-11-19T06:00:03.995Z
 **URL:** [https://www.sula.kommune.no/](https://www.sula.kommune.no/)
 **Total Violations:** 3
 

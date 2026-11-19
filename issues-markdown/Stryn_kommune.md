@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stryn kommune
 
-**Timestamp:** 2026-11-18T13:18:48.257Z
+**Timestamp:** 2026-11-19T05:59:46.517Z
 **URL:** [https://www.stryn.kommune.no/](https://www.stryn.kommune.no/)
 **Total Violations:** 1
 

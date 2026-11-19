@@ -1,6 +1,6 @@
 # WCAG Violations Report for Delecto kompetanse AS
 
-**Timestamp:** 2026-11-18T12:40:44.004Z
+**Timestamp:** 2026-11-19T05:36:16.956Z
 **URL:** [https://delectokragero.no/](https://delectokragero.no/)
 **Total Violations:** 4
 

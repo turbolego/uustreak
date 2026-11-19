@@ -1,6 +1,6 @@
 # WCAG Violations Report for Orkla Industrimuseum
 
-**Timestamp:** 2026-11-18T13:08:17.845Z
+**Timestamp:** 2026-11-19T05:49:32.923Z
 **URL:** [https://oi.no/](https://oi.no/)
 **Total Violations:** 1
 

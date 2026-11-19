@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vegamot AS
 
-**Timestamp:** 2026-11-18T13:24:25.280Z
+**Timestamp:** 2026-11-19T06:08:41.925Z
 **URL:** [https://www.vegamot.no/](https://www.vegamot.no/)
 **Total Violations:** 4
 
@@ -41,7 +41,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `#c-navigation-menu-6afcdc9e297f1`
+- `#c-navigation-menu-6afe2e57708c4`
 
 ### All page content should be contained by landmarks
 

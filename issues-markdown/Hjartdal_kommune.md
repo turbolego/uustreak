@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hjartdal kommune
 
-**Timestamp:** 2026-11-18T12:51:14.217Z
+**Timestamp:** 2026-11-19T05:40:24.100Z
 **URL:** [https://hjartdal.kommune.no/](https://hjartdal.kommune.no/)
 **Total Violations:** 1
 

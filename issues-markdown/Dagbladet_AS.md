@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-11-18T12:37:58.911Z
+**Timestamp:** 2026-11-19T05:32:07.843Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `._topnav_aogjo_45`
+- `._topnav_hsgxc_45`
 
 ### All page content should be contained by landmarks
 
@@ -28,5 +28,5 @@
 
 #### Affected Elements:
 
-- `._skiplink_aogjo_13`
+- `._skiplink_hsgxc_13`
 - `#am-branding > p`

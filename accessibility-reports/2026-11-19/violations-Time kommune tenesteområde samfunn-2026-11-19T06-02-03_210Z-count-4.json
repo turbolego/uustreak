@@ -1,0 +1,152 @@
+{
+  "project": "Time kommune tenesteområde samfunn",
+  "timestamp": "2026-11-19T06:02:03.210Z",
+  "url": "https://www.time.kommune.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3><span>ⓘ Aktuell informasjon</span></h3>",
+          "target": [
+            ".area-message-list-item__title > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"logo\" src=\"/design/time_kommune/time/v2018/assets/images/time-logo.svg\" alt=\"Hovedportal\">",
+          "target": [
+            ".logo"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nn\" style=\"--innsyn-primary-theme-color: #003B5C; --innsyn-primary-contrast-color: #FFFFFF; --innsyn-primary-neutral-color: #E7ECEA; --innsyn-secondary-theme-color: #FBDBC2; --innsyn-secondary-contrast-color: #141423; --innsyn-secondary-neutral-color: #E9E1DC;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<div class=\"alert-box\">",
+          "target": [
+            ".alert-box"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$innhold$ctl09$WebpartId_91$WebpartId_91$txtSearch\" type=\"text\" id=\"ctl00_ctl00_ctl00_innhold_ctl09_WebpartId_91_WebpartId_91_txtSearch\" class=\"js-liten-trigger-search\" aria-label=\"Søketekst\" placeholder=\"Kva leitar du etter?\" data-handled=\"true\" autocomplete=\"off\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_ctl09_WebpartId_91_WebpartId_91_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart frontpage__service-menu\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_43\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_43"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Politikk </span>",
+          "target": [
+            "a[data-id=\"5510\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Sjå alle tenester</span>",
+          "target": [
+            "a[data-id=\"5509\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text\">Ledige stillingar</span>",
+          "target": [
+            "a[data-id=\"14023\"] > span > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"middleTop-boxes\">",
+          "target": [
+            "#middleTop-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_51_WebpartId_51_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Sjå fleire aktuelle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

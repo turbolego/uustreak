@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ullensaker kommune
 
-**Timestamp:** 2026-11-18T13:22:35.233Z
+**Timestamp:** 2026-11-19T06:07:03.950Z
 **URL:** [https://www.ullensaker.kommune.no/](https://www.ullensaker.kommune.no/)
 **Total Violations:** 3
 

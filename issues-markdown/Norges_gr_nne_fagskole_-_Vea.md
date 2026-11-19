@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges grønne fagskole - Vea
 
-**Timestamp:** 2026-11-18T13:06:43.200Z
+**Timestamp:** 2026-11-19T05:49:58.824Z
 **URL:** [https://www.vea-fs.no/](https://www.vea-fs.no/)
 **Total Violations:** 8
 

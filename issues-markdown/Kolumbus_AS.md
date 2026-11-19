@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kolumbus AS
 
-**Timestamp:** 2026-11-18T12:55:59.640Z
+**Timestamp:** 2026-11-19T05:43:27.655Z
 **URL:** [https://www.kolumbus.no/](https://www.kolumbus.no/)
 **Total Violations:** 7
 

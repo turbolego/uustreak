@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansund kommune
 
-**Timestamp:** 2026-11-18T12:57:36.841Z
+**Timestamp:** 2026-11-19T05:47:45.900Z
 **URL:** [https://www.kristiansund.kommune.no/](https://www.kristiansund.kommune.no/)
 **Total Violations:** 1
 

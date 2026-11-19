@@ -1,6 +1,6 @@
 # WCAG Violations Report for Færder nasjonalparksenter IKS
 
-**Timestamp:** 2026-11-18T12:44:21.960Z
+**Timestamp:** 2026-11-19T05:38:26.583Z
 **URL:** [https://ferdernasjonalpark.no/](https://ferdernasjonalpark.no/)
 **Total Violations:** 4
 
@@ -30,8 +30,8 @@
 
 #### Affected Elements:
 
-- `#gt-wrapper-54056033 > a[title="English"][data-gt-lang="en"][aria-label="English"]`
-- `#gt-wrapper-54056033 > .gt-current-lang[title="Norwegian"][data-gt-lang="no"]`
+- `#gt-wrapper-66606844 > a[title="English"][data-gt-lang="en"][aria-label="English"]`
+- `#gt-wrapper-66606844 > .gt-current-lang[title="Norwegian"][data-gt-lang="no"]`
 
 ### Links must have discernible text
 
@@ -43,7 +43,7 @@
 
 #### Affected Elements:
 
-- `.impressum[href$="ferdernasjonalpark.no/"][data-relative_url=""]`
+- `.banner-1 > .cmplz-documents.cmplz-links > .impressum.cmplz-link[data-relative_url=""]`
 - `.elementor-element-563e00d > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon`
 - `.elementor-element-e045563 > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon`
 - `.elementor-element-a6a9bd2 > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon`

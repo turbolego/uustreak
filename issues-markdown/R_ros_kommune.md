@@ -1,6 +1,6 @@
 # WCAG Violations Report for Røros kommune
 
-**Timestamp:** 2026-11-18T13:13:32.268Z
+**Timestamp:** 2026-11-19T05:58:08.887Z
 **URL:** [https://www.roros.kommune.no/](https://www.roros.kommune.no/)
 **Total Violations:** 4
 
@@ -29,8 +29,8 @@
 #### Affected Elements:
 
 - `hsk-event-list,.hundekjoring-i-nydelig-roros-natur-lGOj8 > footer > a[target="_self"]`
-- `hsk-event-list,.the-hunger-games-sunrise-on-the-reaping-ULHVfS > footer > a[target="_self"]`
-- `hsk-event-list,.kveli-ranes-show-allsang-tullprat-X6RG9v > footer > a[target="_self"]`
+- `hsk-event-list,.kunstutstilling-en-av-oss-174xt > footer > a[target="_self"]`
+- `hsk-event-list,a[aria-label="See details for Seniornett"]`
 
 ### Page should contain a level-one heading
 

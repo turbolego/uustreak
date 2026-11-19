@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-11-18T12:55:16.853Z
+**Timestamp:** 2026-11-19T05:46:02.299Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 4
 
@@ -41,19 +41,18 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
-- `.snap-start:nth-child(1) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(2) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
+- `.snap-start:nth-child(2) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="3288232-_r_a_"]`
-- `.snap-start:nth-child(3) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
+- `a[aria-describedby="5529702-_r_4_"]`
 - `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(4) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
+- `.snap-start:nth-child(4) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `a[aria-describedby="3439032-_r_6_"]`
 
 ### All page content should be contained by landmarks
 

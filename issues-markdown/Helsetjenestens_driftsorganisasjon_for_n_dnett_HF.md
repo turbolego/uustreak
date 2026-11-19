@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helsetjenestens driftsorganisasjon for nødnett HF
 
-**Timestamp:** 2026-11-18T12:50:49.998Z
+**Timestamp:** 2026-11-19T05:40:06.756Z
 **URL:** [https://www.hdo.no/](https://www.hdo.no/)
 **Total Violations:** 1
 

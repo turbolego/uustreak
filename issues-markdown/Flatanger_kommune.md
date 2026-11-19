@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flatanger kommune
 
-**Timestamp:** 2026-11-18T12:46:04.780Z
+**Timestamp:** 2026-11-19T05:35:10.638Z
 **URL:** [https://www.flatanger.kommune.no/](https://www.flatanger.kommune.no/)
 **Total Violations:** 1
 
