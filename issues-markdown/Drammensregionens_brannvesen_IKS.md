@@ -1,6 +1,6 @@
 # WCAG Violations Report for Drammensregionens brannvesen IKS
 
-**Timestamp:** 2026-11-19T05:34:27.688Z
+**Timestamp:** 2026-11-19T06:37:37.657Z
 **URL:** [https://drbv.no/](https://drbv.no/)
 **Total Violations:** 4
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges institusjon for menneskerettigheter
 
-**Timestamp:** 2026-11-19T05:53:52.410Z
+**Timestamp:** 2026-11-19T06:52:59.152Z
 **URL:** [https://www.nhri.no/](https://www.nhri.no/)
 **Total Violations:** 2
 

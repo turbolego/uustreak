@@ -1,6 +1,6 @@
 # WCAG Violations Report for Indre østfold brann og redning IKS
 
-**Timestamp:** 2026-11-19T05:44:47.095Z
+**Timestamp:** 2026-11-19T06:45:04.728Z
 **URL:** [https://www.iobr.no/](https://www.iobr.no/)
 **Total Violations:** 1
 
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `iframe, #u_0_1_zg`
+- `iframe, #u_0_1_AJ`

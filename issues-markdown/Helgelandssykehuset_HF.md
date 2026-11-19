@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helgelandssykehuset HF
 
-**Timestamp:** 2026-11-19T05:39:44.251Z
+**Timestamp:** 2026-11-19T06:42:57.864Z
 **URL:** [https://www.helgelandssykehuset.no/](https://www.helgelandssykehuset.no/)
 **Total Violations:** 1
 

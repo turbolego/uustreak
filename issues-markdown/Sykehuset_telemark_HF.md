@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sykehuset telemark HF
 
-**Timestamp:** 2026-11-19T06:00:12.770Z
+**Timestamp:** 2026-11-19T07:02:45.335Z
 **URL:** [https://www.sthf.no/](https://www.sthf.no/)
 **Total Violations:** 1
 

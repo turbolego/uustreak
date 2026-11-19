@@ -1,6 +1,6 @@
 # WCAG Violations Report for Politiets sikkerhetstjeneste den sentrale enhet
 
-**Timestamp:** 2026-11-19T05:53:18.599Z
+**Timestamp:** 2026-11-19T06:59:40.837Z
 **URL:** [https://www.pst.no/](https://www.pst.no/)
 **Total Violations:** 1
 

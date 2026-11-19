@@ -1,6 +1,6 @@
 # WCAG Violations Report for Årdal kommune
 
-**Timestamp:** 2026-11-19T05:28:11.440Z
+**Timestamp:** 2026-11-19T06:31:16.102Z
 **URL:** [https://www.ardal.kommune.no/](https://www.ardal.kommune.no/)
 **Total Violations:** 3
 

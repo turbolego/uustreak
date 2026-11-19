@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sykehusapotekene i midt-norge HF
 
-**Timestamp:** 2026-11-19T05:59:54.353Z
+**Timestamp:** 2026-11-19T07:02:27.827Z
 **URL:** [https://www.sykehusapoteket.no/](https://www.sykehusapoteket.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Irmat AS
 
-**Timestamp:** 2026-11-19T05:41:58.967Z
+**Timestamp:** 2026-11-19T06:44:47.757Z
 **URL:** [https://irmat.no/](https://irmat.no/)
 **Total Violations:** 4
 
@@ -81,7 +81,7 @@
 
 #### Affected Elements:
 
-- `.cookie-statement.cmplz-link[data-relative_url=""]`
+- `.cookie-statement[href$="irmat.no/"][data-relative_url=""]`
 - `.elementor-element-25108ff.elementor-section-items-stretch[data-id="25108ff"]:nth-child(1) > .elementor-column-gap-no.elementor-container > .elementor-element-7290ad7.elementor-col-33[data-id="7290ad7"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-d9897d1.elementor-widget-image[data-id="d9897d1"] > .elementor-widget-container > a[href$="irmat.no"]`
 - `.jet-listing-dynamic-post-9439 > .jet-engine-listing-overlay-wrap > .jet-engine-listing-overlay-link`
 - `.jet-listing-dynamic-post-9421 > .jet-engine-listing-overlay-wrap > .jet-engine-listing-overlay-link`

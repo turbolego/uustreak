@@ -1,6 +1,6 @@
 # WCAG Violations Report for Røros kommune
 
-**Timestamp:** 2026-11-19T05:58:08.887Z
+**Timestamp:** 2026-11-19T06:57:07.075Z
 **URL:** [https://www.roros.kommune.no/](https://www.roros.kommune.no/)
 **Total Violations:** 4
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsø brann og redning KF
 
-**Timestamp:** 2026-11-19T06:00:24.019Z
+**Timestamp:** 2026-11-19T07:10:08.638Z
 **URL:** [https://www.tromsobrannogredning.no/](https://www.tromsobrannogredning.no/)
 **Total Violations:** 7
 

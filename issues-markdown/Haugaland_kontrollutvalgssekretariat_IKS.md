@@ -1,6 +1,6 @@
 # WCAG Violations Report for Haugaland kontrollutvalgssekretariat IKS
 
-**Timestamp:** 2026-11-19T05:37:22.558Z
+**Timestamp:** 2026-11-19T06:40:49.237Z
 **URL:** [https://kontrollutvalgene.no/](https://kontrollutvalgene.no/)
 **Total Violations:** 1
 

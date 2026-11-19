@@ -1,6 +1,6 @@
 # WCAG Violations Report for Færder nasjonalparksenter IKS
 
-**Timestamp:** 2026-11-19T05:38:26.583Z
+**Timestamp:** 2026-11-19T06:38:48.719Z
 **URL:** [https://ferdernasjonalpark.no/](https://ferdernasjonalpark.no/)
 **Total Violations:** 4
 
@@ -30,8 +30,8 @@
 
 #### Affected Elements:
 
-- `#gt-wrapper-66606844 > a[title="English"][data-gt-lang="en"][aria-label="English"]`
-- `#gt-wrapper-66606844 > .gt-current-lang[title="Norwegian"][data-gt-lang="no"]`
+- `#gt-wrapper-74332850 > a[title="English"][data-gt-lang="en"][aria-label="English"]`
+- `#gt-wrapper-74332850 > .gt-current-lang[title="Norwegian"][data-gt-lang="no"]`
 
 ### Links must have discernible text
 
@@ -39,11 +39,10 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
-- `.banner-1 > .cmplz-documents.cmplz-links > .impressum.cmplz-link[data-relative_url=""]`
 - `.elementor-element-563e00d > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon`
 - `.elementor-element-e045563 > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon`
 - `.elementor-element-a6a9bd2 > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Røyrvik kommune
 
-**Timestamp:** 2026-11-19T05:54:47.306Z
+**Timestamp:** 2026-11-19T07:01:22.301Z
 **URL:** [https://www.royrvik.kommune.no/](https://www.royrvik.kommune.no/)
 **Total Violations:** 2
 

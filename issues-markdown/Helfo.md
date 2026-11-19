@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helfo
 
-**Timestamp:** 2026-11-19T05:37:39.828Z
+**Timestamp:** 2026-11-19T06:41:07.447Z
 **URL:** [https://www.helfo.no/](https://www.helfo.no/)
 **Total Violations:** 2
 

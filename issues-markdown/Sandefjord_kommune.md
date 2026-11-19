@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandefjord kommune
 
-**Timestamp:** 2026-11-19T05:54:23.394Z
+**Timestamp:** 2026-11-19T06:56:26.649Z
 **URL:** [https://www.sandefjord.kommune.no/](https://www.sandefjord.kommune.no/)
 **Total Violations:** 2
 

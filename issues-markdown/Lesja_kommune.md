@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lesja kommune
 
-**Timestamp:** 2026-11-19T05:43:45.387Z
+**Timestamp:** 2026-11-19T06:53:33.366Z
 **URL:** [https://www.lesja.kommune.no/](https://www.lesja.kommune.no/)
 **Total Violations:** 3
 

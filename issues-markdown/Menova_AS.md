@@ -1,6 +1,6 @@
 # WCAG Violations Report for Menova AS
 
-**Timestamp:** 2026-11-19T05:44:59.126Z
+**Timestamp:** 2026-11-19T06:54:47.939Z
 **URL:** [https://menova.menova.no/](https://menova.menova.no/)
 **Total Violations:** 5
 

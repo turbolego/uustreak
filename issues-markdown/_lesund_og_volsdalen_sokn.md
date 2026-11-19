@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ålesund og volsdalen sokn
 
-**Timestamp:** 2026-11-19T05:27:34.476Z
+**Timestamp:** 2026-11-19T06:30:41.520Z
 **URL:** [https://aalesund.menighet.no/](https://aalesund.menighet.no/)
 **Total Violations:** 3
 

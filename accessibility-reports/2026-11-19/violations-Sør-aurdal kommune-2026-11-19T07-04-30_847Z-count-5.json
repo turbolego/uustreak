@@ -1,0 +1,326 @@
+{
+  "project": "Sør-aurdal kommune",
+  "timestamp": "2026-11-19T07:04:30.847Z",
+  "url": "https://www.sor-aurdal.kommune.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Sør-Aurdal kommune\" role=\"presentation\" src=\"/handlers/bv.ashx/i4b26ebb1-a6e5-49e8-942d-a930b24a5a9a/logo-nettside.png\">",
+          "target": [
+            "img[alt=\"Sør-Aurdal kommune\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<td class=\"g-color-primary\">Sør-Aurdal Frivilligsentral</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(1) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Bangsmoen Husflidsutsalg.</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(2) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Friskis og svettis Valdres Sør</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(3) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Friskis og svettis Valdres Sør</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(4) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Seniorsvømming</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(5) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Bangsmoen Husflidsutsalg.</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(6) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Sør-Aurdal Frivilligsentral</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(7) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<td class=\"g-color-primary\">Sør-Aurdal kommune</td>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".col-sm-6.col-md-4.col-lg-3:nth-child(8) > article > a > .g-pa-10 > table > tbody > tr:nth-child(4) > .g-color-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.09 (foreground color: #4fa369, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe data-load-src=\"true\" style=\"width: 100%; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; overflow: hidden; height: 642px;\" scrolling=\"no\" src=\"https://sor-aurdal.foreningsportal.no/kalender/iframe?Top=8\"></iframe>",
+          "target": [
+            "iframe[data-load-src$=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--innsyn-primary-theme-color: #003B5C; --innsyn-primary-contrast-color: #FFFFFF; --innsyn-primary-neutral-color: #E7ECEA; --innsyn-secondary-theme-color: #FBDBC2; --innsyn-secondary-contrast-color: #141423; --innsyn-secondary-neutral-color: #E9E1DC; height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html lang=\"no\" prefix=\"og: http://ogp.me/ns#\">",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Søk</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_41 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$in...\" type=\"text\" id=\"ctl00_ctl00_ctl00_in...\" class=\"js-liten-trigger-sea...\" aria-label=\"Søketekst\" data-handled=\"true\" autocomplete=\"off\" placeholder=\"Hva leter du etter?\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_41_WebpartId_41_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone5001\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone5001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"middle-boxes\">",
+          "target": [
+            "#middle-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_44 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_44_WebpartId_44_hlLinkAlle\" class=\"MargLink\" href=\"/nyheter/\">Se alle saker</a>\n        </div>",
+          "target": [
+            ".container > .webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Kommunale råd og møter</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl05_WebpartId_45 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-date\">\n      <div class=\"event-date-month\">nov</div>\n      <div class=\"event-date-day\">19</div>\n    </div>",
+          "target": [
+            ".event:nth-child(1) > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"event-title\"><a href=\"/Kalender/CalendarEvent.aspx?Id=18039&amp;lang=1&amp;MId1=8\">Formannskapet</a></h3>",
+          "target": [
+            ".event:nth-child(1) > .event-text > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"event-location\">kommunestyresalen, Tingvoll</span>",
+          "target": [
+            ".event:nth-child(1) > .event-text > .event-location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-date\">\n      <div class=\"event-date-month\">des</div>\n      <div class=\"event-date-day\">10</div>\n    </div>",
+          "target": [
+            ".event:nth-child(2) > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"event-title\"><a href=\"/Kalender/CalendarEvent.aspx?Id=18038&amp;lang=1&amp;MId1=8\">Kommunestyret</a></h3>",
+          "target": [
+            ".event:nth-child(2) > .event-text > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"event-location\">kommunestyresalen, Tingvoll</span>",
+          "target": [
+            ".event:nth-child(2) > .event-text > .event-location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"calWPFooter\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl05_WebpartId_45_WebpartId_45_webPart_lnkSearch\" href=\"/Kalender/CalendarEvents.aspx?lang=1&amp;kategori=4&amp;dir=ComingEvents&amp;MId1=8\"><span>Vis alle</span></a>\n        </div>",
+          "target": [
+            ".calWPFooter"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Hva skjer i Sør-Aurdal?</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl05_WebpartId_174 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"webPartBunnLink\"><a href=\"https://sor-aurdal.foreningsportal.no/kalender\" data-templateid=\"1\" style=\"display: inline-block;\" class=\"external-link external\">Se hele kalenderen</a></p>",
+          "target": [
+            ".client-content-widget > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row justify-content-left text-left\" style=\"cursor: pointer;\">",
+          "target": [
+            "iframe[data-load-src$=\"true\"]",
+            ".row"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-floating-notifications\" style=\"background: url(\"/images/1px_Black_Opacity_75.png\");\">",
+          "target": [
+            ".container-floating-notifications"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

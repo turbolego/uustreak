@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lierne nasjonalparksenter IKS
 
-**Timestamp:** 2026-11-19T05:46:07.185Z
+**Timestamp:** 2026-11-19T06:52:27.517Z
 **URL:** [https://nasjonalparken.no/](https://nasjonalparken.no/)
 **Total Violations:** 13
 
@@ -52,12 +52,12 @@
 
 #### Affected Elements:
 
-- `ul[data-accordion="zziaa7-accordion"]`
-- `ul[data-accordion="qngbqf-accordion"]`
-- `ul[data-accordion="gf0skb-accordion"]`
-- `ul[data-accordion="7lvmpk-accordion"]`
-- `ul[data-accordion="oldxh4-accordion"]`
-- `ul[data-accordion="0h1zec-accordion"]`
+- `ul[data-accordion="yotvb5-accordion"]`
+- `ul[data-accordion="h90qce-accordion"]`
+- `ul[data-accordion="2rj45w-accordion"]`
+- `ul[data-accordion="upf4na-accordion"]`
+- `ul[data-accordion="9y07n1-accordion"]`
+- `ul[data-accordion="6k6fqx-accordion"]`
 
 ### Certain ARIA roles must be contained by particular parents
 
@@ -69,12 +69,12 @@
 
 #### Affected Elements:
 
-- `#\36 67k0x-accordion-label`
-- `#r2a9ha-accordion-label`
-- `#ba1njk-accordion-label`
-- `#wysgrc-accordion-label`
-- `#\39 jy8pp-accordion-label`
-- `#\36 0bi4d-accordion-label`
+- `#gnqph3-accordion-label`
+- `#kzsb7d-accordion-label`
+- `#ncvdr8-accordion-label`
+- `#k8po6s-accordion-label`
+- `#bugs0f-accordion-label`
+- `#stwqf6-accordion-label`
 
 ### Buttons must have discernible text
 
@@ -149,9 +149,9 @@
 #### Affected Elements:
 
 - `#branding > .site-logo[rel="home"][href$="nasjonalparken.no/"]`
-- `iframe[name="f92f588eaf2218735"], #u_0_1_4L`
-- `iframe[name="ffa5f1342cab281fa"], #u_0_1_kf`
-- `iframe[name="fd99e38734dabfea7"], #u_0_1_03`
+- `iframe[name="f5990fe0bb16fe24c"], #u_0_1_yf`
+- `iframe[name="f9c904214c6f4943b"], #u_0_1_nz`
+- `iframe[name="f6b566445542f9bc8"], #u_0_1_us`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -163,12 +163,12 @@
 
 #### Affected Elements:
 
-- `ul[data-accordion="zziaa7-accordion"] > .accordion-item[data-accordion-item=""]`
-- `ul[data-accordion="qngbqf-accordion"] > .accordion-item[data-accordion-item=""]`
-- `ul[data-accordion="gf0skb-accordion"] > .accordion-item[data-accordion-item=""]`
-- `ul[data-accordion="7lvmpk-accordion"] > .accordion-item[data-accordion-item=""]`
-- `ul[data-accordion="oldxh4-accordion"] > .accordion-item[data-accordion-item=""]`
-- `ul[data-accordion="0h1zec-accordion"] > .accordion-item[data-accordion-item=""]`
+- `ul[data-accordion="yotvb5-accordion"] > .accordion-item[data-accordion-item=""]`
+- `ul[data-accordion="h90qce-accordion"] > .accordion-item[data-accordion-item=""]`
+- `ul[data-accordion="2rj45w-accordion"] > .accordion-item[data-accordion-item=""]`
+- `ul[data-accordion="upf4na-accordion"] > .accordion-item[data-accordion-item=""]`
+- `ul[data-accordion="9y07n1-accordion"] > .accordion-item[data-accordion-item=""]`
+- `ul[data-accordion="6k6fqx-accordion"] > .accordion-item[data-accordion-item=""]`
 
 ### All page content should be contained by landmarks
 
@@ -185,8 +185,8 @@
 - `.intro-text`
 - `#post-6604 > .entry-content`
 - `.more-posts`
-- `div[data-equalizer="p2vr9x-equalizer"]`
-- `div[data-equalizer="ez9nz1-equalizer"]`
+- `div[data-equalizer="w5a277-equalizer"]`
+- `div[data-equalizer="86njcn-equalizer"]`
 - `a[title="Les mer 'Naturopplevelser'"] > .page_row_image.large-6[data-equalizer-watch=""]`
 - `a[title="Les mer 'Naturopplevelser'"] > .page_row_content.large-6[data-equalizer-watch=""] > .entry-title`
 - `a[title="Les mer 'Naturopplevelser'"] > .page_row_content.large-6[data-equalizer-watch=""] > .entry-content > p:nth-child(1)`
@@ -194,12 +194,12 @@
 - `iframe[title="Vinteropplevelser i Lierne"], .ytmVideoInfoVideoTitleContainer`
 - `iframe[title="Vinteropplevelser i Lierne"], .ytmVideoInfoOverlay`
 - `iframe[title="Vinteropplevelser i Lierne"], .quick-actions-wrapper`
-- `div[data-equalizer="qjwy8l-equalizer"]`
+- `div[data-equalizer="kdlskm-equalizer"]`
 - `.facts > h3`
-- `#\36 67k0x-accordion-label`
-- `#r2a9ha-accordion-label`
-- `#ba1njk-accordion-label`
-- `#wysgrc-accordion-label`
-- `#\39 jy8pp-accordion-label`
-- `#\36 0bi4d-accordion-label`
+- `#gnqph3-accordion-label`
+- `#kzsb7d-accordion-label`
+- `#ncvdr8-accordion-label`
+- `#k8po6s-accordion-label`
+- `#bugs0f-accordion-label`
+- `#stwqf6-accordion-label`
 - `.information`

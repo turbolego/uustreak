@@ -1,6 +1,6 @@
 # WCAG Violations Report for Skien kommune
 
-**Timestamp:** 2026-11-19T06:00:08.025Z
+**Timestamp:** 2026-11-19T06:58:34.761Z
 **URL:** [https://skien.kommune.no/](https://skien.kommune.no/)
 **Total Violations:** 2
 

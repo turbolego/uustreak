@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vidju holding AS
 
-**Timestamp:** 2026-11-19T06:06:24.381Z
+**Timestamp:** 2026-11-19T07:12:05.254Z
 **URL:** [https://vidju.no/](https://vidju.no/)
 **Total Violations:** 4
 

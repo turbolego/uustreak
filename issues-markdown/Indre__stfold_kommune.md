@@ -1,6 +1,6 @@
 # WCAG Violations Report for Indre østfold kommune
 
-**Timestamp:** 2026-11-19T05:42:12.922Z
+**Timestamp:** 2026-11-19T06:45:25.874Z
 **URL:** [https://www.io.kommune.no/](https://www.io.kommune.no/)
 **Total Violations:** 2
 

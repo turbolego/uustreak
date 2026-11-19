@@ -1,6 +1,6 @@
 # WCAG Violations Report for Agder kollektivtrafikk AS
 
-**Timestamp:** 2026-11-19T05:26:56.839Z
+**Timestamp:** 2026-11-19T06:30:04.741Z
 **URL:** [https://www.akt.no/](https://www.akt.no/)
 **Total Violations:** 4
 

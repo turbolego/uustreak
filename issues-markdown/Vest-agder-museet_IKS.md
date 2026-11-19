@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vest-agder-museet IKS
 
-**Timestamp:** 2026-11-19T06:04:07.486Z
+**Timestamp:** 2026-11-19T07:12:44.173Z
 **URL:** [https://www.vestagdermuseet.no/](https://www.vestagdermuseet.no/)
 **Total Violations:** 4
 

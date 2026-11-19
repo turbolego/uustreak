@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kulturfabrikken sortland KF
 
-**Timestamp:** 2026-11-19T05:48:03.336Z
+**Timestamp:** 2026-11-19T06:48:08.458Z
 **URL:** [https://kulturfabrikkensortland.no/](https://kulturfabrikkensortland.no/)
 **Total Violations:** 5
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
-- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > .date > b`
-- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > p`
-- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > .btn-block.btn-default.btn`
+- `.active.carousel-item > .carousel-caption.d-xs-block.text-left > .date > b`
+- `.active.carousel-item > .carousel-caption.d-xs-block.text-left > p`
+- `.carousel-caption.d-xs-block.text-left > .btn-block.btn-default[href$="ylvis-og-calle/"]`
 
 ### Headings should not be empty
 
@@ -38,12 +38,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.carousel-item-left.active.carousel-item > .carousel-caption.d-xs-block.text-left > h5`
-- `.carousel-item-next > .carousel-caption.d-xs-block.text-left > h5`
+- `.active.carousel-item > .carousel-caption.d-xs-block.text-left > h5`
 
 ### Links must have discernible text
 
@@ -63,12 +62,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 30
+- **Count:** 29
 
 #### Affected Elements:
 
-- `.carousel-item-left.active.carousel-item`
-- `.carousel-item-next`
+- `.active.carousel-item`
 - `.main-page-navigation`
 - `.\35 491.item.\35 441:nth-child(1) > .image-wrapper`
 - `.\35 491.item.\35 441:nth-child(1) > .item-link`

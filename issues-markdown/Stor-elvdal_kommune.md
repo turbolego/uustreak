@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stor-elvdal kommune
 
-**Timestamp:** 2026-11-19T05:56:58.399Z
+**Timestamp:** 2026-11-19T07:07:03.631Z
 **URL:** [https://www.stor-elvdal.kommune.no/](https://www.stor-elvdal.kommune.no/)
 **Total Violations:** 7
 

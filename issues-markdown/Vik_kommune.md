@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vik kommune
 
-**Timestamp:** 2026-11-19T06:05:10.239Z
+**Timestamp:** 2026-11-19T07:07:45.074Z
 **URL:** [https://www.vik.kommune.no/](https://www.vik.kommune.no/)
 **Total Violations:** 4
 

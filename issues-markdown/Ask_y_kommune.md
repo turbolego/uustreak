@@ -1,6 +1,6 @@
 # WCAG Violations Report for Askøy kommune
 
-**Timestamp:** 2026-11-19T05:27:10.062Z
+**Timestamp:** 2026-11-19T06:30:51.052Z
 **URL:** [https://www.askoy.kommune.no/](https://www.askoy.kommune.no/)
 **Total Violations:** 2
 

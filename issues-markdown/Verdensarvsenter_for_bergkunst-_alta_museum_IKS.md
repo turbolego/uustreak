@@ -1,6 +1,6 @@
 # WCAG Violations Report for Verdensarvsenter for bergkunst- alta museum IKS
 
-**Timestamp:** 2026-11-19T06:04:33.028Z
+**Timestamp:** 2026-11-19T07:06:54.277Z
 **URL:** [https://www.altamuseum.no/](https://www.altamuseum.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Guovdageainnu suohkan – kautokeino kommune
 
-**Timestamp:** 2026-11-19T05:38:34.634Z
+**Timestamp:** 2026-11-19T06:41:44.958Z
 **URL:** [https://www.guovdageainnu.suohkan.no/](https://www.guovdageainnu.suohkan.no/)
 **Total Violations:** 5
 

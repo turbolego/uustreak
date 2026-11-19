@@ -1,6 +1,6 @@
 # WCAG Violations Report for Interkommunalt arkiv for møre og romsdal IKS
 
-**Timestamp:** 2026-11-19T05:42:30.022Z
+**Timestamp:** 2026-11-19T06:45:43.084Z
 **URL:** [https://ikamr.no/](https://ikamr.no/)
 **Total Violations:** 1
 

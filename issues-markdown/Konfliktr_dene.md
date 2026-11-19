@@ -1,6 +1,6 @@
 # WCAG Violations Report for Konfliktrådene
 
-**Timestamp:** 2026-11-19T05:46:49.490Z
+**Timestamp:** 2026-11-19T06:47:03.127Z
 **URL:** [https://konfliktraadet.no/](https://konfliktraadet.no/)
 **Total Violations:** 2
 

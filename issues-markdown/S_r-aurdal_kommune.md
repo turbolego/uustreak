@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sør-aurdal kommune
 
-**Timestamp:** 2026-11-19T05:54:30.654Z
+**Timestamp:** 2026-11-19T07:04:30.847Z
 **URL:** [https://www.sor-aurdal.kommune.no/](https://www.sor-aurdal.kommune.no/)
 **Total Violations:** 5
 

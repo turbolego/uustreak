@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kvinnherad kommune
 
-**Timestamp:** 2026-11-19T05:45:27.333Z
+**Timestamp:** 2026-11-19T06:51:46.250Z
 **URL:** [https://www.kvinnherad.kommune.no/](https://www.kvinnherad.kommune.no/)
 **Total Violations:** 2
 
@@ -23,8 +23,8 @@
 - `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(5) > .rek-link.env-button--ghost.rekai-pill-radius`
 - `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(6) > .rek-link.env-button--ghost.rekai-pill-radius`
 - `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(7) > .rek-link.env-button--ghost.rekai-pill-radius`
-- `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(8) > .rek-link.env-button--ghost.rekai-pill-radius`
-- `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(9) > .rek-link.env-button--ghost[href$="helse-og-omsorg"]`
+- `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(8) > .rek-link.env-button--ghost[href$="helse-og-omsorg"]`
+- `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-right--medium.env-m-top--small.env-list__item:nth-child(9) > .rek-link.env-button--ghost.rekai-pill-radius`
 - `#rekai_12_54bdac5919c988ca0ba3e22 > .rekai-pills.env-list--horizontal.env-list > .env-m-top--small.env-list__item:nth-child(10) > .rek-link.env-button--ghost.rekai-pill-radius`
 
 ### All page content should be contained by landmarks

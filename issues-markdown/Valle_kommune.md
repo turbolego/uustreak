@@ -1,6 +1,6 @@
 # WCAG Violations Report for Valle kommune
 
-**Timestamp:** 2026-11-19T06:08:17.098Z
+**Timestamp:** 2026-11-19T07:07:15.454Z
 **URL:** [https://www.valle.kommune.no/](https://www.valle.kommune.no/)
 **Total Violations:** 2
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Øystre slidre kommune
 
-**Timestamp:** 2026-11-19T05:56:23.972Z
+**Timestamp:** 2026-11-19T06:55:26.045Z
 **URL:** [https://www.oystre-slidre.kommune.no/](https://www.oystre-slidre.kommune.no/)
 **Total Violations:** 5
 

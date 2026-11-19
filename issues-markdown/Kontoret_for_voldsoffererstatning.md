@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kontoret for voldsoffererstatning
 
-**Timestamp:** 2026-11-19T05:41:53.060Z
+**Timestamp:** 2026-11-19T06:51:42.464Z
 **URL:** [https://www.voldsoffererstatning.no/](https://www.voldsoffererstatning.no/)
 **Total Violations:** 1
 

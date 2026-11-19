@@ -1,6 +1,6 @@
 # WCAG Violations Report for Averøy kommune
 
-**Timestamp:** 2026-11-19T05:32:01.830Z
+**Timestamp:** 2026-11-19T06:32:22.730Z
 **URL:** [https://www.averoy.kommune.no/](https://www.averoy.kommune.no/)
 **Total Violations:** 2
 

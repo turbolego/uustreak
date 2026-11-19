@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hattfjelldal kommune
 
-**Timestamp:** 2026-11-19T05:38:56.554Z
+**Timestamp:** 2026-11-19T06:41:49.684Z
 **URL:** [https://hattfjelldal.kommune.no/](https://hattfjelldal.kommune.no/)
 **Total Violations:** 2
 

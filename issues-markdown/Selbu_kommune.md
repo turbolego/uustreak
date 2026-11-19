@@ -1,6 +1,6 @@
 # WCAG Violations Report for Selbu kommune
 
-**Timestamp:** 2026-11-19T05:54:54.583Z
+**Timestamp:** 2026-11-19T06:56:58.718Z
 **URL:** [https://www.selbu.kommune.no/](https://www.selbu.kommune.no/)
 **Total Violations:** 2
 

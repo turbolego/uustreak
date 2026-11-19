@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sykehusbygg HF
 
-**Timestamp:** 2026-11-19T05:58:18.769Z
+**Timestamp:** 2026-11-19T07:08:19.967Z
 **URL:** [https://www.sykehusbygg.no/](https://www.sykehusbygg.no/)
 **Total Violations:** 1
 

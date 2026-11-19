@@ -1,6 +1,6 @@
 # WCAG Violations Report for Gjerstad kommune
 
-**Timestamp:** 2026-11-19T05:38:02.590Z
+**Timestamp:** 2026-11-19T06:40:56.174Z
 **URL:** [https://www.gjerstad.kommune.no/](https://www.gjerstad.kommune.no/)
 **Total Violations:** 2
 

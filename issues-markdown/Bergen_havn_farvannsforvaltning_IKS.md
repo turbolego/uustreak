@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergen havn farvannsforvaltning IKS
 
-**Timestamp:** 2026-11-19T05:32:41.858Z
+**Timestamp:** 2026-11-19T06:32:58.903Z
 **URL:** [https://www.bergenhavn.no/](https://www.bergenhavn.no/)
 **Total Violations:** 5
 

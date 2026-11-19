@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hemit HF
 
-**Timestamp:** 2026-11-19T05:38:33.343Z
+**Timestamp:** 2026-11-19T06:42:02.524Z
 **URL:** [https://www.hemit.no/](https://www.hemit.no/)
 **Total Violations:** 1
 

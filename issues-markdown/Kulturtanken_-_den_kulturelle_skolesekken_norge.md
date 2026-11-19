@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kulturtanken - den kulturelle skolesekken norge
 
-**Timestamp:** 2026-11-19T05:45:08.321Z
+**Timestamp:** 2026-11-19T06:51:27.491Z
 **URL:** [https://www.kulturtanken.no/](https://www.kulturtanken.no/)
 **Total Violations:** 2
 

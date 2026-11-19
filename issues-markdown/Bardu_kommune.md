@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bardu kommune
 
-**Timestamp:** 2026-11-19T05:32:22.515Z
+**Timestamp:** 2026-11-19T06:32:40.921Z
 **URL:** [https://www.bardu.kommune.no/](https://www.bardu.kommune.no/)
 **Total Violations:** 4
 

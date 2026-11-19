@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lysna AS
 
-**Timestamp:** 2026-11-19T05:50:14.277Z
+**Timestamp:** 2026-11-19T06:49:46.009Z
 **URL:** [https://lysna.no/](https://lysna.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fartt IKT IKS
 
-**Timestamp:** 2026-11-19T05:34:13.804Z
+**Timestamp:** 2026-11-19T06:37:55.388Z
 **URL:** [https://www.fartt.no/](https://www.fartt.no/)
 **Total Violations:** 2
 

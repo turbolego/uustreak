@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fjellinjen AS
 
-**Timestamp:** 2026-11-19T05:34:50.866Z
+**Timestamp:** 2026-11-19T06:38:30.954Z
 **URL:** [https://www.fjellinjen.no/](https://www.fjellinjen.no/)
 **Total Violations:** 2
 

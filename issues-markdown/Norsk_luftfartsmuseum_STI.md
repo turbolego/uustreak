@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norsk luftfartsmuseum STI
 
-**Timestamp:** 2026-11-19T05:50:36.809Z
+**Timestamp:** 2026-11-19T06:52:50.046Z
 **URL:** [https://www.luftfartsmuseum.no/](https://www.luftfartsmuseum.no/)
 **Total Violations:** 4
 

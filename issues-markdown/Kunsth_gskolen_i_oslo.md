@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kunsthøgskolen i oslo
 
-**Timestamp:** 2026-11-19T05:43:04.577Z
+**Timestamp:** 2026-11-19T06:52:56.930Z
 **URL:** [https://khio.no/](https://khio.no/)
 **Total Violations:** 4
 
@@ -47,7 +47,7 @@
 - `.kunst-og-handverk.kunst-og-handverk-page[data-index="16"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height="682"][width="1024"][loading="lazy"]`
 - `img[title="Bachelorstudium i samtidsdans"]`
 - `img[title="Masterstudium i koreografi"]`
-- `.design.design-page[data-index="19"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > .loaded[height="682"][width="1024"]`
+- `.preloaded`
 - `.operahogskolen.dans[data-index="20"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height="682"][width="1024"][loading="lazy"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

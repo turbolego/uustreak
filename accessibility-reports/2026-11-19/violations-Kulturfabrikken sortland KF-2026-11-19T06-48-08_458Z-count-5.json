@@ -1,0 +1,357 @@
+{
+  "project": "Kulturfabrikken sortland KF",
+  "timestamp": "2026-11-19T06:48:08.458Z",
+  "url": "https://kulturfabrikkensortland.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"btn btn-outline-secondary\" type=\"button\" value=\"search\"><i class=\"fas fa-search\"></i></button>",
+          "target": [
+            ".btn-outline-secondary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<b>Torsdag 03. desember kl. 19.00</b>",
+          "target": [
+            ".active.carousel-item > .carousel-caption.d-xs-block.text-left > .date > b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.33 (foreground color: #ffffff, background color: #918c86, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Stageway og All Things Live</p>",
+          "target": [
+            ".active.carousel-item > .carousel-caption.d-xs-block.text-left > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.33 (foreground color: #ffffff, background color: #918c86, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-default btn-block\" href=\"/program/ylvis-og-calle/\">Les mer</a>",
+          "target": [
+            ".carousel-caption.d-xs-block.text-left > .btn-block.btn-default[href$=\"ylvis-og-calle/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.33 (foreground color: #ffffff, background color: #918c86, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h5></h5>",
+          "target": [
+            ".active.carousel-item > .carousel-caption.d-xs-block.text-left > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a rel=\"noopener\" href=\"https://uustatus.no/nb/erklaringer/publisert/33446861-dfff-46c9-95c1-f8830689dd14\" target=\"_blank\"></a>",
+          "target": [
+            "a[rel=\"noopener\"][target=\"_blank\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 29,
+      "nodes": [
+        {
+          "html": "<div class=\"carousel-item active\">",
+          "target": [
+            ".active.carousel-item"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"nav main-page-navigation\">",
+          "target": [
+            ".main-page-navigation"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\35 491.item.\\35 441:nth-child(1) > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\35 491.item.\\35 441:nth-child(1) > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\35 576.item.\\35 441 > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\35 576.item.\\35 441 > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\31 4487.\\35 495.item > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\31 4487.\\35 495.item > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\31 1811.item.\\35 441:nth-child(4) > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\31 1811.item.\\35 441:nth-child(4) > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".item.\\35 441.col-lg-4:nth-child(8) > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".item.\\35 441.col-lg-4:nth-child(8) > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\37 455.\\31 1811.item > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\37 455.\\31 1811.item > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".item.\\35 441.col-lg-4:nth-child(11) > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".item.\\35 441.col-lg-4:nth-child(11) > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\35 578.\\31 090.item:nth-child(14) > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\35 578.\\31 090.item:nth-child(14) > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"image-wrapper\">",
+          "target": [
+            ".\\35 494.\\35 491.item:nth-child(15) > .image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item-link\">",
+          "target": [
+            ".\\35 494.\\35 491.item:nth-child(15) > .item-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" class=\"see-all\" onclick=\"ShowAllPrograms(event, this);\">\n                <h3>+ Vis flere arrangementer</h3>\n            </a>",
+          "target": [
+            "#grid > .see-all[onclick=\"ShowAllPrograms(event, this);\"][href=\"#\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            ".bottom-section > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"order-title\">Bestill møterom</div>",
+          "target": [
+            ".order-item.col-sm-6.col-12:nth-child(1) > .order-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"order-item-body\">\n                            Trenger du rom til møter, kurs og konferanse?\n                        </div>",
+          "target": [
+            ".order-item.col-sm-6.col-12:nth-child(1) > .order-item-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"order-title\">Book kulturarrangement</div>",
+          "target": [
+            ".order-item.col-sm-6.col-12:nth-child(2) > .order-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"order-item-body\">\n                             Vil du arrangere noe på Kulturfabrikken?\n                        </div>",
+          "target": [
+            ".order-item.col-sm-6.col-12:nth-child(2) > .order-item-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"news-section text-center\">",
+          "target": [
+            ".news-section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            ".footer > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cookie-popup-inner\">",
+          "target": [
+            ".cookie-popup-inner"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

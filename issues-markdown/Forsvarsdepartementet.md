@@ -1,6 +1,6 @@
 # WCAG Violations Report for Forsvarsdepartementet
 
-**Timestamp:** 2026-11-19T05:37:35.560Z
+**Timestamp:** 2026-11-19T06:40:44.042Z
 **URL:** [https://www.regjeringen.no/no/dep/fd/id380/](https://www.regjeringen.no/no/dep/fd/id380/)
 **Total Violations:** 2
 

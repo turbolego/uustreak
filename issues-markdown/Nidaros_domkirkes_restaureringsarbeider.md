@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nidaros domkirkes restaureringsarbeider
 
-**Timestamp:** 2026-11-19T05:48:31.639Z
+**Timestamp:** 2026-11-19T06:54:48.611Z
 **URL:** [https://www.pilegrimsleden.no/](https://www.pilegrimsleden.no/)
 **Total Violations:** 3
 

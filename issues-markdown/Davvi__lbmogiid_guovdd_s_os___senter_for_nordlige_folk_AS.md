@@ -1,6 +1,6 @@
 # WCAG Violations Report for Davvi álbmogiid guovddás os – senter for nordlige folk AS
 
-**Timestamp:** 2026-11-19T05:35:59.101Z
+**Timestamp:** 2026-11-19T06:36:13.824Z
 **URL:** [https://nordligefolk.no/](https://nordligefolk.no/)
 **Total Violations:** 6
 

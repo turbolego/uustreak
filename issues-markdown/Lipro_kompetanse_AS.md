@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lipro kompetanse AS
 
-**Timestamp:** 2026-11-19T05:49:33.223Z
+**Timestamp:** 2026-11-19T06:49:14.072Z
 **URL:** [https://www.lipro.no/](https://www.lipro.no/)
 **Total Violations:** 11
 
@@ -142,8 +142,8 @@
 
 #### Affected Elements:
 
-- `iframe[name="fe06e578516a27302"], #u_0_1_f7`
-- `iframe[name="fe06e578516a27302"], .lfloat._3-8_`
+- `iframe[name="fbd5cdc9874304a51"], #u_0_1_lZ`
+- `iframe[name="fbd5cdc9874304a51"], .lfloat._3-8_`
 
 ### Page should contain a level-one heading
 
@@ -156,7 +156,7 @@
 #### Affected Elements:
 
 - `html`
-- `iframe[name="fe06e578516a27302"], #facebook`
+- `iframe[name="fbd5cdc9874304a51"], #facebook`
 
 ### All page content should be contained by landmarks
 

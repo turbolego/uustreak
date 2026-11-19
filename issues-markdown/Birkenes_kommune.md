@@ -1,6 +1,6 @@
 # WCAG Violations Report for Birkenes kommune
 
-**Timestamp:** 2026-11-19T05:30:26.922Z
+**Timestamp:** 2026-11-19T06:33:40.886Z
 **URL:** [https://birkenes.kommune.no/](https://birkenes.kommune.no/)
 **Total Violations:** 6
 

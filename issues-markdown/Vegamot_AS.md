@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vegamot AS
 
-**Timestamp:** 2026-11-19T06:08:41.925Z
+**Timestamp:** 2026-11-19T07:07:43.207Z
 **URL:** [https://www.vegamot.no/](https://www.vegamot.no/)
 **Total Violations:** 4
 

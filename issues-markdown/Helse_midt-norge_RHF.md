@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse midt-norge RHF
 
-**Timestamp:** 2026-11-19T05:42:57.234Z
+**Timestamp:** 2026-11-19T06:43:23.024Z
 **URL:** [https://www.helse-midt.no/](https://www.helse-midt.no/)
 **Total Violations:** 1
 

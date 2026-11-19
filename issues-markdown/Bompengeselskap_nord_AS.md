@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bompengeselskap nord AS
 
-**Timestamp:** 2026-11-19T05:34:14.786Z
+**Timestamp:** 2026-11-19T06:34:29.690Z
 **URL:** [https://bpsnord.no/](https://bpsnord.no/)
 **Total Violations:** 2
 

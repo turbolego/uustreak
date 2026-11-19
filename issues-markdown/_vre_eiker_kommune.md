@@ -1,6 +1,6 @@
 # WCAG Violations Report for Øvre eiker kommune
 
-**Timestamp:** 2026-11-19T05:52:08.967Z
+**Timestamp:** 2026-11-19T06:54:19.803Z
 **URL:** [https://ovre-eiker.kommune.no/](https://ovre-eiker.kommune.no/)
 **Total Violations:** 2
 

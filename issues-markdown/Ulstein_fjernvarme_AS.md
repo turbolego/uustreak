@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ulstein fjernvarme AS
 
-**Timestamp:** 2026-11-19T06:01:40.126Z
+**Timestamp:** 2026-11-19T07:10:56.940Z
 **URL:** [https://ulsteinfjernvarme.no/](https://ulsteinfjernvarme.no/)
 **Total Violations:** 2
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Direktoratet for medisinske produkter
 
-**Timestamp:** 2026-11-19T05:36:58.220Z
+**Timestamp:** 2026-11-19T06:37:12.022Z
 **URL:** [https://www.dmp.no/](https://www.dmp.no/)
 **Total Violations:** 3
 

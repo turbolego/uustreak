@@ -1,6 +1,6 @@
 # WCAG Violations Report for Åseral kommune
 
-**Timestamp:** 2026-11-19T05:31:14.035Z
+**Timestamp:** 2026-11-19T06:31:43.240Z
 **URL:** [https://www.aseral.kommune.no/](https://www.aseral.kommune.no/)
 **Total Violations:** 1
 

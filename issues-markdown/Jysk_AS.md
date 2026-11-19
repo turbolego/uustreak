@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-11-19T05:46:02.299Z
+**Timestamp:** 2026-11-19T06:46:17.183Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 4
 
@@ -12,10 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.pb-1`
+- `.text-sm.text-black`
 - `.prose.max-w-none.marker\:text-black > p > span`
 
 ### Alternative text of images should not be repeated as text
@@ -48,11 +50,11 @@
 - `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 - `.snap-start:nth-child(2) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="5529702-_r_4_"]`
+- `a[aria-describedby="2351200-_r_4_"]`
+- `.snap-start:nth-child(3) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 - `.snap-start:nth-child(4) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="3439032-_r_6_"]`
 
 ### All page content should be contained by landmarks
 

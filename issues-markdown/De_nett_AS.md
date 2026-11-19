@@ -1,6 +1,6 @@
 # WCAG Violations Report for De nett AS
 
-**Timestamp:** 2026-11-19T05:33:02.656Z
+**Timestamp:** 2026-11-19T06:36:16.488Z
 **URL:** [https://denett.no/](https://denett.no/)
 **Total Violations:** 2
 

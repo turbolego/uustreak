@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norsk filminstitutt
 
-**Timestamp:** 2026-11-19T05:50:39.293Z
+**Timestamp:** 2026-11-19T06:56:46.988Z
 **URL:** [https://www.nfi.no/](https://www.nfi.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Forbrukertilsynet
 
-**Timestamp:** 2026-11-19T05:37:18.837Z
+**Timestamp:** 2026-11-19T06:40:26.857Z
 **URL:** [https://www.forbrukertilsynet.no/](https://www.forbrukertilsynet.no/)
 **Total Violations:** 2
 

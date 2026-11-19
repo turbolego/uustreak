@@ -1,6 +1,6 @@
 # WCAG Violations Report for Meråker kommune
 
-**Timestamp:** 2026-11-19T05:50:38.253Z
+**Timestamp:** 2026-11-19T06:50:03.885Z
 **URL:** [https://www.meraker.kommune.no/](https://www.meraker.kommune.no/)
 **Total Violations:** 2
 

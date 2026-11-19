@@ -1,6 +1,6 @@
 # WCAG Violations Report for Herøy kommune
 
-**Timestamp:** 2026-11-19T05:40:33.118Z
+**Timestamp:** 2026-11-19T06:43:49.276Z
 **URL:** [https://www.heroy.kommune.no/](https://www.heroy.kommune.no/)
 **Total Violations:** 5
 

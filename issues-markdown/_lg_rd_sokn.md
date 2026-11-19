@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ålgård sokn
 
-**Timestamp:** 2026-11-19T05:25:42.978Z
+**Timestamp:** 2026-11-19T06:29:33.940Z
 **URL:** [https://algard.kirken.no/](https://algard.kirken.no/)
 **Total Violations:** 3
 

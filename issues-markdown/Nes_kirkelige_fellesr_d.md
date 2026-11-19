@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nes kirkelige fellesråd
 
-**Timestamp:** 2026-11-19T05:48:16.286Z
+**Timestamp:** 2026-11-19T06:50:35.461Z
 **URL:** [https://kirkenines.no/](https://kirkenines.no/)
 **Total Violations:** 4
 

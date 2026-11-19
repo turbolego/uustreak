@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fjellregionen interkommunale avfallsselskap AS
 
-**Timestamp:** 2026-11-19T05:39:38.576Z
+**Timestamp:** 2026-11-19T06:40:04.521Z
 **URL:** [https://www.fias.no/](https://www.fias.no/)
 **Total Violations:** 2
 

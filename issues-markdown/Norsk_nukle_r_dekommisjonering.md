@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norsk nukleær dekommisjonering
 
-**Timestamp:** 2026-11-19T05:48:27.003Z
+**Timestamp:** 2026-11-19T06:58:08.042Z
 **URL:** [https://www.norskdekommisjonering.no/](https://www.norskdekommisjonering.no/)
 **Total Violations:** 4
 

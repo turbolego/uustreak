@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hrs husholdning AS
 
-**Timestamp:** 2026-11-19T05:41:09.343Z
+**Timestamp:** 2026-11-19T06:44:22.148Z
 **URL:** [https://www.hrs.no/](https://www.hrs.no/)
 **Total Violations:** 4
 

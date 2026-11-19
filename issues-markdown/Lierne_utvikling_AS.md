@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lierne utvikling AS
 
-**Timestamp:** 2026-11-19T05:45:52.145Z
+**Timestamp:** 2026-11-19T06:48:29.005Z
 **URL:** [https://lierneutvikling.no/](https://lierneutvikling.no/)
 **Total Violations:** 4
 

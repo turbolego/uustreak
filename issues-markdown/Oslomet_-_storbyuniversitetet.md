@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslomet - storbyuniversitetet
 
-**Timestamp:** 2026-11-19T05:52:17.333Z
+**Timestamp:** 2026-11-19T06:58:29.443Z
 **URL:** [https://www.oslomet.no/](https://www.oslomet.no/)
 **Total Violations:** 1
 

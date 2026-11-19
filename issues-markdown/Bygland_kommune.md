@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bygland kommune
 
-**Timestamp:** 2026-11-19T05:31:23.167Z
+**Timestamp:** 2026-11-19T06:34:40.612Z
 **URL:** [https://www.bygland.kommune.no/](https://www.bygland.kommune.no/)
 **Total Violations:** 2
 

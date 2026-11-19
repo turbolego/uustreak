@@ -1,6 +1,6 @@
 # WCAG Violations Report for Forus energigjenvinning 1 AS
 
-**Timestamp:** 2026-11-19T05:37:26.517Z
+**Timestamp:** 2026-11-19T06:40:21.831Z
 **URL:** [https://www.forusenergi.no/](https://www.forusenergi.no/)
 **Total Violations:** 5
 

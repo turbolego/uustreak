@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kragerø kommune
 
-**Timestamp:** 2026-11-19T05:44:00.146Z
+**Timestamp:** 2026-11-19T06:46:47.767Z
 **URL:** [https://www.kragero.kommune.no/](https://www.kragero.kommune.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Rødøy kommune
 
-**Timestamp:** 2026-11-19T05:54:30.502Z
+**Timestamp:** 2026-11-19T07:01:01.982Z
 **URL:** [https://www.rodoy.kommune.no/](https://www.rodoy.kommune.no/)
 **Total Violations:** 1
 

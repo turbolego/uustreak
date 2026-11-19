@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-11-19T05:32:48.748Z
+**Timestamp:** 2026-11-19T06:36:04.451Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -101,6 +101,12 @@
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `div[title="Stadig færre får ta doktorgrad"] > h2`
+- `time[datetime="2026-11-19T06:29:48.000Z"]`
+- `div[title="Musk angrer på pengebruken"] > h2`
+- `time[datetime="2026-11-19T06:28:30.000Z"]`
+- `div[title="Nytt angrep mot Krym-broen"] > h2`
+- `time[datetime="2026-11-19T06:27:58.000Z"]`
 - `#notice-10641011 > .content > h2`
 - `#notice-10641011 > .content > .meta`
 - `#notice-10641002 > .content > h2`
@@ -135,12 +141,6 @@
 - `time[datetime="2026-11-18T06:20:18.000Z"]`
 - `#notice-10638851 > .content > h2`
 - `#notice-10638851 > .content > .meta`
-- `div[title="Tog på Dovrebanen må evakueres"] > h2`
-- `div[title="Tog på Dovrebanen må evakueres"] > .meta`
-- `#notice-10638747 > .content > h2`
-- `#notice-10638747 > .content > .meta`
-- `div[title="Sør-Norge kan få minus 25"] > h2`
-- `div[title="Sør-Norge kan få minus 25"] > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo kommune
 
-**Timestamp:** 2026-11-19T05:51:34.788Z
+**Timestamp:** 2026-11-19T06:53:41.974Z
 **URL:** [https://www.oslo.kommune.no/](https://www.oslo.kommune.no/)
 **Total Violations:** 1
 

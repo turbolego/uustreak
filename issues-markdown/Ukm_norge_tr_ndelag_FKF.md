@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ukm norge trøndelag FKF
 
-**Timestamp:** 2026-11-19T06:01:20.459Z
+**Timestamp:** 2026-11-19T07:10:41.581Z
 **URL:** [https://www.ukm.no/](https://www.ukm.no/)
 **Total Violations:** 2
 

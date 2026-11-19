@@ -1,6 +1,6 @@
 # WCAG Violations Report for Høgskolen i molde
 
-**Timestamp:** 2026-11-19T05:38:51.092Z
+**Timestamp:** 2026-11-19T06:42:19.351Z
 **URL:** [https://www.himolde.no/](https://www.himolde.no/)
 **Total Violations:** 1
 

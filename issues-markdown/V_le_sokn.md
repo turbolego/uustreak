@@ -1,6 +1,6 @@
 # WCAG Violations Report for Våle sokn
 
-**Timestamp:** 2026-11-19T06:03:58.225Z
+**Timestamp:** 2026-11-19T07:06:21.170Z
 **URL:** [https://re.kirken.no/](https://re.kirken.no/)
 **Total Violations:** 3
 

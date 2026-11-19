@@ -1,6 +1,6 @@
 # WCAG Violations Report for Retrans midt AS
 
-**Timestamp:** 2026-11-19T05:53:30.156Z
+**Timestamp:** 2026-11-19T06:55:34.858Z
 **URL:** [https://www.retrans.no/](https://www.retrans.no/)
 **Total Violations:** 3
 

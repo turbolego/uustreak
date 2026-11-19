@@ -1,6 +1,6 @@
 # WCAG Violations Report for Narvik kommune
 
-**Timestamp:** 2026-11-19T05:48:13.214Z
+**Timestamp:** 2026-11-19T06:54:29.441Z
 **URL:** [https://www.narvik.kommune.no/](https://www.narvik.kommune.no/)
 **Total Violations:** 1
 

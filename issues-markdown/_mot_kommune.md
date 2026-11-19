@@ -1,6 +1,6 @@
 # WCAG Violations Report for Åmot kommune
 
-**Timestamp:** 2026-11-19T05:26:07.160Z
+**Timestamp:** 2026-11-19T06:29:53.957Z
 **URL:** [https://www.amot.kommune.no/](https://www.amot.kommune.no/)
 **Total Violations:** 5
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Høgskolen i østfold
 
-**Timestamp:** 2026-11-19T05:43:51.421Z
+**Timestamp:** 2026-11-19T06:44:11.629Z
 **URL:** [https://www.hiof.no/](https://www.hiof.no/)
 **Total Violations:** 1
 

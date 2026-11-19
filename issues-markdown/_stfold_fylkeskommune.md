@@ -1,6 +1,6 @@
 # WCAG Violations Report for Østfold fylkeskommune
 
-**Timestamp:** 2026-11-19T05:56:06.090Z
+**Timestamp:** 2026-11-19T06:55:08.655Z
 **URL:** [https://ofk.no/](https://ofk.no/)
 **Total Violations:** 1
 

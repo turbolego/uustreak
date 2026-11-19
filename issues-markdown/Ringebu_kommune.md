@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringebu kommune
 
-**Timestamp:** 2026-11-19T05:53:48.148Z
+**Timestamp:** 2026-11-19T06:55:52.167Z
 **URL:** [https://www.ringebu.kommune.no/](https://www.ringebu.kommune.no/)
 **Total Violations:** 3
 

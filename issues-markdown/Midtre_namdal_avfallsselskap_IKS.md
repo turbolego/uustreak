@@ -1,6 +1,6 @@
 # WCAG Violations Report for Midtre namdal avfallsselskap IKS
 
-**Timestamp:** 2026-11-19T05:47:37.144Z
+**Timestamp:** 2026-11-19T06:49:53.291Z
 **URL:** [https://mna.no/](https://mna.no/)
 **Total Violations:** 4
 

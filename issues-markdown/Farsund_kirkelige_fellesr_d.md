@@ -1,6 +1,6 @@
 # WCAG Violations Report for Farsund kirkelige fellesråd
 
-**Timestamp:** 2026-11-19T05:35:59.031Z
+**Timestamp:** 2026-11-19T06:38:51.256Z
 **URL:** [https://farsund.kirken.no/](https://farsund.kirken.no/)
 **Total Violations:** 3
 

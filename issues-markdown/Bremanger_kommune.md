@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bremanger kommune
 
-**Timestamp:** 2026-11-19T05:34:33.851Z
+**Timestamp:** 2026-11-19T06:34:47.281Z
 **URL:** [https://www.bremanger.kommune.no/](https://www.bremanger.kommune.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vinje kommune
 
-**Timestamp:** 2026-11-19T06:09:30.076Z
+**Timestamp:** 2026-11-19T07:08:47.313Z
 **URL:** [https://www.vinje.kommune.no/](https://www.vinje.kommune.no/)
 **Total Violations:** 2
 

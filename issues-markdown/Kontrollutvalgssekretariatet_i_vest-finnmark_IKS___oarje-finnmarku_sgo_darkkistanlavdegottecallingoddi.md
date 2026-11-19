@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kontrollutvalgssekretariatet i vest-finnmark IKS – oarje-finnmarku sgo darkkistanlavdegottecallingoddi
 
-**Timestamp:** 2026-11-19T05:44:18.916Z
+**Timestamp:** 2026-11-19T06:50:36.265Z
 **URL:** [https://kusek.no/](https://kusek.no/)
 **Total Violations:** 2
 

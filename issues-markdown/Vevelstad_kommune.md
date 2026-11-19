@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vevelstad kommune
 
-**Timestamp:** 2026-11-19T06:09:14.376Z
+**Timestamp:** 2026-11-19T07:08:28.948Z
 **URL:** [https://www.vevelstad.kommune.no/](https://www.vevelstad.kommune.no/)
 **Total Violations:** 4
 
