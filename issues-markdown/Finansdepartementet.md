@@ -10,10 +10,14 @@
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.is-style-list-image`
+- **Target:** `.is-style-list-image`
+  - **HTML:** `<ul class="is-style-list-image wp-block-dss-simple-posts">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: div
+
