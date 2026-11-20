@@ -1,0 +1,156 @@
+{
+  "project": "Bergensavisen AS",
+  "timestamp": "2026-11-20T09:48:55.330Z",
+  "url": "https://www.ba.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": true,
+  "violations": [
+    {
+      "id": "aria-hidden-focus",
+      "impact": "serious",
+      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-hidden-focus?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-10.8.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"amedia-menu\" aria-hidden=\"true\" id=\"amediamenu\">",
+          "target": [
+            "#amediamenu"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\", be removed from the DOM, or not be hidden with aria-hidden"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<button aria-label=\"Åpne hovedmeny\" aria-expanded=\"false\" aria-controls=\"amediamenu\">",
+          "target": [
+            "button[aria-label=\"Åpne hovedmeny\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4584237?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Utvikler\" target=\"_blank\">",
+          "target": [
+            "a[aria-label=\"Ledig stilling: Utvikler\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4584385?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Fagarbeider på Drift og Forvaltning\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide[itemtype=\"http://schema.org/WPAdBlock\"][itemscope=\"\"]:nth-child(2) > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4585288?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Fagansvarleg PPT\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide[itemtype=\"http://schema.org/WPAdBlock\"][itemscope=\"\"]:nth-child(3) > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4585291?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Rektor\" target=\"_blank\">",
+          "target": [
+            "a[aria-label=\"Ledig stilling: Rektor\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4585294?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Nærings- og samfunnsutviklar\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide[itemtype=\"http://schema.org/WPAdBlock\"][itemscope=\"\"]:nth-child(5) > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4585462?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Kommunalsjef for teknisk, plan og miljø\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide[itemtype=\"http://schema.org/WPAdBlock\"][itemscope=\"\"]:nth-child(6) > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.ba.no/vis/stillingledig/4585213?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Nyheitsjournalist\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide[itemtype=\"http://schema.org/WPAdBlock\"][itemscope=\"\"]:nth-child(7) > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" data-sitekey=\"bergen\" data-paywall=\"false\" data-pagemodel=\"rodimus\" data-isfrontpage=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ba.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    }
+  ]
+}

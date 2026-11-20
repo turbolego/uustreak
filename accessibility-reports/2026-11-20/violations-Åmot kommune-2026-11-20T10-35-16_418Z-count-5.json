@@ -1,0 +1,188 @@
+{
+  "project": "Åmot kommune",
+  "timestamp": "2026-11-20T10:35:16.418Z",
+  "url": "https://www.amot.kommune.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_615_WebpartId_615_rptItems_ctl01_ucDisplayControl_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle aktuelle saker</a>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_615_WebpartId_615_rptItems_ctl01_ucDisplayControl_hlLinkAlle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #00863d, background color: #ededed, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"logo\" src=\"/design/SATE/Amot/v2025/assets/images/logo-Amot.svg\" alt=\"Åmot kommune\">",
+          "target": [
+            ".logo"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--bc-primary-color-500: #000000; --bc-primary-color-400: #191919; --bc-primary-color-300: #474747; --bc-primary-color-200: #7E7E7E; --bc-primary-color-100: #B1B1B1;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--bc-primary-color-500: #000000; --bc-primary-color-400: #191919; --bc-primary-color-300: #474747; --bc-primary-color-200: #7E7E7E; --bc-primary-color-100: #B1B1B1;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<div class=\"global-area-message\">",
+          "target": [
+            ".global-area-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"ac-banner-field-header\"><h2 class=\"ac-banner-field-title\"><span class=\"ac-banner-field-title-text\">Hva kan vi hjelpe med?</span></h2></div>",
+          "target": [
+            ".ac-banner-field--search-box > .ac-banner-field-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"ac-banner-field-footer\">",
+          "target": [
+            ".ac-banner-field--search-box > .ac-banner-field-footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section frontpage-top\">",
+          "target": [
+            ".frontpage-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section frontpage-focus-field\">",
+          "target": [
+            ".frontpage-focus-field"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt</span>\n\t\t</h2>",
+          "target": [
+            ".webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_615_WebpartId_615_rptItems_ctl01_ucDisplayControl_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle aktuelle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section frontpage-politics\">",
+          "target": [
+            ".frontpage-politics"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-floating-notifications\" style=\"background: url(\"/images/1px_Black_Opacity_75.png\");\">",
+          "target": [
+            ".container-floating-notifications"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

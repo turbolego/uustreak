@@ -1,0 +1,119 @@
+{
+  "project": "Agder kommunerevisjon IKS",
+  "timestamp": "2026-11-20T09:38:48.215Z",
+  "url": "https://agderkomrev.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-contentinfo-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the contentinfo landmark is at top level",
+      "help": "Contentinfo landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-contentinfo-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer class=\"container_wrap socket_color\" id=\"socket\" role=\"contentinfo\" itemscope=\"itemscope\" itemtype=\"https://schema.org/WPFooter\" aria-label=\"Opphavsrett og firmainformasjon\">",
+          "target": [
+            "#socket"
+          ],
+          "failureSummary": "Fix any of the following:\n  The contentinfo landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" class=\"html_stretched respo...\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"pojo-a11y-skip-content\" class=\"pojo-skip-link pojo-skip-content\" tabindex=\"1\" accesskey=\"s\" href=\"#content\" role=\"link\">Hopp rett ned til innholdet</a>",
+          "target": [
+            "#pojo-a11y-skip-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/skip-link?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-12.7.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"pojo-a11y-skip-content\" class=\"pojo-skip-link pojo-skip-content\" tabindex=\"1\" accesskey=\"s\" href=\"#content\" role=\"link\">Hopp rett ned til innholdet</a>",
+          "target": [
+            "#pojo-a11y-skip-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  No skip link target"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"pojo-a11y-skip-content\" class=\"pojo-skip-link pojo-skip-content\" tabindex=\"1\" accesskey=\"s\" href=\"#content\" role=\"link\">Hopp rett ned til innholdet</a>",
+          "target": [
+            "#pojo-a11y-skip-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

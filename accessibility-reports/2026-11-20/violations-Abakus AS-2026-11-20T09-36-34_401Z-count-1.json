@@ -1,0 +1,38 @@
+{
+  "project": "Abakus AS",
+  "timestamp": "2026-11-20T09:36:34.401Z",
+  "url": "https://www.abakus.as/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3 class=\"list__title title\">Siste utlyste konkurranser</h3>",
+          "target": [
+            ".list:nth-child(2) > .list__title.title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h6>Nyttige lenker</h6>",
+          "target": [
+            "h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}

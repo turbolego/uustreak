@@ -1,0 +1,88 @@
+{
+  "project": "Spesialenheten for politisaker",
+  "timestamp": "2026-11-20T10:04:08.565Z",
+  "url": "https://www.spesialenheten.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"wp-block-button__link button button-link has-text-align-center wp-element-button\" href=\"https://dfo.no/kundesider/fakturahandtering/send-faktura-til-en-kunde-av-dfo#a9ab86d1b6e098bd24669a09cdaa5d266\">Informasjon til leverandører angående elektronisk faktura.</a>",
+          "target": [
+            ".button-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.08 (foreground color: #009bb4, background color: #f7f7f7, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a rel=\"noreferrer noopener\" href=\"https://www.kilde.no\" target=\"_blank\">Kilde</a>",
+          "target": [
+            "a[href$=\"www.kilde.no\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.08 (foreground color: #009bb4, background color: #f7f7f7, font size: 10.8pt (14.336px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"wp-block-heading\">Spesialenheten for politisaker</h4>",
+          "target": [
+            ".mai-column.is-column:nth-child(1) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" style=\"--before-header-height: 50px; --header-height-full: 115px; --header-height: 115px;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}
