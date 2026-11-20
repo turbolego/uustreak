@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-11-19T06:35:25.860Z
+**Timestamp:** 2026-11-20T06:06:32.519Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
 **Total Violations:** 2
 
@@ -10,34 +10,23 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `._topnav_hsgxc_45`
-  - **HTML:** `<nav class="_topnav_hsgxc_45">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
+- `._topnav_hsgxc_45`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `._skiplink_hsgxc_13`
-  - **HTML:** `<div class="_skiplink_hsgxc_13"><a href="#main" aria-label="Hopp til hovedinnholdet">Hopp til hovedinnholdet</a></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#am-branding > p`
-  - **HTML:** `<p> Dagbladet er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden. &nbsp;<a href="https://personvern.aller.no/personvern">Les mer</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `._skiplink_hsgxc_13`
+- `#am-branding > p`

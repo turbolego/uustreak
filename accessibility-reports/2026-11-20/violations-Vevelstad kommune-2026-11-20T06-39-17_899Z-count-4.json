@@ -1,0 +1,171 @@
+{
+  "project": "Vevelstad kommune",
+  "timestamp": "2026-11-20T06:39:17.899Z",
+  "url": "https://www.vevelstad.kommune.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"artikkelTittel\">",
+          "target": [
+            "h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"logo\" src=\"/design/Sor_Helgeland_Regionrad/bronnoy/v2017/assets/images/vevelstad-logo.svg\" alt=\"Vevelstad kommune\">",
+          "target": [
+            ".logo"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.vevelstad.kommune.no/tjenester/kultur-idrett-og-fritid/lomsdal-visten-nasjonalpark-njaarken-vaarjelimmiedajve/\" data-id=\"2364\" class=\"\">",
+          "target": [
+            "a[data-id=\"2364\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"http://www.trollfjellgeopark.no/index.php/no/geoparken\" target=\"_blank\" data-id=\"2366\" class=\"external-link external\"><span><span class=\"img\"></span><span class=\"text\">Trollfjell Geopark</span></span></a>",
+          "target": [
+            "a[data-id=\"2366\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/Kalender/CalendarEvent.aspx?Id=385&amp;lang=1&amp;MId1=35\"><div class=\"event-image\" style=\"background-image: url(&quot;handlers/bv.ashx/ifdd350af-f986-4026-a94f-ed4c68f00b07/w640/keb9ac88be97f/2026-10-28-kulturminnefondet-apent-mote-avdeling-vevelstad.jpg&quot;);\"></div></a>",
+          "target": [
+            ".event:nth-child(1) > .event-image-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/Kalender/CalendarEvent.aspx?Id=384&amp;lang=1&amp;MId1=35\"><div class=\"event-image\" style=\"background-image: url(&quot;handlers/bv.ashx/i98bbfbf4-fef5-4ad5-923f-cb92ba9ded86/w640/kdb084637e1a5/dsc_0644.jpg&quot;);\"></div></a>",
+          "target": [
+            ".event:nth-child(2) > .event-image-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$in...\" type=\"text\" id=\"ctl00_ctl00_ctl00_in...\" class=\"js-liten-trigger-sea...\" aria-label=\"Søketekst\" data-handled=\"true\" placeholder=\"Hva kan vi hjelpe de...\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_48_WebpartId_48_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone5001\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone5001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone6000\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone6000"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_49 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_49_WebpartId_49_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle aktualiteter</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone7001\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone7001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

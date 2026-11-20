@@ -1,0 +1,36 @@
+{
+  "project": "Statskog SF",
+  "timestamp": "2026-11-20T06:29:47.246Z",
+  "url": "https://www.statskog.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"top\" role=\"menubar\" aria-label=\"Hovedmeny\">",
+          "target": [
+            ".top"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: button[aria-controls]"
+        }
+      ]
+    }
+  ]
+}

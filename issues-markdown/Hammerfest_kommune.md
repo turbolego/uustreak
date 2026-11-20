@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hammerfest kommune
 
-**Timestamp:** 2026-11-19T06:42:02.669Z
+**Timestamp:** 2026-11-20T06:13:06.802Z
 **URL:** [https://hammerfest.kommune.no/](https://hammerfest.kommune.no/)
 **Total Violations:** 6
 
@@ -10,94 +10,70 @@
 
 - **Impact:** critical
 - **Description:** Ensure an element's role supports its ARIA attributes
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.flex-active`
-  - **HTML:** `<a tabindex="0" class="flex-active" aria-selected="true">Vis element 2 av 2</a>`
-  - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-selected="true"
-
+- `.flex-active`
 
 ### Headings should not be empty
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
-  - **HTML:** `<h4 class="artikkelTittel">`
-  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
-
+- `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
 
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
-  - **HTML:** `<h4 class="artikkelTittel">`
-  - **Failure summary:** Fix any of the following: Heading order invalid
-
+- `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
 
 ### Alternative text of images should not be repeated as text
 
 - **Impact:** minor
 - **Description:** Ensure image alternative is not repeated as text
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `img[alt="Hammerfest kommune"]`
-  - **HTML:** `<img alt="Hammerfest kommune" src="/handlers/bv.ashx/i84340fca-472c-43c3-ae76-e20b3612bce2/hk-logo-web-m-minsteavstand-ny.png">`
-  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
-
+- `img[alt="Hammerfest kommune"]`
 
 ### Page should contain a level-one heading
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `html`
-  - **HTML:** `<html lang="nb" style="--bc-primary-color-5...">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
-
+- `html`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch`
-  - **HTML:** `<input name="ctl00$ctl00$ctl00$innhold$ctl11$WebpartId_97$WebpartId_97$txtSearch" type="text" id="ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch" class="js-liten-trigger-search" aria-label="Søketekst" placeholder="Hva …`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `#ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch`

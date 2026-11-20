@@ -1,0 +1,31 @@
+{
+  "project": "Bremanger kommune",
+  "timestamp": "2026-11-20T06:05:09.085Z",
+  "url": "https://www.bremanger.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Bremanger kommune\" src=\"../Design/bremanger_kommune/bremanger/v2024/assets/images/logo-bremanger--alternate.svg\">",
+          "target": [
+            "img[alt=\"Bremanger kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

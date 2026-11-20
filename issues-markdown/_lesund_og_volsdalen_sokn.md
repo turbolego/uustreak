@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ålesund og volsdalen sokn
 
-**Timestamp:** 2026-11-19T06:30:41.520Z
+**Timestamp:** 2026-11-20T06:00:40.447Z
 **URL:** [https://aalesund.menighet.no/](https://aalesund.menighet.no/)
 **Total Violations:** 3
 
@@ -10,214 +10,76 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `html`
-  - **HTML:** `<html lang="nb-NO" dir="ltr" class="wf-opensans-n7-active wf-opensans-n8-active wf-opensans-n3-active wf-opensans-n6-active wf-opensans-n4-active wf-opensans-i6-active wf-opensans-i8-active wf-opensans-i3-active wf-opensans-i7-active wf-op…`
-  - **Failure summary:** Fix all of the following: Document does not have a main landmark
-
+- `html`
 
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 8
 
 #### Affected Elements:
 
-- **Target:** `#top-search-trigger`
-  - **HTML:** `<a id="top-search-trigger" href="#" class="toggle-item"> <i class="fa fa-search"></i> <i class="fa fa-close"></i> </a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `#dnn_ctr454_DNNArticle_List_MyArticleList_panelArticle > .article-even > .image-container-even > a`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/42154/Messy-Church"> <img class="article-image-even" style="width:100%;margin-bottom:30px;padding-top:0px;" src="/Portals/1/Messy Church.png" alt=""> </a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `.image-container-odd > a`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/41133/Kjaere-frivillig"> <img class="article-image-odd" style="width:100%;margin-bottom:30px;padding-top:0px;" src="/Portals/1/frivillig samling.jpg" alt=""> </a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `#dnn_ctr454_ContentPane > .article-even > .image-container-even > a`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/30523/4-Arsbok"> <img class="article-image-even" style="width:100%;margin-bottom:30px;padding-top:0px;" src="/Portals/1/4 Årsbok.jpg" alt=""> </a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `.news-item.col-sm-3:nth-child(1) > a:nth-child(1)`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/1317/Leie-av-lokaler"> <img class="news-image" style="width:100%;margin-bottom:30px;padding-top:0px;min-height:200px;" src="/Portals/1/13891938_864603783673308_328509…`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `.news-item.col-sm-3:nth-child(2) > a:nth-child(1)`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/312/Alesund-kirke"> <img class="news-image" style="width:100%;margin-bottom:30px;padding-top:0px;min-height:200px;" src="/Portals/1/13082583_813324632134557_900345602…`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `.news-item.col-sm-3:nth-child(3) > a:nth-child(1)`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/311/Volsdalen-kirke"> <img class="news-image" style="width:100%;margin-bottom:30px;padding-top:0px;min-height:200px;" src="/Portals/1/IMG_20190319_143004.jpg" alt="">…`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `.news-item.col-sm-3:nth-child(4) > a:nth-child(1)`
-  - **HTML:** `<a href="https://aalesund.menighet.no/Aktiviteter/Artikler/Vis/ArticleId/77/Skarbovik-kirke"> <img class="news-image" style="width:100%;margin-bottom:30px;padding-top:0px;min-height:200px;" src="/Portals/1/IMG_20190319_143928.jpg" alt=""> …`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
+- `#top-search-trigger`
+- `#dnn_ctr454_DNNArticle_List_MyArticleList_panelArticle > .article-even > .image-container-even > a`
+- `.image-container-odd > a`
+- `#dnn_ctr454_ContentPane > .article-even > .image-container-even > a`
+- `.news-item.col-sm-3:nth-child(1) > a:nth-child(1)`
+- `.news-item.col-sm-3:nth-child(2) > a:nth-child(1)`
+- `.news-item.col-sm-3:nth-child(3) > a:nth-child(1)`
+- `.news-item.col-sm-3:nth-child(4) > a:nth-child(1)`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 36
 
 #### Affected Elements:
 
-- **Target:** `.cookieConsentContent > .cookieDetailsH5`
-  - **HTML:** `<h5 class="cookieDetailsH5">Vi bruker informasjonskapsler</h5>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.cookieConsentContent > p:nth-child(2)`
-  - **HTML:** `<p> Vi benytter nødvendige informasjonskapsler (cookies) for å ivareta sikkerhet og kan ikke velges bort. Vi bruker valgfrie informasjonskapsler for å samle inn data om hvordan dette nettstedet blir brukt. </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.cookieConsentContent > p:nth-child(3)`
-  - **HTML:** `<p>Trykk på Detaljer for å lese mer.</p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.off`
-  - **HTML:** `<span class="off">AV</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.switchText`
-  - **HTML:** `<label for="trackingConsent" class="switchText">Valgfrie informasjonskapsler</label>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `p:nth-child(5)`
-  - **HTML:** `<p> Du kan trekke tilbake samtykket når som helst ved å velge «administrer informasjonskapsler» nederst på våre sider. </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.cookieConsentContent > .cookieBtnContainer`
-  - **HTML:** `<div class="cookieBtnContainer"> <a class="cookieConsentBtnPrimary" onclick="acceptCookies()">Lagre valg</a> <a class="cookieConsentBtn" onclick="showCookieDetails()">Detaljer</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.cookieDetailsContainer`
-  - **HTML:** `<div class="cookieDetailsContainer">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#top-menu`
-  - **HTML:** `<div id="top-menu"> <div class="menu-item"><a href="/Dåp-Konfirmasjon-Vigsel-Gravferd">Kirkelige handlinger</a></div> <div class="menu-item"><a href="#section4">Kalender</a></div> <div class="menu-item"><a href="/Staben-vår">Kontakt oss</a…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#dnn_ctr454_DNNArticle_List_MyArticleList_panelArticle`
-  - **HTML:** `<div id="dnn_ctr454_DNNArticle_List_MyArticleList_panelArticle">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.article-odd`
-  - **HTML:** `<div class="article-odd">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#dnn_ctr454_ContentPane > .article-even`
-  - **HTML:** `<div class="article-even">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#section3`
-  - **HTML:** `<section id="section3" class="wsc-section wsc-section3 empt-default wsc-empt-no-overlay wsc-empt-text-dark wsc-pane-not-empty wsc-has-panes-inside" style="background-color: #f2f2f2;">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.hele-kalender`
-  - **HTML:** `<div class="hele-kalender"> <a href="/Kalender">Se hele kalenderen</a></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-data-front`
-  - **HTML:** `<div class="calendar-data-front"> <div class="calendar-day-front">Søndag</div> <div class="calendar-date-front">22.11</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
-  - **HTML:** `<div class="event-time-front">kl.11.00</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
-  - **HTML:** `<p class="info-text-front"> <a href="/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=69caae76-de97-4deb-874e-93ee28fa1563&amp;OccurenceId=69caae76-de97-4deb-874e-93ee28fa1563">Høymesse</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-  - **HTML:** `<span class="calendar-location-front">Ålesund kirke</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front`
-  - **HTML:** `<div class="event-time-front">kl.15.00</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
-  - **HTML:** `<p class="info-text-front"> <a href="/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=44b69511-e102-4ec1-85f7-dc3b223aeb91&amp;OccurenceId=44b69511-e102-4ec1-85f7-dc3b223aeb91">Messy Church</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-  - **HTML:** `<span class="calendar-location-front">Skarbøvik kirke</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-data-front`
-  - **HTML:** `<div class="calendar-data-front"> <div class="calendar-day-front">Søndag</div> <div class="calendar-date-front">29.11</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
-  - **HTML:** `<div class="event-time-front">kl.11.00</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
-  - **HTML:** `<p class="info-text-front"> <a href="/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=14ae4fa9-1f3f-4b5e-8fc9-e69054b8c05c&amp;OccurenceId=14ae4fa9-1f3f-4b5e-8fc9-e69054b8c05c">Høymesse</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-  - **HTML:** `<span class="calendar-location-front">Ålesund kirke</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front`
-  - **HTML:** `<div class="event-time-front">kl.17.00</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
-  - **HTML:** `<p class="info-text-front"> <a href="/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=13ec2647-00d5-495e-be8f-0fad4d536311&amp;OccurenceId=13ec2647-00d5-495e-be8f-0fad4d536311">Ålesund Symfoniorkester</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-  - **HTML:** `<span class="calendar-location-front">Ålesund kirke</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(4) > .calendar-data-front`
-  - **HTML:** `<div class="calendar-data-front"> <div class="calendar-day-front">Tirsdag</div> <div class="calendar-date-front">01.12</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-time-front`
-  - **HTML:** `<div class="event-time-front">kl.18.00</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`
-  - **HTML:** `<p class="info-text-front"> <a href="/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=ffa1c3c1-e41c-443b-a1cc-9391c328db6d&amp;OccurenceId=ffa1c3c1-e41c-443b-a1cc-9391c328db6d">Konsert: Deilig er Jorden</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-  - **HTML:** `<span class="calendar-location-front">Ålesund kirke</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(5) > .calendar-data-front`
-  - **HTML:** `<div class="calendar-data-front"> <div class="calendar-day-front">Onsdag</div> <div class="calendar-date-front">02.12</div> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-time-front`
-  - **HTML:** `<div class="event-time-front">kl.19.00</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`
-  - **HTML:** `<p class="info-text-front"> <a href="/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=6135de66-247b-412d-a437-8cb4a4bd43ca&amp;OccurenceId=6135de66-247b-412d-a437-8cb4a4bd43ca">Lovsangskoret konsert</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
-  - **HTML:** `<span class="calendar-location-front">Volsdalen kirke</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.cookieConsentContent > .cookieDetailsH5`
+- `.cookieConsentContent > p:nth-child(2)`
+- `.cookieConsentContent > p:nth-child(3)`
+- `.off`
+- `.switchText`
+- `p:nth-child(5)`
+- `.cookieConsentContent > .cookieBtnContainer`
+- `.cookieDetailsContainer`
+- `#top-menu`
+- `#dnn_ctr454_DNNArticle_List_MyArticleList_panelArticle`
+- `.article-odd`
+- `#dnn_ctr454_ContentPane > .article-even`
+- `#section3`
+- `.hele-kalender`
+- `.calendar-item-front:nth-child(2) > .calendar-data-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
+- `.calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-data-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front`
+- `.calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front:nth-child(4) > .calendar-data-front`
+- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-time-front`
+- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`
+- `.calendar-item-front:nth-child(4) > .calendar-event-front > .event-front > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`
+- `.calendar-item-front-alt:nth-child(5) > .calendar-data-front`
+- `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-time-front`
+- `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-info-front > .info-text-front`
+- `.calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front > .event-info-front > .calendar-kategori-front > a > .calendar-location-front`

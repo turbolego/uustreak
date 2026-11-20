@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kontrollutvalgssekretariatet i vest-finnmark IKS – oarje-finnmarku sgo darkkistanlavdegottecallingoddi
 
-**Timestamp:** 2026-11-19T06:50:36.265Z
+**Timestamp:** 2026-11-20T06:18:47.332Z
 **URL:** [https://kusek.no/](https://kusek.no/)
 **Total Violations:** 2
 
@@ -10,30 +10,22 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.menu_breakpoint`
-  - **HTML:** `<nav class="bricks-nav-menu-wrapper menu_breakpoint" aria-label="Navigasjonsmeny">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
+- `.menu_breakpoint`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#brx-new-tab-link-description`
-  - **HTML:** `<span id="brx-new-tab-link-description" class="screen-reader-text">Åpnes i en ny fane</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `#brx-new-tab-link-description`
