@@ -1,0 +1,118 @@
+{
+  "project": "Delecto kompetanse AS",
+  "timestamp": "2026-11-22T05:51:15.988Z",
+  "url": "https://delectokragero.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://delectokragero.no/aktuelt/\" target=\"_self\" class=\"btn btn-outline-primary\">Flere nyheter</a>",
+          "target": [
+            "#tile-3119 > .tile-content > .bottomlink.justify-content-center.d-flex > .btn-outline-primary.btn[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #e9500e, background color: #f5f5f5, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://delectokragero.no/kurs-aktiviteter/\" target=\"_self\" class=\"btn btn-outline-primary\">Kurs/aktiviteter</a>",
+          "target": [
+            "#tile-3125 > .tile-content > .bottomlink.justify-content-center.d-flex > .btn-outline-primary.btn[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #e9500e, background color: #f5f5f5, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3 itemprop=\"headline\">Systemsvikt, milliardsluk og Kåring av Norges beste inkluderingsløsninger: Slik blir siste dag av Arbeidsuka på Arendalsuka</h3>",
+          "target": [
+            "article[data-articleid=\"6942\"] > a[target=\"_self\"] > .card-body > h3[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h3 itemprop=\"name\">Jobbklubb</h3>",
+          "target": [
+            "h3[itemprop=\"name\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"tile-common standard-menu d-print-none nav-inline navbar-nav d-none d-lg-block quick-mode\" aria-label=\"Hovedmeny\">",
+          "target": [
+            ".navbar-nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coretrek-footer\" class=\"d-print-none\">",
+          "target": [
+            "#coretrek-footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

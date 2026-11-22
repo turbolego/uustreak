@@ -1,0 +1,227 @@
+{
+  "project": "Sokndal kommune",
+  "timestamp": "2026-11-22T05:58:59.786Z",
+  "url": "https://www.sokndal.kommune.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"logo\" src=\"/Design/sokndal_kommune/sokndal/v2019/assets/images/logo-sokndal.png\" alt=\"Sokndal kommune\">",
+          "target": [
+            ".default-logo--desktop > .logo[alt=\"Sokndal kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--innsyn-primary-theme-color: #0F4568; --innsyn-primary-contrast-color: #FFFFFF; --innsyn-primary-neutral-color: #e2e3e5; --innsyn-secondary-theme-color: #9fbed3; --innsyn-secondary-contrast-color: #141423; --innsyn-secondary-neutral-color: #e2e3e5;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a class=\"InnholdLinkTekst  \" href=\"\" data-id=\"7044\"><img class=\"image_resized\" style=\"width:150px;\" src=\"/handlers/bv.ashx/ib5f46204-506b-49fd-8c3a-1a2f4071d57b/w150/q755/k377d323cc92e/group-97.png\" alt=\"\" data-width=\"custom\"></a>",
+          "target": [
+            "a[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"InnholdLinkTekst link-webpage \" href=\"https://magmageopark.no/no/destinasjoner/sokndal/\" data-id=\"10471\">",
+          "target": [
+            "a[data-id=\"10471\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/DetGodeLivISokndal/\" data-id=\"69\" class=\"external-link external\"><span>Facebook</span></a>",
+          "target": [
+            "a[data-id=\"69\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/sokndalkommune/\" data-id=\"7721\" class=\"external-link external\"><span>Instagram</span></a>",
+          "target": [
+            "a[data-id=\"7721\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"back-to-top-button js-back-to-top-button\" href=\"#header\">\n        <span>Til toppen</span>\n      </a>",
+          "target": [
+            ".back-to-top-button"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 14,
+      "nodes": [
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$in...\" type=\"text\" id=\"ctl00_ctl00_ctl00_in...\" class=\"js-liten-trigger-sea...\" aria-label=\"Søketekst\" placeholder=\"Hva kan vi hjelpe de...\" data-handled=\"true\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_44_WebpartId_44_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-boxes\">",
+          "target": [
+            ".top-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Hva skjer i Sokndal?</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_74 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-date\">\n      <div class=\"event-date-day\">23</div>\n      <div class=\"event-date-month\">nov</div>\n    </div>",
+          "target": [
+            ".event:nth-child(1) > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/Kalender/CalendarEvent.aspx?Id=2408&amp;lang=1&amp;MId1=7\"><h3 class=\"event-title\">Babybading </h3></a>",
+          "target": [
+            ".event:nth-child(1) > .event-text > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-date\">\n      <div class=\"event-date-day\">24</div>\n      <div class=\"event-date-month\">nov</div>\n    </div>",
+          "target": [
+            ".event:nth-child(2) > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/Kalender/CalendarEvent.aspx?Id=2249&amp;lang=1&amp;MId1=7\"><h3 class=\"event-title\">Formiddagstreff</h3></a>",
+          "target": [
+            ".event:nth-child(2) > .event-text > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-date\">\n      <div class=\"event-date-day\">24</div>\n      <div class=\"event-date-month\">nov</div>\n    </div>",
+          "target": [
+            ".event:nth-child(3) > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/Kalender/CalendarEvent.aspx?Id=2474&amp;lang=1&amp;MId1=7\"><h3 class=\"event-title\">Barnekafé   </h3></a>",
+          "target": [
+            ".event:nth-child(3) > .event-text > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart calendar-buttons\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_82\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_82"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_103 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_103_WebpartId_103_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se aktuelle saker</a>\n        </div>",
+          "target": [
+            ".container > .webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-floating-notifications\" style=\"background: url(\"/images/1px_Black_Opacity_75.png\");\">",
+          "target": [
+            ".container-floating-notifications"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

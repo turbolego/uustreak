@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stortinget
 
-**Timestamp:** 2026-11-20T06:31:26.046Z
+**Timestamp:** 2026-11-22T06:07:48.642Z
 **URL:** [https://www.stortinget.no/](https://www.stortinget.no/)
 **Total Violations:** 1
 
@@ -10,14 +10,10 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.site-layout__visually-hidden-h1`
-  - **HTML:** `<h1 class="site-layout__visually-hidden-h1">Stortinget.no</h1>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.site-layout__visually-hidden-h1`

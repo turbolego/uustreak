@@ -1,0 +1,198 @@
+{
+  "project": "Utdanningsforbundet",
+  "timestamp": "2026-11-22T06:22:34.039Z",
+  "url": "https://www.utdanningsforbundet.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a target=\"\" class=\"PrimaryCTALink_primaryCTALink__1eh0T PrimaryCTALink_center__UtgTK\" href=\"/om-medlemskapet/pris-betingelser/innmelding\">Bli medlem</a>",
+          "target": [
+            ".HeaderPromotionBlock_headerPromotionLinks___zMeq > .PrimaryCTALink_center__UtgTK.PrimaryCTALink_primaryCTALink__1eh0T[target=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #008b48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a target=\"\" class=\"PrimaryCTALink_primaryCTALink__1eh0T PrimaryCTALink_withIcon__ZuxFz\" href=\"/lonn-og-arbeidsvilkar/arbeidsmiljo/vold-og-trusler-pa-jobben\">",
+          "target": [
+            ".BlockWrapper_span-3__H0f6B[data-display-option=\"full\"]:nth-child(3) > .CampaignBlock_root__DhhXL > .CampaignBlock_contentWrapper__s0bF3 > .CampaignBlock_content___rOKV > .PrimaryCTALink_withIcon__ZuxFz.PrimaryCTALink_primaryCTALink__1eh0T[target=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #008b48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a target=\"\" class=\"PrimaryCTALink_primaryCTALink__1eh0T PrimaryCTALink_withIcon__ZuxFz\" href=\"/nyheter/2026/sporsmal-og-svar-om-pensjon-i-fus\">",
+          "target": [
+            ".BlockWrapper_span-3__H0f6B[data-display-option=\"full\"]:nth-child(5) > .CampaignBlock_root__DhhXL > .CampaignBlock_contentWrapper__s0bF3 > .CampaignBlock_content___rOKV > .PrimaryCTALink_withIcon__ZuxFz.PrimaryCTALink_primaryCTALink__1eh0T[target=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #008b48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a target=\"\" class=\"PrimaryCTALink_primaryCTALink__1eh0T\" href=\"/om-medlemskapet/pris-betingelser/innmelding\">Bli medlem</a>",
+          "target": [
+            ".Footer_promotionLinks__3_6W7 > .PrimaryCTALink_primaryCTALink__1eh0T[target=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #008b48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://embed.acast.com/5ca73b1ee061b6670b629d28/6ac4aa3c924bc02b55934511?bgColor=f0f0f0\" frameborder=\"0\" width=\"100%\" height=\"190px\"></iframe>",
+          "target": [
+            "iframe[frameborder=\"0\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a aria-label=\"Lederjuss: Skolemiljøsaker\" class=\"ArrangementHitListingCard_root__oZHvm\" href=\"/kurs-og-konferanser/kurskalender/kurs-2026/lederjuss-lederes-arbeidsmiljo2\">",
+          "target": [
+            "a[aria-label=\"Lederjuss: Skolemiljøsaker\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Bli læreren som tegner - januar\" class=\"ArrangementHitListingCard_root__oZHvm\" href=\"/kurs-og-konferanser/kurskalender/kurs-2027/bli-lareren-som-tegnerm11\">",
+          "target": [
+            "article:nth-child(2) > .ArrangementHitListingCard_root__oZHvm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Inspirasjonsseminar før Barnehagedagen: Leseglede\" class=\"ArrangementHitListingCard_root__oZHvm\" href=\"/kurs-og-konferanser/kurskalender/kurs-2027/inspirasjonsseminar-for-barnehagedagen-leseglede\">",
+          "target": [
+            "article:nth-child(3) > .ArrangementHitListingCard_root__oZHvm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<main>",
+          "target": [
+            "main"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav aria-label=\"Lokal navigasjon\" class=\"LocalNavigationTopLayout_localNavigationTop__I8NPN\">",
+          "target": [
+            ".BlockWrapper_span-3__H0f6B[data-display-option=\"full\"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label=\"Lokal navigasjon\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] and [role=\"image\"] elements have alternative text",
+      "help": "[role=\"img\"] and [role=\"image\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div role=\"img\" class=\"ShareControl__ShareIcon-sc-1pwe6vd-0 jwZxjc\">",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            ".ShareControl__ShareIcon-sc-1pwe6vd-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div role=\"img\" class=\"SubscribeLink__PlusIcon-sc-q4x3v7-0 kWhSaR\">",
+          "target": [
+            "iframe[frameborder=\"0\"]",
+            ".SubscribeLink__PlusIcon-sc-q4x3v7-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

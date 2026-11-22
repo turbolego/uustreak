@@ -1,0 +1,354 @@
+{
+  "project": "Mediehuset Nettavisen AS",
+  "timestamp": "2026-11-22T05:33:47.516Z",
+  "url": "https://www.nettavisen.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h1 data-adp-clicklabel=\"brandheader-logo\" class=\"na-logo-header\">\n                <a href=\"/\" tabindex=\"-1\" aria-hidden=\"true\">*Nettavisen.*</a>\n            </h1>",
+          "target": [
+            ".miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 21,
+      "nodes": [
+        {
+          "html": "<img class=\"bgImg\" src=\"./assets/skin-bg-5.webp\" style=\"filter: brightness(1.06) saturate(1.15) contrast(1.04);\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".bgImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"logo\" src=\"./assets/logo-white-2row.svg\" style=\"transform: translate(0px, 0px); opacity: 1; visibility: inherit;\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6326-fireplace.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(1) > .cardMedia > .cardImg[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8071.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(2) > .cardMedia > .cardImg[src$=\"product-36-8071.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6686.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(3) > .cardMedia > .cardImg[src$=\"product-36-6686.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6685.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(4) > .cardMedia > .cardImg[src$=\"product-36-6685.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8226.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(5) > .cardMedia > .cardImg[src$=\"product-36-8226.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8069.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(6) > .cardMedia > .cardImg[src$=\"product-36-8069.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6326-fireplace.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(7) > .cardMedia > .cardImg[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8071.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(8) > .cardMedia > .cardImg[src$=\"product-36-8071.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6686.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(9) > .cardMedia > .cardImg[src$=\"product-36-6686.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6685.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(10) > .cardMedia > .cardImg[src$=\"product-36-6685.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8226.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(11) > .cardMedia > .cardImg[src$=\"product-36-8226.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8069.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(12) > .cardMedia > .cardImg[src$=\"product-36-8069.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6326-fireplace.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(13) > .cardMedia > .cardImg[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8071.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(14) > .cardMedia > .cardImg[src$=\"product-36-8071.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6686.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(15) > .cardMedia > .cardImg[src$=\"product-36-6686.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-6685.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(16) > .cardMedia > .cardImg[src$=\"product-36-6685.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8226.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(17) > .cardMedia > .cardImg[src$=\"product-36-8226.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"cardImg\" src=\"./assets/product-36-8069.webp\" draggable=\"false\">",
+          "target": [
+            "#adsm-iframe-skin-c7f1389ef1",
+            ".card:nth-child(18) > .cardMedia > .cardImg[src$=\"product-36-8069.webp\"][draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"adnm-view-pixel\" src=\"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\" style=\"width: 100vw; height: 100vh; min-width: 30px; min-height: 30px; display: block;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            ".adnm-view-pixel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-banner-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"miniheader\">",
+          "target": [
+            ".miniheader"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header id=\"page-header\" class=\"\">",
+          "target": [
+            "#page-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<header id=\"page-header\" class=\"\">",
+          "target": [
+            "#page-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav data-adp-clicklabel=\"brandheader-toplinks\" class=\"nav lp_nav\">",
+          "target": [
+            ".miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.nettavisen.no/tilbud\" subscription-platform=\"amedia\" publication=\"www.nettavisen.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" locale=\"nb-NO\" theme=\"nettavisen\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layou...=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_topp...\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.nettavisen.no/to...\" render-count=\"1\" ad-size=\"980,300\" ...>",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

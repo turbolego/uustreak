@@ -1,0 +1,31 @@
+{
+  "project": "Tana arbeidsservice AS",
+  "timestamp": "2026-11-22T06:13:22.225Z",
+  "url": "https://www.tana-arbeidsservice.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<li class=\"wp-block-kadence-sli...\" id=\"splide01-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"%1$s of %2$s\" style=\"margin-right: 0px; w...\">",
+          "target": [
+            "#splide01-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        }
+      ]
+    }
+  ]
+}

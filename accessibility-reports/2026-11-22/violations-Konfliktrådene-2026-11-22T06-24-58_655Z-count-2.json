@@ -1,0 +1,82 @@
+{
+  "project": "Konfliktrådene",
+  "timestamp": "2026-11-22T06:24:58.655Z",
+  "url": "https://konfliktraadet.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"https://konfliktraadet.no/content/plugins/sitepress-multilingual-cms/res/flags/no.png\" alt=\"Norsk (bokmål)\">",
+          "target": [
+            "img[alt=\"Norsk (bokmål)\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link sr-only sr-only-focusable\" href=\"#content\">Hopp til innhold</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"column\">",
+          "target": [
+            ".column:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"menu-item\">\n\t\t\t\t\t\t\t\t\t<a class=\"press\" href=\"/finn-ditt-konfliktrad/\">Kontakt oss</a>\n\t\t\t\t\t\t\t\t</li>",
+          "target": [
+            "#topmenu > .menu-item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"nav-link dropdown-toggle current-language\" href=\"https://konfliktraadet.no/\" title=\"Norsk (bokmål)\" data-toggle=\"dropdown\"><img src=\"https://konfliktraadet.no/content/plugins/sitepress-multilingual-cms/res/flags/no.png\" alt=\"Norsk (bokmål)\">Norsk (bokmål)</a>",
+          "target": [
+            ".dropdown-toggle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"wpb-content-wrapper\">",
+          "target": [
+            ".insert-page > .wpb-content-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

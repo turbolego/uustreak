@@ -1,0 +1,89 @@
+{
+  "project": "Bompengeselskap nord AS",
+  "timestamp": "2026-11-22T05:44:33.968Z",
+  "url": "https://bpsnord.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4>AutoPASS-avtale tegnes her</h4>",
+          "target": [
+            ".card-v3.bg-contrast-lower.col\\@sm:nth-child(1) > .card-v3__link[target=\"\"] > .card-v3__content > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<div class=\"card-v3__content\">\n\t\t\t\t<div class=\"card-v3__label\"></div>\n\t\t\t\t<h4>AutoPASS-avtale tegnes her</h4>\n\t\t\t</div>",
+          "target": [
+            ".card-v3.bg-contrast-lower.col\\@sm:nth-child(1) > .card-v3__link[target=\"\"] > .card-v3__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Tegn AutoPASS-avtale</span>",
+          "target": [
+            ".card-v3.bg-contrast-lower.col\\@sm:nth-child(1) > .card-v3__link[target=\"\"] > .card-v3__footer > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card-v3__content\">\n\t\t\t\t<div class=\"card-v3__label\"></div>\n\t\t\t\t<h4>BPS Nord fakturerer bompasseringer uten AutoPass-avtale</h4>\n\t\t\t</div>",
+          "target": [
+            "a[href$=\"faktura-2/\"] > .card-v3__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Faktura fra BPS Nord</span>",
+          "target": [
+            "a[href$=\"faktura-2/\"] > .card-v3__footer > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card-v3__content\">\n\t\t\t\t<div class=\"card-v3__label\"></div>\n\t\t\t\t<h4>Her kan du lese hvordan man søker fritak.</h4>\n\t\t\t</div>",
+          "target": [
+            "a[href$=\"fritak/\"] > .card-v3__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Les om fritak her</span>",
+          "target": [
+            "a[href$=\"fritak/\"] > .card-v3__footer > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

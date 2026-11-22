@@ -1,0 +1,50 @@
+{
+  "project": "Kongsberg kommune",
+  "timestamp": "2026-11-22T06:25:11.077Z",
+  "url": "https://www.kongsberg.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a class=\"campaign__item\" href=\"https://kongsbergregionen.no/informasjon-til-innbyggere-og-parorende/\" aria-label=\"Bli kjent med Mitt Aidn (Åpner i nytt vindu)\" target=\"_blank\">",
+          "target": [
+            ".campaign__item[target=\"_blank\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"campaign__item\" href=\"https://kongsberg.kommune.no/artikkel/budsjettprosess-2027\" aria-label=\"Budsjettprosess 2027 (Åpner i nytt vindu)\" target=\"_blank\">",
+          "target": [
+            ".campaign__item[target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"campaign__item\" href=\"https://kongsbergkommune.easycruit.com/\" aria-label=\"Vil du jobbe hos oss? (Åpner i nytt vindu)\" target=\"_blank\">",
+          "target": [
+            ".campaign__item[target=\"_blank\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ]
+}

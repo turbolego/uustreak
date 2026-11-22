@@ -1,0 +1,103 @@
+{
+  "project": "Hattfjelldal kommune",
+  "timestamp": "2026-11-22T06:11:12.696Z",
+  "url": "https://hattfjelldal.kommune.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<div class=\"frontpage__banner\" style=\"background-image: url('/handlers/bv.ashx/i51213fbe-a468-4666-9d3b-c4ec908dc295/host.png');\">",
+          "target": [
+            ".frontpage__banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"frontpage__welcome\">",
+          "target": [
+            ".frontpage__welcome"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$innhold$MidtSone$ctl03$txtSearch\" type=\"text\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_txtSearch\" class=\"js-liten-trigger-search\" aria-label=\"Søketekst\" data-handled=\"true\" placeholder=\"Hva kan vi hjelpe deg med?\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-boxes\">",
+          "target": [
+            ".top-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"lower-middle-boxes\">",
+          "target": [
+            ".lower-middle-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt fra kommunen</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl10_WebpartId_53 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl10_WebpartId_53_WebpartId_53_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Gå til nyhetsarkiv</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
