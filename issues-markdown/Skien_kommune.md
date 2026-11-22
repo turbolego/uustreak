@@ -10,22 +10,30 @@
 
 - **Impact:** serious
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#siteSearchBarToggle`
+- **Target:** `#siteSearchBarToggle`
+  - **HTML:** `<a class="site-tool site-tool-search collapsed" id="siteSearchBarToggle" href="#siteSearchBar" data-bs-toggle="collapse" aria-expanded="false" aria-controls="siteSearchBar" role="button" aria-label="Åpne Lukke søkelinje">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
 
 ### Page should contain a level-one heading
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="no">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+

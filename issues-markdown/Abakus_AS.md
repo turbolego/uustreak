@@ -10,11 +10,18 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.list:nth-child(2) > .list__title.title`
-- `h6`
+- **Target:** `.list:nth-child(2) > .list__title.title`
+  - **HTML:** `<h3 class="list__title title">Siste utlyste konkurranser</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `h6`
+  - **HTML:** `<h6>Nyttige lenker</h6>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
