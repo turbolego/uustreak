@@ -1,0 +1,66 @@
+{
+  "project": "Askøy kommune",
+  "timestamp": "2026-11-22T09:23:13.936Z",
+  "url": "https://www.askoy.kommune.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"uk-flex-1 uk-card uk-card-default uk-card-small uk-card-hover uk-card-body uk-margin-remove-first-child uk-link-toggle\" href=\"/tjenester/skole-og-sfo/skolerutene\" aria-label=\"Link til barnehage- og skolerutene\">",
+          "target": [
+            ".uk-first-column:nth-child(1) > .uk-flex-column.uk-flex.el-item > .uk-card-small.uk-card-default.uk-flex-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"uk-flex-1 uk-card uk-card-default uk-card-small uk-card-hover uk-card-body uk-margin-remove-first-child uk-link-toggle\" href=\"https://detskjer.askoy.no/\" aria-label=\"Aktivitets kalender for Askøy\">",
+          "target": [
+            "a[href$=\"detskjer.askoy.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto\">\n            <div class=\"uk-notification-message\">\n                <a href=\"#tm-main\" class=\"uk-link-reset\">Skip to main content</a>\n            </div>\n        </div>",
+          "target": [
+            ".uk-hidden-visually"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

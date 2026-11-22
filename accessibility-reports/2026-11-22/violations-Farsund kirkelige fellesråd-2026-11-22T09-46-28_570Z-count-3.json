@@ -1,0 +1,402 @@
+{
+  "project": "Farsund kirkelige fellesråd",
+  "timestamp": "2026-11-22T09:46:28.570Z",
+  "url": "https://farsund.kirken.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" dir=\"ltr\" class=\"wf-opensans-i4-active wf-opensans-i3-active wf-opensans-i7-active wf-opensans-i6-active wf-opensans-i8-active wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n3-active wf-opensans-n7-active wf-opensans-n8-active wf-active\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a id=\"top-search-trigger\" href=\"#\" class=\"toggle-item\">\n                                            <i class=\"fa fa-search\"></i>\n                                            <i class=\"fa fa-close\"></i>\n                                        </a>",
+          "target": [
+            "#top-search-trigger"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/Portals/0/Dokumenter/Vedtekter for gravplassene i Farsund kommune.pdf\">\n \n \n <img class=\"article-image-even\" style=\"width:100%;margin-bottom:30px;padding-top:0px;\" src=\"/desktopmodules/dnnarticle/images/noimage.gif\" alt=\"\">\n \n </a>",
+          "target": [
+            "#dnn_ctr380_DNNArticle_List_MyArticleList_panelArticle > .article-even > .image-container-even > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.listamenighet.no/\">\n \n \n <img class=\"article-image-odd\" style=\"width:100%;margin-bottom:30px;padding-top:0px;\" src=\"/Portals/0/lista.jpeg\" alt=\"\">\n \n </a>",
+          "target": [
+            ".image-container-odd > a[href$=\"listamenighet.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://kirketorget.no/\">\n \n \n <img class=\"article-image-even\" style=\"width:100%;margin-bottom:30px;padding-top:0px;\" src=\"/Portals/0/Bilder/E41824E7C4DFF87A2991038CA8BF3F49.jpg\" alt=\"\">\n \n </a>",
+          "target": [
+            ".image-container-even > a[href$=\"kirketorget.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 43,
+      "nodes": [
+        {
+          "html": "<div id=\"cookieConsentContainer\" class=\"cookieConsentContainer\" style=\"display: flex;\">",
+          "target": [
+            "#cookieConsentContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"top-menu\">\n<div class=\"menu-item\"><a href=\"#section2\">Menighetene</a></div>\n\n<div class=\"menu-item\"><a href=\"#section4\">Kalender</a></div>\n\n<div class=\"menu-item\"><a href=\"/kontakt\">Kontakt</a></div>\n</div>",
+          "target": [
+            "#top-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"dnn_ctr380_DNNArticle_List_MyArticleList_panelArticle\">",
+          "target": [
+            "#dnn_ctr380_DNNArticle_List_MyArticleList_panelArticle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article-odd\">",
+          "target": [
+            ".article-odd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article-even\">",
+          "target": [
+            "#dnn_ctr380_ContentPane > .article-even"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"hele-kalender\"> <a href=\"/Kalender\">Se hele kalenderen</a></div>",
+          "target": [
+            ".hele-kalender"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"calendar-data-front\"> <div class=\"calendar-day-front\">Søndag</div> <div class=\"calendar-date-front\">22.11</div>    </div>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-data-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.11.00</div>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=42d266d0-37c9-48ed-9759-3fd93d5c3cf0&amp;OccurenceId=42d266d0-37c9-48ed-9759-3fd93d5c3cf0\">Jubileumsgudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Spind kirke</span>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.11.00</div>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=ea7911ce-048e-4017-8821-4b8defa21d4e&amp;OccurenceId=ea7911ce-048e-4017-8821-4b8defa21d4e\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Spind kirke</span>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.19.00</div>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(3) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=7197a500-8bd7-42cd-a531-8dd3db579548&amp;OccurenceId=7197a500-8bd7-42cd-a531-8dd3db579548\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(3) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Frelserens kirke</span>",
+          "target": [
+            ".calendar-item-front:nth-child(2) > .calendar-event-front > .event-front:nth-child(3) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"calendar-data-front\"> <div class=\"calendar-day-front\">Søndag</div> <div class=\"calendar-date-front\">29.11</div>    </div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-data-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.11.00</div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=aaba4b80-3f03-4346-9ffe-f6efd1fd60c8&amp;OccurenceId=aaba4b80-3f03-4346-9ffe-f6efd1fd60c8\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Frelserens kirke</span>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.11.00</div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=cfbc42ed-4e4b-449a-9ff7-d975cc2ce809&amp;OccurenceId=cfbc42ed-4e4b-449a-9ff7-d975cc2ce809\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Vanse kirke</span>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.17.00</div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(3) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=4b28f209-d1ad-46ab-b55d-c8021b05beb4&amp;OccurenceId=4b28f209-d1ad-46ab-b55d-c8021b05beb4\">Syng julen inn gudstjene</a> </p>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(3) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Herad kirke</span>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(3) > .calendar-event-front > .event-front:nth-child(3) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"calendar-data-front\"> <div class=\"calendar-day-front\">Søndag</div> <div class=\"calendar-date-front\">06.12</div>    </div>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-data-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.11.00</div>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=fa211888-844a-4f32-b665-36b8009c1b56&amp;OccurenceId=fa211888-844a-4f32-b665-36b8009c1b56\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Frelserens kirke</span>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.11.00</div>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=164e05d5-3809-49d2-b39a-8ba0623c2372&amp;OccurenceId=164e05d5-3809-49d2-b39a-8ba0623c2372\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Vanse kirke</span>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.17.00</div>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(3) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=6ba92d1a-0572-45f0-863c-8cc40647e843&amp;OccurenceId=6ba92d1a-0572-45f0-863c-8cc40647e843\">Gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(3) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Spind kirke</span>",
+          "target": [
+            ".calendar-item-front:nth-child(4) > .calendar-event-front > .event-front:nth-child(3) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"calendar-data-front\"> <div class=\"calendar-day-front\">Søndag</div> <div class=\"calendar-date-front\">13.12</div>    </div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-data-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.16.00</div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front:nth-child(1) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=d2fc4ebb-d220-46ef-9f62-8ddddf8fa1a1&amp;OccurenceId=d2fc4ebb-d220-46ef-9f62-8ddddf8fa1a1\">Syng julen inn gudstjene</a> </p>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Frelserens kirke</span>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front:nth-child(1) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"event-time-front\">kl.16.00</div>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front:nth-child(2) > .event-time-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"info-text-front\">  <a href=\"/Kalenderdetaljer?Publish=Polo&amp;Att=Nei&amp;EventId=c90a1b56-534a-4e1a-b8ce-09a21b7baebf&amp;OccurenceId=c90a1b56-534a-4e1a-b8ce-09a21b7baebf\">Syng Julen Inn gudstjeneste</a> </p>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .info-text-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"calendar-location-front\">Vestbygda kapell</span>",
+          "target": [
+            ".calendar-item-front-alt:nth-child(5) > .calendar-event-front > .event-front:nth-child(2) > .event-info-front > .calendar-kategori-front > a > .calendar-location-front"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
