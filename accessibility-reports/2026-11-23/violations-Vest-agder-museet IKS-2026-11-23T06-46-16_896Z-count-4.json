@@ -1,0 +1,219 @@
+{
+  "project": "Vest-agder-museet IKS",
+  "timestamp": "2026-11-23T06:46:16.896Z",
+  "url": "https://www.vestagdermuseet.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button id=\"btn-show-search\" class=\"btn\" type=\"button\">\n\t\t\t\t\t<i class=\"fa fa-search\"></i>\n\t\t\t\t</button>",
+          "target": [
+            "#btn-show-search"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\">",
+          "target": [
+            ".goog-te-gadget"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #666666, background color: #111c24, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" href=\"https://translate.google.com\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png\" width=\"37px\" height=\"14px\" style=\"padding-right: 3px\" alt=\"Google Oversetter\">Oversetter</a>",
+          "target": [
+            ".VIpgJd-ZVi9od-l4eHX-hSRGPd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.77 (foreground color: #444444, background color: #111c24, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"event-list-item-day\">20</span>",
+          "target": [
+            "time[datetime=\"20-11-2026 11:00\"] > .event-list-item-day"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #111c24, background color: #a84069, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<span class=\"event-list-item-month\">nov</span>",
+          "target": [
+            "time[datetime=\"20-11-2026 11:00\"] > .event-list-item-month"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #111c24, background color: #a84069, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>- et seilende kulturminne og Norsk krigsseilermuseum</p>",
+          "target": [
+            "a[title=\"D/S Hestmanden\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #111c24, background color: #0071bb, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p> - by- sjøfart og industrihistorie, kunstsamlinger og barndomshjemmet til Gustav og Emanuel Vigeland</p>",
+          "target": [
+            "a[title=\"Mandal museum\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #111c24, background color: #0088ce, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>- smalsporet jernbane som fremdeles kjører med damplokomotiv og gamle trevogner</p>",
+          "target": [
+            "a[title=\"Setesdalsbanen\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #111c24, background color: #ed2939, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>- den levende museumsfabrikken med produksjon av garn og ullvarer på gamle maskiner</p>",
+          "target": [
+            "a[title=\"Sjølingstad Uldvarefabrik\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #111c24, background color: #a84069, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h4 style=\"\n    text-transform: uppercase;\n    letter-spacing: 0.3em;\n    display: inline-block;\n    margin: 0;\n    padding: 0.5rem 0 0;\">\tVi forteller din historie</h4>",
+          "target": [
+            ".textwidget.custom-html-widget > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"widget-title widget-title--gray\">Dette skjer i museet</h4>",
+          "target": [
+            ".widget-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text sr-only\" href=\"#content\">Hopp til innhold</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"media_image-2\" class=\"footer-widget col-md-4 col-lg-3\">",
+          "target": [
+            "#media_image-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"vam_museums_list-2\" class=\"footer-widget col-md-4 col-lg-3\">",
+          "target": [
+            "#vam_museums_list-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>\n\t<b>Vest-Agder-museet</b> ble opprettet i 2006 ved en interkommunal sammenslåing av kulturhistoriske museer i fylket.<br>\n<a href=\"/forsiden/om-museet/\" title=\"Om VAM\">Les om VAM her &gt;</a>\n</p>",
+          "target": [
+            "#custom_html-3 > .textwidget.custom-html-widget > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>\n\t<b>Museets administrasjon</b>\n\t<br>\n\tOdderøyveien 21, 4610 Kristiansand\n\t<br>\n\tTlf: +47 38 12 03 50\n\t<br>\n\tOrg nr: NO 989 072 048 MVA<br>\n\tE-post: <a href=\"mailto:post@vestagdermuseet.no\">post@vestagdermuseet.no</a>\n</p>",
+          "target": [
+            ".textwidget.custom-html-widget > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>\n\tAnsvarlig redaktør: <a href=\"mailto:j.olsen@vestagdermuseet.no\">Direktør John Olsen</a>\n\t<br>\n\tWebansvarlig: <a href=\"mailto:erik.engenes@vestagdermuseet.no\">Erik Engenes</a>\n\t<br>\n\t<a href=\"/forsiden/kontakt-oss/\" title=\"Kontakt oss\">Fullstendig kontaktoversikt &gt;</a>\n</p>",
+          "target": [
+            ".textwidget.custom-html-widget > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p style=\"margin: 15px 0;\">\n\t<a href=\"https://www.vestagdermuseet.no/informasjonskapsler-cookies/\">Informasjonskapsler (cookies)</a>\n<a href=\"https://uustatus.no/nb/erklaringer/publisert/8b52cc6f-35c2-4481-849b-848ad8777fd8\">Tilgjengelighetserklæring</a>\n</p>",
+          "target": [
+            ".textwidget.custom-html-widget > p:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"block-5\" class=\"footer-widget col-md-4 col-lg-3\"><p><strong>Meld deg på vårt nyhetsbrev</strong></p><div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" style=\"background-color:#8a8a8a !important;\" href=\"http://eepurl.com/dp_QRv\"> Få Nyhetsbrev </a></div></div>",
+          "target": [
+            "#block-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

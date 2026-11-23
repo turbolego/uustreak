@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansund kommune
 
-**Timestamp:** 2026-11-22T06:27:39.546Z
+**Timestamp:** 2026-11-23T06:22:22.970Z
 **URL:** [https://www.kristiansund.kommune.no/](https://www.kristiansund.kommune.no/)
 **Total Violations:** 1
 
@@ -10,14 +10,10 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.global-bottom-container`
-  - **HTML:** `<section class="global-bottom-container">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.global-bottom-container`

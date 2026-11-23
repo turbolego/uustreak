@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ålesund kommune
 
-**Timestamp:** 2026-11-22T06:32:20.366Z
+**Timestamp:** 2026-11-23T06:01:47.785Z
 **URL:** [https://alesund.kommune.no/](https://alesund.kommune.no/)
 **Total Violations:** 1
 
@@ -10,14 +10,10 @@
 
 - **Impact:** minor
 - **Description:** Ensure image alternative is not repeated as text
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `img[alt="Ålesund kommune"]`
-  - **HTML:** `<img alt="Ålesund kommune" src="/handlers/bv.ashx/i8e58e09e-5c46-4f8b-af79-2b7be89302cd/f0744alesund-logo.svg">`
-  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
-
+- `img[alt="Ålesund kommune"]`

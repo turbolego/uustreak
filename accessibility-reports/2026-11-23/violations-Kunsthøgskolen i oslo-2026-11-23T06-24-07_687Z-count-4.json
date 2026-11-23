@@ -1,0 +1,234 @@
+{
+  "project": "Kunsthøgskolen i oslo",
+  "timestamp": "2026-11-23T06:24:07.687Z",
+  "url": "https://khio.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h6>Følg oss</h6>",
+          "target": [
+            ".two.col:nth-child(1) > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 21,
+      "nodes": [
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader loaded\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i me...\" alt=\"Bachelorstudium i me...\">",
+          "target": [
+            ".kunst-og-handverk.kunst-og-handverk-page[data-index=\"0\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > .loaded[height=\"682\"][width=\"1024\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjQvMDYvMjgvdmpuZ2t1enp0X0NVX0UxXzAwM18yMzExMDYuanBnIl0sWyJwIiwidGh1bWIiLCIxMDI0eDY4MiMiXV0/CU_E1_003_231106.jpg\" class=\"imgloader loaded\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i design\" alt=\"Masterstudium i design\">",
+          "target": [
+            "img[title=\"Masterstudium i design\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader loaded\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i bi...\" alt=\"Bachelorstudium i bi...\">",
+          "target": [
+            "img[title=\"Bachelorstudium i billedkunst\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader loaded\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i kl...\" alt=\"Bachelorstudium i kl...\">",
+          "target": [
+            ".design.design-page[data-index=\"3\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > .loaded[height=\"682\"][width=\"1024\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjUvMDgvMjAvMzZncGZwZTMxZV9UZWF0ZXJfTWFzdGVyLmpwZyJdLFsicCIsInRodW1iIiwiMTAyNHg2ODIjIl1d/Teater%20Master.jpg\" class=\"imgloader loaded\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i teater\" alt=\"Masterstudium i teater\">",
+          "target": [
+            "img[title=\"Masterstudium i teater\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i kl...\" alt=\"Bachelorstudium i kl...\">",
+          "target": [
+            ".dans-page.dans[data-index=\"5\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjQvMDYvMjgvMXEzcXkxbXh2bV9FTUtfXzEwMy5qcGciXSxbInAiLCJ0aHVtYiIsIjEwMjR4NjgyIyJdXQ/EMK_-103.jpg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i opera\" alt=\"Masterstudium i opera\">",
+          "target": [
+            "img[title=\"Masterstudium i opera\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMTkvMDkvMDUvMTRfMTdfNDhfNzI1X1QzNEM2NTcyXzE3NTB4MTE1Mi5qcGciXSxbInAiLCJ0aHVtYiIsIjEwMjR4NjgyIyJdXQ/T34C6572_1750x1152.jpg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i regi\" alt=\"Bachelorstudium i regi\">",
+          "target": [
+            "img[title=\"Bachelorstudium i regi\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i medi...\" alt=\"Masterstudium i medi...\">",
+          "target": [
+            ".kunst-og-handverk.kunst-og-handverk-page[data-index=\"8\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Årsstudium i opera\" alt=\"Årsstudium i opera\">",
+          "target": [
+            "img[title=\"Årsstudium i opera\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjQvMDYvMDUvM2t2dmE4bGg0dl9QaG90b19ZYW5pdl9Db2hlbl83NzAyLmpwZyJdLFsicCIsInRodW1iIiwiMTAyNHg2ODIjIl1d/Photo_Yaniv_Cohen-7702.jpg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i jazzdans\" alt=\"Bachelorstudium i jazzdans\">",
+          "target": [
+            "img[title=\"Bachelorstudium i jazzdans\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i dans\" alt=\"Masterstudium i dans\">",
+          "target": [
+            "img[title=\"Masterstudium i dans\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Dobbelgrad Masterstu...\" alt=\"Dobbelgrad Masterstu...\">",
+          "target": [
+            ".teaterhogskolen-page.teaterhogskolen[data-index=\"12\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i gr...\" alt=\"Bachelorstudium i gr...\">",
+          "target": [
+            ".design.design-page[data-index=\"13\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjYvMDMvMTEvNHd1eTJyY3Rmd19EU0MwNjM0M18yLmpwZyJdLFsicCIsInRodW1iIiwiMTAyNHg2ODIjIl1d/DSC06343-2.jpg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i skuespillerfag\" alt=\"Bachelorstudium i skuespillerfag\">",
+          "target": [
+            ".teaterhogskolen-page.teaterhogskolen[data-index=\"14\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i bill...\" alt=\"Masterstudium i bill...\">",
+          "target": [
+            "img[title=\"Masterstudium i billedkunst\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i kuns...\" alt=\"Masterstudium i kuns...\">",
+          "target": [
+            ".kunst-og-handverk.kunst-og-handverk-page[data-index=\"16\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjQvMDYvMDkvOHFxZ2wybWlic19QaG90b19ZYW5pdl9Db2hlbl85MzE5LmpwZyJdLFsicCIsInRodW1iIiwiMTAyNHg2ODIjIl1d/Photo_Yaniv_Cohen-9319.jpg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i samtidsdans\" alt=\"Bachelorstudium i samtidsdans\">",
+          "target": [
+            "img[title=\"Bachelorstudium i samtidsdans\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjQvMDYvMTkvNjE3aWQ4aHdhZF90aHVtYm5haWxfNC5qcGVnIl0sWyJwIiwidGh1bWIiLCIxMDI0eDY4MiMiXV0/thumbnail-4.jpeg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Masterstudium i koreografi\" alt=\"Masterstudium i koreografi\">",
+          "target": [
+            "img[title=\"Masterstudium i koreografi\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZ...\" class=\"imgloader loaded\" width=\"1024\" height=\"682\" title=\"Bachelorstudium i in...\" alt=\"Bachelorstudium i in...\">",
+          "target": [
+            ".design.design-page[data-index=\"19\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > .loaded[height=\"682\"][width=\"1024\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/system/images/W1siZiIsIjIwMjUvMTAvMjgvNDIyenY0NWw0ZF9EU0MwMDU0OS5qcGciXSxbInAiLCJ0aHVtYiIsIjEwMjR4NjgyIyJdXQ/DSC00549.jpg\" class=\"imgloader\" loading=\"lazy\" width=\"1024\" height=\"682\" title=\"Praktisk-pedagogisk utdanning i scenekunst\" alt=\"Praktisk-pedagogisk utdanning i scenekunst\">",
+          "target": [
+            ".operahogskolen.dans[data-index=\"20\"] > .slide-image > figure > .image-wrapper.horizontal > img-loader > picture > img[height=\"682\"][width=\"1024\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"container cf\" data-sticky-mini-home-button-target=\"logo\" isvisible=\"true\">",
+          "target": [
+            "nav[data-sticky-mini-home-button-target=\"logo\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" class=\"js\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "project": "Larvik kulturhus bølgen KF",
+  "timestamp": "2026-11-23T06:26:24.069Z",
+  "url": "https://www.bolgenkulturhus.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4>Gavekort</h4>",
+          "target": [
+            "h4:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-contentinfo-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the contentinfo landmark is at top level",
+      "help": "Contentinfo landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-contentinfo-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer class=\"elementor-section el...\" data-id=\"d4a85af\" data-element_type=\"section\" data-e-type=\"section\" data-settings=\"{\"_ob_glider_is_slid...\">",
+          "target": [
+            ".elementor-element-d4a85af"
+          ],
+          "failureSummary": "Fix any of the following:\n  The contentinfo landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-contentinfo",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one contentinfo landmark",
+      "help": "Document should not have more than one contentinfo landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-contentinfo?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer data-elementor-type=\"footer\" data-elementor-id=\"77\" class=\"elementor elementor-77 elementor-location-footer\" data-elementor-post-type=\"elementor_library\">",
+          "target": [
+            ".elementor-77"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one contentinfo landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"elementor-slides-wrapper elementor-main-swiper swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden\" role=\"region\" aria-roledescription=\"carousel\" aria-label=\"Slides\" dir=\"ltr\" data-animation=\"fadeInRight\">",
+          "target": [
+            ".elementor-slides-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<footer data-elementor-type=\"footer\" data-elementor-id=\"77\" class=\"elementor elementor-77 elementor-location-footer\" data-elementor-post-type=\"elementor_library\">",
+          "target": [
+            ".elementor-77"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 14,
+      "nodes": [
+        {
+          "html": "<a class=\"elementor-icon\" href=\"https://www.bolgenkulturhus.no/\">",
+          "target": [
+            ".elementor-element-8dbd8bb.menybg.elementor-sticky--active > .e-con-inner > .elementor-element-4c2e129.elementor-view-default.elementor-widget-icon > .elementor-widget-container > .elementor-icon-wrapper > .elementor-icon"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/jula-er-her-alexandra-rotan-venner/\">",
+          "target": [
+            ".post-855590 > .elementor-element-4824038.elementor-top-section[data-id=\"4824038\"] > .elementor-column-gap-no.elementor-container > .elementor-element-3b12fe9.elementor-col-100[data-id=\"3b12fe9\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-74e17a0.elementor-inner-section[data-id=\"74e17a0\"] > .elementor-column-gap-default.elementor-container > .elementor-element-22a3bed.elementor-col-50[data-id=\"22a3bed\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-a713e3c.elementor-widget-theme-post-featured-image[data-id=\"a713e3c\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/var-jul/\">",
+          "target": [
+            ".post-850763 > .elementor-element-4824038.elementor-top-section[data-id=\"4824038\"] > .elementor-column-gap-no.elementor-container > .elementor-element-3b12fe9.elementor-col-100[data-id=\"3b12fe9\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-74e17a0.elementor-inner-section[data-id=\"74e17a0\"] > .elementor-column-gap-default.elementor-container > .elementor-element-22a3bed.elementor-col-50[data-id=\"22a3bed\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-a713e3c.elementor-widget-theme-post-featured-image[data-id=\"a713e3c\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/notteknekkeren-klassisk-juleballett-med-strykekvartett/\">",
+          "target": [
+            ".post-857151 > .elementor-element-4824038.elementor-top-section[data-id=\"4824038\"] > .elementor-column-gap-no.elementor-container > .elementor-element-3b12fe9.elementor-col-100[data-id=\"3b12fe9\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-74e17a0.elementor-inner-section[data-id=\"74e17a0\"] > .elementor-column-gap-default.elementor-container > .elementor-element-22a3bed.elementor-col-50[data-id=\"22a3bed\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-a713e3c.elementor-widget-theme-post-featured-image[data-id=\"a713e3c\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/studio-nille-mellom-linjene/\">",
+          "target": [
+            ".post-861469 > .elementor-element-6bb2467a.elementor-top-section[data-id=\"6bb2467a\"] > .elementor-column-gap-default.elementor-container > .elementor-element-771cde29.elementor-col-100[data-id=\"771cde29\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-4c7e804d.elementor-inner-section[data-id=\"4c7e804d\"] > .elementor-column-gap-default.elementor-container > .elementor-element-2a8e4c60.elementor-inner-column[data-id=\"2a8e4c60\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-2e52474a.elementor-widget-theme-post-featured-image[data-id=\"2e52474a\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/matineklubben/\">",
+          "target": [
+            ".post-860926 > .elementor-element-6bb2467a.elementor-top-section[data-id=\"6bb2467a\"] > .elementor-column-gap-default.elementor-container > .elementor-element-771cde29.elementor-col-100[data-id=\"771cde29\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-4c7e804d.elementor-inner-section[data-id=\"4c7e804d\"] > .elementor-column-gap-default.elementor-container > .elementor-element-2a8e4c60.elementor-inner-column[data-id=\"2a8e4c60\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-2e52474a.elementor-widget-theme-post-featured-image[data-id=\"2e52474a\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/christmas-with-nordic-tenors/\">",
+          "target": [
+            ".post-851316 > .elementor-element-6bb2467a.elementor-top-section[data-id=\"6bb2467a\"] > .elementor-column-gap-default.elementor-container > .elementor-element-771cde29.elementor-col-100[data-id=\"771cde29\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-4c7e804d.elementor-inner-section[data-id=\"4c7e804d\"] > .elementor-column-gap-default.elementor-container > .elementor-element-2a8e4c60.elementor-inner-column[data-id=\"2a8e4c60\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-2e52474a.elementor-widget-theme-post-featured-image[data-id=\"2e52474a\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/mer-teater-i-larvik-rodhettedagbokene/\">",
+          "target": [
+            ".post-861708 > .elementor-element-6bb2467a.elementor-top-section[data-id=\"6bb2467a\"] > .elementor-column-gap-default.elementor-container > .elementor-element-771cde29.elementor-col-100[data-id=\"771cde29\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-4c7e804d.elementor-inner-section[data-id=\"4c7e804d\"] > .elementor-column-gap-default.elementor-container > .elementor-element-2a8e4c60.elementor-inner-column[data-id=\"2a8e4c60\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-2e52474a.elementor-widget-theme-post-featured-image[data-id=\"2e52474a\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/riviera-band-julespesial/\">",
+          "target": [
+            ".post-863644 > .elementor-element-6bb2467a.elementor-top-section[data-id=\"6bb2467a\"] > .elementor-column-gap-default.elementor-container > .elementor-element-771cde29.elementor-col-100[data-id=\"771cde29\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-4c7e804d.elementor-inner-section[data-id=\"4c7e804d\"] > .elementor-column-gap-default.elementor-container > .elementor-element-2a8e4c60.elementor-inner-column[data-id=\"2a8e4c60\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-2e52474a.elementor-widget-theme-post-featured-image[data-id=\"2e52474a\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bolgenkulturhus.no/program/didrik-solli-tangen-o-helga-natt/\">",
+          "target": [
+            ".post-852924 > .elementor-element-6bb2467a.elementor-top-section[data-id=\"6bb2467a\"] > .elementor-column-gap-default.elementor-container > .elementor-element-771cde29.elementor-col-100[data-id=\"771cde29\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-4c7e804d.elementor-inner-section[data-id=\"4c7e804d\"] > .elementor-column-gap-default.elementor-container > .elementor-element-2a8e4c60.elementor-inner-column[data-id=\"2a8e4c60\"] > .elementor-widget-wrap.elementor-element-populated > .elementor-element-2e52474a.elementor-widget-theme-post-featured-image[data-id=\"2e52474a\"] > .elementor-widget-container > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.nasta.no/\" target=\"_blank\">",
+          "target": [
+            "a[href$=\"nasta.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.op.no/\" target=\"_blank\">\n\t\t\t\t\t\t\t<img width=\"572\" height=\"131\" src=\"https://www.bolgenkulturhus.no/wp-content/uploads/2021/12/op-web-sponsor-bolgenkulturhus.png\" class=\"attachment-medium_large size-medium_large wp-image-2057\" alt=\"\">\t\t\t\t\t\t\t\t</a>",
+          "target": [
+            "a[href$=\"op.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"elementor-icon elementor-social-icon elementor-social-icon- elementor-animation-grow elementor-repeater-item-e3fc30c\" href=\"https://www.facebook.com/bolgenkulturhus\" target=\"_blank\">",
+          "target": [
+            ".elementor-repeater-item-e3fc30c"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"elementor-icon elementor-social-icon elementor-social-icon- elementor-animation-grow elementor-repeater-item-f4393ba\" href=\"https://www.instagram.com/bolgenkulturhus\" target=\"_blank\">",
+          "target": [
+            ".elementor-repeater-item-f4393ba"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" href=\"#content\">Skip to content</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

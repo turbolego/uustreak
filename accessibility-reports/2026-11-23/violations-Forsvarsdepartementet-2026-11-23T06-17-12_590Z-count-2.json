@@ -1,0 +1,82 @@
+{
+  "project": "Forsvarsdepartementet",
+  "timestamp": "2026-11-23T06:17:12.590Z",
+  "url": "https://www.regjeringen.no/no/dep/fd/id380/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"accordion\" type=\"button\"><div class=\"custom-checkbox\"><input class=\"checkbox\" id=\"consentCheckBox_FORM\" type=\"checkbox\" name=\"consentCB\" value=\"FORM\" data-required=\"false\"><label for=\"consentCheckBox_FORM\">Skjema</label></div></button>",
+          "target": [
+            ".whole-thing:nth-child(2) > .accordion[type=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants. Move them outside of the element, or remove them."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"logo_blackEdt\"><span><a id=\"logoATag\"><span class=\"logotxt\">Regjeringen.no</span><span></span></a></span></div>",
+          "target": [
+            ".logo_blackEdt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 id=\"cookieH2\" class=\"pd-40 mrgb-0\">Vi bruker informasjonskapsler</h2>",
+          "target": [
+            "#cookieH2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"desc\">",
+          "target": [
+            "#desc"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#mainContent\" class=\"skipLink\">\n    Til hovedinnhold\n</a>",
+          "target": [
+            ".skipLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

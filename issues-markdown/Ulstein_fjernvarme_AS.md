@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ulstein fjernvarme AS
 
-**Timestamp:** 2026-11-22T06:20:02.146Z
+**Timestamp:** 2026-11-23T06:44:04.785Z
 **URL:** [https://ulsteinfjernvarme.no/](https://ulsteinfjernvarme.no/)
 **Total Violations:** 2
 
@@ -10,30 +10,22 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `html`
-  - **HTML:** `<html lang="en-US" class="h-100">`
-  - **Failure summary:** Fix all of the following: Document does not have a main landmark
-
+- `html`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `h1`
-  - **HTML:** `<h1 class="display-1">Website parked</h1>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `h1`
