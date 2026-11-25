@@ -12,7 +12,6 @@ const forenklaKontrollUrls2025 = {
     257: 'www.luftfartsmuseum.no',
     258: 'kirkemusikkfredrikstad.no',
     264: 'aabv.no',
-    271: 'bremanger.kommune.no',
 };
 
 function forenklaKontrollUrlKey(value) {
@@ -58,4 +57,8 @@ function loadForenklaKontrollScores() {
             });
     }
     return forenklaKontrollScoresPromise;
+}
+
+if (typeof module !== 'undefined') {
+    module.exports = { forenklaKontrollUrlKey };
 }
