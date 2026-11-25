@@ -25,6 +25,74 @@ Poengsummen endres ikke når du velger en annen dato i topplista: Den viser
 resultatet fra UUtilsynets kontroll i 2025, ikke fra UUStreaks egne målinger.
 En tankestrek betyr at nettstedet ikke har en tilgjengelig poengsum.
 
+### Kandidater fra tilgjengelighetserklæringer
+
+Organisasjonsnavn og -nummer i [projects.json](projects.json) kommer fra
+forenkla kontroll 2025 der nettsted og virksomhet kan kobles sammen. Nummeret
+identifiserer en virksomhet, ikke et nettsted. Flere erklæringer kan derfor
+ha samme nummer, og prosjekter uten nummer blir ikke fanget opp av
+nummersammenligningen.
+
+Lag en kandidatliste fra en lokal eksport av søket etter
+tilgjengelighetserklæringer:
+
+```sh
+node js/declaration-candidates.js <eksport.json> <kandidater.json>
+```
+
+Kommandoen gjør ingen nettverksoppslag som standard. Legg til `--fetch-limit 25`
+for å hente opptil 25 publiserte erklæringer og lese nettadressen fra
+`statement-box--values`.
+Bruk samme utfil på nytt for å fortsette med uoppslåtte erklæringer fra samme
+eksport. `baseURL` er nettadressen oppgitt i erklæringen; `baseURLHint` er bare
+et uverifisert forslag fra navnet. Kandidatlisten endrer ikke prosjektlisten.
+
+Hent `baseURL` for hver oppføring i listen over manglende prosjekter:
+
+```sh
+node js/fetch-declaration-urls.js
+```
+
+Kommandoen leser `missing-projects-18112026.json` og lagrer de opprinnelige
+feltene sammen med `baseURL` og `lookupError` i
+`missing-projects-with-baseurls-18112026.json`. Den leser nettadressen fra
+lenken i `div.statement-box--values`, ikke fra erklæringens egen URL.
+Bruk `--limit 25` for en avgrenset kjøring, eller oppgi andre inn- og utfiler
+som de to første argumentene. Gjentatte kjøringer hopper over vellykkede
+oppslag og prøver feil på nytt. Skriptet venter minst et halvt sekund mellom
+oppslag og lagrer fremdrift underveis. HTTP 429 og serverfeil stopper kjøringen;
+andre oppslagsfeil logges og lagres med `baseURL: null`.
+
+Importer manglende nettsteder fra erklæringene:
+
+```sh
+node js/fetch-declaration-urls.js missing-projects-18112026.json resolved-projects.json --use-site-name
+node js/import-declaration-projects.js resolved-projects.json import-report.json --apply
+```
+
+`--use-site-name` bruker URL-formede navn direkte, inkludert norske domenenavn,
+og henter nettadressen fra feltet «Denne erklæringa gjeld nettstaden» for resten.
+Oppslag kan kjøres med `--concurrency 1-4`; `--delay-ms` angir minste intervall
+mellom start av forespørsler på tvers av alle arbeidere (standard 500 ms).
+Importereren beholder eksisterende prosjekter og prestasjoner, slår sammen
+dupliserte nettadresser og lager unike, filnavnsikre prosjektnavn.
+Adresser oppgitt av flere forskjellige organisasjoner legges i rapporten for
+manuell vurdering. Utelat `--apply` for å se forslaget uten å endre prosjektlisten.
+
+### Kontroll mot lokal Brreg-eksport
+
+Valider registrerte organisasjonsnumre og finn mulige eiere fra totalbestanden
+uten å laste hele filen i minnet (krever `jq`):
+
+```sh
+node js/validate-brreg.js enheter_alle.json brreg-validation.json
+```
+
+Rapporten viser navneavvik, slettede enheter og kandidater for prosjekter uten
+nummer. `--apply` fyller bare manglende metadata der både navn og hele
+nettadressen samsvarer med én aktiv, ikke-konkursregistrert enhet. Eksisterende
+numre endres ikke. Delte domener og andre usikre treff må vurderes manuelt.
+
 ## WCAG-skill for KI-agenter
 
 [wcag-skill på ClawHub](https://clawhub.ai/turbolego/skills/wcag-skill) er en
